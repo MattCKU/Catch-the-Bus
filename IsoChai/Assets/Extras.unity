@@ -122,31 +122,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.2
+      value: 2.4876366
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.4
+      value: -3.5746307
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 18
+      value: 19.269049
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.6274078
+      value: 0.63236094
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.003278336
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.028392727
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.7786909
+      value: 0.7741465
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_RootOrder
@@ -154,15 +154,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -11.335001
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -8.755
       objectReference: {fileID: 0}
     - target: {fileID: 4934956563238640, guid: 445d87ea8e2f27943ba4ccbe36b7e11c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 77.718
+      value: 78.312004
       objectReference: {fileID: 0}
     - target: {fileID: 114628956515196564, guid: 445d87ea8e2f27943ba4ccbe36b7e11c,
         type: 2}
@@ -217,13 +217,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 473711648}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.03417682, y: -0.17315088, z: 0.09726531, w: 0.9794846}
+  m_LocalPosition: {x: 19.810194, y: -7.3799686, z: 12.270243}
+  m_LocalScale: {x: 1.162, y: 1.162, z: 1.162}
   m_Children: []
   m_Father: {fileID: 1291195557}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.7760005, y: -19.527, z: 10.347}
 --- !u!81 &473711650
 AudioListener:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ Camera:
   m_GameObject: {fileID: 473711648}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -255,7 +255,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 12
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -335,7 +335,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -502,7 +502,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1411130901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 15.96, y: -4.71, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
