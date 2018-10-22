@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "Tiled2Unity", "namespace_tiled2_unity.html", "namespace_tiled2_unity" ],
+    [ "Char2Controller", "class_char2_controller.html", "class_char2_controller" ],
     [ "CharController", "class_char_controller.html", "class_char_controller" ],
     [ "cube", "classcube.html", "classcube" ],
     [ "FixedJoystick", "class_fixed_joystick.html", "class_fixed_joystick" ],

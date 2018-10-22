@@ -30,6 +30,7 @@ var hierarchy =
       [ "Joystick", "class_joystick.html", null ]
     ] ],
     [ "MonoBehaviour", null, [
+      [ "Char2Controller", "class_char2_controller.html", null ],
       [ "CharController", "class_char_controller.html", null ],
       [ "cube", "classcube.html", null ],
       [ "Joystick", "class_joystick.html", null ],

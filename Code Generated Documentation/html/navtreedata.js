@@ -24,7 +24,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Catch The Bus Prototype", "index.html", [
-    [ "Catch-the-Bus", "md__r_e_a_d_m_e.html", null ],
+    [ "Catch-the-Bus", "md__d_1__users__bennett__desktop__school__e_e_c_s_448__catch-the-_bus__r_e_a_d_m_e.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
     ] ],
