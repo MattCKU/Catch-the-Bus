@@ -1,0 +1,20 @@
+Works Cited
+Cite1:  For player movement, sources used include the instructional video below. 
+	URL: https://www.youtube.com/watch?v=XhliRnzJe5g
+	Author: Studica News (www.studica.com)
+	Used in: In file CharController/Char3Controller for player movement.
+
+Cite2:  For used Tilemaps/2D Art, 
+	URL: https://opengameart.org/content/isometric-buildings-1
+	Author: Kenney
+	Used in: In the assets folder, a tilemap was created consisting of the tiles.
+
+Cite3: For tilemap creation the program Tiled.
+	URL: https://www.mapeditor.org/
+	Author: MapEditor
+	Used to: Take .png image files and use them as tiles. 
+
+Cite4: For tilemap to Unity conversion.
+	URL: http://www.seanba.com/tiled2unity
+	Author: Sean Barton
+	Used to: Convert the tilemap made in tiled to be sent to the assets folder in Unity.
