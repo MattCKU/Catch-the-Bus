@@ -1,0 +1,27 @@
+var namespace_tiled2_unity =
+[
+    [ "CircleObject", "class_tiled2_unity_1_1_circle_object.html", null ],
+    [ "CustomTiledImporterAttribute", "class_tiled2_unity_1_1_custom_tiled_importer_attribute.html", "class_tiled2_unity_1_1_custom_tiled_importer_attribute" ],
+    [ "GPUInstancing", "class_tiled2_unity_1_1_g_p_u_instancing.html", "class_tiled2_unity_1_1_g_p_u_instancing" ],
+    [ "GroupLayer", "class_tiled2_unity_1_1_group_layer.html", null ],
+    [ "ICustomTiledImporter", "interface_tiled2_unity_1_1_i_custom_tiled_importer.html", "interface_tiled2_unity_1_1_i_custom_tiled_importer" ],
+    [ "ImportBehaviour", "class_tiled2_unity_1_1_import_behaviour.html", "class_tiled2_unity_1_1_import_behaviour" ],
+    [ "ImportTiled2Unity", "class_tiled2_unity_1_1_import_tiled2_unity.html", "class_tiled2_unity_1_1_import_tiled2_unity" ],
+    [ "ImportUtils", "class_tiled2_unity_1_1_import_utils.html", null ],
+    [ "Layer", "class_tiled2_unity_1_1_layer.html", "class_tiled2_unity_1_1_layer" ],
+    [ "Logger", "class_tiled2_unity_1_1_logger.html", "class_tiled2_unity_1_1_logger" ],
+    [ "ObjectLayer", "class_tiled2_unity_1_1_object_layer.html", "class_tiled2_unity_1_1_object_layer" ],
+    [ "PolygonObject", "class_tiled2_unity_1_1_polygon_object.html", null ],
+    [ "PolylineObject", "class_tiled2_unity_1_1_polyline_object.html", null ],
+    [ "RectangleObject", "class_tiled2_unity_1_1_rectangle_object.html", null ],
+    [ "SortingLayerExposed", "class_tiled2_unity_1_1_sorting_layer_exposed.html", null ],
+    [ "SpriteDepthInMap", "class_tiled2_unity_1_1_sprite_depth_in_map.html", "class_tiled2_unity_1_1_sprite_depth_in_map" ],
+    [ "SpriteDepthInMapEditor", "class_tiled2_unity_1_1_sprite_depth_in_map_editor.html", "class_tiled2_unity_1_1_sprite_depth_in_map_editor" ],
+    [ "TileAnimator", "class_tiled2_unity_1_1_tile_animator.html", "class_tiled2_unity_1_1_tile_animator" ],
+    [ "Tiled2UnityMenuItems", "class_tiled2_unity_1_1_tiled2_unity_menu_items.html", null ],
+    [ "TiledAssetPostProcessor", "class_tiled2_unity_1_1_tiled_asset_post_processor.html", null ],
+    [ "TiledMap", "class_tiled2_unity_1_1_tiled_map.html", "class_tiled2_unity_1_1_tiled_map" ],
+    [ "TileLayer", "class_tiled2_unity_1_1_tile_layer.html", null ],
+    [ "TileObject", "class_tiled2_unity_1_1_tile_object.html", "class_tiled2_unity_1_1_tile_object" ],
+    [ "TmxObject", "class_tiled2_unity_1_1_tmx_object.html", "class_tiled2_unity_1_1_tmx_object" ]
+];
