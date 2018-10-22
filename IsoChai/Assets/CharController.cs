@@ -6,7 +6,7 @@ public class CharController : MonoBehaviour
 {
     [SerializeField]
     float moveSpeed = 3f;
-
+    public Joystick joystick;
     Vector3 forward, right;
 
 	// Use this for initialization
@@ -28,9 +28,9 @@ public class CharController : MonoBehaviour
 
     void Move()
     {
-        Vector3 direction = new Vector3(Input.GetAxis("HorizontalKey"), 0, Input.GetAxis("VerticalKey"));
-        Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
-        Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+        Vector3 direction = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
+        Vector3 rightMovement = right * moveSpeed * Time.deltaTime * joystick.Horizontal;
+        Vector3 upMovement = forward * moveSpeed * Time.deltaTime * joystick.Vertical;
 
         Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 
