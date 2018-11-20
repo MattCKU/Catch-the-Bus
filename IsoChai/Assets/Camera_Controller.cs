@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// Code found from Unity Tutorial on Cameras	
+// URL: https://unity3d.com/learn/tutorials/projects/2d-ufo-tutorial/following-player-camera
+
+using UnityEngine;
 using System.Collections;
 
 public class Camera_Controller : MonoBehaviour {
