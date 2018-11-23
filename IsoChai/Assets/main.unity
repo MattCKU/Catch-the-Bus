@@ -158,15 +158,53 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4576351309692198, guid: db8667656b0089f4a9809b998df9a125, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.85
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4576351309692198, guid: db8667656b0089f4a9809b998df9a125, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4576351309692198, guid: db8667656b0089f4a9809b998df9a125, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022106438389616, guid: db8667656b0089f4a9809b998df9a125,
+        type: 2}
+      propertyPath: BackgroundColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022106438389616, guid: db8667656b0089f4a9809b998df9a125,
+        type: 2}
+      propertyPath: BackgroundColor.g
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022106438389616, guid: db8667656b0089f4a9809b998df9a125,
+        type: 2}
+      propertyPath: BackgroundColor.b
+      value: 0.042452812
+      objectReference: {fileID: 0}
+    - target: {fileID: 23578470517058984, guid: db8667656b0089f4a9809b998df9a125,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114022106438389616, guid: db8667656b0089f4a9809b998df9a125,
+        type: 2}
+      propertyPath: Orientation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369650510612786, guid: db8667656b0089f4a9809b998df9a125, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576351309692198, guid: db8667656b0089f4a9809b998df9a125, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23578470517058984, guid: db8667656b0089f4a9809b998df9a125,
+        type: 2}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db8667656b0089f4a9809b998df9a125, type: 2}
