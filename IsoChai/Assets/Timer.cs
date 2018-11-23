@@ -1,11 +1,14 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour {
 
-	int countDownStartValue = 120; //limit time to two minutes
+	int countDownStartValue = 10; //limit time to two minutes
 	public Text timerUI;
 	void Start () {
 		countDownTimer();
@@ -14,13 +17,14 @@ public class Timer : MonoBehaviour {
 	{
 		if(countDownStartValue>0)
 		{
+			TimeSpan spanTime = TimeSpan.FromSeconds(countDownStartValue);
 			timerUI.text = "Time left:"+countDownStartValue;
 			countDownStartValue--;
 			Invoke("countDownTimer",1.0f);
 		}
 		else
 		{
-			timerUI.text = "GameOver!";
+			SceneManager.LoadScene("final");
 		}
 	}
 
