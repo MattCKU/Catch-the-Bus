@@ -17,7 +17,6 @@ public class Timer : MonoBehaviour {
 	{
 		if(countDownStartValue>0)
 		{
-			TimeSpan spanTime = TimeSpan.FromSeconds(countDownStartValue);
 			timerUI.text = "Time left:"+countDownStartValue;
 			countDownStartValue--;
 			Invoke("countDownTimer",1.0f);
