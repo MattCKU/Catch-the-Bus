@@ -388,8 +388,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 159
+  m_fontSizeBase: 159
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -632,8 +632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 212.67, y: 58}
-  m_SizeDelta: {x: 276.3, y: 78.2}
+  m_AnchoredPosition: {x: 386.2, y: 108.850006}
+  m_SizeDelta: {x: 872.4, y: 317.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810413300
 MonoBehaviour:
@@ -821,8 +821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 209.83997, y: -39.100006}
-  m_SizeDelta: {x: 276.3, y: 78.2}
+  m_AnchoredPosition: {x: 451, y: -110.17}
+  m_SizeDelta: {x: 468.1, y: 220.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997128449
 MonoBehaviour:
@@ -942,8 +942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 209.84, y: 160.24}
-  m_SizeDelta: {x: 270.63, y: 102.52}
+  m_AnchoredPosition: {x: 379.45, y: 333}
+  m_SizeDelta: {x: 983.1, y: 235.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079109638
 MonoBehaviour:
@@ -966,11 +966,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 58
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 69
+    m_MaxSize: 200
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1017,7 +1017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -47, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079380651
@@ -1067,8 +1067,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 169
+  m_fontSizeBase: 169
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
