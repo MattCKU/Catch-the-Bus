@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
-	int countDownStartValue = 10; //limit time to two minutes
+	int countDownStartValue = 120; //limit time to two minutes
 	public Text timerUI;
 	void Start () {
 		countDownTimer();
