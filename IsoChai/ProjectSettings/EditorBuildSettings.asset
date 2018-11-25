@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/menu.unity
     guid: 4fd1cb3cc05414b7a889d8229e8bb3a8
   - enabled: 1
-    path: Assets/main.unity
-    guid: b314de33129281f44990c8d4ae67e35a
+    path: Assets/introduction.unity
+    guid: 4ef64bb91139e4fd6a24f7ee1aef20c9
+  - enabled: 1
+    path: Assets/level_1.unity
+    guid: 3a0cd5572b2c31940bac57629e57b85d
+  - enabled: 1
+    path: Assets/finallose.unity
+    guid: 6e4bb55bf021a4ca7bed15151b5216d7
+  - enabled: 1
+    path: Assets/finalwin.unity
+    guid: 426a09275ef8a403ca514b43be199e96
   m_configObjects: {}

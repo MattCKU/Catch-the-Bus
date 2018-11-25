@@ -21,7 +21,7 @@ public class CharController : MonoBehaviour
         right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
 
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
     {
