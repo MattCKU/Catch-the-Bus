@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
-	int countDownStartValue = 120; //limit time to two minutes
+	int countDownStartValue = 5; //limit time to two minutes
 	public Text timerUI;
 	void Start () {
 		countDownTimer();
@@ -20,7 +21,7 @@ public class Timer : MonoBehaviour {
 		}
 		else
 		{
-			timerUI.text = "GameOver!";
+			SceneManager.LoadScene("finallose");
 		}
 	}
 
