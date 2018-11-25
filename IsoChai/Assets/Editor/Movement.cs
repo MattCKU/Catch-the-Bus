@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour {
+public class Movement
+{
+    public float Speed;
+    public Movement(float speed)
+    {
+        Speed = speed;
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public Vector3 Calculate(float h, float v, float deltaTime)
+    {
+        var x = h * Speed * deltaTime;
+        var z = v * Speed * deltaTime;
+
+        return new Vector3(x, 0, z);
+    }
 }
