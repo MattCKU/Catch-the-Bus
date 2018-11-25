@@ -2365,21 +2365,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 2e24ecdb1a57b0e41906dd5c75b094e7,
     type: 3}
   m_PrefabInternal: {fileID: 2087010760}
---- !u!54 &1443572129
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1443572128}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1443572132
 BoxCollider:
   m_ObjectHideFlags: 0
