@@ -9,7 +9,9 @@ public class PrefabSpawner : MonoBehaviour {
 	[SerializeField]
 	private GameObject spawnObject;
 	[SerializeField]
-	private float spawnDelay=10;
+	private float spawnDelay=10f;
+	[SerializeField]
+	private float rand_variance = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +25,7 @@ public class PrefabSpawner : MonoBehaviour {
 		}
 	}
 	private void Spawn(){
-		nextSpawnTime = Time.time + spawnDelay;
+		nextSpawnTime = Time.time + spawnDelay + Random.Range(-1*rand_variance,rand_variance);
 		Instantiate(spawnObject, transform.position, transform.rotation);
 	}
 	private bool shouldSpawn(){

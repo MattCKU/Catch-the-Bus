@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4417952076820856}
   - component: {fileID: 114180955528014530}
   m_Layer: 0
-  m_Name: Sawner
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,3 +140,4 @@ MonoBehaviour:
   spawnObject: {fileID: 1528694104240506, guid: 5ddb291f10ced334babf9128eac34b89,
     type: 2}
   spawnDelay: 10
+  rand_variance: 0
