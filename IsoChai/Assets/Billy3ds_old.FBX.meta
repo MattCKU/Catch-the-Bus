@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab99a5fb6a5a32c40b1dfebebc4c32cb
+guid: d1e3ac4b5ad87ab4fad727deaa11e4aa
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -16,15 +16,8 @@ ModelImporter:
     2000000: Camera0
     2100000: No Name
     2300000: ' 1'
-    2300002: //RootNode
     3300000: ' 1'
-    3300002: //RootNode
-    4300000: Untitled
     7400000: Take 001
-    7400002: Untitled|Camera0|Take 001|BaseLayer
-    7400004: Untitled|Undefined.001|Take 001|BaseLayer
-    7400006: Untitled|Undefined|Take 001|BaseLayer
-    7400008: Untitled|Untitled|Take 001|BaseLayer
     9500000: //RootNode
     10800000: Undefined
     10800002: Undefined 1
@@ -79,7 +72,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.0254
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
