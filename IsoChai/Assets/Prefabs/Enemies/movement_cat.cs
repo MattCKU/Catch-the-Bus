@@ -5,6 +5,7 @@ using UnityEngine;
 public class movement_cat : MonoBehaviour {
 
 	Rigidbody rb;
+	GameObject self;
 
 	[SerializeField] 
 	private Vector3 movementDir = new Vector3(-60,0,-30);
@@ -14,6 +15,7 @@ public class movement_cat : MonoBehaviour {
 	void Start () {
 		transform.eulerAngles = new Vector3(90,320,0);
 		rb = GetComponent<Rigidbody>();
+		self=GetComponent<GameObject>();
 	}
 	
 	// Update is called once per frame
@@ -23,4 +25,10 @@ public class movement_cat : MonoBehaviour {
 		
 		//transform.Rotate(0,240,0);
 	}
+	void onCollisionEnter(Collision collision){
+		if(collision.gameObject.tag == "Wall"){
+			Destroy(self);
+		}
+	}
+
 }
