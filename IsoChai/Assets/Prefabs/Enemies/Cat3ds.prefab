@@ -3386,6 +3386,7 @@ GameObject:
   - component: {fileID: 114788543849354608}
   - component: {fileID: 54603990112340590}
   - component: {fileID: 136554662892494846}
+  - component: {fileID: 114243479134951392}
   m_Layer: 0
   m_Name: Cat3ds
   m_TagString: Enemy
@@ -14004,7 +14005,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368982609448090}
-  m_LocalRotation: {x: -0.3535534, y: 0.61237246, z: -0.61237246, w: -0.3535534}
+  m_LocalRotation: {x: -0.68122447, y: 0.18956074, z: -0.18956074, w: -0.68122447}
   m_LocalPosition: {x: 74.54607, y: -7.118621, z: 24.167435}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
@@ -14517,7 +14518,7 @@ Transform:
   - {fileID: 4288001587956696}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 240, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 328.9, z: 0}
 --- !u!4 &4826556968566388
 Transform:
   m_ObjectHideFlags: 1
@@ -36936,7 +36937,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &114788543849354608
+--- !u!114 &114243479134951392
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36944,9 +36945,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368982609448090}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2261e1a3c546ba34eaff4f1a0642952c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneObject: {fileID: 0}
+  speed: 5
+--- !u!114 &114788543849354608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368982609448090}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 549d0950e950f6c45b10da2e6fe90f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laneObject: {fileID: 0}
   movementDir: {x: -0.866, y: 0, z: -0.5}
   speed: 5
 --- !u!136 &136554662892494846

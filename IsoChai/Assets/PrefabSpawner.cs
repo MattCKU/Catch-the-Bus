@@ -12,6 +12,8 @@ public class PrefabSpawner : MonoBehaviour {
 	private float spawnDelay=10f;
 	[SerializeField]
 	private float rand_variance = 0.0f;
+	[SerializeField]
+	private GameObject laneObject;
 
 	// Use this for initialization
 	void Start () {
@@ -20,16 +22,16 @@ public class PrefabSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(shouldSpawn()){
+		if(Time.time >= nextSpawnTime){
 			Spawn();
 		}
 	}
 	private void Spawn(){
 		nextSpawnTime = Time.time + spawnDelay + Random.Range(-1*rand_variance,rand_variance);
-		Instantiate(spawnObject, transform.position, transform.rotation);
-	}
-	private bool shouldSpawn(){
-		return Time.time >= nextSpawnTime;
+		var obj = Instantiate(spawnObject, transform.position, spawnObject.transform.rotation);
+		obj.GetComponent<movement>().setLaneObject(laneObject);
+	
+		
 	}
 
 }

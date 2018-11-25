@@ -6,7 +6,8 @@ public class movement_cat : MonoBehaviour {
 
 	Rigidbody rb;
 	GameObject self;
-
+	[SerializeField]
+	private GameObject laneObject;
 	[SerializeField] 
 	private Vector3 movementDir = new Vector3(-60,0,-30);
 	[SerializeField] 

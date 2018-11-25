@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65875050485062184}
   - component: {fileID: 54530829447828358}
   - component: {fileID: 114761651992747144}
+  - component: {fileID: 114114661223160956}
   m_Layer: 0
   m_Name: Car3ds
   m_TagString: Enemy
@@ -37,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1869684617252586}
-  m_LocalRotation: {x: 0.000000020781119, y: -0.30970338, z: -0.000000006768782, w: 0.9508332}
+  m_LocalRotation: {x: 0, y: 0.96339685, z: 0, w: 0.26807928}
   m_LocalPosition: {x: 147.3, y: 304.1, z: 100.8}
   m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -36.083, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 148.9, z: 0}
 --- !u!23 &23912749589696700
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -99,7 +100,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &65875050485062184
 BoxCollider:
@@ -113,7 +114,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 48.252007, y: 14.315946, z: 18.350517}
   m_Center: {x: 0.19334029, y: 0.96653813, z: -0.0029721316}
---- !u!114 &114761651992747144
+--- !u!114 &114114661223160956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,8 +122,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1869684617252586}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2261e1a3c546ba34eaff4f1a0642952c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneObject: {fileID: 0}
+  speed: 20
+--- !u!114 &114761651992747144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869684617252586}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 033948da6bb84d7419497d214f44753c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laneObject: {fileID: 0}
   movementDir: {x: -58.9, y: 0, z: -31.1}
   speed: 12

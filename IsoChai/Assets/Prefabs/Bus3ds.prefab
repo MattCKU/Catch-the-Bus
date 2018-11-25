@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23449728681620726}
   - component: {fileID: 95654486338291288}
   - component: {fileID: 65635228316913178}
+  - component: {fileID: 114358406848341206}
   m_Layer: 0
   m_Name: Bus3ds
   m_TagString: Untagged
@@ -115,3 +116,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114358406848341206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1514975584615678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 144227f6dc3fd784dad43c254e5a35f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}

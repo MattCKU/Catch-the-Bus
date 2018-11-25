@@ -5,7 +5,8 @@ using UnityEngine;
 public class movement_Snowman : MonoBehaviour {
 
 	Rigidbody rb;
-
+	[SerializeField]
+	private GameObject laneObject;
 	[SerializeField] 
 	private Vector3 movementDir = new Vector3(-60,0,-30);
 	[SerializeField] 

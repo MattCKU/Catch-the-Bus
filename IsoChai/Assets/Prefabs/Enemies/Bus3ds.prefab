@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 54040362207648566}
   - component: {fileID: 65613928445439490}
   - component: {fileID: 114403830871674482}
+  - component: {fileID: 114797045926439940}
   m_Layer: 0
   m_Name: Bus3ds
   m_TagString: Enemy
@@ -254,10 +255,24 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1697066417415342}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 033948da6bb84d7419497d214f44753c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laneObject: {fileID: 0}
   movementDir: {x: -60, y: 0, z: -30}
   speed: 10
+--- !u!114 &114797045926439940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1697066417415342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2261e1a3c546ba34eaff4f1a0642952c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laneObject: {fileID: 0}
+  speed: 5

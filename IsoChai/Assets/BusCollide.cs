@@ -20,7 +20,10 @@ public class BusCollide : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Entered.");
-		SceneManager.LoadScene("finalwin");
+		if(other.gameObject.tag=="player"){
+			SceneManager.LoadScene("finalwin");
+		}
+		
 		//player.transform.position = new Vector3(0, y: 2, z: 0	);
 	}
 }
