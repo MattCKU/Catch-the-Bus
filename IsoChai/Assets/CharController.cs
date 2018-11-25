@@ -38,9 +38,8 @@ public class CharController : MonoBehaviour
         Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
 
         transform.forward = heading;
-        transform.position += rightMovement;
-        transform.position += upMovement;
-
-        //rb.MovePosition(rightMovement+upMovement);
+        //transform.position += rightMovement;
+        //transform.position += upMovement;
+        rb.MovePosition(transform.position+rightMovement+upMovement);
     }
 }
