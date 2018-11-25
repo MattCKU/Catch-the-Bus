@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
+
+    Rigidbody rb;
     [SerializeField]
     float moveSpeed = 3f;
     public Joystick joystick;
@@ -12,6 +14,7 @@ public class CharController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        rb = GetComponent<Rigidbody>();
         forward = Camera.main.transform.forward;
         forward.y = 0;
         forward = Vector3.Normalize(forward);
@@ -37,5 +40,7 @@ public class CharController : MonoBehaviour
         transform.forward = heading;
         transform.position += rightMovement;
         transform.position += upMovement;
+
+        //rb.MovePosition(rightMovement+upMovement);
     }
 }
