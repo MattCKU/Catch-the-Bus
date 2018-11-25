@@ -21,11 +21,12 @@ GameObject:
   - component: {fileID: 4977469558430802}
   - component: {fileID: 95045937965087972}
   - component: {fileID: 54209779770424414}
-  - component: {fileID: 136425344508785640}
   - component: {fileID: 114145171605698492}
+  - component: {fileID: 65510056904669598}
+  - component: {fileID: 65606113699796050}
   m_Layer: 0
   m_Name: Billy3ds
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,6 +219,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65510056904669598
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236641191859178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1681488, y: 0.5100052, z: 0.06938917}
+  m_Center: {x: 0.00000001192093, y: 0.005697489, z: 0.001899156}
+--- !u!65 &65606113699796050
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236641191859178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1681488, y: 0.5100052, z: 0.06938917}
+  m_Center: {x: 0.00000001192093, y: 0.005697489, z: 0.001899156}
 --- !u!95 &95045937965087972
 Animator:
   serializedVersion: 3
@@ -247,18 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d4f49f65663bd41bfd67bf2150834d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stunTime: 1
   moveSpeed: 9
   joystick: {fileID: 0}
---- !u!136 &136425344508785640
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1236641191859178}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.2041264
-  m_Height: 1.391655
-  m_Direction: 1
-  m_Center: {x: 0.7142372, y: 0.5143633, z: -0.819046}
