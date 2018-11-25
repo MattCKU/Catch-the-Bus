@@ -20,7 +20,7 @@ public class BusCollide : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Entered.");
-		if(other.gameObject.tag=="player"){
+		if(other.gameObject.tag=="Player"){
 			SceneManager.LoadScene("finalwin");
 		}
 		
