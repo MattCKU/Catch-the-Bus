@@ -15,7 +15,7 @@ namespace Tests.Editor
         [Test]
         public void Moves_Along_Z()
         {
-            Assert.AreEqual(1, new Movement(1).Calculate(1, 0, 1).z, 0.1f);
+            Assert.AreEqual(1, new Movement(1).Calculate(0, 1, 1).z, 0.1f);
         }
     }
 }
