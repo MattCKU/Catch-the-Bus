@@ -1,7 +1,10 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour {
 
@@ -20,7 +23,7 @@ public class Timer : MonoBehaviour {
 		}
 		else
 		{
-			timerUI.text = "GameOver!";
+			SceneManager.LoadScene("final");
 		}
 	}
 
