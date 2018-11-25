@@ -13,7 +13,7 @@ public class movement_cat : MonoBehaviour {
 	private float speed = 5f;
 	// Use this for initialization
 	void Start () {
-		transform.eulerAngles = new Vector3(90,320,0);
+		transform.eulerAngles = new Vector3(90,328.9f,0);
 		rb = GetComponent<Rigidbody>();
 		self=GetComponent<GameObject>();
 	}

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114761651992747144}
   m_Layer: 0
   m_Name: Car3ds
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,5 +124,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 033948da6bb84d7419497d214f44753c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDir: {x: -60, y: 0, z: -30}
-  speed: 5
+  movementDir: {x: -58.9, y: 0, z: -31.1}
+  speed: 12

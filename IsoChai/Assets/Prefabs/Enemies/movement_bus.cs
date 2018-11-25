@@ -13,7 +13,7 @@ public class movement_bus : MonoBehaviour {
 	private float speed = 5f;
 	// Use this for initialization
 	void Start () {
-		transform.eulerAngles = new Vector3(0,330,0);
+		transform.eulerAngles = new Vector3(0,328.9f,0);
 		rb = GetComponent<Rigidbody>();
 		self=GetComponent<GameObject>();
 	}
