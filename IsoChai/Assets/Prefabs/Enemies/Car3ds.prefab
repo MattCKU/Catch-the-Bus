@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23912749589696700}
   - component: {fileID: 65875050485062184}
   - component: {fileID: 54530829447828358}
-  - component: {fileID: 114761651992747144}
   - component: {fileID: 114114661223160956}
   m_Layer: 0
   m_Name: Car3ds
@@ -127,17 +126,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneObject: {fileID: 0}
   speed: 20
---- !u!114 &114761651992747144
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869684617252586}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033948da6bb84d7419497d214f44753c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laneObject: {fileID: 0}
-  movementDir: {x: -58.9, y: 0, z: -31.1}
-  speed: 12
