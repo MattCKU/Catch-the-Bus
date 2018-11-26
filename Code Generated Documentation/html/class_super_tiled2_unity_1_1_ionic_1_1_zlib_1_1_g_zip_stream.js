@@ -1,0 +1,26 @@
+var class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream =
+[
+    [ "GZipStream", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a509b4683754c1e03e277c5688b75cf54", null ],
+    [ "GZipStream", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a0c3a1b84d1e634a7405d40ff529330ca", null ],
+    [ "GZipStream", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#af94d6e6357a0e88fb3c237388574efeb", null ],
+    [ "GZipStream", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a3cb29104487c56e6f58a24ce79ee546d", null ],
+    [ "Dispose", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a43554a520237d8aedb81068572f93507", null ],
+    [ "Flush", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#ad71244e7b3bcea606d73cbf964f9f239", null ],
+    [ "Read", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a772b5013a585850ffaf8be4aa7f3dbcf", null ],
+    [ "Seek", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a098a173894636f7470f79af72c12ba4f", null ],
+    [ "SetLength", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a79496db830d2a246f7c5aac8f3305617", null ],
+    [ "Write", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a49032afb5806563236a5d53841abe2b8", null ],
+    [ "LastModified", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a2833edcfc2a88f9d036ca748be768188", null ],
+    [ "BufferSize", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a62b26d1385352043955773fe1366c029", null ],
+    [ "CanRead", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a6340afe9b11c6b17cd965ca153d75f27", null ],
+    [ "CanSeek", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a3a02ff35fb1b66b953a9cbda586871b8", null ],
+    [ "CanWrite", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a2e9b27e19327583b32fe086716245a40", null ],
+    [ "Comment", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a52ef5182490dec747b8d57a32f673668", null ],
+    [ "Crc32", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a70e29334f61c43bc2c37591177f1869a", null ],
+    [ "FileName", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a9f84ab701414ec04ac9ef7107eb4a30c", null ],
+    [ "FlushMode", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#aa04b0e1934fafb1582f6d4bc8ce54542", null ],
+    [ "Length", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#ade637ab4f778c5ee7f5540e00662a645", null ],
+    [ "Position", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#adcdf8cb19b6e76db6966ea46af5316e9", null ],
+    [ "TotalIn", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a4ffb8953936fc146795e0b76784369ac", null ],
+    [ "TotalOut", "class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#aecc3867899f33926a632972aba76519f", null ]
+];

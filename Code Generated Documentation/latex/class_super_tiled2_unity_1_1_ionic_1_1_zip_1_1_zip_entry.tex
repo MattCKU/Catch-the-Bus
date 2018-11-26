@@ -1,0 +1,1683 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry@{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry}}
+
+
+Represents a single entry in a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. Typically, applications get a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} by enumerating the entries within a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, or by adding an entry to a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{Zip\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times}} (Date\+Time created, Date\+Time accessed, Date\+Time modified)
+\begin{DoxyCompactList}\small\item\em Sets the N\+T\+FS Creation, Access, and Modified times for the given entry. \end{DoxyCompactList}\item 
+override String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a032c7cdd397cb85f1050c98745103f48}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Provides a string representation of the instance.\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract}} ()
+\begin{DoxyCompactList}\small\item\em Extract the entry to the filesystem, starting at the current working directory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a0c740ca64fe50c0851e27d1324893ab9}{Extract}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} extract\+Existing\+File)
+\begin{DoxyCompactList}\small\item\em Extract the entry to a file in the filesystem, using the specified behavior when extraction would overwrite an existing file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a13e055aec36ff9eb116526778dd413fe}{Extract}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} stream)
+\begin{DoxyCompactList}\small\item\em Extracts the entry to the specified stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9620a0b7f21b2ae639d555d8f6a528d5}{Extract}} (string base\+Directory)
+\begin{DoxyCompactList}\small\item\em Extract the entry to the filesystem, starting at the specified base directory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a704fdbf9a9838692b6fbf4fa2991cca8}{Extract}} (string base\+Directory, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} extract\+Existing\+File)
+\begin{DoxyCompactList}\small\item\em Extract the entry to the filesystem, starting at the specified base directory, and using the specified behavior when extraction would overwrite an existing file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}{Extract\+With\+Password}} (string password)
+\begin{DoxyCompactList}\small\item\em Extract the entry to the filesystem, using the current working directory and the specified password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a866b689638268d28d95bc075b350b4d9}{Extract\+With\+Password}} (string base\+Directory, string password)
+\begin{DoxyCompactList}\small\item\em Extract the entry to the filesystem, starting at the specified base directory, and using the specified password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a99571d1031642000580642b2a3028394}{Extract\+With\+Password}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} extract\+Existing\+File, string password)
+\begin{DoxyCompactList}\small\item\em Extract the entry to a file in the filesystem, relative to the current directory, using the specified behavior when extraction would overwrite an existing file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af015f9309029c100d5e2fb03bb884024}{Extract\+With\+Password}} (string base\+Directory, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} extract\+Existing\+File, string password)
+\begin{DoxyCompactList}\small\item\em Extract the entry to the filesystem, starting at the specified base directory, and using the specified behavior when extraction would overwrite an existing file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8ac45ec7b5cb019d573436c27e97b358}{Extract\+With\+Password}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} stream, string password)
+\begin{DoxyCompactList}\small\item\em Extracts the entry to the specified stream, using the specified Password. For example, the caller could extract to Console.\+Out, or to a Memory\+Stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Ionic.\+Crc.\+Crc\+Calculator\+Stream}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader}} ()
+\begin{DoxyCompactList}\small\item\em Opens a readable stream corresponding to the zip entry in the archive. The stream decompresses and decrypts as necessary, as it is read. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Ionic.\+Crc.\+Crc\+Calculator\+Stream}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab85b4a5dd2d9b10e53a63b34c77cac83}{Open\+Reader}} (string password)
+\begin{DoxyCompactList}\small\item\em Opens a readable stream for an encrypted zip entry in the archive. The stream decompresses and decrypts as necessary, as it is read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aef716e6024192e012aee41fe721bd7d2}{Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Provides a human-\/readable string with information about the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time and date at which the file indicated by the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} was last modified. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Last Modified time for the file represented by the entry. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Last Access time for the file represented by the entry. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The file creation time for the file represented by the entry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Emit\+Times\+In\+Windows\+Format\+When\+Saving}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Specifies whether the Creation, Access, and Modified times for the given entry will be emitted in \char`\"{}\+Windows format\char`\"{} when the zip archive is saved. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Specifies whether the Creation, Access, and Modified times for the given entry will be emitted in "\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6ec1bd1ea6a5d67a63b20c8f6172bddd}{Unix(tm)}} format" when the zip archive is saved. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}{Zip\+Entry\+Timestamp}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab03dc475006c92fb01b760102d508220}{Timestamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The type of timestamp attached to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+System.\+I\+O.\+File\+Attributes \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a65bea4a1790f224d1be99cd8d51be425}{Attributes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The file attributes for the entry. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a78e0c5ee8272a51926eabb9ffc1b38d9}{File\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the file contained in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9c5db72a0ee3dad46be934c75ffcfe91}{Input\+Stream}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The stream that provides content for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a621c95b01079d1bdc1fa2a3ade52676f}{Input\+Stream\+Was\+Jit\+Provided}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A flag indicating whether the Input\+Stream was provided Just-\/in-\/time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83}{Zip\+Entry\+Source}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9b8d8fe257d315d4407ad0ae81d98dde}{Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An enum indicating the source of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+Int16 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a20cc898535b0cc01abc025d4678050be}{Version\+Needed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The version of the zip engine needed to read the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a59ecd22f231ce6c16aec38e12a90bd6a}{Comment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The comment attached to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+Nullable$<$ bool $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ac89b4cc0aff95adfa926c3649042d539}{Requires\+Zip64}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the entry requires Z\+I\+P64 extensions. \end{DoxyCompactList}\item 
+Nullable$<$ bool $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a1e1ef842a3e02644daeffa985f14ac11}{Output\+Used\+Zip64}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the entry actually used Z\+I\+P64 extensions, as it was most recently written to the output file or stream. \end{DoxyCompactList}\item 
+Int16 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abe02c41fe4d270aefd0ae1b271d8bef4}{Bit\+Field}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The bitfield for the entry as defined in the zip spec. You probably never need to look at this. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}{Compression\+Method}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}{Compression\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The compression method employed for this \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Ionic.\+Zlib.\+Compression\+Level}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a33bd0a9dc3440f2ee25bdf798c17d33d}{Compression\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the compression level to be used for the entry when saving the zip archive. This applies only for Compression\+Method = D\+E\+F\+L\+A\+TE. \end{DoxyCompactList}\item 
+Int64 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a45604152b5da4f8c24ee1e89abb1c396}{Compressed\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The compressed size of the file, in bytes, within the zip archive. \end{DoxyCompactList}\item 
+Int64 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad41c71d426caa6377c1af3682bd2055c}{Uncompressed\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The size of the file, in bytes, before compression, or after extraction. \end{DoxyCompactList}\item 
+Double \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af0d953dffdfe37b0578bdd9b7a828361}{Compression\+Ratio}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ratio of compressed size to uncompressed size of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+Int32 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4b24fadb05fd70564b92f6618343aa87}{Crc}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The 32-\/bit C\+RC (Cyclic Redundancy Check) on the contents of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad15b658412856468c7f75983c6f9de11}{Is\+Directory}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the entry is a directory (not a file). This is a readonly property on the entry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a3aeaf32e0d2adbe6a5aaf1a70e1a6e7b}{Uses\+Encryption}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A derived property that is {\ttfamily true} if the entry uses encryption. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{Encryption\+Algorithm}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Encryption}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set this to specify which encryption algorithm to use for the entry when saving it to a zip archive. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Password to be used when encrypting a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} upon {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}}, or when decrypting an entry upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Extract\+Existing\+File}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The action the library should take when extracting a file that already exists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593}{Zip\+Error\+Action}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a55a679298f00c5eef672e947c6293304}{Zip\+Error\+Action}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The action to take when an error is encountered while opening or reading files as they are saved into a zip archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aaf8218fe23c2cd0c0642858ce2f85087}{Included\+In\+Most\+Recent\+Save}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the entry was included in the most recent save. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_ab6b15a72531220e6f98c46b594c9a849}{Set\+Compression\+Callback}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aa1417136aad30c1392834ce807438d58}{Set\+Compression}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A callback that allows the application to specify the compression to use for a given entry that is about to be added to the zip archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a18a1d0cdb8d149e3be733736c8bef63c}{Use\+Unicode\+As\+Necessary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set to indicate whether to use U\+T\+F-\/8 encoding for filenames and comments. \end{DoxyCompactList}\item 
+System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a29b5aae0611b60d5906ab25a1ed6c2f1}{Provisional\+Alternate\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The text encoding to use for the File\+Name and Comment on this \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}, when the default encoding is insufficient. \end{DoxyCompactList}\item 
+System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7a5ff9afc8cad1de6fbfc76a7bf786ee}{Alternate\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Specifies the alternate text encoding used by this \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{Zip\+Option}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a972512ebe8d25c895ad0d67e75e24bfb}{Alternate\+Encoding\+Usage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Describes if and when this instance should apply Alternate\+Encoding to encode the File\+Name and Comment, when saving. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a04adaebb58e53fedd580cfa10fd1c7a9}{Is\+Text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether an entry is marked as a text file. Be careful when using on this property. Unless you have a good reason, you should probably ignore this property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a single entry in a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. Typically, applications get a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} by enumerating the entries within a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, or by adding an entry to a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Zip\+Entry@{Zip\+Entry}}
+\index{Zip\+Entry@{Zip\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Zip\+Entry()}{ZipEntry()}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Zip\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Applications should never need to call this directly. It is exposed to support C\+OM Automation environments. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract@{Extract}}
+\index{Extract@{Extract}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract()}{Extract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to the filesystem, starting at the current working directory. 
+
+$<$overloads$>$ This method has a bunch of overloads! One of them is sure to be the right one for you... If you don\textquotesingle{}t like these, check out the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}{Extract\+With\+Password()}}} methods. $<$/overloads$>$
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a0c740ca64fe50c0851e27d1324893ab9}{Zip\+Entry.\+Extract(\+Extract\+Existing\+File\+Action)}}
+
+
+\end{DoxySeeAlso}
+
+
+This method extracts an entry from a zip file into the current working directory. The path of the entry as extracted is the full path as specified in the zip archive, relative to the current working directory. After the file is extracted successfully, the file attributes and timestamps are set. 
+
+The action taken when extraction an entry would overwrite an existing file is determined by the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Extract\+Existing\+File}} property. 
+
+Within the call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}}}, the content for the entry is written into a filesystem file, and then the last modified time of the file is set according to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property on the entry. See the remarks the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property for some details about the last modified time. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a0c740ca64fe50c0851e27d1324893ab9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a0c740ca64fe50c0851e27d1324893ab9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract@{Extract}}
+\index{Extract@{Extract}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract()}{Extract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}}}]{extract\+Existing\+File }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to a file in the filesystem, using the specified behavior when extraction would overwrite an existing file. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property, for some details about how the last modified time of the file is set after extraction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em extract\+Existing\+File} & The action to take if extraction would overwrite an existing file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a13e055aec36ff9eb116526778dd413fe}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a13e055aec36ff9eb116526778dd413fe}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract@{Extract}}
+\index{Extract@{Extract}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract()}{Extract()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}}}]{stream }\end{DoxyParamCaption})}
+
+
+
+Extracts the entry to the specified stream. 
+
+The caller can specify any write-\/able stream, for example a System.\+I\+O.\+File\+Stream, a System.\+I\+O.\+Memory\+Stream, or A\+S\+P.\+N\+ET\textquotesingle{}s {\ttfamily Response.\+Output\+Stream}. The content will be decrypted and decompressed as necessary. If the entry is encrypted and no password is provided, this method will throw. 
+
+The position on the stream is not reset by this method before it extracts. You may want to call stream.\+Seek() before calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & the stream to which the entry should be extracted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9620a0b7f21b2ae639d555d8f6a528d5}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9620a0b7f21b2ae639d555d8f6a528d5}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract@{Extract}}
+\index{Extract@{Extract}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract()}{Extract()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract (\begin{DoxyParamCaption}\item[{string}]{base\+Directory }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to the filesystem, starting at the specified base directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Directory} & the pathname of the base directory\\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a704fdbf9a9838692b6fbf4fa2991cca8}{Ionic.\+Zip.\+Zip\+Entry.\+Extract(string, Extract\+Existing\+File\+Action)}}
+
+
+\end{DoxySeeAlso}
+
+
+This example extracts only the entries in a zip file that are .txt files, into a directory called \char`\"{}textfiles\char`\"{}. 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(\textcolor{stringliteral}{"PackedDocuments.zip"}))
+\{
+  \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} s1 \textcolor{keywordflow}{in} zip.EntryFilenames)
+  \{
+    \textcolor{keywordflow}{if} (s1.EndsWith(\textcolor{stringliteral}{".txt"}))
+    \{
+      zip[s1].Extract(\textcolor{stringliteral}{"textfiles"});
+    \}
+  \}
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+Using zip As \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(\textcolor{stringliteral}{"PackedDocuments.zip"})
+    Dim s1 As String
+    For Each s1 In zip.EntryFilenames
+        If s1.EndsWith(\textcolor{stringliteral}{".txt"}) Then
+            zip(s1).Extract(\textcolor{stringliteral}{"textfiles"})
+        End If
+    Next
+End Using
+\end{DoxyCode}
+ 
+
+Using this method, existing entries in the filesystem will not be overwritten. If you would like to force the overwrite of existing files, see the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Extract\+Existing\+File}} property, or call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a704fdbf9a9838692b6fbf4fa2991cca8}{Extract(string, Extract\+Existing\+File\+Action)}}. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property, for some details about how the last modified time of the created file is set. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a704fdbf9a9838692b6fbf4fa2991cca8}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a704fdbf9a9838692b6fbf4fa2991cca8}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract@{Extract}}
+\index{Extract@{Extract}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract()}{Extract()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract (\begin{DoxyParamCaption}\item[{string}]{base\+Directory,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}}}]{extract\+Existing\+File }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to the filesystem, starting at the specified base directory, and using the specified behavior when extraction would overwrite an existing file. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property, for some details about how the last modified time of the created file is set. 
+
+
+\begin{DoxyCode}
+String sZipPath = \textcolor{stringliteral}{"Airborne.zip"};
+String sFilePath = \textcolor{stringliteral}{"Readme.txt"};
+String sRootFolder = \textcolor{stringliteral}{"Digado"};
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(sZipPath))
+\{
+  \textcolor{keywordflow}{if} (zip.EntryFileNames.Contains(sFilePath))
+  \{
+    \textcolor{comment}{// use the string indexer on the zip file}
+    zip[sFileName].Extract(sRootFolder,
+                           \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{ExtractExistingFileAction}}.OverwriteSilently);
+  \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Dim sZipPath as String = \textcolor{stringliteral}{"Airborne.zip"}
+Dim sFilePath As String = \textcolor{stringliteral}{"Readme.txt"}
+Dim sRootFolder As String = \textcolor{stringliteral}{"Digado"}
+Using zip As \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(sZipPath)
+  If zip.EntryFileNames.Contains(sFilePath)
+    \textcolor{stringliteral}{' use the string indexer on the zip file}
+\textcolor{stringliteral}{    zip(sFilePath).Extract(sRootFolder, \_}
+\textcolor{stringliteral}{                           ExtractExistingFileAction.OverwriteSilently)}
+\textcolor{stringliteral}{  End If}
+\textcolor{stringliteral}{End Using}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Directory} & the pathname of the base directory\\
+\hline
+{\em extract\+Existing\+File} & The action to take if extraction would overwrite an existing file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract\+With\+Password@{Extract\+With\+Password}}
+\index{Extract\+With\+Password@{Extract\+With\+Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract\+With\+Password()}{ExtractWithPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password (\begin{DoxyParamCaption}\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to the filesystem, using the current working directory and the specified password. 
+
+$<$overloads$>$ This method has a bunch of overloads! One of them is sure to be the right one for you... $<$/overloads$>$
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a99571d1031642000580642b2a3028394}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password(\+Extract\+Existing\+File\+Action, string)}}
+
+
+\end{DoxySeeAlso}
+
+
+Existing entries in the filesystem will not be overwritten. If you would like to force the overwrite of existing files, see the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File}}property, or call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a99571d1031642000580642b2a3028394}{Extract\+With\+Password(\+Extract\+Existing\+File\+Action,string)}}. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property for some details about how the \char`\"{}last modified\char`\"{} time of the created file is set. 
+
+In this example, entries that use encryption are extracted using a particular password. 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (var zip = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(FilePath))
+\{
+    \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} e \textcolor{keywordflow}{in} zip)
+    \{
+        \textcolor{keywordflow}{if} (e.UsesEncryption)
+            e.ExtractWithPassword(\textcolor{stringliteral}{"Secret!"});
+        \textcolor{keywordflow}{else}
+            e.Extract();
+    \}
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+Using zip As \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(FilePath)
+    Dim e As \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}}
+    For Each e In zip
+        If (e.UsesEncryption)
+          e.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}{ExtractWithPassword}}("Secret!")
+        Else
+          e.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract}}
+        End If
+    Next
+End Using
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The Password to use for decrypting the entry.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a866b689638268d28d95bc075b350b4d9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a866b689638268d28d95bc075b350b4d9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract\+With\+Password@{Extract\+With\+Password}}
+\index{Extract\+With\+Password@{Extract\+With\+Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract\+With\+Password()}{ExtractWithPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password (\begin{DoxyParamCaption}\item[{string}]{base\+Directory,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to the filesystem, starting at the specified base directory, and using the specified password. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af015f9309029c100d5e2fb03bb884024}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password(string, Extract\+Existing\+File\+Action, string)}}
+
+
+\end{DoxySeeAlso}
+
+
+Existing entries in the filesystem will not be overwritten. If you would like to force the overwrite of existing files, see the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File}}property, or call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a99571d1031642000580642b2a3028394}{Extract\+With\+Password(\+Extract\+Existing\+File\+Action,string)}}. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property, for some details about how the last modified time of the created file is set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Directory} & The pathname of the base directory.\\
+\hline
+{\em password} & The Password to use for decrypting the entry.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a99571d1031642000580642b2a3028394}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a99571d1031642000580642b2a3028394}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract\+With\+Password@{Extract\+With\+Password}}
+\index{Extract\+With\+Password@{Extract\+With\+Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract\+With\+Password()}{ExtractWithPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}}}]{extract\+Existing\+File,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to a file in the filesystem, relative to the current directory, using the specified behavior when extraction would overwrite an existing file. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property, for some details about how the last modified time of the created file is set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The Password to use for decrypting the entry.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em extract\+Existing\+File} & The action to take if extraction would overwrite an existing file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af015f9309029c100d5e2fb03bb884024}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af015f9309029c100d5e2fb03bb884024}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract\+With\+Password@{Extract\+With\+Password}}
+\index{Extract\+With\+Password@{Extract\+With\+Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract\+With\+Password()}{ExtractWithPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password (\begin{DoxyParamCaption}\item[{string}]{base\+Directory,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}}}]{extract\+Existing\+File,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Extract the entry to the filesystem, starting at the specified base directory, and using the specified behavior when extraction would overwrite an existing file. 
+
+See the remarks on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property, for some details about how the last modified time of the created file is set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Directory} & the pathname of the base directory\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em extract\+Existing\+File} & The action to take if extraction would overwrite an existing file.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The Password to use for decrypting the entry.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8ac45ec7b5cb019d573436c27e97b358}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8ac45ec7b5cb019d573436c27e97b358}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract\+With\+Password@{Extract\+With\+Password}}
+\index{Extract\+With\+Password@{Extract\+With\+Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract\+With\+Password()}{ExtractWithPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract\+With\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}}}]{stream,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Extracts the entry to the specified stream, using the specified Password. For example, the caller could extract to Console.\+Out, or to a Memory\+Stream. 
+
+The caller can specify any write-\/able stream, for example a System.\+I\+O.\+File\+Stream, a System.\+I\+O.\+Memory\+Stream, or A\+S\+P.\+N\+ET\textquotesingle{}s {\ttfamily Response.\+Output\+Stream}. The content will be decrypted and decompressed as necessary. If the entry is encrypted and no password is provided, this method will throw. 
+
+The position on the stream is not reset by this method before it extracts. You may want to call stream.\+Seek() before calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & the stream to which the entry should be extracted. \\
+\hline
+{\em password} & The password to use for decrypting the entry. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Open\+Reader@{Open\+Reader}}
+\index{Open\+Reader@{Open\+Reader}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Open\+Reader()}{OpenReader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Ionic.\+Crc.\+Crc\+Calculator\+Stream}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Open\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opens a readable stream corresponding to the zip entry in the archive. The stream decompresses and decrypts as necessary, as it is read. 
+
+Dot\+Net\+Zip offers a variety of ways to extract entries from a zip file. This method allows an application to extract an entry by reading a System.\+I\+O.\+Stream. 
+
+The return value is of type \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Ionic.\+Crc.\+Crc\+Calculator\+Stream}}. Use it as you would any stream for reading. When an application calls Stream.\+Read(byte\mbox{[}$\,$\mbox{]}, int, int) on that stream, it will receive data from the zip entry that is decrypted and decompressed as necessary. 
+
+{\ttfamily Crc\+Calculator\+Stream} adds one additional feature\+: it keeps a C\+R\+C32 checksum on the bytes of the stream as it is read. The C\+RC value is available in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ae9b4d1e28a4cbc040799543643a31e1e}{Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc}} property on the {\ttfamily Crc\+Calculator\+Stream}. When the read is complete, your application {\itshape should} check this C\+RC against the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4b24fadb05fd70564b92f6618343aa87}{Zip\+Entry.\+Crc}} property on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} to validate the content of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. You don\textquotesingle{}t have to validate the entry using the C\+RC, but you should, to verify integrity. Check the example for how to do this. 
+
+If the entry is protected with a password, then you need to provide a password prior to calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}}, either by setting the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Password}} property on the entry, or the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a32b5a69438b625f81303940ec70f9c39}{Zip\+File.\+Password}} property on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} itself. Or, you can use Open\+Reader(\+String), the overload of Open\+Reader that accepts a password parameter. 
+
+If you want to extract entry data into a write-\/able stream that is already opened, like a System.\+I\+O.\+File\+Stream, do not use this method. Instead, use \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a13e055aec36ff9eb116526778dd413fe}{Extract(\+Stream)}}. 
+
+Your application may use only one stream created by \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}} at a time, and you should not call other Extract methods before completing your reads on a stream obtained from \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}}. This is because there is really only one source stream for the compressed content. A call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}} seeks in the source stream, to the beginning of the compressed content. A subsequent call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}} on a different entry will seek to a different position in the source stream, as will a call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}} or one of its overloads. This will corrupt the state for the decompressing stream from the original call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}}. 
+
+The {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}}} method works only when the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} is obtained from an instance of {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. This method will throw an exception if the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} is obtained from a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}. 
+
+This example shows how to open a zip archive, then read in a named entry via a stream. After the read loop is complete, the code compares the calculated during the read loop with the expected C\+RC on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}}, to verify the extraction. 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}(ZipFileToRead))
+\{
+  \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} e1= zip[\textcolor{stringliteral}{"Elevation.mp3"}];
+  \textcolor{keyword}{using} (Ionic.Zlib.CrcCalculatorStream s = e1.OpenReader())
+  \{
+    byte[] buffer = \textcolor{keyword}{new} byte[4096];
+    \textcolor{keywordtype}{int} n, totalBytesRead= 0;
+    \textcolor{keywordflow}{do} \{
+      n = s.Read(buffer,0, buffer.Length);
+      totalBytesRead+=n;
+    \} \textcolor{keywordflow}{while} (n>0);
+     \textcolor{keywordflow}{if} (s.Crc32 != e1.Crc32)
+      \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"The Zip Entry failed the CRC Check. (0x\{0:X8\}!=0x\{1:X8\})"}, s.Crc32
+      , e1.Crc32));
+     \textcolor{keywordflow}{if} (totalBytesRead != e1.UncompressedSize)
+      \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"We read an unexpected number of bytes. (\{0\}!=\{1\})"}, totalBytesRead
+      , e1.UncompressedSize));
+  \}
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+Using zip As New \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}(ZipFileToRead)
+    Dim e1 As \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} = zip.Item(\textcolor{stringliteral}{"Elevation.mp3"})
+    Using s As Ionic.Zlib.CrcCalculatorStream = e1.OpenReader
+        Dim n As Integer
+        Dim buffer As Byte() = New Byte(4096) \{\}
+        Dim totalBytesRead As Integer = 0
+        Do
+            n = s.Read(buffer, 0, buffer.Length)
+            totalBytesRead = (totalBytesRead + n)
+        Loop While (n > 0)
+        If (s.Crc32 <> e1.Crc32) Then
+            \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a8ce61dd2505effd96f937fa743b6491f}{Throw}} New Exception(String.Format("The Zip Entry failed the CRC Check. (0x\{0:X8\}!=0x\{1:X8\}
+      )\textcolor{stringliteral}{", s.Crc32, e1.Crc32))}
+\textcolor{stringliteral}{        End If}
+\textcolor{stringliteral}{        If (totalBytesRead <> e1.UncompressedSize) Then}
+\textcolor{stringliteral}{            Throw New Exception(String.Format("}We read an unexpected number of bytes. (\{0\}!=\{1\})\textcolor{stringliteral}{",
+       totalBytesRead, e1.UncompressedSize))}
+\textcolor{stringliteral}{        End If}
+\textcolor{stringliteral}{    End Using}
+\textcolor{stringliteral}{End Using}
+\end{DoxyCode}
+ 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a13e055aec36ff9eb116526778dd413fe}{Ionic.\+Zip.\+Zip\+Entry.\+Extract(\+System.\+I\+O.\+Stream)}}
+
+
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The Stream for reading.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab85b4a5dd2d9b10e53a63b34c77cac83}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab85b4a5dd2d9b10e53a63b34c77cac83}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Open\+Reader@{Open\+Reader}}
+\index{Open\+Reader@{Open\+Reader}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Open\+Reader()}{OpenReader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Ionic.\+Crc.\+Crc\+Calculator\+Stream}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Open\+Reader (\begin{DoxyParamCaption}\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Opens a readable stream for an encrypted zip entry in the archive. The stream decompresses and decrypts as necessary, as it is read. 
+
+See the documentation on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}} method for full details. This overload allows the application to specify a password for the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} to be read. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & The password to use for decrypting the entry.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Stream for reading.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Set\+Entry\+Times@{Set\+Entry\+Times}}
+\index{Set\+Entry\+Times@{Set\+Entry\+Times}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Set\+Entry\+Times()}{SetEntryTimes()}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Set\+Entry\+Times (\begin{DoxyParamCaption}\item[{Date\+Time}]{created,  }\item[{Date\+Time}]{accessed,  }\item[{Date\+Time}]{modified }\end{DoxyParamCaption})}
+
+
+
+Sets the N\+T\+FS Creation, Access, and Modified times for the given entry. 
+
+When adding an entry from a file or directory, the Creation, Access, and Modified times for the given entry are automatically set from the filesystem values. When adding an entry from a stream or string, the values are implicitly set to Date\+Time.\+Now. The application may wish to set these values to some arbitrary value, before saving the archive, and can do so using the various setters. If you want to set all of the times, this method is more efficient. 
+
+The values you set here will be retrievable with the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}} and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}} properties. 
+
+When this method is called, if both \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Emit\+Times\+In\+Windows\+Format\+When\+Saving}} and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}} are false, then the {\ttfamily Emit\+Times\+In\+Windows\+Format\+When\+Saving} flag is automatically set. 
+
+Date\+Time values provided here without a Date\+Time\+Kind are assumed to be Local Time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em created} & the creation time of the entry.\\
+\hline
+{\em accessed} & the last access time of the entry.\\
+\hline
+{\em modified} & the last modified time of the entry.\\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Emit\+Times\+In\+Windows\+Format\+When\+Saving}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a032c7cdd397cb85f1050c98745103f48}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a032c7cdd397cb85f1050c98745103f48}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override String Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides a string representation of the instance.
+
+\begin{DoxyReturn}{Returns}
+a string representation of the instance.
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Accessed\+Time@{Accessed\+Time}}
+\index{Accessed\+Time@{Accessed\+Time}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Accessed\+Time}{AccessedTime}}
+{\footnotesize\ttfamily Date\+Time Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Accessed\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Last Access time for the file represented by the entry. 
+
+This value may or may not be meaningful. If the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} was read from an existing \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archive, this information may not be available. For an explanation of why, see \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7a5ff9afc8cad1de6fbfc76a7bf786ee}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7a5ff9afc8cad1de6fbfc76a7bf786ee}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Alternate\+Encoding@{Alternate\+Encoding}}
+\index{Alternate\+Encoding@{Alternate\+Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Alternate\+Encoding}{AlternateEncoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Alternate\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Specifies the alternate text encoding used by this \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} 
+
+The default text encoding used in \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} files for encoding filenames and comments is I\+B\+M437, which is something like a superset of A\+S\+C\+II. In cases where this is insufficient, applications can specify an alternate encoding. 
+
+When creating a zip file, the usage of the alternate encoding is governed by the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a972512ebe8d25c895ad0d67e75e24bfb}{Alternate\+Encoding\+Usage}} property. Typically you would set both properties to tell Dot\+Net\+Zip to employ an encoding that is not I\+B\+M437 in the zipfile you are creating. 
+
+Keep in mind that because the Z\+IP specification states that the only valid encodings to use are I\+B\+M437 and U\+T\+F-\/8, if you use something other than that, then zip tools and libraries may not be able to successfully read the zip archive you generate. 
+
+The zip specification states that applications should presume that I\+B\+M437 is in use, except when a special bit is set, which indicates U\+T\+F-\/8. There is no way to specify an arbitrary code page, within the zip file itself. When you create a zip file encoded with gb2312 or ibm861 or anything other than I\+B\+M437 or U\+T\+F-\/8, then the application that reads the zip file needs to \char`\"{}know\char`\"{} which code page to use. In some cases, the code page used when reading is chosen implicitly. For example, Win\+Rar uses the ambient code page for the host desktop operating system. The pitfall here is that if you create a zip in Copenhagen and send it to Tokyo, the reader of the zipfile may not be able to decode successfully. 
+
+This example shows how to create a zipfile encoded with a language-\/specific encoding\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (var zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}())
+\{
+   zip.AlternateEnoding = \mbox{\hyperlink{namespace_system}{System}}.Text.Encoding.GetEncoding(\textcolor{stringliteral}{"ibm861"});
+   zip.AlternateEnodingUsage = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{ZipOption}}.Always;
+   zip.AddFileS(arrayOfFiles);
+   zip.Save(\textcolor{stringliteral}{"Myarchive-Encoded-in-IBM861.zip"});
+\}
+\end{DoxyCode}
+ 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_abfa9e860cc57465297df205d1d48a616}{Zip\+File.\+Alternate\+Encoding\+Usage}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a972512ebe8d25c895ad0d67e75e24bfb}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a972512ebe8d25c895ad0d67e75e24bfb}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Alternate\+Encoding\+Usage@{Alternate\+Encoding\+Usage}}
+\index{Alternate\+Encoding\+Usage@{Alternate\+Encoding\+Usage}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Alternate\+Encoding\+Usage}{AlternateEncodingUsage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{Zip\+Option}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Alternate\+Encoding\+Usage\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Describes if and when this instance should apply Alternate\+Encoding to encode the File\+Name and Comment, when saving. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a5fbf6af29062f76b6ce06c6197ff6c8b}{Zip\+File.\+Alternate\+Encoding}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a65bea4a1790f224d1be99cd8d51be425}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a65bea4a1790f224d1be99cd8d51be425}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Attributes@{Attributes}}
+\index{Attributes@{Attributes}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Attributes}{Attributes}}
+{\footnotesize\ttfamily System.\+I\+O.\+File\+Attributes Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Attributes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The file attributes for the entry. 
+
+The \mbox{\hyperlink{}{attributes}} in N\+T\+FS include Read\+Only, Archive, Hidden, System, and Indexed. When adding a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} to a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, these attributes are set implicitly when adding an entry from the filesystem. When adding an entry from a stream or string, the Attributes are not set implicitly. Regardless of the way an entry was added to a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, you can set the attributes explicitly if you like. 
+
+When reading a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} from a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, the attributes are set according to the data stored in the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. If you extract the entry from the archive to a filesystem file, Dot\+Net\+Zip will set the attributes on the resulting file accordingly. 
+
+The attributes can be set explicitly by the application. For example the application may wish to set the {\ttfamily File\+Attributes.\+Read\+Only} bit for all entries added to an archive, so that on unpack, this attribute will be set on the extracted file. Any changes you make to this property are made permanent only when you call a {\ttfamily Save()} method on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} instance that contains the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+For example, an application may wish to zip up a directory and set the Read\+Only bit on every file in the archive, so that upon later extraction, the resulting files will be marked as Read\+Only. Not every extraction tool respects these attributes, but if you unpack with Dot\+Net\+Zip, as for example in a self-\/extracting archive, then the attributes will be set as they are stored in the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. 
+
+These attributes may not be interesting or useful if the resulting archive is extracted on a non-\/\+Windows platform. How these attributes get used upon extraction depends on the platform and tool used. 
+
+This property is only partially supported in the Silverlight version of the library\+: applications can read attributes on entries within Zip\+Files. But extracting entries within Silverlight will not set the attributes on the extracted files. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abe02c41fe4d270aefd0ae1b271d8bef4}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abe02c41fe4d270aefd0ae1b271d8bef4}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Bit\+Field@{Bit\+Field}}
+\index{Bit\+Field@{Bit\+Field}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Bit\+Field}{BitField}}
+{\footnotesize\ttfamily Int16 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Bit\+Field\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The bitfield for the entry as defined in the zip spec. You probably never need to look at this. 
+
+You probably do not need to concern yourself with the contents of this property, but in case you do\+: 
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ bit }&\textbf{ meaning 
+
+}\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ bit }&\textbf{ meaning 
+
+}\\\cline{1-2}
+\endhead
+0 &set if encryption is used. 
+
+\\\cline{1-2}
+1-\/2 &set to determine whether normal, max, fast deflation. Dot\+Net\+Zip library always leaves these bits unset when writing (indicating \char`\"{}normal\char`\"{} deflation"), but can read an entry with any value here.  
+
+\\\cline{1-2}
+3 &Indicates that the Crc32, Compressed and Uncompressed sizes are zero in the local header. This bit gets set on an entry during writing a zip file, when it is saved to a non-\/seekable output stream.  
+
+\\\cline{1-2}
+4 &reserved for \char`\"{}enhanced deflating\char`\"{}. This library doesn\textquotesingle{}t do enhanced deflating. 
+
+\\\cline{1-2}
+5 &set to indicate the zip is compressed patched data. This library doesn\textquotesingle{}t do that. 
+
+\\\cline{1-2}
+6 &set if P\+K\+Ware\textquotesingle{}s strong encryption is used (must also set bit 1 if bit 6 is set). This bit is not set if Win\+Zip\textquotesingle{}s A\+ES encryption is set. 
+
+\\\cline{1-2}
+7 &not used 
+
+\\\cline{1-2}
+8 &not used 
+
+\\\cline{1-2}
+9 &not used 
+
+\\\cline{1-2}
+10 &not used 
+
+\\\cline{1-2}
+11 &Language encoding flag (E\+FS). If this bit is set, the filename and comment fields for this file must be encoded using U\+T\+F-\/8. This library currently does not support U\+T\+F-\/8.  
+
+\\\cline{1-2}
+12 &Reserved by P\+K\+W\+A\+RE for enhanced compression. 
+
+\\\cline{1-2}
+13 &Used when encrypting the Central Directory to indicate selected data values in the Local Header are masked to hide their actual values. See the section in \href{http://www.pkware.com/documents/casestudies/APPNOTE.TXT}{\tt the Zip specification} describing the Strong Encryption Specification for details.  
+
+\\\cline{1-2}
+14 &Reserved by P\+K\+W\+A\+RE. 
+
+\\\cline{1-2}
+15 &Reserved by P\+K\+W\+A\+RE. 
+
+\\\cline{1-2}
+\end{longtabu}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a59ecd22f231ce6c16aec38e12a90bd6a}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a59ecd22f231ce6c16aec38e12a90bd6a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Comment@{Comment}}
+\index{Comment@{Comment}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Comment}{Comment}}
+{\footnotesize\ttfamily string Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Comment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The comment attached to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+Each entry in a zip file can optionally have a comment associated to it. The comment might be displayed by a zip tool during extraction, for example. 
+
+By default, the {\ttfamily Comment} is encoded in I\+B\+M437 code page. You can specify an alternative with \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7a5ff9afc8cad1de6fbfc76a7bf786ee}{Alternate\+Encoding}} and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a972512ebe8d25c895ad0d67e75e24bfb}{Alternate\+Encoding\+Usage}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7a5ff9afc8cad1de6fbfc76a7bf786ee}{Alternate\+Encoding}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a972512ebe8d25c895ad0d67e75e24bfb}{Alternate\+Encoding\+Usage}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a45604152b5da4f8c24ee1e89abb1c396}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a45604152b5da4f8c24ee1e89abb1c396}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Compressed\+Size@{Compressed\+Size}}
+\index{Compressed\+Size@{Compressed\+Size}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Compressed\+Size}{CompressedSize}}
+{\footnotesize\ttfamily Int64 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Compressed\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The compressed size of the file, in bytes, within the zip archive. 
+
+When reading a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, this value is read in from the existing zip file. When creating or updating a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, the compressed size is computed during compression. Therefore the value on a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} is valid after a call to {\ttfamily Save()} (or one of its overloads) in that case. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad41c71d426caa6377c1af3682bd2055c}{Ionic.\+Zip.\+Zip\+Entry.\+Uncompressed\+Size}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a33bd0a9dc3440f2ee25bdf798c17d33d}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a33bd0a9dc3440f2ee25bdf798c17d33d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Compression\+Level@{Compression\+Level}}
+\index{Compression\+Level@{Compression\+Level}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Compression\+Level}{CompressionLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Ionic.\+Zlib.\+Compression\+Level}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Compression\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sets the compression level to be used for the entry when saving the zip archive. This applies only for Compression\+Method = D\+E\+F\+L\+A\+TE. 
+
+When using the D\+E\+F\+L\+A\+TE compression method, Varying the compression level used on entries can affect the size-\/vs-\/speed tradeoff when compression and decompressing data streams or files. 
+
+If you do not set this property, the default compression level is used, which normally gives a good balance of compression efficiency and compression speed. In some tests, using {\ttfamily Best\+Compression} can double the time it takes to compress, while delivering just a small increase in compression efficiency. This behavior will vary with the type of data you compress. If you are in doubt, just leave this setting alone, and accept the default. 
+
+When setting this property on a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} that is read from an existing zip file, calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}} will cause the new {\ttfamily Compression\+Level} to be used on the entry in the newly saved zip file. 
+
+Setting this property may have the side effect of modifying the {\ttfamily Compression\+Method} property. If you set the {\ttfamily Compression\+Level} to a value other than {\ttfamily None}, {\ttfamily Compression\+Method} will be set to {\ttfamily Deflate}, if it was previously {\ttfamily None}. 
+
+Setting this property has no effect if the {\ttfamily Compression\+Method} is something other than {\ttfamily Deflate} or {\ttfamily None}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}{Compression\+Method}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Compression\+Method@{Compression\+Method}}
+\index{Compression\+Method@{Compression\+Method}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Compression\+Method}{CompressionMethod}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}{Compression\+Method}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Compression\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The compression method employed for this \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+The \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification
+
+allows a variety of compression methods. This library supports just two\+: 0x08 = Deflate. 0x00 = Store (no compression), for reading or writing. 
+
+When reading an entry from an existing zipfile, the value you retrieve here indicates the compression method used on the entry by the original creator of the zip. When writing a zipfile, you can specify either 0x08 (Deflate) or 0x00 (None). If you try setting something else, you will get an exception. 
+
+You may wish to set {\ttfamily Compression\+Method} to {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3a6adf97f83acf6453d4a6a4b1070f3754}{Compression\+Method.\+None}}} (0) when zipping already-\/compressed data like a jpg, png, or mp3 file. This can save time and cpu cycles. 
+
+When setting this property on a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} that is read from an existing zip file, calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}} will cause the new Compression\+Method to be used on the entry in the newly saved zip file. 
+
+Setting this property may have the side effect of modifying the {\ttfamily Compression\+Level} property. If you set the {\ttfamily Compression\+Method} to a value other than {\ttfamily None}, and {\ttfamily Compression\+Level} is previously set to {\ttfamily None}, then {\ttfamily Compression\+Level} will be set to {\ttfamily Default}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}{Compression\+Method}}
+
+
+\end{DoxySeeAlso}
+
+
+In this example, the first entry added to the zip archive uses the default behavior -\/ compression is used where it makes sense. The second entry, the M\+P3 file, is added to the archive without being compressed. 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}(ZipFileToCreate))
+\{
+  \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} e1= zip.AddFile(\textcolor{stringliteral}{@"notes\(\backslash\)Readme.txt"});
+  \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} e2= zip.AddFile(\textcolor{stringliteral}{@"music\(\backslash\)StopThisTrain.mp3"});
+  e2.CompressionMethod = \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}{CompressionMethod}}.None;
+  zip.Save();
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Using zip As New \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}(ZipFileToCreate)
+  zip.AddFile(\textcolor{stringliteral}{"notes\(\backslash\)Readme.txt"})
+  Dim e2 as \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} = zip.AddFile(\textcolor{stringliteral}{"music\(\backslash\)StopThisTrain.mp3"})
+  e2.CompressionMethod = \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a8d566d136931133f42c0d6ef62c32f2c}{CompressionMethod}}.None
+  zip.Save
+End Using
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af0d953dffdfe37b0578bdd9b7a828361}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_af0d953dffdfe37b0578bdd9b7a828361}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Compression\+Ratio@{Compression\+Ratio}}
+\index{Compression\+Ratio@{Compression\+Ratio}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Compression\+Ratio}{CompressionRatio}}
+{\footnotesize\ttfamily Double Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Compression\+Ratio\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The ratio of compressed size to uncompressed size of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+This is a ratio of the compressed size to the uncompressed size of the entry, expressed as a double in the range of 0 to 100+. A value of 100 indicates no compression at all. It could be higher than 100 when the compression algorithm actually inflates the data, as may occur for small files, or uncompressible data that is encrypted. 
+
+You could format it for presentation to a user via a format string of \char`\"{}\{3,5\+:\+F0\}\%\char`\"{} to see it as a percentage. 
+
+If the size of the original uncompressed file is 0, implying a denominator of 0, the return value will be zero. 
+
+This property is valid after reading in an existing zip file, or after saving the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} that contains the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. You cannot know the effect of a compression transform until you try it. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4b24fadb05fd70564b92f6618343aa87}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4b24fadb05fd70564b92f6618343aa87}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Crc@{Crc}}
+\index{Crc@{Crc}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Crc}{Crc}}
+{\footnotesize\ttfamily Int32 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Crc\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The 32-\/bit C\+RC (Cyclic Redundancy Check) on the contents of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+You probably don\textquotesingle{}t need to concern yourself with this. It is used internally by Dot\+Net\+Zip to verify files or streams upon extraction. 
+
+The value is a 32-\/bit C\+RC
+
+using 0x\+E\+D\+B88320 for the polynomial. This is the same C\+R\+C-\/32 used in P\+NG, M\+P\+E\+G-\/2, and other protocols and formats. It is a read-\/only property; when creating a \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archive, the C\+RC for each entry is set only after a call to {\ttfamily Save()} on the containing \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. When reading an existing zip file, the value of this property reflects the stored C\+RC for the entry. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Creation\+Time@{Creation\+Time}}
+\index{Creation\+Time@{Creation\+Time}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Creation\+Time}{CreationTime}}
+{\footnotesize\ttfamily Date\+Time Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Creation\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The file creation time for the file represented by the entry. 
+
+This value may or may not be meaningful. If the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} was read from an existing zip archive, and the creation time was not set on the entry when the zip file was created, then this property may be meaningless. For an explanation of why, see \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Emit\+Times\+In\+Unix\+Format\+When\+Saving@{Emit\+Times\+In\+Unix\+Format\+When\+Saving}}
+\index{Emit\+Times\+In\+Unix\+Format\+When\+Saving@{Emit\+Times\+In\+Unix\+Format\+When\+Saving}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Emit\+Times\+In\+Unix\+Format\+When\+Saving}{EmitTimesInUnixFormatWhenSaving}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Emit\+Times\+In\+Unix\+Format\+When\+Saving\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Specifies whether the Creation, Access, and Modified times for the given entry will be emitted in "\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6ec1bd1ea6a5d67a63b20c8f6172bddd}{Unix(tm)}} format" when the zip archive is saved. 
+
+An application creating a zip archive can use this flag to explicitly specify that the file times for the entry should or should not be stored in the zip archive in the format used by Unix. By default this flag is {\ttfamily false}, meaning the Unix-\/format times are not stored in the zip archive. 
+
+When adding an entry from a file or directory, the Creation (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}), Access (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}), and Modified (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}) times for the given entry are automatically set from the filesystem values. When adding an entry from a stream or string, all three values are implicitly set to Date\+Time.\+Now. Applications can also explicitly set those times by calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times(\+Date\+Time, Date\+Time, Date\+Time)}}. 
+
+P\+K\+W\+A\+RE\textquotesingle{}s zip specification
+
+describes multiple ways to format these times in a zip file. One is the format Windows applications normally use\+: 100ns ticks since Jan 1, 1601 U\+TC. The other is a format Unix applications typically use\+: seconds since Jan 1, 1970 U\+TC. Each format can be stored in an \char`\"{}extra field\char`\"{} in the zip entry when saving the zip archive. The former uses an extra field with a Header Id of 0x000A, while the latter uses a header ID of 0x5455. 
+
+Not all tools and libraries can interpret these fields. Windows compressed folders is one that can read the Windows Format timestamps, while I believe the Infozip
+
+tools can read the Unix format timestamps. Although the time values are easily convertible, subject to a loss of precision, some tools and libraries may be able to read only one or the other. Dot\+Net\+Zip can read or write times in either or both formats. 
+
+The times stored are taken from \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}. 
+
+This property is not mutually exclusive from the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Zip\+Entry.\+Emit\+Times\+In\+Windows\+Format\+When\+Saving}} property. It is possible that a zip entry can embed the timestamps in both forms, one form, or neither. But, there are no guarantees that a program running on Mac or Linux will gracefully handle N\+T\+FS Formatted times, or that a non-\/\+Dot\+Net\+Zip-\/powered application running on Windows will be able to handle file times in Unix format. When in doubt, test. 
+
+Normally you will use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_af369a36c1bf83fc28466fe15c095ea87}{Zip\+File.\+Emit\+Times\+In\+Unix\+Format\+When\+Saving}} property, to specify the behavior for all entries, rather than the property on each individual entry. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times(\+Date\+Time, Date\+Time, Date\+Time)}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Emit\+Times\+In\+Windows\+Format\+When\+Saving}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_af369a36c1bf83fc28466fe15c095ea87}{Zip\+File.\+Emit\+Times\+In\+Unix\+Format\+When\+Saving}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Emit\+Times\+In\+Windows\+Format\+When\+Saving@{Emit\+Times\+In\+Windows\+Format\+When\+Saving}}
+\index{Emit\+Times\+In\+Windows\+Format\+When\+Saving@{Emit\+Times\+In\+Windows\+Format\+When\+Saving}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Emit\+Times\+In\+Windows\+Format\+When\+Saving}{EmitTimesInWindowsFormatWhenSaving}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Emit\+Times\+In\+Windows\+Format\+When\+Saving\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Specifies whether the Creation, Access, and Modified times for the given entry will be emitted in \char`\"{}\+Windows format\char`\"{} when the zip archive is saved. 
+
+An application creating a zip archive can use this flag to explicitly specify that the file times for the entry should or should not be stored in the zip archive in the format used by Windows. The default value of this property is {\ttfamily true}. 
+
+When adding an entry from a file or directory, the Creation (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}), Access (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}), and Modified (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}) times for the given entry are automatically set from the filesystem values. When adding an entry from a stream or string, all three values are implicitly set to Date\+Time.\+Now. Applications can also explicitly set those times by calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times(\+Date\+Time, Date\+Time, Date\+Time)}}. 
+
+P\+K\+W\+A\+RE\textquotesingle{}s zip specification
+
+describes multiple ways to format these times in a zip file. One is the format Windows applications normally use\+: 100ns ticks since Jan 1, 1601 U\+TC. The other is a format Unix applications typically use\+: seconds since January 1, 1970 U\+TC. Each format can be stored in an \char`\"{}extra field\char`\"{} in the zip entry when saving the zip archive. The former uses an extra field with a Header Id of 0x000A, while the latter uses a header ID of 0x5455. 
+
+Not all zip tools and libraries can interpret these fields. Windows compressed folders is one that can read the Windows Format timestamps, while I believe the Infozip
+
+tools can read the Unix format timestamps. Although the time values are easily convertible, subject to a loss of precision, some tools and libraries may be able to read only one or the other. Dot\+Net\+Zip can read or write times in either or both formats. 
+
+The times stored are taken from \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}. 
+
+This property is not mutually exclusive from the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Zip\+Entry.\+Emit\+Times\+In\+Unix\+Format\+When\+Saving}} property. It is possible that a zip entry can embed the timestamps in both forms, one form, or neither. But, there are no guarantees that a program running on Mac or Linux will gracefully handle N\+T\+FS Formatted times, or that a non-\/\+Dot\+Net\+Zip-\/powered application running on Windows will be able to handle file times in Unix format. When in doubt, test. 
+
+Normally you will use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a1695d2181d639029b132e67c85734e8c}{Zip\+File.\+Emit\+Times\+In\+Windows\+Format\+When\+Saving}} property, to specify the behavior for all entries in a zip, rather than the property on each individual entry. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times(\+Date\+Time, Date\+Time, Date\+Time)}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}{Modified\+Time}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Encryption@{Encryption}}
+\index{Encryption@{Encryption}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Encryption}{Encryption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{Encryption\+Algorithm}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Encryption\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set this to specify which encryption algorithm to use for the entry when saving it to a zip archive. 
+
+Set this property in order to encrypt the entry when the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} is saved. When setting this property, you must also set a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Password}} on the entry. If you set a value other than \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6a6adf97f83acf6453d4a6a4b1070f3754}{Encryption\+Algorithm.\+None}} on this property and do not set a {\ttfamily Password} then the entry will not be encrypted. The {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} data is encrypted as the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} is saved, when you call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}} or one of its cousins on the containing {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} instance. You do not need to specify the {\ttfamily Encryption} when extracting entries from an archive. 
+
+The \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification from P\+K\+Ware defines a set of encryption algorithms, and the data formats for the zip archive that support them, and P\+K\+Ware supports those algorithms in the tools it produces. Other vendors of tools and libraries, such as Win\+Zip or Xceed, typically support {\itshape a subset} of the algorithms specified by P\+K\+Ware. These tools can sometimes support additional different encryption algorithms and data formats, not specified by P\+K\+Ware. The A\+ES Encryption specified and supported by Win\+Zip is the most popular example. This library supports a subset of the complete set of algorithms specified by P\+K\+Ware and other vendors. 
+
+There is no common, ubiquitous multi-\/vendor standard for strong encryption within zip files. There is broad support for so-\/called \char`\"{}traditional\char`\"{} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} encryption, sometimes called \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} 2.\+0 encryption, as specified by P\+K\+Ware
+
+, but this encryption is considered weak and breakable. This library currently supports the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} 2.\+0 \char`\"{}weak\char`\"{} encryption, and also a stronger Win\+Zip-\/compatible A\+ES encryption, using either 128-\/bit or 256-\/bit key strength. If you want Dot\+Net\+Zip to support an algorithm that is not currently supported, call the author of this library and maybe we can talk business. 
+
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class also has a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aeaa88018eaea63cd09f9e05a853c51f8}{Zip\+File.\+Encryption}} property. In most cases you will use {\itshape that} property when setting encryption. This property takes precedence over any {\ttfamily Encryption} set on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} itself. Typically, you would use the per-\/entry Encryption when most entries in the zip archive use one encryption algorithm, and a few entries use a different one. If all entries in the zip file use the same Encryption, then it is simpler to just set this property on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} itself, when creating a zip archive. 
+
+Some comments on updating archives\+: If you read a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, you can modify the Encryption on an encrypted entry\+: you can remove encryption from an entry that was encrypted; you can encrypt an entry that was not encrypted previously; or, you can change the encryption algorithm. The changes in encryption are not made permanent until you call Save() on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. To effect changes in encryption, the entry content is streamed through several transformations, depending on the modification the application has requested. For example if the entry is not encrypted and the application sets {\ttfamily Encryption} to {\ttfamily Pkzip\+Weak}, then at the time of {\ttfamily Save()}, the original entry is read and decompressed, then re-\/compressed and encrypted. Conversely, if the original entry is encrypted with {\ttfamily Pkzip\+Weak} encryption, and the application sets the {\ttfamily Encryption} property to {\ttfamily Win\+Zip\+Aes128}, then at the time of {\ttfamily Save()}, the original entry is decrypted via P\+K\+Z\+IP encryption and decompressed, then re-\/compressed and re-\/encrypted with A\+ES. This all happens automatically within the library, but it can be time-\/consuming for large entries. 
+
+Additionally, when updating archives, it is not possible to change the password when changing the encryption algorithm. To change both the algorithm and the password, you need to Save() the zipfile twice. First set the {\ttfamily Encryption} to None, then call {\ttfamily Save()}. Then set the {\ttfamily Encryption} to the new value (not \char`\"{}\+None\char`\"{}), then call {\ttfamily Save()} once again. 
+
+The Win\+Zip A\+ES encryption algorithms are not supported on the .N\+ET Compact Framework. 
+
+This example creates a zip archive that uses encryption, and then extracts entries from the archive. When creating the zip archive, the Read\+Me.\+txt file is zipped without using a password or encryption. The other file uses encryption. 
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Create a zip archive with AES Encryption.}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}())
+\{
+    zip.AddFile(\textcolor{stringliteral}{"ReadMe.txt"})
+    \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} e1= zip.AddFile(\textcolor{stringliteral}{"2008-Regional-Sales-Report.pdf"});
+    e1.Encryption= \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{EncryptionAlgorithm}}.WinZipAes256;
+    e1.Password= \textcolor{stringliteral}{"Top.Secret.No.Peeking!"};
+    zip.Save(\textcolor{stringliteral}{"EncryptedArchive.zip"});
+\}
+
+\textcolor{comment}{// Extract a zip archive that uses AES Encryption.}
+\textcolor{comment}{// You do not need to specify the algorithm during extraction.}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(\textcolor{stringliteral}{"EncryptedArchive.zip"}))
+\{
+    \textcolor{comment}{// Specify the password that is used during extraction, for}
+    \textcolor{comment}{// all entries that require a password:}
+    zip.Password= \textcolor{stringliteral}{"Top.Secret.No.Peeking!"};
+    zip.ExtractAll(\textcolor{stringliteral}{"extractDirectory"});
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+\textcolor{stringliteral}{' Create a zip that uses Encryption.}
+\textcolor{stringliteral}{Using zip As New ZipFile()}
+\textcolor{stringliteral}{    zip.AddFile("ReadMe.txt")}
+\textcolor{stringliteral}{    Dim e1 as ZipEntry}
+\textcolor{stringliteral}{    e1= zip.AddFile("2008-Regional-Sales-Report.pdf")}
+\textcolor{stringliteral}{    e1.Encryption= EncryptionAlgorithm.WinZipAes256}
+\textcolor{stringliteral}{    e1.Password= "Top.Secret.No.Peeking!"}
+\textcolor{stringliteral}{    zip.Save("EncryptedArchive.zip")}
+\textcolor{stringliteral}{End Using}
+\textcolor{stringliteral}{}
+\textcolor{stringliteral}{'} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract}} a zip archive that uses AES \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Encryption}}.
+\textcolor{stringliteral}{' You do not need to specify the algorithm during extraction.}
+\textcolor{stringliteral}{Using (zip as ZipFile = ZipFile.Read("EncryptedArchive.zip"))}
+\textcolor{stringliteral}{    '} Specify the password that is used during extraction, \textcolor{keywordflow}{for}
+    \textcolor{stringliteral}{' all entries that require a password:}
+\textcolor{stringliteral}{    zip.Password= "Top.Secret.No.Peeking!"}
+\textcolor{stringliteral}{    zip.ExtractAll("extractDirectory")}
+\textcolor{stringliteral}{End Using}
+\end{DoxyCode}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Invalid\+Operation\+Exception} & Thrown in the setter if \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ab4080bdf74febf04d578ff105cce9d3f}{Encryption\+Algorithm.\+Unsupported}} is specified. \\
+\hline
+\end{DoxyExceptions}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Ionic.\+Zip.\+Zip\+Entry.\+Password}}
+
+
+\end{DoxySeeAlso}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Zip\+Entry.\+Password}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aeaa88018eaea63cd09f9e05a853c51f8}{Ionic.\+Zip.\+Zip\+File.\+Encryption}}
+
+
+\end{DoxySeeAlso}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aeaa88018eaea63cd09f9e05a853c51f8}{Zip\+File.\+Encryption}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Extract\+Existing\+File@{Extract\+Existing\+File}}
+\index{Extract\+Existing\+File@{Extract\+Existing\+File}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Extract\+Existing\+File}{ExtractExistingFile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Extract\+Existing\+File\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The action the library should take when extracting a file that already exists. 
+
+This property affects the behavior of the Extract methods (one of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}}} or {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}{Extract\+With\+Password()}}} overloads), when extraction would would overwrite an existing filesystem file. If you do not set this property, the library throws an exception when extracting an entry would overwrite an existing file. 
+
+This property has no effect when extracting to a stream, or when the file to be extracted does not already exist. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_ab900ee0fb15ee35c3c76ef492ff2517f}{Ionic.\+Zip.\+Zip\+File.\+Extract\+Existing\+File}}
+
+
+\end{DoxySeeAlso}
+
+
+This example shows how to set the {\ttfamily Extract\+Existing\+File} property in an {\ttfamily Extract\+Progress} event, in response to user input. The {\ttfamily Extract\+Progress} event is invoked if and only if the {\ttfamily Extract\+Existing\+File} property was previously set to {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a260afa558b9392c717b397a63c86e1fe}{Extract\+Existing\+File\+Action.\+Invoke\+Extract\+Progress\+Event}}}. 
+\begin{DoxyCode}
+\textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} ExtractProgress(\textcolor{keywordtype}{object} sender, ExtractProgressEventArgs e)
+\{
+    \textcolor{keywordflow}{if} (e.EventType == \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}{ZipProgressEventType}}.Extracting\_BeforeExtractEntry)
+        Console.WriteLine(\textcolor{stringliteral}{"extract \{0\} "}, e.CurrentEntry.FileName);
+
+    \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (e.EventType == \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}{ZipProgressEventType}}.Extracting\_ExtractEntryWouldOverwrite)
+    \{
+        \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} entry = e.CurrentEntry;
+        \textcolor{keywordtype}{string} response = null;
+        \textcolor{comment}{// Ask the user if he wants overwrite the file}
+        \textcolor{keywordflow}{do}
+        \{
+            Console.Write(\textcolor{stringliteral}{"Overwrite \{0\} in \{1\} ? (y/n/C) "}, entry.FileName, e.ExtractLocation);
+            response = Console.ReadLine();
+            Console.WriteLine();
+
+        \} \textcolor{keywordflow}{while} (response != null &amp;&amp; response[0]!=\textcolor{charliteral}{'Y'} &amp;&amp;
+                 response[0]!=\textcolor{charliteral}{'N'} &amp;&amp; response[0]!=\textcolor{charliteral}{'C'});
+
+        \textcolor{keywordflow}{if}  (response[0]==\textcolor{charliteral}{'C'})
+            e.Cancel = \textcolor{keyword}{true};
+        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (response[0]==\textcolor{charliteral}{'Y'})
+            entry.ExtractExistingFile = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{ExtractExistingFileAction}}.
+      OverwriteSilently;
+        \textcolor{keywordflow}{else}
+            entry.ExtractExistingFile= \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{ExtractExistingFileAction}}.DoNotOverwrite;
+    \}
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a78e0c5ee8272a51926eabb9ffc1b38d9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a78e0c5ee8272a51926eabb9ffc1b38d9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!File\+Name@{File\+Name}}
+\index{File\+Name@{File\+Name}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{File\+Name}{FileName}}
+{\footnotesize\ttfamily string Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+File\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of the file contained in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+This is the name of the entry in the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} itself. When creating a zip archive, if the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} has been created from a filesystem file, via a call to Zip\+File.\+Add\+File(\+String,\+String) or \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a4f5b34dc261ef4f4af63d0a692d9cfc6}{Zip\+File.\+Add\+Item(\+String,\+String)}}, or a related overload, the value of this property is derived from the name of that file. The {\ttfamily File\+Name} property does not include drive letters, and may include a different directory path, depending on the value of the {\ttfamily directory\+Path\+In\+Archive} parameter used when adding the entry into the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. 
+
+In some cases there is no related filesystem file -\/ for example when a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} is created using \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a7f8d10ab9f75f0de6d27a61e5466c210}{Zip\+File.\+Add\+Entry(string,
+  string)}} or one of the similar overloads. In this case, the value of this property is derived from the file\+Name and the directory path passed to that method. 
+
+When reading a zip file, this property takes the value of the entry name as stored in the zip file. If you extract such an entry, the extracted file will take the name given by this property. 
+
+Applications can set this property when creating new zip archives or when reading existing archives. When setting this property, the actual value that is set will replace backslashes with forward slashes, in accordance with the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification
+
+, for compatibility with \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6ec1bd1ea6a5d67a63b20c8f6172bddd}{Unix(tm)}} and ... get this.... Amiga! 
+
+If an application reads a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} via Zip\+File.\+Read(\+String) or a related overload, and then explicitly sets the File\+Name on an entry contained within the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, and then calls \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}, the application will effectively rename the entry within the zip archive. 
+
+If an application sets the value of {\ttfamily File\+Name}, then calls {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}}} on the entry, the entry is extracted to a file using the newly set value as the filename. The {\ttfamily File\+Name} value is made permanent in the zip archive only {\itshape after} a call to one of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}} methods on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} that contains the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+If an application attempts to set the {\ttfamily File\+Name} to a value that would result in a duplicate entry in the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, an exception is thrown. 
+
+When a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} is contained within a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, applications cannot rename the entry within the context of a {\ttfamily foreach} ({\ttfamily For Each} in VB) loop, because of the way the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} stores entries. If you need to enumerate through all the entries and rename one or more of them, use \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_ad4da87108d27a1ee534a16333fa39fd7}{Zip\+File.\+Entries\+Sorted}} as the collection. See also, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_ad3c41dee19a5bb1f2779ec232d3c3d0f}{Zip\+File.\+Get\+Enumerator()}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aaf8218fe23c2cd0c0642858ce2f85087}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aaf8218fe23c2cd0c0642858ce2f85087}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Included\+In\+Most\+Recent\+Save@{Included\+In\+Most\+Recent\+Save}}
+\index{Included\+In\+Most\+Recent\+Save@{Included\+In\+Most\+Recent\+Save}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Included\+In\+Most\+Recent\+Save}{IncludedInMostRecentSave}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Included\+In\+Most\+Recent\+Save\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the entry was included in the most recent save. 
+
+An entry can be excluded or skipped from a save if there is an error opening or reading the entry. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a55a679298f00c5eef672e947c6293304}{Zip\+Error\+Action}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aef716e6024192e012aee41fe721bd7d2}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aef716e6024192e012aee41fe721bd7d2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Info@{Info}}
+\index{Info@{Info}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Info}{Info}}
+{\footnotesize\ttfamily string Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Provides a human-\/readable string with information about the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9c5db72a0ee3dad46be934c75ffcfe91}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9c5db72a0ee3dad46be934c75ffcfe91}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Input\+Stream@{Input\+Stream}}
+\index{Input\+Stream@{Input\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Input\+Stream}{InputStream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Input\+Stream\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The stream that provides content for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+The application can use this property to set the input stream for an entry on a just-\/in-\/time basis. Imagine a scenario where the application creates a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} comprised of content obtained from hundreds of files, via calls to {\ttfamily Add\+File()}. The Dot\+Net\+Zip library opens streams on these files on a just-\/in-\/time basis, only when writing the entry out to an external store within the scope of a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}} call. Only one input stream is opened at a time, as each entry is being written out. 
+
+Now imagine a different application that creates a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} with content obtained from hundreds of streams, added through \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a5ae21397e59e0699aa8701822477e537}{Zip\+File.\+Add\+Entry(string, System.\+I\+O.\+Stream)}}. Normally the application would supply an open stream to that call. But when large numbers of streams are being added, this can mean many open streams at one time, unnecessarily. 
+
+To avoid this, call Zip\+File.\+Add\+Entry(\+String, Open\+Delegate,
+  Close\+Delegate) and specify delegates that open and close the stream at the time of Save. 
+
+Setting the value of this property when the entry was not added from a stream (for example, when the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} was added with Zip\+File.\+Add\+File(\+String) or Zip\+File.\+Add\+Directory(\+String), or when the entry was added by reading an existing zip archive) will throw an exception. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a621c95b01079d1bdc1fa2a3ade52676f}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a621c95b01079d1bdc1fa2a3ade52676f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Input\+Stream\+Was\+Jit\+Provided@{Input\+Stream\+Was\+Jit\+Provided}}
+\index{Input\+Stream\+Was\+Jit\+Provided@{Input\+Stream\+Was\+Jit\+Provided}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Input\+Stream\+Was\+Jit\+Provided}{InputStreamWasJitProvided}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Input\+Stream\+Was\+Jit\+Provided\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A flag indicating whether the Input\+Stream was provided Just-\/in-\/time. 
+
+When creating a zip archive, an application can obtain content for one or more of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} instances from streams, using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a5ae21397e59e0699aa8701822477e537}{Zip\+File.\+Add\+Entry(string, System.\+I\+O.\+Stream)}} method. At the time of calling that method, the application can supply null as the value of the stream parameter. By doing so, the application indicates to the library that it will provide a stream for the entry on a just-\/in-\/time basis, at the time one of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}} methods is called and the data for the various entries are being compressed and written out. 
+
+In this case, the application can set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9c5db72a0ee3dad46be934c75ffcfe91}{Input\+Stream}} property, typically within the Save\+Progress event (event type\+: \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6a5772cb33fcfbfbe2f970efdac29ac4}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+Before\+Write\+Entry}}) for that entry. 
+
+The application will later want to call Close() and Dispose() on that stream. In the Save\+Progress event, when the event type is \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa25e89555bbf919c6e0d8d535bbdfcc67}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+After\+Write\+Entry}}, the application can do so. This flag indicates that the stream has been provided by the application on a just-\/in-\/time basis and that it is the application\textquotesingle{}s responsibility to call Close/\+Dispose on that stream. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9c5db72a0ee3dad46be934c75ffcfe91}{Input\+Stream}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad15b658412856468c7f75983c6f9de11}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad15b658412856468c7f75983c6f9de11}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Is\+Directory@{Is\+Directory}}
+\index{Is\+Directory@{Is\+Directory}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Is\+Directory}{IsDirectory}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Is\+Directory\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+True if the entry is a directory (not a file). This is a readonly property on the entry. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a04adaebb58e53fedd580cfa10fd1c7a9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a04adaebb58e53fedd580cfa10fd1c7a9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Is\+Text@{Is\+Text}}
+\index{Is\+Text@{Is\+Text}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Is\+Text}{IsText}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Is\+Text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether an entry is marked as a text file. Be careful when using on this property. Unless you have a good reason, you should probably ignore this property. 
+
+The Z\+IP format includes a provision for specifying whether an entry in the zip archive is a text or binary file. This property exposes that metadata item. Be careful when using this property\+: It\textquotesingle{}s not clear that this property as a firm meaning, across tools and libraries. 
+
+To be clear, when reading a zip file, the property value may or may not be set, and its value may or may not be valid. Not all entries that you may think of as \char`\"{}text\char`\"{} entries will be so marked, and entries marked as \char`\"{}text\char`\"{} are not guaranteed in any way to be text entries. Whether the value is set and set correctly depends entirely on the application that produced the zip file. 
+
+There are many zip tools available, and when creating zip files, some of them \char`\"{}respect\char`\"{} the Is\+Text metadata field, and some of them do not. Unfortunately, even when an application tries to do \char`\"{}the right thing\char`\"{}, it\textquotesingle{}s not always clear what \char`\"{}the right thing\char`\"{} is. 
+
+There\textquotesingle{}s no firm definition of just what it means to be \char`\"{}a text file\char`\"{}, and the zip specification does not help in this regard. Twenty years ago, text was A\+S\+C\+II, each byte was less than 127. Is\+Text meant, all bytes in the file were less than 127. These days, it is not the case that all text files have all bytes less than 127. Any unicode file may have bytes that are above 0x7f. The zip specification has nothing to say on this topic. Therefore, it\textquotesingle{}s not clear what Is\+Text really means. 
+
+This property merely tells a reading application what is stored in the metadata for an entry, without guaranteeing its validity or its meaning. 
+
+When Dot\+Net\+Zip is used to create a zipfile, it attempts to set this field \char`\"{}correctly.\char`\"{} For example, if a file ends in \char`\"{}.\+txt\char`\"{}, this field will be set. Your application may override that default setting. When writing a zip file, you must set the property before calling {\ttfamily Save()} on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. 
+
+When reading a zip file, a more general way to decide just what kind of file is contained in a particular entry is to use the file type database stored in the operating system. The operating system stores a table that says, a file with .jpg extension is a J\+PG image file, a file with a .xml extension is an X\+ML document, a file with a .txt is a pure A\+S\+C\+II text document, and so on. To get this information on Windows,  you need to read and parse the registry.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{using} (var zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}())
+\{
+    var e = zip.UpdateFile(\textcolor{stringliteral}{"Descriptions.mme"}, \textcolor{stringliteral}{""});
+    e.IsText = \textcolor{keyword}{true};
+    zip.Save(zipPath);
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Using zip As New \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}
+    Dim e2 as \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} = zip.AddFile(\textcolor{stringliteral}{"Descriptions.mme"}, \textcolor{stringliteral}{""})
+    e.IsText= True
+    zip.Save(zipPath)
+End Using
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Last\+Modified@{Last\+Modified}}
+\index{Last\+Modified@{Last\+Modified}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Last\+Modified}{LastModified}}
+{\footnotesize\ttfamily Date\+Time Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Last\+Modified\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time and date at which the file indicated by the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} was last modified. 
+
+The Dot\+Net\+Zip library sets the Last\+Modified value for an entry, equal to the Last Modified time of the file in the filesystem. If an entry is added from a stream, the library uses {\ttfamily System.\+Date\+Time.\+Now} for this value, for the given entry. 
+
+This property allows the application to retrieve and possibly set the Last\+Modified value on an entry, to an arbitrary value. System.\+Date\+Time values with a System.\+Date\+Time\+Kind setting of {\ttfamily Date\+Time\+Kind.\+Unspecified} are taken to be expressed as {\ttfamily Date\+Time\+Kind.\+Local}. 
+
+Be aware that because of the way P\+K\+Ware\textquotesingle{}s \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification
+
+describes how times are stored in the zip file, the full precision of the {\ttfamily System.\+Date\+Time} datatype is not stored for the last modified time when saving zip files. For more information on how times are formatted, see the P\+K\+Zip specification. 
+
+The actual last modified time of a file can be stored in multiple ways in the zip file, and they are not mutually exclusive\+: 
+
+
+\begin{DoxyItemize}
+\item In the so-\/called \char`\"{}\+D\+O\+S\char`\"{} format, which has a 2-\/second precision. Values are rounded to the nearest even second. For example, if the time on the file is 12\+:34\+:43, then it will be stored as 12\+:34\+:44. This first value is accessible via the {\ttfamily Last\+Modified} property. This value is always present in the metadata for each zip entry. In some cases the value is invalid, or zero. 
+
+
+\item In the so-\/called \char`\"{}\+Windows\char`\"{} or \char`\"{}\+N\+T\+F\+S\char`\"{} format, as an 8-\/byte integer quantity expressed as the number of 1/10 milliseconds (in other words the number of 100 nanosecond units) since January 1, 1601 (U\+TC). This format is how Windows represents file times. This time is accessible via the {\ttfamily Modified\+Time} property. 
+
+
+\item In the \char`\"{}\+Unix\char`\"{} format, a 4-\/byte quantity specifying the number of seconds since January 1, 1970 U\+TC. 
+
+
+\item In an older format, now deprecated but still used by some current tools. This format is also a 4-\/byte quantity specifying the number of seconds since January 1, 1970 U\+TC. 
+
+
+\end{DoxyItemize}
+
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} tools and libraries will always at least handle (read or write) the D\+OS time, and may also handle the other time formats. Keep in mind that while the names refer to particular operating systems, there is nothing in the time formats themselves that prevents their use on other operating systems. 
+
+When reading Z\+IP files, the Dot\+Net\+Zip library reads the Windows-\/formatted time, if it is stored in the entry, and sets both {\ttfamily Last\+Modified} and {\ttfamily Modified\+Time} to that value. When writing Z\+IP files, the Dot\+Net\+Zip library by default will write both time quantities. It can also emit the Unix-\/formatted time if desired (See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}}.) 
+
+The last modified time of the file created upon a call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}} may be adjusted during extraction to compensate for differences in how the .N\+ET Base Class Library deals with daylight saving time (D\+ST) versus how the Windows filesystem deals with daylight saving time. Raymond Chen provides some good context
+
+. 
+
+In a nutshell\+: Daylight savings time rules change regularly. In 2007, for example, the inception week of D\+ST changed. In 1977, D\+ST was in place all year round. In 1945, likewise. And so on. Win32 does not attempt to guess which time zone rules were in effect at the time in question. It will render a time as \char`\"{}standard time\char`\"{} and allow the app to change to D\+ST as necessary. .N\+ET makes a different choice. 
+
+Compare the output of File\+Info.\+Last\+Write\+Time.\+To\+String(\char`\"{}f\char`\"{}) with what you see in the Windows Explorer property sheet for a file that was last written to on the other side of the D\+ST transition. For example, suppose the file was last modified on October 17, 2003, during D\+ST but D\+ST is not currently in effect. Explorer\textquotesingle{}s file properties reports Thursday, October 17, 2003, 8\+:45\+:38 AM, but .N\+E\+Ts File\+Info reports Thursday, October 17, 2003, 9\+:45 AM. 
+
+Win32 says, \char`\"{}\+Thursday, October 17, 2002 8\+:45\+:38 A\+M P\+S\+T\char`\"{}. Note\+: Pacific S\+T\+A\+N\+D\+A\+RD Time. Even though October 17 of that year occurred during Pacific Daylight Time, Win32 displays the time as standard time because that\textquotesingle{}s what time it is N\+OW. 
+
+.N\+ET B\+CL assumes that the current D\+ST rules were in place at the time in question. So, .N\+ET says, \char`\"{}\+Well, if the rules in effect now were also in
+  effect on October 17, 2003, then that would be daylight time\char`\"{} so it displays \char`\"{}\+Thursday, October 17, 2003, 9\+:45 A\+M P\+D\+T\char`\"{} -\/ daylight time. 
+
+So .N\+ET gives a value which is more intuitively correct, but is also potentially incorrect, and which is not invertible. Win32 gives a value which is intuitively incorrect, but is strictly correct. 
+
+Because of this funkiness, this library adds one hour to the Last\+Modified time on the extracted file, if necessary. That is to say, if the time in question had occurred in what the .N\+ET Base Class Library assumed to be D\+ST. This assumption may be wrong given the constantly changing D\+ST rules, but it is the best we can do. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a88021d72ea8b94c762388d92d74c2e0d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Modified\+Time@{Modified\+Time}}
+\index{Modified\+Time@{Modified\+Time}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Modified\+Time}{ModifiedTime}}
+{\footnotesize\ttfamily Date\+Time Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Modified\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Last Modified time for the file represented by the entry. 
+
+This value corresponds to the \char`\"{}last modified\char`\"{} time in the N\+T\+FS file times as described in the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification
+
+. When getting this property, the value may be different from \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}}. When setting the property, the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}} property also gets set, but with a lower precision. 
+
+Let me explain. It\textquotesingle{}s going to take a while, so get comfortable. Originally, waaaaay back in 1989 when the Z\+IP specification was originally described by the esteemed Mr. Phil Katz, the dominant operating system of the time was M\+S-\/\+D\+OS. M\+S\+D\+OS stored file times with a 2-\/second precision, because, c\textquotesingle{}mon, {\itshape who is ever going to need better resolution than T\+H\+AT?} And so Z\+IP files, regardless of the platform on which the zip file was created, store file times in exactly the same format that D\+OS used in 1989
+
+. 
+
+Since then, the Z\+IP spec has evolved, but the internal format for file timestamps remains the same. Despite the fact that the way times are stored in a zip file is rooted in D\+OS heritage, any program on any operating system can format a time in this way, and most zip tools and libraries DO -\/ they round file times to the nearest even second and store it just like D\+OS did 25+ years ago. 
+
+P\+K\+Ware extended the Z\+IP specification to allow a zip file to store what are called \char`\"{}\+N\+T\+F\+S Times\char`\"{} and \char`\"{}\+Unix(tm) times\char`\"{} for a file. These are the {\itshape last write}, {\itshape last access}, and {\itshape file creation} times of a particular file. These metadata are not actually specific to N\+T\+FS or Unix. They are tracked for each file by N\+T\+FS and by various Unix filesystems, but they are also tracked by other filesystems, too. The key point is that the times are {\itshape formatted in the zip file} in the same way that N\+T\+FS formats the time (ticks since win32 epoch), or in the same way that Unix formats the time (seconds since Unix epoch). As with the D\+OS time, any tool or library running on any operating system is capable of formatting a time in one of these ways and embedding it into the zip file. 
+
+These extended times are higher precision quantities than the D\+OS time. As described above, the (D\+OS) Last\+Modified has a precision of 2 seconds. The Unix time is stored with a precision of 1 second. The N\+T\+FS time is stored with a precision of 0.\+0000001 seconds. The quantities are easily convertible, except for the loss of precision you may incur. 
+
+A zip archive can store the \{C,A,M\} times in N\+T\+FS format, in Unix format, or not at all. Often a tool running on Unix or Mac will embed the times in Unix format (1 second precision), while Win\+Zip running on Windows might embed the times in N\+T\+FS format (precision of of 0.\+0000001 seconds). When reading a zip file with these \char`\"{}extended\char`\"{} times, in either format, Dot\+Net\+Zip represents the values with the {\ttfamily Modified\+Time}, {\ttfamily Accessed\+Time} and {\ttfamily Creation\+Time} properties on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}}. 
+
+While any zip application or library, regardless of the platform it runs on, could use any of the time formats allowed by the Z\+IP specification, not all zip tools or libraries do support all these formats. Storing the higher-\/precision times for each entry is optional for zip files, and many tools and libraries don\textquotesingle{}t use the higher precision quantities at all. The old D\+OS time, represented by \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Last\+Modified}}, is guaranteed to be present, though it sometimes unset. 
+
+Ok, getting back to the question about how the {\ttfamily Last\+Modified} property relates to this {\ttfamily Modified\+Time} property... {\ttfamily Last\+Modified} is always set, while {\ttfamily Modified\+Time} is not. (The other times stored in the {\itshape N\+T\+FS times extension}, {\ttfamily Creation\+Time} and {\ttfamily Accessed\+Time} also may not be set on an entry that is read from an existing zip file.) When reading a zip file, then {\ttfamily Last\+Modified} takes the D\+OS time that is stored with the file. If the D\+OS time has been stored as zero in the zipfile, then this library will use {\ttfamily Date\+Time.\+Now} for the {\ttfamily Last\+Modified} value. If the Z\+IP file was created by an evolved tool, then there will also be higher precision N\+T\+FS or Unix times in the zip file. In that case, this library will read those times, and set {\ttfamily Last\+Modified} and {\ttfamily Modified\+Time} to the same value, the one corresponding to the last write time of the file. If there are no higher precision times stored for the entry, then {\ttfamily Modified\+Time} remains unset (likewise {\ttfamily Accessed\+Time} and {\ttfamily Creation\+Time}), and {\ttfamily Last\+Modified} keeps its D\+OS time. 
+
+When creating zip files with this library, by default the extended time properties ({\ttfamily Modified\+Time}, {\ttfamily Accessed\+Time}, and {\ttfamily Creation\+Time}) are set on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} instance, and these data are stored in the zip archive for each entry, in N\+T\+FS format. If you add an entry from an actual filesystem file, then the entry gets the actual file times for that file, to N\+T\+F\+S-\/level precision. If you add an entry from a stream, or a string, then the times get the value {\ttfamily Date\+Time.\+Now}. In this case {\ttfamily Last\+Modified} and {\ttfamily Modified\+Time} will be identical, to 2 seconds of precision. You can explicitly set the {\ttfamily Creation\+Time}, {\ttfamily Accessed\+Time}, and {\ttfamily Modified\+Time} of an entry using the property setters. If you want to set all of those quantities, it\textquotesingle{}s more efficient to use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times(\+Date\+Time, Date\+Time, Date\+Time)}} method. Those changes are not made permanent in the zip file until you call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}} or one of its cousins. 
+
+When creating a zip file, you can override the default behavior of this library for formatting times in the zip file, disabling the embedding of file times in N\+T\+FS format or enabling the storage of file times in Unix format, or both. You may want to do this, for example, when creating a zip file on Windows, that will be consumed on a Mac, by an application that is not hip to the \char`\"{}\+N\+T\+F\+S times\char`\"{} format. To do this, use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Emit\+Times\+In\+Windows\+Format\+When\+Saving}} and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}} properties. A valid zip file may store the file times in both formats. But, there are no guarantees that a program running on Mac or Linux will gracefully handle the N\+T\+F\+S-\/formatted times when Unix times are present, or that a non-\/\+Dot\+Net\+Zip-\/powered application running on Windows will be able to handle file times in Unix format. Dot\+Net\+Zip will always do something reasonable; other libraries or tools may not. When in doubt, test. 
+
+I\textquotesingle{}ll bet you didn\textquotesingle{}t think one person could type so much about time, eh? And reading it was so enjoyable, too! Well, in appreciation, maybe you should donate
+
+? 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_abc1a038c251f1ed0e2c1435a5bab23fd}{Accessed\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a38ef2ae810c3b89b1f23ebea918fb60e}{Creation\+Time}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_acd1234fd27c216b59c166c2b96aba3dd}{Ionic.\+Zip.\+Zip\+Entry.\+Last\+Modified}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7331ca69b05c476a9d321b30d7649766}{Set\+Entry\+Times}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a1e1ef842a3e02644daeffa985f14ac11}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a1e1ef842a3e02644daeffa985f14ac11}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Output\+Used\+Zip64@{Output\+Used\+Zip64}}
+\index{Output\+Used\+Zip64@{Output\+Used\+Zip64}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Output\+Used\+Zip64}{OutputUsedZip64}}
+{\footnotesize\ttfamily Nullable$<$bool$>$ Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Output\+Used\+Zip64\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the entry actually used Z\+I\+P64 extensions, as it was most recently written to the output file or stream. 
+
+This Nullable property is null (Nothing in VB) until a {\ttfamily Save()} method on the containing \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} instance has been called. {\ttfamily Has\+Value} is true only after a {\ttfamily Save()} method has been called. 
+
+The value of this property for a particular {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} may change over successive calls to {\ttfamily Save()} methods on the containing \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, even if the file that corresponds to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} does not. This may happen if other entries contained in the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} expand, causing the offset for this particular entry to exceed 0x\+F\+F\+F\+F\+F\+F\+FF. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ac89b4cc0aff95adfa926c3649042d539}{Requires\+Zip64}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Password@{Password}}
+\index{Password@{Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily string Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Password\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+The Password to be used when encrypting a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} upon {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}}, or when decrypting an entry upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}}. 
+
+This is a write-\/only property on the entry. Set this to request that the entry be encrypted when writing the zip archive, or set it to specify the password to be used when extracting an existing entry that is encrypted. 
+
+The password set here is implicitly used to encrypt the entry during the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}} operation, or to decrypt during the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Extract()}} or \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a825692bb86f2c5da7eefc1e9714ae18c}{Open\+Reader()}} operation. If you set the Password on a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} after calling {\ttfamily Save()}, there is no effect. 
+
+Consider setting the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Encryption}} property when using a password. Answering concerns that the standard password protection supported by all zip tools is weak, Win\+Zip has extended the Z\+IP specification with a way to use A\+ES Encryption to protect entries in the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} file. Unlike the \char`\"{}\+P\+K\+Z\+I\+P 2.\+0\char`\"{} encryption specified in the P\+K\+Z\+IP specification, A\+ES Encryption
+
+uses a standard, strong, tested, encryption algorithm. Dot\+Net\+Zip can create zip archives that use Win\+Zip-\/compatible A\+ES encryption, if you set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Encryption}} property. But, archives created that use A\+ES encryption may not be readable by all other tools and libraries. For example, Windows Explorer cannot read a \char`\"{}compressed folder\char`\"{} (a zip file) that uses A\+ES encryption, though it can read a zip file that uses \char`\"{}\+P\+K\+Z\+I\+P encryption.\char`\"{} 
+
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class also has a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a32b5a69438b625f81303940ec70f9c39}{Zip\+File.\+Password}} property. This property takes precedence over any password set on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} itself. Typically, you would use the per-\/entry Password when most entries in the zip archive use one password, and a few entries use a different password. If all entries in the zip file use the same password, then it is simpler to just set this property on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} itself, whether creating a zip archive or extracting a zip archive. 
+
+Some comments on updating archives\+: If you read a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, you cannot modify the password on any encrypted entry, except by extracting the entry with the original password (if any), removing the original entry via \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_adc89fc6cc55422a648f860be36d6c02f}{Zip\+File.\+Remove\+Entry(\+Zip\+Entry)}}, and then adding a new entry with a new Password. 
+
+For example, suppose you read a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, and there is an encrypted entry. Setting the Password property on that {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} and then calling {\ttfamily Save()} on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} does not update the password on that entry in the archive. Neither is an exception thrown. Instead, what happens during the {\ttfamily Save()} is the existing entry is copied through to the new zip archive, in its original encrypted form. Upon re-\/reading that archive, the entry can be decrypted with its original password. 
+
+If you read a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, and there is an un-\/encrypted entry, you can set the {\ttfamily Password} on the entry and then call Save() on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, and get encryption on that entry. 
+
+This example creates a zip file with two entries, and then extracts the entries from the zip file. When creating the zip file, the two files are added to the zip file using password protection. Each entry uses a different password. During extraction, each file is extracted with the appropriate password. 
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// create a file with encryption}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}())
+\{
+    \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} entry;
+    entry= zip.AddFile(\textcolor{stringliteral}{"Declaration.txt"});
+    entry.Password= \textcolor{stringliteral}{"123456!"};
+    entry = zip.AddFile(\textcolor{stringliteral}{"Report.xls"});
+    entry.Password= \textcolor{stringliteral}{"1Secret!"};
+    zip.Save(\textcolor{stringliteral}{"EncryptedArchive.zip"});
+\}
+
+\textcolor{comment}{// extract entries that use encryption}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}} zip = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}.Read(\textcolor{stringliteral}{"EncryptedArchive.zip"}))
+\{
+    \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}} entry;
+    entry = zip[\textcolor{stringliteral}{"Declaration.txt"}];
+    entry.Password = \textcolor{stringliteral}{"123456!"};
+    entry.Extract(\textcolor{stringliteral}{"extractDir"});
+    entry = zip[\textcolor{stringliteral}{"Report.xls"}];
+    entry.Password = \textcolor{stringliteral}{"1Secret!"};
+    entry.Extract(\textcolor{stringliteral}{"extractDir"});
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Using zip As New \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}
+    Dim entry as \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a440b6d4d136b20dc6bdbdd399397e3a0}{ZipEntry}}
+    entry= zip.AddFile(\textcolor{stringliteral}{"Declaration.txt"})
+    entry.Password= \textcolor{stringliteral}{"123456!"}
+    entry = zip.AddFile(\textcolor{stringliteral}{"Report.xls"})
+    entry.Password= \textcolor{stringliteral}{"1Secret!"}
+    zip.Save(\textcolor{stringliteral}{"EncryptedArchive.zip"})
+End Using
+
+
+\textcolor{stringliteral}{' extract entries that use encryption}
+\textcolor{stringliteral}{Using (zip as ZipFile = ZipFile.Read("EncryptedArchive.zip"))}
+\textcolor{stringliteral}{    Dim entry as ZipEntry}
+\textcolor{stringliteral}{    entry = zip("Declaration.txt")}
+\textcolor{stringliteral}{    entry.Password = "123456!"}
+\textcolor{stringliteral}{    entry.Extract("extractDir")}
+\textcolor{stringliteral}{    entry = zip("Report.xls")}
+\textcolor{stringliteral}{    entry.Password = "1Secret!"}
+\textcolor{stringliteral}{    entry.Extract("extractDir")}
+\textcolor{stringliteral}{End Using}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Ionic.\+Zip.\+Zip\+Entry.\+Encryption}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a32b5a69438b625f81303940ec70f9c39}{Ionic.\+Zip.\+Zip\+File.\+Password}}
+
+
+\end{DoxySeeAlso}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a32b5a69438b625f81303940ec70f9c39}{Zip\+File.\+Password}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a29b5aae0611b60d5906ab25a1ed6c2f1}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a29b5aae0611b60d5906ab25a1ed6c2f1}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Provisional\+Alternate\+Encoding@{Provisional\+Alternate\+Encoding}}
+\index{Provisional\+Alternate\+Encoding@{Provisional\+Alternate\+Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Provisional\+Alternate\+Encoding}{ProvisionalAlternateEncoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Provisional\+Alternate\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The text encoding to use for the File\+Name and Comment on this \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}, when the default encoding is insufficient. 
+
+Don\textquotesingle{}t use this property. See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a7a5ff9afc8cad1de6fbfc76a7bf786ee}{Alternate\+Encoding}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ac89b4cc0aff95adfa926c3649042d539}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ac89b4cc0aff95adfa926c3649042d539}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Requires\+Zip64@{Requires\+Zip64}}
+\index{Requires\+Zip64@{Requires\+Zip64}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Requires\+Zip64}{RequiresZip64}}
+{\footnotesize\ttfamily Nullable$<$bool$>$ Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Requires\+Zip64\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the entry requires Z\+I\+P64 extensions. 
+
+This property is null (Nothing in VB) until a {\ttfamily Save()} method on the containing \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} instance has been called. The property is non-\/null ({\ttfamily Has\+Value} is true) only after a {\ttfamily Save()} method has been called. 
+
+After the containing {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} has been saved, the Value of this property is true if any of the following three conditions holds\+: the uncompressed size of the entry is larger than 0x\+F\+F\+F\+F\+F\+F\+FF; the compressed size of the entry is larger than 0x\+F\+F\+F\+F\+F\+F\+FF; the relative offset of the entry within the zip archive is larger than 0x\+F\+F\+F\+F\+F\+F\+FF. These quantities are not known until a {\ttfamily Save()} is attempted on the zip archive and the compression is applied. 
+
+If none of the three conditions holds, then the {\ttfamily Value} is false. 
+
+A {\ttfamily Value} of false does not indicate that the entry, as saved in the zip archive, does not use Z\+I\+P64. It merely indicates that Z\+I\+P64 is {\itshape not required}. An entry may use Z\+I\+P64 even when not required if the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aa6813ece810ffc34b633da96143383e6}{Zip\+File.\+Use\+Zip64\+When\+Saving}} property on the containing {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} instance is set to \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a68eec46437c384d8dad18d5464ebc35c}{Zip64\+Option.\+Always}}, or if the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aa6813ece810ffc34b633da96143383e6}{Zip\+File.\+Use\+Zip64\+When\+Saving}} property on the containing {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} instance is set to \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}{Zip64\+Option.\+As\+Necessary}} and the output stream was not seekable. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a1e1ef842a3e02644daeffa985f14ac11}{Output\+Used\+Zip64}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aa1417136aad30c1392834ce807438d58}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_aa1417136aad30c1392834ce807438d58}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Set\+Compression@{Set\+Compression}}
+\index{Set\+Compression@{Set\+Compression}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Set\+Compression}{SetCompression}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_ab6b15a72531220e6f98c46b594c9a849}{Set\+Compression\+Callback}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Set\+Compression\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A callback that allows the application to specify the compression to use for a given entry that is about to be added to the zip archive. 
+
+See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_abd6bdba1b63a17f284509bbc0fb66637}{Zip\+File.\+Set\+Compression}} \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9b8d8fe257d315d4407ad0ae81d98dde}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9b8d8fe257d315d4407ad0ae81d98dde}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Source@{Source}}
+\index{Source@{Source}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Source}{Source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83}{Zip\+Entry\+Source}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Source\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+An enum indicating the source of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab03dc475006c92fb01b760102d508220}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab03dc475006c92fb01b760102d508220}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Timestamp}{Timestamp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}{Zip\+Entry\+Timestamp}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Timestamp\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The type of timestamp attached to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+This property is valid only for a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} that was read from a zip archive. It indicates the type of timestamp attached to the entry. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_affabc22ba72be27e9134676becddcec7}{Emit\+Times\+In\+Windows\+Format\+When\+Saving}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_afd50bda347e67681780f32ebdba43f58}{Emit\+Times\+In\+Unix\+Format\+When\+Saving}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad41c71d426caa6377c1af3682bd2055c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad41c71d426caa6377c1af3682bd2055c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Uncompressed\+Size@{Uncompressed\+Size}}
+\index{Uncompressed\+Size@{Uncompressed\+Size}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Uncompressed\+Size}{UncompressedSize}}
+{\footnotesize\ttfamily Int64 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Uncompressed\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The size of the file, in bytes, before compression, or after extraction. 
+
+When reading a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, this value is read in from the existing zip file. When creating or updating a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}, the uncompressed size is computed during compression. Therefore the value on a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} is valid after a call to {\ttfamily Save()} (or one of its overloads) in that case. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a45604152b5da4f8c24ee1e89abb1c396}{Ionic.\+Zip.\+Zip\+Entry.\+Compressed\+Size}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a3aeaf32e0d2adbe6a5aaf1a70e1a6e7b}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a3aeaf32e0d2adbe6a5aaf1a70e1a6e7b}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Uses\+Encryption@{Uses\+Encryption}}
+\index{Uses\+Encryption@{Uses\+Encryption}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Uses\+Encryption}{UsesEncryption}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Uses\+Encryption\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+A derived property that is {\ttfamily true} if the entry uses encryption. 
+
+This is a readonly property on the entry. When reading a zip file, the value for the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} is determined by the data read from the zip file. After saving a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, the value of this property for each {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} indicates whether encryption was actually used (which will have been true if the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Password}} was set and the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Encryption}} property was something other than \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6a6adf97f83acf6453d4a6a4b1070f3754}{Encryption\+Algorithm.\+None}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a18a1d0cdb8d149e3be733736c8bef63c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a18a1d0cdb8d149e3be733736c8bef63c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Use\+Unicode\+As\+Necessary@{Use\+Unicode\+As\+Necessary}}
+\index{Use\+Unicode\+As\+Necessary@{Use\+Unicode\+As\+Necessary}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Use\+Unicode\+As\+Necessary}{UseUnicodeAsNecessary}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Use\+Unicode\+As\+Necessary\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set to indicate whether to use U\+T\+F-\/8 encoding for filenames and comments. 
+
+If this flag is set, the comment and filename for the entry will be encoded with U\+T\+F-\/8, as described in the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification
+
+, if necessary. \char`\"{}\+Necessary\char`\"{} means, the filename or entry comment (if any) cannot be reflexively encoded and decoded using the default code page, I\+B\+M437. 
+
+Setting this flag to true is equivalent to setting \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a29b5aae0611b60d5906ab25a1ed6c2f1}{Provisional\+Alternate\+Encoding}} to {\ttfamily System.\+Text.\+Encoding.\+U\+T\+F8}. 
+
+This flag has no effect or relation to the text encoding used within the file itself. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a20cc898535b0cc01abc025d4678050be}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a20cc898535b0cc01abc025d4678050be}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Version\+Needed@{Version\+Needed}}
+\index{Version\+Needed@{Version\+Needed}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Version\+Needed}{VersionNeeded}}
+{\footnotesize\ttfamily Int16 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Version\+Needed\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The version of the zip engine needed to read the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+This is a readonly property, indicating the version of \href{http://www.pkware.com/documents/casestudies/APPNOTE.TXT}{\tt the Zip specification} that the extracting tool or library must support to extract the given entry. Generally higher versions indicate newer features. Older zip engines obviously won\textquotesingle{}t know about new features, and won\textquotesingle{}t be able to extract entries that depend on those newer features. 
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ value }&\textbf{ Features 
+
+}\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ value }&\textbf{ Features 
+
+}\\\cline{1-2}
+\endhead
+20 &a basic \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} Entry, potentially using P\+K\+Z\+IP encryption.  
+
+\\\cline{1-2}
+45 &The Z\+I\+P64 extension is used on the entry.  
+
+\\\cline{1-2}
+46 &File is compressed using B\+Z\+I\+P2 compression$\ast$ 
+
+\\\cline{1-2}
+50 &File is encrypted using Pk\+Ware\textquotesingle{}s D\+ES, 3\+D\+ES, (broken) R\+C2 or R\+C4 
+
+\\\cline{1-2}
+51 &File is encrypted using P\+K\+Ware\textquotesingle{}s A\+ES encryption or corrected R\+C2 encryption. 
+
+\\\cline{1-2}
+52 &File is encrypted using corrected R\+C2-\/64 encryption$\ast$$\ast$ 
+
+\\\cline{1-2}
+61 &File is encrypted using non-\/\+O\+A\+EP key wrapping$\ast$$\ast$$\ast$ 
+
+\\\cline{1-2}
+63 &File is compressed using L\+Z\+MA, P\+P\+Md+, Blowfish, or Twofish 
+
+\\\cline{1-2}
+\end{longtabu}
+
+
+There are other values possible, not listed here. Dot\+Net\+Zip supports regular P\+K\+Zip encryption, and Z\+I\+P64 extensions. Dot\+Net\+Zip cannot extract entries that require a zip engine higher than 45. 
+
+This value is set upon reading an existing zip file, or after saving a zip archive. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a55a679298f00c5eef672e947c6293304}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a55a679298f00c5eef672e947c6293304}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}!Zip\+Error\+Action@{Zip\+Error\+Action}}
+\index{Zip\+Error\+Action@{Zip\+Error\+Action}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Entry}}
+\subsubsection{\texorpdfstring{Zip\+Error\+Action}{ZipErrorAction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593}{Zip\+Error\+Action}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry.\+Zip\+Error\+Action\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The action to take when an error is encountered while opening or reading files as they are saved into a zip archive. 
+
+Errors can occur within a call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save}}, as the various files contained in a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} are being saved into the zip archive. During the {\ttfamily Save}, Dot\+Net\+Zip will perform a {\ttfamily File.\+Open} on the file associated to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}, and then will read the entire contents of the file as it is zipped. Either the open or the Read may fail, because of lock conflicts or other reasons. Using this property, you can specify the action to take when such errors occur. 
+
+Typically you will N\+OT set this property on individual \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} instances. Instead, you will set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a68ea59eb815f14ecc6f060da3a77e5a6}{Zip\+File.\+Zip\+Error\+Action}} property on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} instance, before adding any entries to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. If you do this, errors encountered on behalf of any of the entries in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} will be handled the same way. 
+
+But, if you use a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a9c72461567386905e4e52ccb312e4812}{Zip\+File.\+Zip\+Error}} handler, you will want to set this property on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} within the handler, to communicate back to Dot\+Net\+Zip what you would like to do with the particular error. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a68ea59eb815f14ecc6f060da3a77e5a6}{Ionic.\+Zip.\+Zip\+File.\+Zip\+Error\+Action}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a9c72461567386905e4e52ccb312e4812}{Ionic.\+Zip.\+Zip\+File.\+Zip\+Error}}
+
+
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Dir\+Entry.\+cs\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Entry.\+cs\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Entry.\+Extract.\+cs\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Entry.\+Read.\+cs\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Entry.\+Write.\+cs\end{DoxyCompactItemize}

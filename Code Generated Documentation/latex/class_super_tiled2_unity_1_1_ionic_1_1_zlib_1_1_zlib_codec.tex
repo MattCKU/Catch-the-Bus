@@ -1,0 +1,730 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec@{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec}}
+
+
+Encoder and Decoder for Z\+L\+IB and D\+E\+F\+L\+A\+TE (I\+E\+TF R\+F\+C1950 and R\+F\+C1951).  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{Zlib\+Codec}} ()
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a447cfe7e7f49e1b5512b7942acb901a4}{Zlib\+Codec}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}} mode)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} that either compresses or decompresses. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aa50e75125aea07774abc7a65b10e1926}{Initialize\+Inflate}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the inflation state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a2010b019c7053bddd33ef8330281019e}{Initialize\+Inflate}} (bool expect\+Rfc1950\+Header)
+\begin{DoxyCompactList}\small\item\em Initialize the inflation state with an explicit flag to govern the handling of R\+F\+C1950 header bytes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a7e6db58967fbb7a5ed726aa8922e3406}{Initialize\+Inflate}} (int window\+Bits)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for inflation, with the specified number of window bits. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a3104516f5fd8ab82eac15ee761d7bb91}{Initialize\+Inflate}} (int window\+Bits, bool expect\+Rfc1950\+Header)
+\begin{DoxyCompactList}\small\item\em Initialize the inflation state with an explicit flag to govern the handling of R\+F\+C1950 header bytes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{Flush\+Type}} flush)
+\begin{DoxyCompactList}\small\item\em Inflate the data in the Input\+Buffer, placing the result in the Output\+Buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a66b84e956a676ace6e5acda167693d92}{End\+Inflate}} ()
+\begin{DoxyCompactList}\small\item\em Ends an inflation session. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8cc5d2325d22513a02d5fef0ec28a411}{Sync\+Inflate}} ()
+\begin{DoxyCompactList}\small\item\em I don\textquotesingle{}t know what this does! \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8554eab826711fc8aaccfc039cf2f372}{Initialize\+Deflate}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aae6025281e278a40df628d36d5978489}{Initialize\+Deflate}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9fb0d3886b2c4739307430311bf5eb3a}{Initialize\+Deflate}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level, bool want\+Rfc1950\+Header)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level, and the explicit flag governing whether to emit an R\+F\+C1950 header byte pair. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a329599d94558959d401bef274faf3842}{Initialize\+Deflate}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level, int bits)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level, and the specified number of window bits. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_acb745f70067c5b131d3306ae84f17c5f}{Initialize\+Deflate}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level, int bits, bool want\+Rfc1950\+Header)
+\begin{DoxyCompactList}\small\item\em Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level, the specified number of window bits, and the explicit flag governing whether to emit an R\+F\+C1950 header byte pair. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}{Deflate}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{Flush\+Type}} flush)
+\begin{DoxyCompactList}\small\item\em Deflate one batch of data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af27aed7df6b5594215c311219d56ee35}{End\+Deflate}} ()
+\begin{DoxyCompactList}\small\item\em End a deflation session. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a75cf8e1228a42f1646f4697059e24d8a}{Reset\+Deflate}} ()
+\begin{DoxyCompactList}\small\item\em Reset a codec for another deflation session. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afa2870874eea3783d45f87599760dffa}{Set\+Deflate\+Params}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Compression\+Strategy}} strategy)
+\begin{DoxyCompactList}\small\item\em Set the Compression\+Strategy and Compression\+Level for a deflation session. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a0d2bbfa7f01f3ddaa8637ab022aa61af}{Set\+Dictionary}} (byte\mbox{[}$\,$\mbox{]} dictionary)
+\begin{DoxyCompactList}\small\item\em Set the dictionary to be used for either Inflation or Deflation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a402b3630c322f33762b0a5ac1e176eef}{Input\+Buffer}}
+\begin{DoxyCompactList}\small\item\em The buffer from which data is taken. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_ab29880bc78b6c9968ebe9a89e90734c2}{Next\+In}}
+\begin{DoxyCompactList}\small\item\em An index into the Input\+Buffer array, indicating where to start reading. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_adc3350c2298e0341dc75e7724de140f3}{Available\+Bytes\+In}}
+\begin{DoxyCompactList}\small\item\em The number of bytes available in the Input\+Buffer, starting at Next\+In. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a391c4ea8048d19b0784929372149a200}{Total\+Bytes\+In}}
+\begin{DoxyCompactList}\small\item\em Total number of bytes read so far, through all calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}}/\+Deflate(). \end{DoxyCompactList}\item 
+byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aaee897c42c02cc7d967e13a8189de8a3}{Output\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Buffer to store output data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_ad9ff05beba7eadf8937e071d3370ccc1}{Next\+Out}}
+\begin{DoxyCompactList}\small\item\em An index into the Output\+Buffer array, indicating where to start writing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a50fd2ef7680382786fe5c35b46a48207}{Available\+Bytes\+Out}}
+\begin{DoxyCompactList}\small\item\em The number of bytes available in the Output\+Buffer, starting at Next\+Out. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8f8527e39db5c3b855dd79f2b02de8d0}{Total\+Bytes\+Out}}
+\begin{DoxyCompactList}\small\item\em Total number of bytes written to the output so far, through all calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}}/\+Deflate(). \end{DoxyCompactList}\item 
+System.\+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af3f680d470f3792d3918273bc48dc4d7}{Message}}
+\begin{DoxyCompactList}\small\item\em used for diagnostics, when something goes wrong! \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a47b2e1b70011088f4a05dbbe16d6cb77}{Compress\+Level}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7dba7a1920d61156abc05a60135aefe8bc67}{Compression\+Level.\+Default}}
+\begin{DoxyCompactList}\small\item\em The compression level to use in this codec. Useful only in compression mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a054b7ff1da2e1bac82b771808706398c}{Window\+Bits}} = Zlib\+Constants.\+Window\+Bits\+Default
+\begin{DoxyCompactList}\small\item\em The number of Window Bits to use. ~\newline
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Compression\+Strategy}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a3fd796243c20c482c781744e0e651519}{Strategy}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7dba7a1920d61156abc05a60135aefe8bc67}{Compression\+Strategy.\+Default}}
+\begin{DoxyCompactList}\small\item\em The compression strategy to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8874d5a22e1d940e2fa5572193e378f7}{Adler32}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Adler32 checksum on the data transferred through the codec so far. You probably don\textquotesingle{}t need to look at this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encoder and Decoder for Z\+L\+IB and D\+E\+F\+L\+A\+TE (I\+E\+TF R\+F\+C1950 and R\+F\+C1951). 
+
+This class compresses and decompresses data according to the Deflate algorithm and optionally, the Z\+L\+IB format, as documented in R\+FC 1950 -\/ Z\+L\+IB
+
+and R\+FC 1951 -\/ D\+E\+F\+L\+A\+TE
+
+. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Zlib\+Codec@{Zlib\+Codec}}
+\index{Zlib\+Codec@{Zlib\+Codec}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Zlib\+Codec()}{ZlibCodec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Zlib\+Codec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}}. 
+
+If you use this default constructor, you will later have to explicitly call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aa50e75125aea07774abc7a65b10e1926}{Initialize\+Inflate()}} or \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8554eab826711fc8aaccfc039cf2f372}{Initialize\+Deflate()}} before using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} to compress or decompress. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a447cfe7e7f49e1b5512b7942acb901a4}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a447cfe7e7f49e1b5512b7942acb901a4}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Zlib\+Codec@{Zlib\+Codec}}
+\index{Zlib\+Codec@{Zlib\+Codec}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Zlib\+Codec()}{ZlibCodec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Zlib\+Codec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} that either compresses or decompresses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Indicates whether the codec should compress (deflate) or decompress (inflate). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Deflate@{Deflate}}
+\index{Deflate@{Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Deflate()}{Deflate()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Deflate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{Flush\+Type}}}]{flush }\end{DoxyParamCaption})}
+
+
+
+Deflate one batch of data. 
+
+You must have set Input\+Buffer and Output\+Buffer before calling this method. 
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} DeflateBuffer(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{CompressionLevel}} level)
+\{
+    \textcolor{keywordtype}{int} bufferSize = 1024;
+    byte[] buffer = \textcolor{keyword}{new} byte[bufferSize];
+    \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{ZlibCodec}} compressor = \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{ZlibCodec}}();
+
+    Console.WriteLine(\textcolor{stringliteral}{"\(\backslash\)n============================================"});
+    Console.WriteLine(\textcolor{stringliteral}{"Size of Buffer to Deflate: \{0\} bytes."}, UncompressedBytes.Length);
+    MemoryStream ms = \textcolor{keyword}{new} MemoryStream();
+
+    \textcolor{keywordtype}{int} rc = compressor.InitializeDeflate(level);
+
+    compressor.InputBuffer = UncompressedBytes;
+    compressor.NextIn = 0;
+    compressor.AvailableBytesIn = UncompressedBytes.Length;
+
+    compressor.OutputBuffer = buffer;
+
+    \textcolor{comment}{// pass 1: deflate }
+    \textcolor{keywordflow}{do}
+    \{
+        compressor.NextOut = 0;
+        compressor.AvailableBytesOut = buffer.Length;
+        rc = compressor.Deflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{FlushType}}.None);
+
+        \textcolor{keywordflow}{if} (rc != ZlibConstants.Z\_OK &amp;&amp; rc != ZlibConstants.Z\_STREAM\_END)
+            \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"deflating: "} + compressor.Message);
+
+        ms.Write(compressor.OutputBuffer, 0, buffer.Length - compressor.AvailableBytesOut);
+    \}
+    \textcolor{keywordflow}{while} (compressor.AvailableBytesIn > 0 || compressor.AvailableBytesOut == 0);
+
+    \textcolor{comment}{// pass 2: finish and flush}
+    \textcolor{keywordflow}{do}
+    \{
+        compressor.NextOut = 0;
+        compressor.AvailableBytesOut = buffer.Length;
+        rc = compressor.Deflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{FlushType}}.Finish);
+
+        \textcolor{keywordflow}{if} (rc != ZlibConstants.Z\_STREAM\_END &amp;&amp; rc != ZlibConstants.Z\_OK)
+            \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"deflating: "} + compressor.Message);
+
+        \textcolor{keywordflow}{if} (buffer.Length - compressor.AvailableBytesOut > 0)
+            ms.Write(buffer, 0, buffer.Length - compressor.AvailableBytesOut);
+    \}
+    \textcolor{keywordflow}{while} (compressor.AvailableBytesIn > 0 || compressor.AvailableBytesOut == 0);
+
+    compressor.EndDeflate();
+
+    ms.Seek(0, SeekOrigin.Begin);
+    CompressedBytes = \textcolor{keyword}{new} byte[compressor.TotalBytesOut];
+    ms.Read(CompressedBytes, 0, CompressedBytes.Length);
+\}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flush} & whether to flush all data as you deflate. Generally you will want to use Z\+\_\+\+N\+O\+\_\+\+F\+L\+U\+SH here, in a series of calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}{Deflate()}}, and then call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af27aed7df6b5594215c311219d56ee35}{End\+Deflate()}} to flush everything. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af27aed7df6b5594215c311219d56ee35}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af27aed7df6b5594215c311219d56ee35}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!End\+Deflate@{End\+Deflate}}
+\index{End\+Deflate@{End\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{End\+Deflate()}{EndDeflate()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+End\+Deflate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+End a deflation session. 
+
+Call this after making a series of one or more calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}{Deflate()}}. All buffers are flushed. 
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a66b84e956a676ace6e5acda167693d92}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a66b84e956a676ace6e5acda167693d92}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!End\+Inflate@{End\+Inflate}}
+\index{End\+Inflate@{End\+Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{End\+Inflate()}{EndInflate()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+End\+Inflate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends an inflation session. 
+
+Call this after successively calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}}. This will cause all buffers to be flushed. After calling this you cannot call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}} without a intervening call to one of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aa50e75125aea07774abc7a65b10e1926}{Initialize\+Inflate()}} overloads. 
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if everything goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Inflate@{Inflate}}
+\index{Inflate@{Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Inflate()}{Inflate()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Inflate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{Flush\+Type}}}]{flush }\end{DoxyParamCaption})}
+
+
+
+Inflate the data in the Input\+Buffer, placing the result in the Output\+Buffer. 
+
+You must have set Input\+Buffer and Output\+Buffer, Next\+In and Next\+Out, and Available\+Bytes\+In and Available\+Bytes\+Out before calling this method. 
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} InflateBuffer()
+\{
+    \textcolor{keywordtype}{int} bufferSize = 1024;
+    byte[] buffer = \textcolor{keyword}{new} byte[bufferSize];
+    \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{ZlibCodec}} decompressor = \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{ZlibCodec}}();
+
+    Console.WriteLine(\textcolor{stringliteral}{"\(\backslash\)n============================================"});
+    Console.WriteLine(\textcolor{stringliteral}{"Size of Buffer to Inflate: \{0\} bytes."}, CompressedBytes.Length);
+    MemoryStream ms = \textcolor{keyword}{new} MemoryStream(DecompressedBytes);
+
+    \textcolor{keywordtype}{int} rc = decompressor.InitializeInflate();
+
+    decompressor.InputBuffer = CompressedBytes;
+    decompressor.NextIn = 0;
+    decompressor.AvailableBytesIn = CompressedBytes.Length;
+
+    decompressor.OutputBuffer = buffer;
+
+    \textcolor{comment}{// pass 1: inflate }
+    \textcolor{keywordflow}{do}
+    \{
+        decompressor.NextOut = 0;
+        decompressor.AvailableBytesOut = buffer.Length;
+        rc = decompressor.Inflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{FlushType}}.None);
+
+        \textcolor{keywordflow}{if} (rc != ZlibConstants.Z\_OK &amp;&amp; rc != ZlibConstants.Z\_STREAM\_END)
+            \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"inflating: "} + decompressor.Message);
+
+        ms.Write(decompressor.OutputBuffer, 0, buffer.Length - decompressor.AvailableBytesOut);
+    \}
+    \textcolor{keywordflow}{while} (decompressor.AvailableBytesIn > 0 || decompressor.AvailableBytesOut == 0);
+
+    \textcolor{comment}{// pass 2: finish and flush}
+    \textcolor{keywordflow}{do}
+    \{
+        decompressor.NextOut = 0;
+        decompressor.AvailableBytesOut = buffer.Length;
+        rc = decompressor.Inflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{FlushType}}.Finish);
+
+        \textcolor{keywordflow}{if} (rc != ZlibConstants.Z\_STREAM\_END &amp;&amp; rc != ZlibConstants.Z\_OK)
+            \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"inflating: "} + decompressor.Message);
+
+        \textcolor{keywordflow}{if} (buffer.Length - decompressor.AvailableBytesOut > 0)
+            ms.Write(buffer, 0, buffer.Length - decompressor.AvailableBytesOut);
+    \}
+    \textcolor{keywordflow}{while} (decompressor.AvailableBytesIn > 0 || decompressor.AvailableBytesOut == 0);
+
+    decompressor.EndInflate();
+\}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flush} & The flush to use when inflating.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if everything goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8554eab826711fc8aaccfc039cf2f372}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8554eab826711fc8aaccfc039cf2f372}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Deflate@{Initialize\+Deflate}}
+\index{Initialize\+Deflate@{Initialize\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Deflate()}{InitializeDeflate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Deflate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation. 
+
+The codec will use the M\+AX window bits and the default level of compression. 
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} bufferSize = 40000;
+byte[] CompressedBytes = \textcolor{keyword}{new} byte[bufferSize];
+byte[] DecompressedBytes = \textcolor{keyword}{new} byte[bufferSize];
+
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{ZlibCodec}} compressor = \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afb741f3d8822709c3fe17ff284d537ab}{ZlibCodec}}();
+
+compressor.InitializeDeflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{CompressionLevel}}.Default);
+
+compressor.InputBuffer = \mbox{\hyperlink{namespace_system}{System}}.Text.ASCIIEncoding.ASCII.GetBytes(TextToCompress);
+compressor.NextIn = 0;
+compressor.AvailableBytesIn = compressor.InputBuffer.Length;
+
+compressor.OutputBuffer = CompressedBytes;
+compressor.NextOut = 0;
+compressor.AvailableBytesOut = CompressedBytes.Length;
+
+\textcolor{keywordflow}{while} (compressor.TotalBytesIn != TextToCompress.Length &amp;&amp; compressor.TotalBytesOut < bufferSize)
+\{
+  compressor.Deflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{FlushType}}.None);
+\}
+
+\textcolor{keywordflow}{while} (\textcolor{keyword}{true})
+\{
+  \textcolor{keywordtype}{int} rc= compressor.Deflate(\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{FlushType}}.Finish);
+  \textcolor{keywordflow}{if} (rc == ZlibConstants.Z\_STREAM\_END) \textcolor{keywordflow}{break};
+\}
+
+compressor.EndDeflate();
+\end{DoxyCode}
+ 
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well. You generally don\textquotesingle{}t need to check the return code.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aae6025281e278a40df628d36d5978489}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aae6025281e278a40df628d36d5978489}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Deflate@{Initialize\+Deflate}}
+\index{Initialize\+Deflate@{Initialize\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Deflate()}{InitializeDeflate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Deflate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level. 
+
+The codec will use the maximum window bits (15) and the specified Compression\+Level. It will emit a Z\+L\+IB stream as it compresses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The compression level for the codec.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9fb0d3886b2c4739307430311bf5eb3a}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9fb0d3886b2c4739307430311bf5eb3a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Deflate@{Initialize\+Deflate}}
+\index{Initialize\+Deflate@{Initialize\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Deflate()}{InitializeDeflate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Deflate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level,  }\item[{bool}]{want\+Rfc1950\+Header }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level, and the explicit flag governing whether to emit an R\+F\+C1950 header byte pair. 
+
+The codec will use the maximum window bits (15) and the specified Compression\+Level. If you want to generate a zlib stream, you should specify true for want\+Rfc1950\+Header. In this case, the library will emit a Z\+L\+IB header, as defined in R\+FC 1950
+
+, in the compressed stream. ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The compression level for the codec.\\
+\hline
+{\em want\+Rfc1950\+Header} & whether to emit an initial R\+F\+C1950 byte pair in the compressed stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a329599d94558959d401bef274faf3842}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a329599d94558959d401bef274faf3842}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Deflate@{Initialize\+Deflate}}
+\index{Initialize\+Deflate@{Initialize\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Deflate()}{InitializeDeflate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Deflate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level,  }\item[{int}]{bits }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level, and the specified number of window bits. 
+
+The codec will use the specified number of window bits and the specified Compression\+Level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The compression level for the codec.\\
+\hline
+{\em bits} & the number of window bits to use. If you don\textquotesingle{}t know what this means, don\textquotesingle{}t use this method.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_acb745f70067c5b131d3306ae84f17c5f}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_acb745f70067c5b131d3306ae84f17c5f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Deflate@{Initialize\+Deflate}}
+\index{Initialize\+Deflate@{Initialize\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Deflate()}{InitializeDeflate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Deflate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level,  }\item[{int}]{bits,  }\item[{bool}]{want\+Rfc1950\+Header }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for deflation operation, using the specified Compression\+Level, the specified number of window bits, and the explicit flag governing whether to emit an R\+F\+C1950 header byte pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The compression level for the codec.\\
+\hline
+{\em want\+Rfc1950\+Header} & whether to emit an initial R\+F\+C1950 byte pair in the compressed stream.\\
+\hline
+{\em bits} & the number of window bits to use. If you don\textquotesingle{}t know what this means, don\textquotesingle{}t use this method.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aa50e75125aea07774abc7a65b10e1926}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aa50e75125aea07774abc7a65b10e1926}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Inflate@{Initialize\+Inflate}}
+\index{Initialize\+Inflate@{Initialize\+Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Inflate()}{InitializeInflate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Inflate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the inflation state. 
+
+It is not necessary to call this before using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} to inflate data; It is implicitly called when you call the constructor. 
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if everything goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a2010b019c7053bddd33ef8330281019e}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a2010b019c7053bddd33ef8330281019e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Inflate@{Initialize\+Inflate}}
+\index{Initialize\+Inflate@{Initialize\+Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Inflate()}{InitializeInflate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Inflate (\begin{DoxyParamCaption}\item[{bool}]{expect\+Rfc1950\+Header }\end{DoxyParamCaption})}
+
+
+
+Initialize the inflation state with an explicit flag to govern the handling of R\+F\+C1950 header bytes. 
+
+By default, the Z\+L\+IB header defined in R\+FC 1950
+
+is expected. If you want to read a zlib stream you should specify true for expect\+Rfc1950\+Header. If you have a deflate stream, you will want to specify false. It is only necessary to invoke this initializer explicitly if you want to specify false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expect\+Rfc1950\+Header} & whether to expect an R\+F\+C1950 header byte pair when reading the stream of data to be inflated.\\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if everything goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a7e6db58967fbb7a5ed726aa8922e3406}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a7e6db58967fbb7a5ed726aa8922e3406}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Inflate@{Initialize\+Inflate}}
+\index{Initialize\+Inflate@{Initialize\+Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Inflate()}{InitializeInflate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Inflate (\begin{DoxyParamCaption}\item[{int}]{window\+Bits }\end{DoxyParamCaption})}
+
+
+
+Initialize the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec}{Zlib\+Codec}} for inflation, with the specified number of window bits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Bits} & The number of window bits to use. If you need to ask what that is, then you shouldn\textquotesingle{}t be calling this initializer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a3104516f5fd8ab82eac15ee761d7bb91}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a3104516f5fd8ab82eac15ee761d7bb91}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Initialize\+Inflate@{Initialize\+Inflate}}
+\index{Initialize\+Inflate@{Initialize\+Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Initialize\+Inflate()}{InitializeInflate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Initialize\+Inflate (\begin{DoxyParamCaption}\item[{int}]{window\+Bits,  }\item[{bool}]{expect\+Rfc1950\+Header }\end{DoxyParamCaption})}
+
+
+
+Initialize the inflation state with an explicit flag to govern the handling of R\+F\+C1950 header bytes. 
+
+If you want to read a zlib stream you should specify true for expect\+Rfc1950\+Header. In this case, the library will expect to find a Z\+L\+IB header, as defined in R\+FC 1950
+
+, in the compressed stream. If you will be reading a D\+E\+F\+L\+A\+TE or G\+Z\+IP stream, which does not have such a header, you will want to specify false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expect\+Rfc1950\+Header} & whether to expect an R\+F\+C1950 header byte pair when reading the stream of data to be inflated.\\
+\hline
+{\em window\+Bits} & The number of window bits to use. If you need to ask what that is, then you shouldn\textquotesingle{}t be calling this initializer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if everything goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a75cf8e1228a42f1646f4697059e24d8a}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a75cf8e1228a42f1646f4697059e24d8a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Reset\+Deflate@{Reset\+Deflate}}
+\index{Reset\+Deflate@{Reset\+Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Reset\+Deflate()}{ResetDeflate()}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Reset\+Deflate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset a codec for another deflation session. 
+
+Call this to reset the deflation state. For example if a thread is deflating non-\/consecutive blocks, you can call Reset() after the Deflate(\+Sync) of the first block and before the next Deflate(\+None) of the second block. 
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afa2870874eea3783d45f87599760dffa}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afa2870874eea3783d45f87599760dffa}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Set\+Deflate\+Params@{Set\+Deflate\+Params}}
+\index{Set\+Deflate\+Params@{Set\+Deflate\+Params}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Set\+Deflate\+Params()}{SetDeflateParams()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Set\+Deflate\+Params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Compression\+Strategy}}}]{strategy }\end{DoxyParamCaption})}
+
+
+
+Set the Compression\+Strategy and Compression\+Level for a deflation session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & the level of compression to use.\\
+\hline
+{\em strategy} & the strategy to use for compression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a0d2bbfa7f01f3ddaa8637ab022aa61af}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a0d2bbfa7f01f3ddaa8637ab022aa61af}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Set\+Dictionary@{Set\+Dictionary}}
+\index{Set\+Dictionary@{Set\+Dictionary}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Set\+Dictionary()}{SetDictionary()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Set\+Dictionary (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{dictionary }\end{DoxyParamCaption})}
+
+
+
+Set the dictionary to be used for either Inflation or Deflation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dictionary} & The dictionary bytes to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if all goes well.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8cc5d2325d22513a02d5fef0ec28a411}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8cc5d2325d22513a02d5fef0ec28a411}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Sync\+Inflate@{Sync\+Inflate}}
+\index{Sync\+Inflate@{Sync\+Inflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Sync\+Inflate()}{SyncInflate()}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Sync\+Inflate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+I don\textquotesingle{}t know what this does! 
+
+\begin{DoxyReturn}{Returns}
+Z\+\_\+\+OK if everything goes well.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_adc3350c2298e0341dc75e7724de140f3}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_adc3350c2298e0341dc75e7724de140f3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Available\+Bytes\+In@{Available\+Bytes\+In}}
+\index{Available\+Bytes\+In@{Available\+Bytes\+In}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Available\+Bytes\+In}{AvailableBytesIn}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Available\+Bytes\+In}
+
+
+
+The number of bytes available in the Input\+Buffer, starting at Next\+In. 
+
+Generally you should set this to Input\+Buffer.\+Length before the first \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}} or \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}{Deflate()}} call. The class will update this number as calls to Inflate/\+Deflate are made. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a50fd2ef7680382786fe5c35b46a48207}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a50fd2ef7680382786fe5c35b46a48207}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Available\+Bytes\+Out@{Available\+Bytes\+Out}}
+\index{Available\+Bytes\+Out@{Available\+Bytes\+Out}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Available\+Bytes\+Out}{AvailableBytesOut}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Available\+Bytes\+Out}
+
+
+
+The number of bytes available in the Output\+Buffer, starting at Next\+Out. 
+
+Generally you should set this to Output\+Buffer.\+Length before the first \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}} or \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_afeb80a3bb4f9bfdbe76e7364d617808c}{Deflate()}} call. The class will update this number as calls to Inflate/\+Deflate are made. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a47b2e1b70011088f4a05dbbe16d6cb77}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a47b2e1b70011088f4a05dbbe16d6cb77}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Compress\+Level@{Compress\+Level}}
+\index{Compress\+Level@{Compress\+Level}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Compress\+Level}{CompressLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Compress\+Level = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7dba7a1920d61156abc05a60135aefe8bc67}{Compression\+Level.\+Default}}}
+
+
+
+The compression level to use in this codec. Useful only in compression mode. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a402b3630c322f33762b0a5ac1e176eef}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a402b3630c322f33762b0a5ac1e176eef}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Input\+Buffer@{Input\+Buffer}}
+\index{Input\+Buffer@{Input\+Buffer}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Input\+Buffer}{InputBuffer}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Input\+Buffer}
+
+
+
+The buffer from which data is taken. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af3f680d470f3792d3918273bc48dc4d7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_af3f680d470f3792d3918273bc48dc4d7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Message@{Message}}
+\index{Message@{Message}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily System.\+String Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Message}
+
+
+
+used for diagnostics, when something goes wrong! 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_ab29880bc78b6c9968ebe9a89e90734c2}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_ab29880bc78b6c9968ebe9a89e90734c2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Next\+In@{Next\+In}}
+\index{Next\+In@{Next\+In}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Next\+In}{NextIn}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Next\+In}
+
+
+
+An index into the Input\+Buffer array, indicating where to start reading. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_ad9ff05beba7eadf8937e071d3370ccc1}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_ad9ff05beba7eadf8937e071d3370ccc1}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Next\+Out@{Next\+Out}}
+\index{Next\+Out@{Next\+Out}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Next\+Out}{NextOut}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Next\+Out}
+
+
+
+An index into the Output\+Buffer array, indicating where to start writing. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aaee897c42c02cc7d967e13a8189de8a3}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_aaee897c42c02cc7d967e13a8189de8a3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Output\+Buffer@{Output\+Buffer}}
+\index{Output\+Buffer@{Output\+Buffer}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Output\+Buffer}{OutputBuffer}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Output\+Buffer}
+
+
+
+Buffer to store output data. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a3fd796243c20c482c781744e0e651519}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a3fd796243c20c482c781744e0e651519}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Strategy@{Strategy}}
+\index{Strategy@{Strategy}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Strategy}{Strategy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Compression\+Strategy}} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Strategy = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7dba7a1920d61156abc05a60135aefe8bc67}{Compression\+Strategy.\+Default}}}
+
+
+
+The compression strategy to use. 
+
+This is only effective in compression. The theory offered by Z\+L\+IB is that different strategies could potentially produce significant differences in compression behavior for different data sets. Unfortunately I don\textquotesingle{}t have any good recommendations for how to set it differently. When I tested changing the strategy I got minimally different compression performance. It\textquotesingle{}s best to leave this property alone if you don\textquotesingle{}t have a good feel for it. Or, you may want to produce a test harness that runs through the different strategy options and evaluates them on different file types. If you do that, let me know your results. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a391c4ea8048d19b0784929372149a200}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a391c4ea8048d19b0784929372149a200}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Total\+Bytes\+In@{Total\+Bytes\+In}}
+\index{Total\+Bytes\+In@{Total\+Bytes\+In}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Total\+Bytes\+In}{TotalBytesIn}}
+{\footnotesize\ttfamily long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Total\+Bytes\+In}
+
+
+
+Total number of bytes read so far, through all calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}}/\+Deflate(). 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8f8527e39db5c3b855dd79f2b02de8d0}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8f8527e39db5c3b855dd79f2b02de8d0}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Total\+Bytes\+Out@{Total\+Bytes\+Out}}
+\index{Total\+Bytes\+Out@{Total\+Bytes\+Out}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Total\+Bytes\+Out}{TotalBytesOut}}
+{\footnotesize\ttfamily long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Total\+Bytes\+Out}
+
+
+
+Total number of bytes written to the output so far, through all calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a9586e5a25c06331824638439938ac8c8}{Inflate()}}/\+Deflate(). 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a054b7ff1da2e1bac82b771808706398c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a054b7ff1da2e1bac82b771808706398c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Window\+Bits@{Window\+Bits}}
+\index{Window\+Bits@{Window\+Bits}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Window\+Bits}{WindowBits}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Window\+Bits = Zlib\+Constants.\+Window\+Bits\+Default}
+
+
+
+The number of Window Bits to use. ~\newline
+
+
+This gauges the size of the sliding window, and hence the compression effectiveness as well as memory consumption. It\textquotesingle{}s best to just leave this setting alone if you don\textquotesingle{}t know what it is. The maximum value is 15 bits, which implies a 32k window. ~\newline
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8874d5a22e1d940e2fa5572193e378f7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_codec_a8874d5a22e1d940e2fa5572193e378f7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}!Adler32@{Adler32}}
+\index{Adler32@{Adler32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Zlib\+Codec}}
+\subsubsection{\texorpdfstring{Adler32}{Adler32}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Zlib\+Codec.\+Adler32\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The Adler32 checksum on the data transferred through the codec so far. You probably don\textquotesingle{}t need to look at this. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zlib/Zlib\+Codec.\+cs\end{DoxyCompactItemize}

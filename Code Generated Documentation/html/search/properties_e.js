@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['selectioncriteria',['SelectionCriteria',['../class_super_tiled2_unity_1_1_ionic_1_1_file_selector.html#a0f2d26f8fb39862f504bc0069365ff39',1,'SuperTiled2Unity::Ionic::FileSelector']]],
+  ['setcompression',['SetCompression',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry.html#aa1417136aad30c1392834ce807438d58',1,'SuperTiled2Unity.Ionic.Zip.ZipEntry.SetCompression()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file.html#abd6bdba1b63a17f284509bbc0fb66637',1,'SuperTiled2Unity.Ionic.Zip.ZipFile.SetCompression()']]],
+  ['sfxexewindowtitle',['SfxExeWindowTitle',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_self_extractor_save_options.html#a7b4242395fe364f1f6b0e7795bad0665',1,'SuperTiled2Unity::Ionic::Zip::SelfExtractorSaveOptions']]],
+  ['sortentriesbeforesaving',['SortEntriesBeforeSaving',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file.html#a4572fef33a794fcbb717f6959b97d6f5',1,'SuperTiled2Unity::Ionic::Zip::ZipFile']]],
+  ['source',['Source',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry.html#a9b8d8fe257d315d4407ad0ae81d98dde',1,'SuperTiled2Unity::Ionic::Zip::ZipEntry']]],
+  ['statusmessagetextwriter',['StatusMessageTextWriter',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file.html#a14a4633b584573a738c560b51a7ef70e',1,'SuperTiled2Unity::Ionic::Zip::ZipFile']]],
+  ['statusmessagewriter',['StatusMessageWriter',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options.html#afbdb75da8e78c61f663cf0a623e0e4cf',1,'SuperTiled2Unity::Ionic::Zip::ReadOptions']]],
+  ['strategy',['Strategy',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file.html#a891511a2bde8493e29fb7c473f4e6eee',1,'SuperTiled2Unity.Ionic.Zip.ZipFile.Strategy()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream.html#a14669ca8951ced9c7ce418b0e813b77a',1,'SuperTiled2Unity.Ionic.Zip.ZipOutputStream.Strategy()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream.html#a55241fe0bc77986941f432d1c53aa420',1,'SuperTiled2Unity.Ionic.Zlib.DeflateStream.Strategy()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_parallel_deflate_output_stream.html#a9e2b8d65b9f2c1a74a72516a30775f62',1,'SuperTiled2Unity.Ionic.Zlib.ParallelDeflateOutputStream.Strategy()']]]
+];

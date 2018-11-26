@@ -1,0 +1,113 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args}}
+
+
+Provides information about the progress of a save, read, or extract operation. This is a base class; you will probably use one of the classes derived from this one.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.040248cm]{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args}
+\end{center}
+\end{figure}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a196333fb229706bb2c521eae0c867dd9}{Entries\+Total}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The total number of entries to be saved or extracted. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_aa2cf173f83591b5b52e15ca4c9d34129}{Current\+Entry}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the last entry saved or extracted. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a91248747aca5704f3cab69af3a289028}{Cancel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em In an event handler, set this to cancel the save or extract operation that is in progress. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}{Zip\+Progress\+Event\+Type}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a6d4aebfeab7f649887bf1994b5258a15}{Event\+Type}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The type of event being reported. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a08044c6164aecbece74b2ca903694072}{Archive\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the archive name associated to this event. \end{DoxyCompactList}\item 
+Int64 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a38659e4968d042dd43ab89570d0fee35}{Bytes\+Transferred}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The number of bytes read or written so far for this entry. \end{DoxyCompactList}\item 
+Int64 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a86555bef7cd829c35b74816bb1113692}{Total\+Bytes\+To\+Transfer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total number of bytes that will be read or written for this entry. This number will be -\/1 if the value cannot be determined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides information about the progress of a save, read, or extract operation. This is a base class; you will probably use one of the classes derived from this one. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a08044c6164aecbece74b2ca903694072}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a08044c6164aecbece74b2ca903694072}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Archive\+Name@{Archive\+Name}}
+\index{Archive\+Name@{Archive\+Name}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Archive\+Name}{ArchiveName}}
+{\footnotesize\ttfamily String Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Archive\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Returns the archive name associated to this event. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a38659e4968d042dd43ab89570d0fee35}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a38659e4968d042dd43ab89570d0fee35}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Bytes\+Transferred@{Bytes\+Transferred}}
+\index{Bytes\+Transferred@{Bytes\+Transferred}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Bytes\+Transferred}{BytesTransferred}}
+{\footnotesize\ttfamily Int64 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Bytes\+Transferred\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The number of bytes read or written so far for this entry. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a91248747aca5704f3cab69af3a289028}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a91248747aca5704f3cab69af3a289028}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Cancel}{Cancel}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Cancel\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+In an event handler, set this to cancel the save or extract operation that is in progress. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_aa2cf173f83591b5b52e15ca4c9d34129}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_aa2cf173f83591b5b52e15ca4c9d34129}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Current\+Entry@{Current\+Entry}}
+\index{Current\+Entry@{Current\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Current\+Entry}{CurrentEntry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Current\+Entry\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The name of the last entry saved or extracted. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a196333fb229706bb2c521eae0c867dd9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a196333fb229706bb2c521eae0c867dd9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Entries\+Total@{Entries\+Total}}
+\index{Entries\+Total@{Entries\+Total}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Entries\+Total}{EntriesTotal}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Entries\+Total\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The total number of entries to be saved or extracted. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a6d4aebfeab7f649887bf1994b5258a15}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a6d4aebfeab7f649887bf1994b5258a15}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Event\+Type@{Event\+Type}}
+\index{Event\+Type@{Event\+Type}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Event\+Type}{EventType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}{Zip\+Progress\+Event\+Type}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Event\+Type\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The type of event being reported. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a86555bef7cd829c35b74816bb1113692}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a86555bef7cd829c35b74816bb1113692}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}!Total\+Bytes\+To\+Transfer@{Total\+Bytes\+To\+Transfer}}
+\index{Total\+Bytes\+To\+Transfer@{Total\+Bytes\+To\+Transfer}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Progress\+Event\+Args}}
+\subsubsection{\texorpdfstring{Total\+Bytes\+To\+Transfer}{TotalBytesToTransfer}}
+{\footnotesize\ttfamily Int64 Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Args.\+Total\+Bytes\+To\+Transfer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Total number of bytes that will be read or written for this entry. This number will be -\/1 if the value cannot be determined. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Events.\+cs\end{DoxyCompactItemize}

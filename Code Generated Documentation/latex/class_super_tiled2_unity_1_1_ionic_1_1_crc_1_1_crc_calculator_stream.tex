@@ -1,0 +1,355 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}\index{Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream}}
+
+
+A Stream that calculates a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} (a checksum) on all bytes read, or on all bytes written.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.904762cm]{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a9c07a721e770fb603dd764c572a0eba6}{Crc\+Calculator\+Stream}} (System.\+I\+O.\+Stream stream)
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a69ee8f78e7559698ab9c4e23618e184e}{Crc\+Calculator\+Stream}} (System.\+I\+O.\+Stream stream, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em The constructor allows the caller to specify how to handle the underlying stream at close. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a51e8a4bd2e462dd66b58881a9aae18fc}{Crc\+Calculator\+Stream}} (System.\+I\+O.\+Stream stream, Int64 length)
+\begin{DoxyCompactList}\small\item\em A constructor allowing the specification of the length of the stream to read. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_aafb4e4ec8f06aa21aa7ace5f2d254d79}{Crc\+Calculator\+Stream}} (System.\+I\+O.\+Stream stream, Int64 length, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em A constructor allowing the specification of the length of the stream to read, as well as whether to keep the underlying stream open upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a7c9c19515f0ebe98d6b72bf663932dc2}{Crc\+Calculator\+Stream}} (System.\+I\+O.\+Stream stream, Int64 length, bool leave\+Open, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} crc32)
+\begin{DoxyCompactList}\small\item\em A constructor allowing the specification of the length of the stream to read, as well as whether to keep the underlying stream open upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}, and the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} instance to use. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a916cf33c4cf7001e2a208a32512be101}{Read}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Read from the stream \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a74d764a6d8b8697dd938780fe39cb9ee}{Write}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Write to the stream. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a0b78c545a1e8a6f87803f6a9882dbd0c}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush the stream. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ac3c75860bb0f9ef265ca55de52ed7734}{Seek}} (long offset, System.\+I\+O.\+Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em Seeking is not supported on this stream. This method always throws Not\+Supported\+Exception \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a4b3bc7f1c16f514f7ae549c2175a15ae}{Set\+Length}} (long value)
+\begin{DoxyCompactList}\small\item\em This method always throws Not\+Supported\+Exception \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Int64 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ab330bfee7993ed3fee080fa3804e940a}{Total\+Bytes\+Slurped}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the total number of bytes run through the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} calculator. \end{DoxyCompactList}\item 
+Int32 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ae9b4d1e28a4cbc040799543643a31e1e}{Crc}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Provides the current C\+RC for all blocks slurped in. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a795c3dfe1fc4761c1426191a66a3bb44}{Leave\+Open}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the underlying stream will be left open when the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Crc\+Calculator\+Stream}}} is Closed. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a71774e57e14fd34554231b2f0c15ba6a}{Can\+Read}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream supports reading. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a9c289f8c4e31f767401db18e56c490b2}{Can\+Seek}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream supports seeking. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a2fdeacbd063fae5fb987f223bf7e5bcb}{Can\+Write}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream supports writing. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ad743ed8196bc2eda561d7afb0f6adb60}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the length of the underlying stream. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ad45b18ed1767984cace5bb4514e8269e}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The getter for this property returns the total bytes read. If you use the setter, it will throw Not\+Supported\+Exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Stream that calculates a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} (a checksum) on all bytes read, or on all bytes written. 
+
+This class can be used to verify the C\+RC of a Zip\+Entry when reading from a stream, or to calculate a C\+RC when writing to a stream. The stream should be used to either read, or write, but not both. If you intermix reads and writes, the results are not defined. 
+
+This class is intended primarily for use internally by the Dot\+Net\+Zip library. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a9c07a721e770fb603dd764c572a0eba6}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a9c07a721e770fb603dd764c572a0eba6}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}}
+\index{Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Crc\+Calculator\+Stream()}{CrcCalculatorStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc\+Calculator\+Stream (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{stream }\end{DoxyParamCaption})}
+
+
+
+The default constructor. 
+
+Instances returned from this constructor will leave the underlying stream open upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}. The stream uses the default \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} algorithm, which implies a polynomial of 0x\+E\+D\+B88320. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The underlying stream\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a69ee8f78e7559698ab9c4e23618e184e}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a69ee8f78e7559698ab9c4e23618e184e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}}
+\index{Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Crc\+Calculator\+Stream()}{CrcCalculatorStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc\+Calculator\+Stream (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{stream,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+The constructor allows the caller to specify how to handle the underlying stream at close. 
+
+The stream uses the default \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} algorithm, which implies a polynomial of 0x\+E\+D\+B88320. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The underlying stream\\
+\hline
+{\em leave\+Open} & true to leave the underlying stream open upon close of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Crc\+Calculator\+Stream}}}; false otherwise.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a51e8a4bd2e462dd66b58881a9aae18fc}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a51e8a4bd2e462dd66b58881a9aae18fc}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}}
+\index{Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Crc\+Calculator\+Stream()}{CrcCalculatorStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc\+Calculator\+Stream (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{stream,  }\item[{Int64}]{length }\end{DoxyParamCaption})}
+
+
+
+A constructor allowing the specification of the length of the stream to read. 
+
+The stream uses the default \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} algorithm, which implies a polynomial of 0x\+E\+D\+B88320. 
+
+Instances returned from this constructor will leave the underlying stream open upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The underlying stream\\
+\hline
+{\em length} & The length of the stream to slurp\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_aafb4e4ec8f06aa21aa7ace5f2d254d79}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_aafb4e4ec8f06aa21aa7ace5f2d254d79}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}}
+\index{Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Crc\+Calculator\+Stream()}{CrcCalculatorStream()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc\+Calculator\+Stream (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{stream,  }\item[{Int64}]{length,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+A constructor allowing the specification of the length of the stream to read, as well as whether to keep the underlying stream open upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}. 
+
+The stream uses the default \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} algorithm, which implies a polynomial of 0x\+E\+D\+B88320. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The underlying stream\\
+\hline
+{\em length} & The length of the stream to slurp\\
+\hline
+{\em leave\+Open} & true to leave the underlying stream open upon close of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Crc\+Calculator\+Stream}}}; false otherwise.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a7c9c19515f0ebe98d6b72bf663932dc2}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a7c9c19515f0ebe98d6b72bf663932dc2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}}
+\index{Crc\+Calculator\+Stream@{Crc\+Calculator\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Crc\+Calculator\+Stream()}{CrcCalculatorStream()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc\+Calculator\+Stream (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{stream,  }\item[{Int64}]{length,  }\item[{bool}]{leave\+Open,  }\item[{\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}}}]{crc32 }\end{DoxyParamCaption})}
+
+
+
+A constructor allowing the specification of the length of the stream to read, as well as whether to keep the underlying stream open upon \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}, and the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} instance to use. 
+
+The stream uses the specified \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} instance, which allows the application to specify how the C\+RC gets calculated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The underlying stream\\
+\hline
+{\em length} & The length of the stream to slurp\\
+\hline
+{\em leave\+Open} & true to leave the underlying stream open upon close of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Crc\+Calculator\+Stream}}}; false otherwise.\\
+\hline
+{\em crc32} & the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} instance to use to calculate the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}}\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Close@{Close}}
+\index{Close@{Close}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes the stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a0b78c545a1e8a6f87803f6a9882dbd0c}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a0b78c545a1e8a6f87803f6a9882dbd0c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flush the stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a916cf33c4cf7001e2a208a32512be101}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a916cf33c4cf7001e2a208a32512be101}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Read@{Read}}
+\index{Read@{Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily override int Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Read from the stream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to read\\
+\hline
+{\em offset} & the offset at which to start\\
+\hline
+{\em count} & the number of bytes to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of bytes actually read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ac3c75860bb0f9ef265ca55de52ed7734}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ac3c75860bb0f9ef265ca55de52ed7734}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Seek@{Seek}}
+\index{Seek@{Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Seek (\begin{DoxyParamCaption}\item[{long}]{offset,  }\item[{System.\+I\+O.\+Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+Seeking is not supported on this stream. This method always throws Not\+Supported\+Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & N/A\\
+\hline
+{\em origin} & N/A\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a4b3bc7f1c16f514f7ae549c2175a15ae}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a4b3bc7f1c16f514f7ae549c2175a15ae}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Set\+Length@{Set\+Length}}
+\index{Set\+Length@{Set\+Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Set\+Length()}{SetLength()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Set\+Length (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+This method always throws Not\+Supported\+Exception 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & N/A\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a74d764a6d8b8697dd938780fe39cb9ee}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a74d764a6d8b8697dd938780fe39cb9ee}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Write@{Write}}
+\index{Write@{Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Write to the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer from which to write\\
+\hline
+{\em offset} & the offset at which to start writing\\
+\hline
+{\em count} & the number of bytes to write\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a71774e57e14fd34554231b2f0c15ba6a}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a71774e57e14fd34554231b2f0c15ba6a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Read}{CanRead}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Can\+Read\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream supports reading. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a9c289f8c4e31f767401db18e56c490b2}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a9c289f8c4e31f767401db18e56c490b2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Can\+Seek@{Can\+Seek}}
+\index{Can\+Seek@{Can\+Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Seek}{CanSeek}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Can\+Seek\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream supports seeking. 
+
+Always returns false. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a2fdeacbd063fae5fb987f223bf7e5bcb}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a2fdeacbd063fae5fb987f223bf7e5bcb}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Can\+Write@{Can\+Write}}
+\index{Can\+Write@{Can\+Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Write}{CanWrite}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Can\+Write\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream supports writing. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ae9b4d1e28a4cbc040799543643a31e1e}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ae9b4d1e28a4cbc040799543643a31e1e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Crc@{Crc}}
+\index{Crc@{Crc}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Crc}{Crc}}
+{\footnotesize\ttfamily Int32 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Crc\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Provides the current C\+RC for all blocks slurped in. 
+
+The running total of the C\+RC is kept as data is written or read through the stream. read this property after all reads or writes to get an accurate C\+RC for the entire stream. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a795c3dfe1fc4761c1426191a66a3bb44}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_a795c3dfe1fc4761c1426191a66a3bb44}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Leave\+Open@{Leave\+Open}}
+\index{Leave\+Open@{Leave\+Open}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Leave\+Open}{LeaveOpen}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Leave\+Open\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether the underlying stream will be left open when the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream}{Crc\+Calculator\+Stream}}} is Closed. 
+
+Set this at any point before calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_af4509c6b2480109b3b52f3881b5a8f5f}{Close()}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ad743ed8196bc2eda561d7afb0f6adb60}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ad743ed8196bc2eda561d7afb0f6adb60}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Length@{Length}}
+\index{Length@{Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the length of the underlying stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ad45b18ed1767984cace5bb4514e8269e}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ad45b18ed1767984cace5bb4514e8269e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Position@{Position}}
+\index{Position@{Position}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The getter for this property returns the total bytes read. If you use the setter, it will throw Not\+Supported\+Exception. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ab330bfee7993ed3fee080fa3804e940a}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream_ab330bfee7993ed3fee080fa3804e940a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}!Total\+Bytes\+Slurped@{Total\+Bytes\+Slurped}}
+\index{Total\+Bytes\+Slurped@{Total\+Bytes\+Slurped}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+Crc\+Calculator\+Stream}}
+\subsubsection{\texorpdfstring{Total\+Bytes\+Slurped}{TotalBytesSlurped}}
+{\footnotesize\ttfamily Int64 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+Crc\+Calculator\+Stream.\+Total\+Bytes\+Slurped\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the total number of bytes run through the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} calculator. 
+
+This is either the total number of bytes read, or the total number of bytes written, depending on the direction of this stream. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Common\+Src/C\+R\+C32.\+cs\end{DoxyCompactItemize}

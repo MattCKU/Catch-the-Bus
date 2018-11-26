@@ -1,0 +1,93 @@
+\hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib}{}\section{Super\+Tiled2\+Unity.\+Editor.\+Clipper\+Lib Namespace Reference}
+\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib}\index{Super\+Tiled2\+Unity.\+Editor.\+Clipper\+Lib@{Super\+Tiled2\+Unity.\+Editor.\+Clipper\+Lib}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_clipper}{Clipper}}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_clipper_base}{Clipper\+Base}}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_clipper_exception}{Clipper\+Exception}}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_clipper_offset}{Clipper\+Offset}}
+\item 
+struct \mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_double_point}{Double\+Point}}
+\item 
+struct {\bfseries Int128}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_intersect_node}{Intersect\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_int_point}{Int\+Point}}
+\item 
+struct \mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_int_rect}{Int\+Rect}}
+\item 
+class {\bfseries Join}
+\item 
+class {\bfseries Local\+Minima}
+\item 
+class {\bfseries Maxima}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_my_intersect_node_sort}{My\+Intersect\+Node\+Sort}}
+\item 
+class {\bfseries Out\+Pt}
+\item 
+class {\bfseries Out\+Rec}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_poly_node}{Poly\+Node}}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_poly_tree}{Poly\+Tree}}
+\item 
+class {\bfseries Scanbeam}
+\item 
+class {\bfseries T\+Edge}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_ac9ea4956d110a952bda6bf055414c6bc}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_ac9ea4956d110a952bda6bf055414c6bc}} 
+using {\bfseries c\+Int} = Int64
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_a4787ea2ba47007636f3b4ab677edd869}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_a4787ea2ba47007636f3b4ab677edd869}} 
+using {\bfseries Path} = List$<$ \mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_int_point}{Int\+Point}} $>$
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_af3406971b2b99f5958e94b07859de03e}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_af3406971b2b99f5958e94b07859de03e}} 
+using {\bfseries Paths} = List$<$ List$<$ \mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_int_point}{Int\+Point}} $>$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_adfbc14e7fd00ae801a0308d6449dcd3f}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_adfbc14e7fd00ae801a0308d6449dcd3f}} 
+enum {\bfseries Clip\+Type} \{ {\bfseries ct\+Intersection}, 
+{\bfseries ct\+Union}, 
+{\bfseries ct\+Difference}, 
+{\bfseries ct\+Xor}
+ \}
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_aba7fa0de20036685a6da58a4d1446bf2}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_aba7fa0de20036685a6da58a4d1446bf2}} 
+enum {\bfseries Poly\+Type} \{ {\bfseries pt\+Subject}, 
+{\bfseries pt\+Clip}
+ \}
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_acd1237967fe5d5589e66e411bcd5969e}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_acd1237967fe5d5589e66e411bcd5969e}} 
+enum {\bfseries Poly\+Fill\+Type} \{ {\bfseries pft\+Even\+Odd}, 
+{\bfseries pft\+Non\+Zero}, 
+{\bfseries pft\+Positive}, 
+{\bfseries pft\+Negative}
+ \}
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_a4b3311d5e0e2695692863b784c2bc637}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_a4b3311d5e0e2695692863b784c2bc637}} 
+enum {\bfseries Join\+Type} \{ {\bfseries jt\+Square}, 
+{\bfseries jt\+Round}, 
+{\bfseries jt\+Miter}
+ \}
+\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_abe112d4d9688280bcbb7827d55c59f98}\label{namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib_abe112d4d9688280bcbb7827d55c59f98}} 
+enum {\bfseries End\+Type} \{ \newline
+{\bfseries et\+Closed\+Polygon}, 
+{\bfseries et\+Closed\+Line}, 
+{\bfseries et\+Open\+Butt}, 
+{\bfseries et\+Open\+Square}, 
+\newline
+{\bfseries et\+Open\+Round}
+ \}
+\end{DoxyCompactItemize}

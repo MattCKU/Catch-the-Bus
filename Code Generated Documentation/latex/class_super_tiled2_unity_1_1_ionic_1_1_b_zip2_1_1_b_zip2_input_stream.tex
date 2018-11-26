@@ -1,0 +1,307 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}\index{Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream}}
+
+
+A read-\/only decorator stream that performs \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}} decompression on Read.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a955dd86b095b4df3d266b00e659be60b}{B\+Zip2\+Input\+Stream}} (Stream input)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}}, wrapping it around the given input Stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a4e4207d28578fefec93dc5b297ccf810}{B\+Zip2\+Input\+Stream}} (Stream input, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}} with the given stream, and specifying whether to leave the wrapped stream open when the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}} is closed. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a80f460d6901a773419ccd51b10a91fa6}{Read}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Read data from the stream. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a8ab15212a893aa47d345905f265d6be6}{Read\+Byte}} ()
+\begin{DoxyCompactList}\small\item\em Read a single byte from the stream. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a30a8f2459c46c5b348b0e2c577678f48}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush the stream. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a1093c240d12e5caec549b40f2e5b554b}{Seek}} (long offset, System.\+I\+O.\+Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em Calling this method always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_afbdeb8e88de09bd83c114d170a764bbe}{Set\+Length}} (long value)
+\begin{DoxyCompactList}\small\item\em Calling this method always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a607d195a539d84ae6d93f09d8a940316}{Write}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Calling this method always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_ac1509e6d87c88d921506ec4ff5417b78}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Close the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a3e9fb5055298ea3c4c224f97d3e68746}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Dispose the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a450d6c2cb4227766d939e3d668a624fc}{Can\+Read}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream can be read. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_add8c8707ccfed79325aa15b98e0ea33c}{Can\+Seek}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream supports Seek operations. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_abcb69a881663824540299969b869dc4b}{Can\+Write}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream can be written. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a15869a797d855b7b2df4a26624a1309c}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Reading this property always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_ae767bc8cffc1a81c9098538139ddd1af}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The position of the stream pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A read-\/only decorator stream that performs \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}} decompression on Read. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a955dd86b095b4df3d266b00e659be60b}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a955dd86b095b4df3d266b00e659be60b}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!B\+Zip2\+Input\+Stream@{B\+Zip2\+Input\+Stream}}
+\index{B\+Zip2\+Input\+Stream@{B\+Zip2\+Input\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{B\+Zip2\+Input\+Stream()}{BZip2InputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+B\+Zip2\+Input\+Stream (\begin{DoxyParamCaption}\item[{Stream}]{input }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}}, wrapping it around the given input Stream. 
+
+The input stream will be closed when the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}} is closed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The stream from which to read compressed data\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a4e4207d28578fefec93dc5b297ccf810}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a4e4207d28578fefec93dc5b297ccf810}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!B\+Zip2\+Input\+Stream@{B\+Zip2\+Input\+Stream}}
+\index{B\+Zip2\+Input\+Stream@{B\+Zip2\+Input\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{B\+Zip2\+Input\+Stream()}{BZip2InputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+B\+Zip2\+Input\+Stream (\begin{DoxyParamCaption}\item[{Stream}]{input,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}} with the given stream, and specifying whether to leave the wrapped stream open when the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}} is closed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The stream from which to read compressed data\\
+\hline
+{\em leave\+Open} & Whether to leave the input stream open, when the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}} closes. \\
+\hline
+\end{DoxyParams}
+
+
+This example reads a bzip2-\/compressed file, decompresses it, and writes the decompressed data into a newly created file.
+
+
+\begin{DoxyCode}
+var fname = \textcolor{stringliteral}{"logfile.log.bz2"};
+\textcolor{keyword}{using} (var fs = File.OpenRead(fname))
+\{
+    \textcolor{keyword}{using} (var decompressor = \textcolor{keyword}{new} Ionic.BZip2.BZip2InputStream(fs))
+    \{
+        var outFname = fname + \textcolor{stringliteral}{".decompressed"};
+        \textcolor{keyword}{using} (var output = File.Create(outFname))
+        \{
+            byte[] buffer = \textcolor{keyword}{new} byte[2048];
+            \textcolor{keywordtype}{int} n;
+            \textcolor{keywordflow}{while} ((n = decompressor.Read(buffer, 0, buffer.Length)) > 0)
+            \{
+                output.Write(buffer, 0, n);
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_ac1509e6d87c88d921506ec4ff5417b78}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_ac1509e6d87c88d921506ec4ff5417b78}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Close@{Close}}
+\index{Close@{Close}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Close the stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a3e9fb5055298ea3c4c224f97d3e68746}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a3e9fb5055298ea3c4c224f97d3e68746}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dispose the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & indicates whether the Dispose method was invoked by user code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a30a8f2459c46c5b348b0e2c577678f48}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a30a8f2459c46c5b348b0e2c577678f48}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flush the stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a80f460d6901a773419ccd51b10a91fa6}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a80f460d6901a773419ccd51b10a91fa6}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Read@{Read}}
+\index{Read@{Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily override int Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Read data from the stream. 
+
+To decompress a \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}} data stream, create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}}}, providing a stream that reads compressed data. Then call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a80f460d6901a773419ccd51b10a91fa6}{Read()}} on that {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}}}, and the data read will be decompressed as you read. 
+
+A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream}{B\+Zip2\+Input\+Stream}}} can be used only for {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a80f460d6901a773419ccd51b10a91fa6}{Read()}}}, not for {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a607d195a539d84ae6d93f09d8a940316}{Write()}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer into which the read data should be placed.\\
+\hline
+{\em offset} & the offset within that data array to put the first byte read.\\
+\hline
+{\em count} & the number of bytes to read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of bytes actually read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a8ab15212a893aa47d345905f265d6be6}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a8ab15212a893aa47d345905f265d6be6}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Read\+Byte@{Read\+Byte}}
+\index{Read\+Byte@{Read\+Byte}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Read\+Byte()}{ReadByte()}}
+{\footnotesize\ttfamily override int Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Read\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read a single byte from the stream. 
+
+\begin{DoxyReturn}{Returns}
+the byte read from the stream, or -\/1 if E\+OF
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a1093c240d12e5caec549b40f2e5b554b}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a1093c240d12e5caec549b40f2e5b554b}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Seek@{Seek}}
+\index{Seek@{Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Seek (\begin{DoxyParamCaption}\item[{long}]{offset,  }\item[{System.\+I\+O.\+Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+Calling this method always throws a Not\+Implemented\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & this is irrelevant, since it will always throw!\\
+\hline
+{\em origin} & this is irrelevant, since it will always throw!\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+irrelevant!
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_afbdeb8e88de09bd83c114d170a764bbe}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_afbdeb8e88de09bd83c114d170a764bbe}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Set\+Length@{Set\+Length}}
+\index{Set\+Length@{Set\+Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Set\+Length()}{SetLength()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Set\+Length (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+Calling this method always throws a Not\+Implemented\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & this is irrelevant, since it will always throw!\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a607d195a539d84ae6d93f09d8a940316}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a607d195a539d84ae6d93f09d8a940316}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Write@{Write}}
+\index{Write@{Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Calling this method always throws a Not\+Implemented\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & this parameter is never used\\
+\hline
+{\em offset} & this parameter is never used\\
+\hline
+{\em count} & this parameter is never used\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a450d6c2cb4227766d939e3d668a624fc}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a450d6c2cb4227766d939e3d668a624fc}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Read}{CanRead}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Can\+Read\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream can be read. 
+
+The return value depends on whether the captive stream supports reading. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_add8c8707ccfed79325aa15b98e0ea33c}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_add8c8707ccfed79325aa15b98e0ea33c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Can\+Seek@{Can\+Seek}}
+\index{Can\+Seek@{Can\+Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Seek}{CanSeek}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Can\+Seek\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream supports Seek operations. 
+
+Always returns false. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_abcb69a881663824540299969b869dc4b}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_abcb69a881663824540299969b869dc4b}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Can\+Write@{Can\+Write}}
+\index{Can\+Write@{Can\+Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Write}{CanWrite}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Can\+Write\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream can be written. 
+
+The return value depends on whether the captive stream supports writing. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a15869a797d855b7b2df4a26624a1309c}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_a15869a797d855b7b2df4a26624a1309c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Length@{Length}}
+\index{Length@{Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Reading this property always throws a Not\+Implemented\+Exception. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_ae767bc8cffc1a81c9098538139ddd1af}\label{class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream_ae767bc8cffc1a81c9098538139ddd1af}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}!Position@{Position}}
+\index{Position@{Position}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+B\+Zip2\+::\+B\+Zip2\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+B\+Zip2.\+B\+Zip2\+Input\+Stream.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The position of the stream pointer. 
+
+Setting this property always throws a Not\+Implemented\+Exception. Reading will return the total number of uncompressed bytes read in. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+B\+Zip2/B\+Zip2\+Input\+Stream.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures =
+[
+    [ "MultiValueDictionary", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary" ]
+];

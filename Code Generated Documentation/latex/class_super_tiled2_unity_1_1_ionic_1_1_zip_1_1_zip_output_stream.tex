@@ -1,0 +1,875 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream}}
+
+
+Provides a stream metaphor for generating zip files.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{Zip\+Output\+Stream}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} stream)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}, wrapping an existing stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4daf8120abcc71a6b939770b50a82ccf}{Zip\+Output\+Stream}} (String file\+Name)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} that writes to a filesystem file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4eb05835f11ff46020c97b18a25efd27}{Zip\+Output\+Stream}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} stream, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. \end{DoxyCompactList}\item 
+override String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_afaa579ec2191f58bf906b13b6880bf9c}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Provides a string representation of the instance.\end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a0940da1079aec5a86af767da50b1ba0d}{Contains\+Entry}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns true if an entry by the given name has already been written to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Write}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Write the data from the buffer to the stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry}} (String entry\+Name)
+\begin{DoxyCompactList}\small\item\em Specify the name of the next entry that will be written to the zip file. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aef2a751108f7c3ab281f544d33ab9355}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em This is a no-\/op. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af8c42b2228926fef65cb3f5efffebb6e}{Read}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em This method always throws a Not\+Supported\+Exception. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac475f96618eb6e4e53c3ec417e73e017}{Seek}} (long offset, Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em This method always throws a Not\+Supported\+Exception. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9486ebdf72376451582daa854e941637}{Set\+Length}} (long value)
+\begin{DoxyCompactList}\small\item\em This method always throws a Not\+Supported\+Exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac792f46e1b4cde3da0aa1eaf4ad28db4}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Dispose the stream \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the password to be used on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{Encryption\+Algorithm}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Encryption to use for entries added to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af75e64bdb4e118bc11e39cab569386c5}{Codec\+Buffer\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the work buffer to use for the Z\+L\+IB codec during compression. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Ionic.\+Zlib.\+Compression\+Strategy}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a14669ca8951ced9c7ce418b0e813b77a}{Strategy}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The compression strategy to use for all entries. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}{Zip\+Entry\+Timestamp}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a460b67a16c9154f213cdd7eb94e9e3db}{Timestamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The type of timestamp attached to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Ionic.\+Zlib.\+Compression\+Level}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab18e466bb7d16f7131c5a543cb9a3453}{Compression\+Level}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the compression level to be used for entries subsequently added to the zip archive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}{Ionic.\+Zip.\+Compression\+Method}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a277b3eee8ff85940ed16ba2cc69a19cf}{Compression\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The compression method used on each entry added to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36027bbb7ea2355884a7922b429a3913}{Comment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A comment attached to the zip archive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69}{Zip64\+Option}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a3e8855ff27cbafba7bb65b9839d6f803}{Enable\+Zip64}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Specify whether to use Z\+I\+P64 extensions when saving a zip archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aa1c7d8a2814a63a083a360a9b4b941e7}{Output\+Used\+Zip64}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether Z\+I\+P64 extensions were used when saving the zip archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ad9c1b5d8e5d348c31ca8126649dd245c}{Ignore\+Case}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Whether the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} should use case-\/insensitive comparisons when checking for uniqueness of zip entries. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4df145de0a4fefaadaa7e98a308ce1db}{Use\+Unicode\+As\+Necessary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether to encode entry filenames and entry comments using Unicode (U\+T\+F-\/8). \end{DoxyCompactList}\item 
+System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aec3ac84c19c3f7c1c7ded0cf4ebba5cf}{Provisional\+Alternate\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The text encoding to use when emitting entries into the zip archive, for those entries whose filenames or comments cannot be encoded with the default (I\+B\+M437) encoding. \end{DoxyCompactList}\item 
+System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab7aa76520f42cd062b9e890817f4c373}{Alternate\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A Text \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_encoding}{Encoding}} to use when encoding the filenames and comments for all the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} items, during a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}} operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{Zip\+Option}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}{Alternate\+Encoding\+Usage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A flag that tells if and when this instance should apply Alternate\+Encoding to encode the filenames and comments associated to of \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} objects contained within this instance. \end{DoxyCompactList}\item 
+static System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a855d0c7107aa6a1176c06041e8695ce7}{Default\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The default text encoding used in zip archives. It is numeric 437, also known as I\+B\+M437. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9918f5fa946840eb0ffee089ce5485b8}{Parallel\+Deflate\+Threshold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The size threshold for an entry, above which a parallel deflate is used. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ad5f3ac0c07bfd366b2f6f7a1afbc2f18}{Parallel\+Deflate\+Max\+Buffer\+Pairs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The maximum number of buffer pairs to use when performing parallel compression. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36555d45a504b89f5889813fc30e70d3}{Can\+Read}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Always returns false. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a7f9b59591fb70d15dea656f96dcf6f72}{Can\+Seek}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Always returns false. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aeb54240dd7abcb178c421bca5baf650e}{Can\+Write}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Always returns true. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aca9775b4fa968157ae513542b4ccefbe}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Always returns a Not\+Supported\+Exception. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a0b9d9a664498cd382a763dc674c0c01f}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting this property always returns a Not\+Supported\+Exception. Getting it returns the value of the Position on the underlying stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a stream metaphor for generating zip files. 
+
+This class writes zip files, as defined in the specification for zip files described by P\+K\+Ware
+
+. The compression for this implementation is provided by a managed-\/code version of \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib}{Zlib}}, included with Dot\+Net\+Zip in the classes in the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib}{Ionic.\+Zlib}} namespace. 
+
+This class provides an alternative programming model to the one enabled by the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class. Use this when creating zip files, as an alternative to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class, when you would like to use a {\ttfamily Stream} type to write the zip file. 
+
+Both the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} class and the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class can be used to create zip files. Both of them support many of the common zip features, including Unicode, different compression levels, and Z\+I\+P64. They provide very similar performance when creating zip files. 
+
+The {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class is generally easier to use than {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} and should be considered a higher-\/level interface. For example, when creating a zip file via calls to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}} and {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Write()}}} methods on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} class, the caller is responsible for opening the file, reading the bytes from the file, writing those bytes into the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}, setting the attributes on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}}, and setting the created, last modified, and last accessed timestamps on the zip entry. All of these things are done automatically by a call to \mbox{\hyperlink{}{Zip\+File.\+Add\+File()}}. For this reason, the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} is generally recommended for use only when your application emits arbitrary data, not necessarily data from a filesystem file, directly into a zip file, and does so using a {\ttfamily Stream} metaphor. 
+
+Aside from the differences in programming model, there are other differences in capability between the two classes. 
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} can be used to read and extract zip files, in addition to creating zip files. {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} cannot read zip files. If you want to use a stream to read zip files, check out the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}} class. 
+
+
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} does not support the creation of segmented or spanned zip files. 
+
+
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} cannot produce a self-\/extracting archive.  
+\end{DoxyItemize}
+
+Be aware that the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} class implements the System.\+I\+Disposable interface. In order for {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} to produce a valid zip file, you use use it within a using clause ({\ttfamily Using} in VB), or call the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac792f46e1b4cde3da0aa1eaf4ad28db4}{Dispose()}}} method explicitly. See the examples for how to employ a using clause. 
+
+Also, a note regarding compression performance\+: On the desktop .N\+ET Framework, Dot\+Net\+Zip can use a multi-\/threaded compression implementation that provides significant speed increases on large files, over 300k or so, at the cost of increased memory use at runtime. (The output of the compression is almost exactly the same size). But, the multi-\/threaded approach incurs a performance hit on smaller files. There\textquotesingle{}s no way for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} to know whether parallel compression will be beneficial, because the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} does not know how much data you will write through the stream. You may wish to set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9918f5fa946840eb0ffee089ce5485b8}{Parallel\+Deflate\+Threshold}} property to zero, if you are compressing large files through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}. This will cause parallel compression to be used, always. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Zip\+Output\+Stream@{Zip\+Output\+Stream}}
+\index{Zip\+Output\+Stream@{Zip\+Output\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Zip\+Output\+Stream()}{ZipOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Zip\+Output\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}}}]{stream }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}, wrapping an existing stream. 
+
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class is generally easier to use when creating zip files. The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} offers a different metaphor for creating a zip file, based on the System.\+I\+O.\+Stream class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to wrap. It must be writable. This stream will be closed at the time the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} is closed. \\
+\hline
+\end{DoxyParams}
+
+
+This example shows how to create a zip file, using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} class.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} Zipup()
+\{
+    \textcolor{keywordflow}{if} (filesToZip.Count == 0)
+    \{
+        \mbox{\hyperlink{namespace_system}{System}}.Console.WriteLine(\textcolor{stringliteral}{"Nothing to do."});
+        \textcolor{keywordflow}{return};
+    \}
+
+    \textcolor{keyword}{using} (var raw = File.Open(\_outputFileName, FileMode.Create, FileAccess.ReadWrite ))
+    \{
+        \textcolor{keyword}{using} (var output= \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}}(raw))
+        \{
+            output.Password = \textcolor{stringliteral}{"VerySecret!"};
+            output.Encryption = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{EncryptionAlgorithm}}.WinZipAes256;
+
+            \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} inputFileName \textcolor{keywordflow}{in} filesToZip)
+            \{
+                \mbox{\hyperlink{namespace_system}{System}}.Console.WriteLine(\textcolor{stringliteral}{"file: \{0\}"}, inputFileName);
+
+                output.PutNextEntry(inputFileName);
+                \textcolor{keyword}{using} (var input = File.Open(inputFileName, FileMode.Open, FileAccess.Read, FileShare.Read 
+      | FileShare.Write ))
+                \{
+                    byte[] buffer= \textcolor{keyword}{new} byte[2048];
+                    \textcolor{keywordtype}{int} n;
+                    \textcolor{keywordflow}{while} ((n= input.Read(buffer,0,buffer.Length)) > 0)
+                    \{
+                        output.Write(buffer,0,n);
+                    \}
+                \}
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Private Sub Zipup()
+    Dim outputFileName As String = "XmlData.zip"
+    Dim filesToZip As String() = Directory.GetFiles(".", "*.xml")
+    If (filesToZip.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aca9775b4fa968157ae513542b4ccefbe}{Length}} = 0) Then
+        Console.WriteLine("Nothing to do.")
+    Else
+        Using raw As FileStream = File.Open(outputFileName, FileMode.Create, FileAccess.ReadWrite)
+            Using output As \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}} = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}}(raw)
+                output.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Password}} = "VerySecret!"
+                output.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{EncryptionAlgorithm}}.WinZipAes256
+                Dim inputFileName As String
+                For Each inputFileName In filesToZip
+                    Console.WriteLine("file: \{0\}\textcolor{stringliteral}{", inputFileName)}
+\textcolor{stringliteral}{                    output.PutNextEntry(inputFileName)}
+\textcolor{stringliteral}{                    Using input As FileStream = File.Open(inputFileName, FileMode.Open, FileAccess.Read,
+       FileShare.ReadWrite)}
+\textcolor{stringliteral}{                        Dim n As Integer}
+\textcolor{stringliteral}{                        Dim buffer As Byte() = New Byte(2048) \{\}}
+\textcolor{stringliteral}{                        Do While (n = input.Read(buffer, 0, buffer.Length) > 0)}
+\textcolor{stringliteral}{                            output.Write(buffer, 0, n)}
+\textcolor{stringliteral}{                        Loop}
+\textcolor{stringliteral}{                    End Using}
+\textcolor{stringliteral}{                Next}
+\textcolor{stringliteral}{            End Using}
+\textcolor{stringliteral}{        End Using}
+\textcolor{stringliteral}{    End If}
+\textcolor{stringliteral}{End Sub}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4daf8120abcc71a6b939770b50a82ccf}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4daf8120abcc71a6b939770b50a82ccf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Zip\+Output\+Stream@{Zip\+Output\+Stream}}
+\index{Zip\+Output\+Stream@{Zip\+Output\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Zip\+Output\+Stream()}{ZipOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Zip\+Output\+Stream (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} that writes to a filesystem file. 
+
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class is generally easier to use when creating zip files. The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} offers a different metaphor for creating a zip file, based on the System.\+I\+O.\+Stream class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the zip file to create. \\
+\hline
+\end{DoxyParams}
+
+
+This example shows how to create a zip file, using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} class.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} Zipup()
+\{
+    \textcolor{keywordflow}{if} (filesToZip.Count == 0)
+    \{
+        \mbox{\hyperlink{namespace_system}{System}}.Console.WriteLine(\textcolor{stringliteral}{"Nothing to do."});
+        \textcolor{keywordflow}{return};
+    \}
+
+    \textcolor{keyword}{using} (var output= \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}}(outputFileName))
+    \{
+        output.Password = \textcolor{stringliteral}{"VerySecret!"};
+        output.Encryption = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{EncryptionAlgorithm}}.WinZipAes256;
+
+        \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} inputFileName \textcolor{keywordflow}{in} filesToZip)
+        \{
+            \mbox{\hyperlink{namespace_system}{System}}.Console.WriteLine(\textcolor{stringliteral}{"file: \{0\}"}, inputFileName);
+
+            output.PutNextEntry(inputFileName);
+            \textcolor{keyword}{using} (var input = File.Open(inputFileName, FileMode.Open, FileAccess.Read,
+                                         FileShare.Read | FileShare.Write ))
+            \{
+                byte[] buffer= \textcolor{keyword}{new} byte[2048];
+                \textcolor{keywordtype}{int} n;
+                \textcolor{keywordflow}{while} ((n= input.Read(buffer,0,buffer.Length)) > 0)
+                \{
+                    output.Write(buffer,0,n);
+                \}
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Private Sub Zipup()
+    Dim outputFileName As String = "XmlData.zip"
+    Dim filesToZip As String() = Directory.GetFiles(".", "*.xml")
+    If (filesToZip.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aca9775b4fa968157ae513542b4ccefbe}{Length}} = 0) Then
+        Console.WriteLine("Nothing to do.")
+    Else
+        Using output As \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}} = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}}(outputFileName)
+            output.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Password}} = "VerySecret!"
+            output.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}} = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{EncryptionAlgorithm}}.WinZipAes256
+            Dim inputFileName As String
+            For Each inputFileName In filesToZip
+                Console.WriteLine("file: \{0\}\textcolor{stringliteral}{", inputFileName)}
+\textcolor{stringliteral}{                output.PutNextEntry(inputFileName)}
+\textcolor{stringliteral}{                Using input As FileStream = File.Open(inputFileName, FileMode.Open, FileAccess.Read,
+       FileShare.ReadWrite)}
+\textcolor{stringliteral}{                    Dim n As Integer}
+\textcolor{stringliteral}{                    Dim buffer As Byte() = New Byte(2048) \{\}}
+\textcolor{stringliteral}{                    Do While (n = input.Read(buffer, 0, buffer.Length) > 0)}
+\textcolor{stringliteral}{                        output.Write(buffer, 0, n)}
+\textcolor{stringliteral}{                    Loop}
+\textcolor{stringliteral}{                End Using}
+\textcolor{stringliteral}{            Next}
+\textcolor{stringliteral}{        End Using}
+\textcolor{stringliteral}{    End If}
+\textcolor{stringliteral}{End Sub}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4eb05835f11ff46020c97b18a25efd27}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4eb05835f11ff46020c97b18a25efd27}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Zip\+Output\+Stream@{Zip\+Output\+Stream}}
+\index{Zip\+Output\+Stream@{Zip\+Output\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Zip\+Output\+Stream()}{ZipOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Zip\+Output\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}}}]{stream,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+Create a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. 
+
+See the documentation for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{Zip\+Output\+Stream(\+Stream)}} constructor for an example. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to wrap. It must be writable. \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em leave\+Open} & true if the application would like the stream to remain open after the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} has been closed. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a0940da1079aec5a86af767da50b1ba0d}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a0940da1079aec5a86af767da50b1ba0d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Contains\+Entry@{Contains\+Entry}}
+\index{Contains\+Entry@{Contains\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Contains\+Entry()}{ContainsEntry()}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Contains\+Entry (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns true if an entry by the given name has already been written to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the entry to scan for. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+true if an entry by the given name has already been written. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac792f46e1b4cde3da0aa1eaf4ad28db4}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac792f46e1b4cde3da0aa1eaf4ad28db4}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dispose the stream 
+
+This method writes the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} Central directory, then closes the stream. The application must call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac792f46e1b4cde3da0aa1eaf4ad28db4}{Dispose()}} (or Close) in order to produce a valid zip file. 
+
+Typically the application will call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac792f46e1b4cde3da0aa1eaf4ad28db4}{Dispose()}}} implicitly, via a {\ttfamily using} statement in C\#, or a {\ttfamily Using} statement in VB. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & set this to true, always.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aef2a751108f7c3ab281f544d33ab9355}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aef2a751108f7c3ab281f544d33ab9355}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is a no-\/op. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Put\+Next\+Entry@{Put\+Next\+Entry}}
+\index{Put\+Next\+Entry@{Put\+Next\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Put\+Next\+Entry()}{PutNextEntry()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Put\+Next\+Entry (\begin{DoxyParamCaption}\item[{String}]{entry\+Name }\end{DoxyParamCaption})}
+
+
+
+Specify the name of the next entry that will be written to the zip file. 
+
+Call this method just before calling Write(byte\mbox{[}$\,$\mbox{]}, int, int), to specify the name of the entry that the next set of bytes written to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} belongs to. All subsequent calls to {\ttfamily Write}, until the next call to {\ttfamily Put\+Next\+Entry}, will be inserted into the named entry in the zip file. 
+
+If the {\itshape entry\+Name}  used in {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}} ends in a slash, then the entry added is marked as a directory. Because directory entries do not contain data, a call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Write()}}}, before an intervening additional call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}}, will throw an exception. 
+
+If you don\textquotesingle{}t call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Write()}}} between two calls to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}}, the first entry is inserted into the zip file as a file of zero size. This may be what you want. 
+
+Because {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}} closes out the prior entry, if any, this method may throw if there is a problem with the prior entry. 
+
+This method returns the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}}. You can modify public properties on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}}, such as \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Zip\+Entry.\+Encryption}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Zip\+Entry.\+Password}}, and so on, until the first call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Zip\+Output\+Stream.\+Write()}}}, or until the next call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}}. If you modify the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} {\itshape after} having called {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Write()}}}, you may get a runtime exception, or you may silently get an invalid zip archive. 
+
+This example shows how to create a zip file, using the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} class.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} Zipup()
+\{
+    \textcolor{keyword}{using} (FileStream fs raw = File.Open(\_outputFileName, FileMode.Create, FileAccess.ReadWrite ))
+    \{
+        \textcolor{keyword}{using} (var output= \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ae484108e008d5822cd7e140bcf44e9fe}{ZipOutputStream}}(fs))
+        \{
+            output.Password = \textcolor{stringliteral}{"VerySecret!"};
+            output.Encryption = \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{EncryptionAlgorithm}}.WinZipAes256;
+            output.PutNextEntry(\textcolor{stringliteral}{"entry1.txt"});
+            byte[] buffer= \mbox{\hyperlink{namespace_system}{System}}.Text.Encoding.ASCII.GetBytes(\textcolor{stringliteral}{"This is the content for entry #1."});
+            output.Write(buffer,0,buffer.Length);
+            output.PutNextEntry(\textcolor{stringliteral}{"entry2.txt"});  \textcolor{comment}{// this will be zero length}
+            output.PutNextEntry(\textcolor{stringliteral}{"entry3.txt"});
+            buffer= \mbox{\hyperlink{namespace_system}{System}}.Text.Encoding.ASCII.GetBytes(\textcolor{stringliteral}{"This is the content for entry #3."});
+            output.Write(buffer,0,buffer.Length);
+        \}
+    \}
+\}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\+Name} & The name of the entry to be added, including any path to be used within the zip file. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af8c42b2228926fef65cb3f5efffebb6e}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af8c42b2228926fef65cb3f5efffebb6e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Read@{Read}}
+\index{Read@{Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily override int Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+This method always throws a Not\+Supported\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & ignored\\
+\hline
+{\em offset} & ignored\\
+\hline
+{\em count} & ignored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac475f96618eb6e4e53c3ec417e73e017}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ac475f96618eb6e4e53c3ec417e73e017}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Seek@{Seek}}
+\index{Seek@{Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Seek (\begin{DoxyParamCaption}\item[{long}]{offset,  }\item[{Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+This method always throws a Not\+Supported\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & ignored\\
+\hline
+{\em origin} & ignored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9486ebdf72376451582daa854e941637}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9486ebdf72376451582daa854e941637}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Set\+Length@{Set\+Length}}
+\index{Set\+Length@{Set\+Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Set\+Length()}{SetLength()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Set\+Length (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+This method always throws a Not\+Supported\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & ignored\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_afaa579ec2191f58bf906b13b6880bf9c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_afaa579ec2191f58bf906b13b6880bf9c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override String Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides a string representation of the instance.
+
+This can be useful for debugging purposes. 
+
+\begin{DoxyReturn}{Returns}
+a string representation of the instance.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Write@{Write}}
+\index{Write@{Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Write the data from the buffer to the stream. 
+
+As the application writes data into this stream, the data may be compressed and encrypted before being written out to the underlying stream, depending on the settings of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab18e466bb7d16f7131c5a543cb9a3453}{Compression\+Level}} and the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}} properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer holding data to write to the stream.\\
+\hline
+{\em offset} & the offset within that data array to find the first byte to write.\\
+\hline
+{\em count} & the number of bytes to write.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab7aa76520f42cd062b9e890817f4c373}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab7aa76520f42cd062b9e890817f4c373}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Alternate\+Encoding@{Alternate\+Encoding}}
+\index{Alternate\+Encoding@{Alternate\+Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Alternate\+Encoding}{AlternateEncoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Alternate\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A Text \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_encoding}{Encoding}} to use when encoding the filenames and comments for all the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} items, during a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}} operation. 
+
+Whether the encoding specified here is used during the save depends on \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}{Alternate\+Encoding\+Usage}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Alternate\+Encoding\+Usage@{Alternate\+Encoding\+Usage}}
+\index{Alternate\+Encoding\+Usage@{Alternate\+Encoding\+Usage}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Alternate\+Encoding\+Usage}{AlternateEncodingUsage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{Zip\+Option}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Alternate\+Encoding\+Usage\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A flag that tells if and when this instance should apply Alternate\+Encoding to encode the filenames and comments associated to of \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} objects contained within this instance. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36555d45a504b89f5889813fc30e70d3}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36555d45a504b89f5889813fc30e70d3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Read}{CanRead}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Can\+Read\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Always returns false. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a7f9b59591fb70d15dea656f96dcf6f72}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a7f9b59591fb70d15dea656f96dcf6f72}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Can\+Seek@{Can\+Seek}}
+\index{Can\+Seek@{Can\+Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Seek}{CanSeek}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Can\+Seek\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Always returns false. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aeb54240dd7abcb178c421bca5baf650e}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aeb54240dd7abcb178c421bca5baf650e}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Can\+Write@{Can\+Write}}
+\index{Can\+Write@{Can\+Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Write}{CanWrite}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Can\+Write\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Always returns true. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af75e64bdb4e118bc11e39cab569386c5}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af75e64bdb4e118bc11e39cab569386c5}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Codec\+Buffer\+Size@{Codec\+Buffer\+Size}}
+\index{Codec\+Buffer\+Size@{Codec\+Buffer\+Size}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Codec\+Buffer\+Size}{CodecBufferSize}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Codec\+Buffer\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Size of the work buffer to use for the Z\+L\+IB codec during compression. 
+
+Setting this may affect performance. For larger files, setting this to a larger size may improve performance, but I\textquotesingle{}m not sure. Sorry, I don\textquotesingle{}t currently have good recommendations on how to set it. You can test it if you like. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36027bbb7ea2355884a7922b429a3913}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36027bbb7ea2355884a7922b429a3913}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Comment@{Comment}}
+\index{Comment@{Comment}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Comment}{Comment}}
+{\footnotesize\ttfamily string Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Comment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A comment attached to the zip archive. 
+
+The application sets this property to specify a comment to be embedded into the generated zip archive. 
+
+According to P\+K\+W\+A\+RE\textquotesingle{}s zip specification
+
+, the comment is not encrypted, even if there is a password set on the zip file. 
+
+The specification does not describe how to indicate the encoding used on a comment string. Many \char`\"{}compliant\char`\"{} zip tools and libraries use I\+B\+M437 as the code page for comments; Dot\+Net\+Zip, too, follows that practice. On the other hand, there are situations where you want a Comment to be encoded with something else, for example using code page 950 \char`\"{}\+Big-\/5 Chinese\char`\"{}. To fill that need, Dot\+Net\+Zip will encode the comment following the same procedure it follows for encoding filenames\+: (a) if \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}{Alternate\+Encoding\+Usage}} is {\ttfamily Never}, it uses the default encoding (I\+B\+M437). (b) if \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}{Alternate\+Encoding\+Usage}} is {\ttfamily Always}, it always uses the alternate encoding (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab7aa76520f42cd062b9e890817f4c373}{Alternate\+Encoding}}). (c) if \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a68fe3cccef62a4745c6aacb71a05a744}{Alternate\+Encoding\+Usage}} is {\ttfamily As\+Necessary}, it uses the alternate encoding only if the default encoding is not sufficient for encoding the comment -\/ in other words if decoding the result does not produce the original string. This decision is taken at the time of the call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aff8f1b3d07b66481e2629b04017a056f}{Zip\+File.\+Save()}}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab18e466bb7d16f7131c5a543cb9a3453}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ab18e466bb7d16f7131c5a543cb9a3453}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Compression\+Level@{Compression\+Level}}
+\index{Compression\+Level@{Compression\+Level}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Compression\+Level}{CompressionLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Ionic.\+Zlib.\+Compression\+Level}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Compression\+Level\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sets the compression level to be used for entries subsequently added to the zip archive. 
+
+Varying the compression level used on entries can affect the size-\/vs-\/speed tradeoff when compression and decompressing data streams or files. 
+
+As with some other properties on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} class, like \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Password}}, and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}}, setting this property on a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} instance will cause the specified {\ttfamily Compression\+Level} to be used on all \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} items that are subsequently added to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} instance. 
+
+If you do not set this property, the default compression level is used, which normally gives a good balance of compression efficiency and compression speed. In some tests, using {\ttfamily Best\+Compression} can double the time it takes to compress, while delivering just a small increase in compression efficiency. This behavior will vary with the type of data you compress. If you are in doubt, just leave this setting alone, and accept the default. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a277b3eee8ff85940ed16ba2cc69a19cf}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a277b3eee8ff85940ed16ba2cc69a19cf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Compression\+Method@{Compression\+Method}}
+\index{Compression\+Method@{Compression\+Method}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Compression\+Method}{CompressionMethod}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}{Ionic.\+Zip.\+Compression\+Method}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Compression\+Method\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The compression method used on each entry added to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a855d0c7107aa6a1176c06041e8695ce7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a855d0c7107aa6a1176c06041e8695ce7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Default\+Encoding@{Default\+Encoding}}
+\index{Default\+Encoding@{Default\+Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Default\+Encoding}{DefaultEncoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Default\+Encoding\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The default text encoding used in zip archives. It is numeric 437, also known as I\+B\+M437. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aece3d00ca721d3d06020ecc44442ea1e}{Ionic.\+Zip.\+Zip\+File.\+Provisional\+Alternate\+Encoding}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a3e8855ff27cbafba7bb65b9839d6f803}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a3e8855ff27cbafba7bb65b9839d6f803}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Enable\+Zip64@{Enable\+Zip64}}
+\index{Enable\+Zip64@{Enable\+Zip64}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Enable\+Zip64}{EnableZip64}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69}{Zip64\+Option}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Enable\+Zip64\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Specify whether to use Z\+I\+P64 extensions when saving a zip archive. 
+
+The default value for the property is \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a6e7b34fa59e1bd229b207892956dc41c}{Zip64\+Option.\+Never}}. \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}{Zip64\+Option.\+As\+Necessary}} is safest, in the sense that you will not get an Exception if a pre-\/\+Z\+I\+P64 limit is exceeded. 
+
+You must set this property before calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Write()}}}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Encryption@{Encryption}}
+\index{Encryption@{Encryption}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Encryption}{Encryption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{Encryption\+Algorithm}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Encryption\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Encryption to use for entries added to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}. 
+
+The specified Encryption is applied to the entries subsequently written to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} instance. 
+
+If you set this to something other than \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6a6adf97f83acf6453d4a6a4b1070f3754}{Encryption\+Algorithm.\+None}}, you will also need to set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Password}} to a non-\/null, non-\/empty value in order to actually get encryption on the entry. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Password}}
+
+
+\end{DoxySeeAlso}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}{Zip\+Output\+Stream.\+Password}}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Ionic.\+Zip.\+Zip\+Entry.\+Encryption}}
+
+
+\end{DoxySeeAlso}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Zip\+Entry.\+Encryption}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ad9c1b5d8e5d348c31ca8126649dd245c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ad9c1b5d8e5d348c31ca8126649dd245c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Ignore\+Case@{Ignore\+Case}}
+\index{Ignore\+Case@{Ignore\+Case}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Ignore\+Case}{IgnoreCase}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Ignore\+Case\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Whether the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} should use case-\/insensitive comparisons when checking for uniqueness of zip entries. 
+
+Though the zip specification doesn\textquotesingle{}t prohibit zipfiles with duplicate entries, Sane zip files have no duplicates, and the Dot\+Net\+Zip library cannot create zip files with duplicate entries. If an application attempts to call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry(\+String)}} with a name that duplicates one already used within the archive, the library will throw an Exception. 
+
+This property allows the application to specify whether the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} instance considers ordinal case when checking for uniqueness of zip entries. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aca9775b4fa968157ae513542b4ccefbe}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aca9775b4fa968157ae513542b4ccefbe}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Length@{Length}}
+\index{Length@{Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Always returns a Not\+Supported\+Exception. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aa1c7d8a2814a63a083a360a9b4b941e7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aa1c7d8a2814a63a083a360a9b4b941e7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Output\+Used\+Zip64@{Output\+Used\+Zip64}}
+\index{Output\+Used\+Zip64@{Output\+Used\+Zip64}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Output\+Used\+Zip64}{OutputUsedZip64}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Output\+Used\+Zip64\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether Z\+I\+P64 extensions were used when saving the zip archive. 
+
+The value is defined only after the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} has been closed. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ad5f3ac0c07bfd366b2f6f7a1afbc2f18}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_ad5f3ac0c07bfd366b2f6f7a1afbc2f18}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Parallel\+Deflate\+Max\+Buffer\+Pairs@{Parallel\+Deflate\+Max\+Buffer\+Pairs}}
+\index{Parallel\+Deflate\+Max\+Buffer\+Pairs@{Parallel\+Deflate\+Max\+Buffer\+Pairs}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Parallel\+Deflate\+Max\+Buffer\+Pairs}{ParallelDeflateMaxBufferPairs}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Parallel\+Deflate\+Max\+Buffer\+Pairs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The maximum number of buffer pairs to use when performing parallel compression. 
+
+This property sets an upper limit on the number of memory buffer pairs to create when performing parallel compression. The implementation of the parallel compression stream allocates multiple buffers to facilitate parallel compression. As each buffer fills up, the stream uses \mbox{\hyperlink{}{Thread\+Pool.\+Queue\+User\+Work\+Item()}} to compress those buffers in a background threadpool thread. After a buffer is compressed, it is re-\/ordered and written to the output stream. 
+
+A higher number of buffer pairs enables a higher degree of parallelism, which tends to increase the speed of compression on multi-\/cpu computers. On the other hand, a higher number of buffer pairs also implies a larger memory consumption, more active worker threads, and a higher cpu utilization for any compression. This property enables the application to limit its memory consumption and C\+PU utilization behavior depending on requirements. 
+
+For each compression \char`\"{}task\char`\"{} that occurs in parallel, there are 2 buffers allocated\+: one for input and one for output. This property sets a limit for the number of pairs. The total amount of storage space allocated for buffering will then be (N$\ast$\+S$\ast$2), where N is the number of buffer pairs, S is the size of each buffer (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af75e64bdb4e118bc11e39cab569386c5}{Codec\+Buffer\+Size}}). By default, Dot\+Net\+Zip allocates 4 buffer pairs per C\+PU core, so if your machine has 4 cores, and you retain the default buffer size of 128k, then the Parallel\+Deflate\+Output\+Stream will use 4 $\ast$ 4 $\ast$ 2 $\ast$ 128kb of buffer memory in total, or 4mb, in blocks of 128kb. If you then set this property to 8, then the number will be 8 $\ast$ 2 $\ast$ 128kb of buffer memory, or 2mb. 
+
+C\+PU utilization will also go up with additional buffers, because a larger number of buffer pairs allows a larger number of background threads to compress in parallel. If you find that parallel compression is consuming too much memory or C\+PU, you can adjust this value downward. 
+
+The default value is 16. Different values may deliver better or worse results, depending on your priorities and the dynamic performance characteristics of your storage and compute resources. 
+
+This property is not the number of buffer pairs to use; it is an upper limit. An illustration\+: Suppose you have an application that uses the default value of this property (which is 16), and it runs on a machine with 2 C\+PU cores. In that case, Dot\+Net\+Zip will allocate 4 buffer pairs per C\+PU core, for a total of 8 pairs. The upper limit specified by this property has no effect. 
+
+The application can set this value at any time, but it is effective only if set before calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a8cd95df92691b8f266216f1d6984dfec}{Zip\+Output\+Stream.\+Write()}}} for the first time. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9918f5fa946840eb0ffee089ce5485b8}{Parallel\+Deflate\+Threshold}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9918f5fa946840eb0ffee089ce5485b8}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a9918f5fa946840eb0ffee089ce5485b8}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Parallel\+Deflate\+Threshold@{Parallel\+Deflate\+Threshold}}
+\index{Parallel\+Deflate\+Threshold@{Parallel\+Deflate\+Threshold}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Parallel\+Deflate\+Threshold}{ParallelDeflateThreshold}}
+{\footnotesize\ttfamily long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Parallel\+Deflate\+Threshold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The size threshold for an entry, above which a parallel deflate is used. 
+
+Dot\+Net\+Zip will use multiple threads to compress any \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}, when the {\ttfamily Compression\+Method} is Deflate, and if the entry is larger than the given size. Zero means \char`\"{}always use parallel
+    deflate\char`\"{}, while -\/1 means \char`\"{}never use parallel deflate\char`\"{}. 
+
+If the entry size cannot be known before compression, as with any entry added via a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}, then Parallel deflate will never be performed, unless the value of this property is zero. 
+
+A parallel deflate operations will speed up the compression of large files, on computers with multiple C\+P\+Us or multiple C\+PU cores. For files above 1mb, on a dual core or dual-\/cpu (2p) machine, the time required to compress the file can be 70\% of the single-\/threaded deflate. For very large files on 4p machines the compression can be done in 30\% of the normal time. The downside is that parallel deflate consumes extra memory during the deflate, and the deflation is slightly less effective. 
+
+Parallel deflate tends to not be as effective as single-\/threaded deflate because the original data stream is split into multiple independent buffers, each of which is compressed in parallel. But because they are treated independently, there is no opportunity to share compression dictionaries, and additional framing bytes must be added to the output stream. For that reason, a deflated stream may be slightly larger when compressed using parallel deflate, as compared to a traditional single-\/threaded deflate. For files of about 512k, the increase over the normal deflate is as much as 5\% of the total compressed size. For larger files, the difference can be as small as 0.\+1\%. 
+
+Multi-\/threaded compression does not give as much an advantage when using Encryption. This is primarily because encryption tends to slow down the entire pipeline. Also, multi-\/threaded compression gives less of an advantage when using lower compression levels, for example \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7dba8811d18b7814723c306a299c49e86701}{Ionic.\+Zlib.\+Compression\+Level.\+Best\+Speed}}. You may have to perform some tests to determine the best approach for your situation. 
+
+The default value for this property is -\/1, which means parallel compression will not be performed unless you set it to zero. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a574733e2d7d17252b7d89f966d588eb9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Password@{Password}}
+\index{Password@{Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily String Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Password\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets the password to be used on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} instance. 
+
+When writing a zip archive, this password is applied to the entries, not to the zip archive itself. It applies to any {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} subsequently written to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}. 
+
+Using a password does not encrypt or protect the \char`\"{}directory\char`\"{} of the archive -\/ the list of entries contained in the archive. If you set the {\ttfamily Password} property, the password actually applies to individual entries that are added to the archive, subsequent to the setting of this property. The list of filenames in the archive that is eventually created will appear in clear text, but the contents of the individual files are encrypted. This is how \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} encryption works. 
+
+If you set this property, and then add a set of entries to the archive via calls to {\ttfamily Put\+Next\+Entry}, then each entry is encrypted with that password. You may also want to change the password between adding different entries. If you set the password, add an entry, then set the password to {\ttfamily null} ({\ttfamily Nothing} in VB), and add another entry, the first entry is encrypted and the second is not. 
+
+When setting the {\ttfamily Password}, you may also want to explicitly set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}} property, to specify how to encrypt the entries added to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. If you set the {\ttfamily Password} to a non-\/null value and do not set \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_af1e123174110807666b7c4df62959112}{Encryption}}, then P\+K\+Zip 2.\+0 (\char`\"{}\+Weak\char`\"{}) encryption is used. This encryption is relatively weak but is very interoperable. If you set the password to a {\ttfamily null} value ({\ttfamily Nothing} in VB), {\ttfamily Encryption} is reset to None. 
+
+Special case\+: if you wrap a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}} around a non-\/seekable stream, and use encryption, and emit an entry of zero bytes, the {\ttfamily Close()} or {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a6328a636a423976167278aca779a3eca}{Put\+Next\+Entry()}}} following the entry will throw an exception. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a0b9d9a664498cd382a763dc674c0c01f}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a0b9d9a664498cd382a763dc674c0c01f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Position@{Position}}
+\index{Position@{Position}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting this property always returns a Not\+Supported\+Exception. Getting it returns the value of the Position on the underlying stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aec3ac84c19c3f7c1c7ded0cf4ebba5cf}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aec3ac84c19c3f7c1c7ded0cf4ebba5cf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Provisional\+Alternate\+Encoding@{Provisional\+Alternate\+Encoding}}
+\index{Provisional\+Alternate\+Encoding@{Provisional\+Alternate\+Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Provisional\+Alternate\+Encoding}{ProvisionalAlternateEncoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Provisional\+Alternate\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The text encoding to use when emitting entries into the zip archive, for those entries whose filenames or comments cannot be encoded with the default (I\+B\+M437) encoding. 
+
+In its zip specification
+
+, P\+K\+Ware describes two options for encoding filenames and comments\+: using I\+B\+M437 or U\+T\+F-\/8. But, some archiving tools or libraries do not follow the specification, and instead encode characters using the system default code page. For example, Win\+R\+AR when run on a machine in Shanghai may encode filenames with the Big-\/5 Chinese (950) code page. This behavior is contrary to the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification, but it occurs anyway. 
+
+When using Dot\+Net\+Zip to write zip archives that will be read by one of these other archivers, set this property to specify the code page to use when encoding the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a78e0c5ee8272a51926eabb9ffc1b38d9}{Zip\+Entry.\+File\+Name}} and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a59ecd22f231ce6c16aec38e12a90bd6a}{Zip\+Entry.\+Comment}} for each {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} in the zip file, for values that cannot be encoded with the default codepage for zip files, I\+B\+M437. This is why this property is \char`\"{}provisional\char`\"{}. In all cases, I\+B\+M437 is used where possible, in other words, where no loss of data would result. It is possible, therefore, to have a given entry with a {\ttfamily Comment} encoded in I\+B\+M437 and a {\ttfamily File\+Name} encoded with the specified \char`\"{}provisional\char`\"{} codepage. 
+
+Be aware that a zip file created after you\textquotesingle{}ve explicitly set the {\ttfamily Provisional\+Alternate\+Encoding} property to a value other than I\+B\+M437 may not be compliant to the P\+K\+Ware specification, and may not be readable by compliant archivers. On the other hand, many (most?) archivers are non-\/compliant and can read zip files created in arbitrary code pages. The trick is to use or specify the proper codepage when reading the zip. 
+
+When creating a zip archive using this library, it is possible to change the value of {\ttfamily Provisional\+Alternate\+Encoding} between each entry you add, and between adding entries and the call to {\ttfamily Close()}. Don\textquotesingle{}t do this. It will likely result in a zipfile that is not readable. For best interoperability, either leave {\ttfamily Provisional\+Alternate\+Encoding} alone, or specify it only once, before adding any entries to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} instance. There is one exception to this recommendation, described later. 
+
+When using an arbitrary, non-\/\+U\+T\+F8 code page for encoding, there is no standard way for the creator application -\/ whether Dot\+Net\+Zip, Win\+Zip, Win\+Rar, or something else -\/ to formally specify in the zip file which codepage has been used for the entries. As a result, readers of zip files are not able to inspect the zip file and determine the codepage that was used for the entries contained within it. It is left to the application or user to determine the necessary codepage when reading zip files encoded this way. If you use an incorrect codepage when reading a zipfile, you will get entries with filenames that are incorrect, and the incorrect filenames may even contain characters that are not legal for use within filenames in Windows. Extracting entries with illegal characters in the filenames will lead to exceptions. It\textquotesingle{}s too bad, but this is just the way things are with code pages in zip files. Caveat Emptor. 
+
+One possible approach for specifying the code page for a given zip file is to describe the code page in a human-\/readable form in the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} comment. For example, the comment may read \char`\"{}\+Entries in this archive are encoded in the
+  Big5 code page\char`\"{}. For maximum interoperability, the zip comment in this case should be encoded in the default, I\+B\+M437 code page. In this case, the zip comment is encoded using a different page than the filenames. To do this, Specify {\ttfamily Provisional\+Alternate\+Encoding} to your desired region-\/specific code page, once before adding any entries, and then set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a36027bbb7ea2355884a7922b429a3913}{Comment}} property and reset {\ttfamily Provisional\+Alternate\+Encoding} to I\+B\+M437 before calling {\ttfamily Close()}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a14669ca8951ced9c7ce418b0e813b77a}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a14669ca8951ced9c7ce418b0e813b77a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Strategy@{Strategy}}
+\index{Strategy@{Strategy}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Strategy}{Strategy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Ionic.\+Zlib.\+Compression\+Strategy}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Strategy\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The compression strategy to use for all entries. 
+
+Set the Strategy used by the Z\+L\+I\+B-\/compatible compressor, when compressing data for the entries in the zip archive. Different compression strategies work better on different sorts of data. The strategy parameter can affect the compression ratio and the speed of compression but not the correctness of the compresssion. For more information see \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_abde5c10a1e2ee453e1e8e22e79a39a3b}{Ionic.\+Zlib.\+Compression\+Strategy }}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a460b67a16c9154f213cdd7eb94e9e3db}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a460b67a16c9154f213cdd7eb94e9e3db}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Timestamp}{Timestamp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}{Zip\+Entry\+Timestamp}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Timestamp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The type of timestamp attached to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+Set this in order to specify the kind of timestamp that should be emitted into the zip file for each entry. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4df145de0a4fefaadaa7e98a308ce1db}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_a4df145de0a4fefaadaa7e98a308ce1db}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}!Use\+Unicode\+As\+Necessary@{Use\+Unicode\+As\+Necessary}}
+\index{Use\+Unicode\+As\+Necessary@{Use\+Unicode\+As\+Necessary}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Output\+Stream}}
+\subsubsection{\texorpdfstring{Use\+Unicode\+As\+Necessary}{UseUnicodeAsNecessary}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Output\+Stream.\+Use\+Unicode\+As\+Necessary\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether to encode entry filenames and entry comments using Unicode (U\+T\+F-\/8). 
+
+The P\+K\+Ware zip specification
+
+provides for encoding file names and file comments in either the I\+B\+M437 code page, or in U\+T\+F-\/8. This flag selects the encoding according to that specification. By default, this flag is false, and filenames and comments are encoded into the zip file in the I\+B\+M437 codepage. Setting this flag to true will specify that filenames and comments that cannot be encoded with I\+B\+M437 will be encoded with U\+T\+F-\/8. 
+
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} files created with strict adherence to the P\+K\+Ware specification with respect to U\+T\+F-\/8 encoding can contain entries with filenames containing any combination of Unicode characters, including the full range of characters from Chinese, Latin, Hebrew, Greek, Cyrillic, and many other alphabets. However, because at this time, the U\+T\+F-\/8 portion of the P\+K\+Ware specification is not broadly supported by other zip libraries and utilities, such zip files may not be readable by your favorite zip tool or archiver. In other words, interoperability will decrease if you set this flag to true. 
+
+In particular, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} files created with strict adherence to the P\+K\+Ware specification with respect to U\+T\+F-\/8 encoding will not work well with Explorer in Windows XP or Windows Vista, because Windows compressed folders, as far as I know, do not support U\+T\+F-\/8 in zip files. Vista can read the zip files, but shows the filenames incorrectly. Unpacking from Windows Vista Explorer will result in filenames that have rubbish characters in place of the high-\/order U\+T\+F-\/8 bytes. 
+
+Also, zip files that use U\+T\+F-\/8 encoding will not work well with Java applications that use the java.\+util.\+zip classes, as of v5.\+0 of the Java runtime. The Java runtime does not correctly implement the P\+K\+Ware specification in this regard. 
+
+As a result, we have the unfortunate situation that \char`\"{}correct\char`\"{} behavior by the Dot\+Net\+Zip library with regard to Unicode encoding of filenames during zip creation will result in zip files that are readable by strictly compliant and current tools (for example the most recent release of the commercial Win\+Zip tool); but these zip files will not be readable by various other tools or libraries, including Windows Explorer. 
+
+The Dot\+Net\+Zip library can read and write zip files with U\+T\+F8-\/encoded entries, according to the P\+Kware spec. If you use Dot\+Net\+Zip for both creating and reading the zip file, and you use U\+T\+F-\/8, there will be no loss of information in the filenames. For example, using a self-\/extractor created by this library will allow you to unpack files correctly with no loss of information in the filenames. 
+
+If you do not set this flag, it will remain false. If this flag is false, the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}} will encode all filenames and comments using the I\+B\+M437 codepage. This can cause \char`\"{}loss of information\char`\"{} on some filenames, but the resulting zipfile will be more interoperable with other utilities. As an example of the loss of information, diacritics can be lost. The o-\/tilde character will be down-\/coded to plain o. The c with a cedilla (Unicode 0x\+E7) used in Portugese will be downcoded to a c. Likewise, the O-\/stroke character (Unicode 248), used in Danish and Norwegian, will be down-\/coded to plain o. Chinese characters cannot be represented in codepage I\+B\+M437; when using the default encoding, Chinese characters in filenames will be represented as ?. These are all examples of \char`\"{}information loss\char`\"{}. 
+
+The loss of information associated to the use of the I\+B\+M437 encoding is inconvenient, and can also lead to runtime errors. For example, using I\+B\+M437, any sequence of 4 Chinese characters will be encoded as ????. If your application creates a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}, does not set the encoding, then adds two files, each with names of four Chinese characters each, this will result in a duplicate filename exception. In the case where you add a single file with a name containing four Chinese characters, the zipfile will save properly, but extracting that file later, with any zip tool, will result in an error, because the question mark is not legal for use within filenames on Windows. These are just a few examples of the problems associated to loss of information. 
+
+This flag is independent of the encoding of the content within the entries in the zip file. Think of the zip file as a container -\/ it supports an encoding. Within the container are other \char`\"{}containers\char`\"{} -\/ the file entries themselves. The encoding within those entries is independent of the encoding of the zip archive container for those entries. 
+
+Rather than specify the encoding in a binary fashion using this flag, an application can specify an arbitrary encoding via the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aec3ac84c19c3f7c1c7ded0cf4ebba5cf}{Provisional\+Alternate\+Encoding}} property. Setting the encoding explicitly when creating zip archives will result in non-\/compliant zip files that, curiously, are fairly interoperable. The challenge is, the P\+K\+Ware specification does not provide for a way to specify that an entry in a zip archive uses a code page that is neither I\+B\+M437 nor U\+T\+F-\/8. Therefore if you set the encoding explicitly when creating a zip archive, you must take care upon reading the zip archive to use the same code page. If you get it wrong, the behavior is undefined and may result in incorrect filenames, exceptions, stomach upset, hair loss, and acne. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream_aec3ac84c19c3f7c1c7ded0cf4ebba5cf}{Provisional\+Alternate\+Encoding}}
+
+
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Output\+Stream.\+cs\end{DoxyCompactItemize}

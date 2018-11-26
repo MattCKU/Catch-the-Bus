@@ -1,0 +1,4 @@
+var namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia =
+[
+    [ "GeneralDataStructures", "namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures.html", "namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures" ]
+];

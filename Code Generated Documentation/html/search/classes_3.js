@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['icustomtiledimporter',['ICustomTiledImporter',['../interface_tiled2_unity_1_1_i_custom_tiled_importer.html',1,'Tiled2Unity']]],
-  ['importbehaviour',['ImportBehaviour',['../class_tiled2_unity_1_1_import_behaviour.html',1,'Tiled2Unity']]],
-  ['importtiled2unity',['ImportTiled2Unity',['../class_tiled2_unity_1_1_import_tiled2_unity.html',1,'Tiled2Unity']]],
-  ['importutils',['ImportUtils',['../class_tiled2_unity_1_1_import_utils.html',1,'Tiled2Unity']]]
+  ['defaultpool',['DefaultPool',['../class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_default_pool.html',1,'SuperTiled2Unity::Editor::LibTessDotNet']]],
+  ['defaulttypepool',['DefaultTypePool',['../class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_default_type_pool.html',1,'SuperTiled2Unity::Editor::LibTessDotNet']]],
+  ['deflatestream',['DeflateStream',['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream.html',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['deleteenemy',['deleteEnemy',['../classdelete_enemy.html',1,'']]],
+  ['doublepoint',['DoublePoint',['../struct_super_tiled2_unity_1_1_editor_1_1_clipper_lib_1_1_double_point.html',1,'SuperTiled2Unity::Editor::ClipperLib']]]
 ];

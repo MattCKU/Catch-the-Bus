@@ -1,0 +1,9 @@
+var class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary =
+[
+    [ "MultiValueDictionary", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html#a88bdd33727b767235b716c268c4a52d2", null ],
+    [ "Add", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html#ab8022bd65275815aa9f61cbe33c07fab", null ],
+    [ "ContainsValue", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html#ab98e6429022ba2fa8ca951e73ffb345f", null ],
+    [ "GetValues", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html#a6e30cf7a205e22c3c87e88acdc3f778e", null ],
+    [ "Merge", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html#af9d3e836e512ec78970c0c037a8f9000", null ],
+    [ "Remove", "class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary.html#a084278ce15ca1cd8eb913511fbe5b7df", null ]
+];

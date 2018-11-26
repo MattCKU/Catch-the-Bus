@@ -1,0 +1,721 @@
+\hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zip Namespace Reference}
+\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zip@{Super\+Tiled2\+Unity.\+Ionic.\+Zip}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_add_progress_event_args}{Add\+Progress\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Provides information about the progress of a Add operation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_bad_crc_exception}{Bad\+Crc\+Exception}}
+\begin{DoxyCompactList}\small\item\em Issued when an C\+RC check fails upon extracting an entry from a zip archive. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_bad_password_exception}{Bad\+Password\+Exception}}
+\begin{DoxyCompactList}\small\item\em Issued when an {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a346d1d4eaf4ccb1274fe31629f3cb429}{Zip\+Entry.\+Extract\+With\+Password()}}} method is invoked with an incorrect password. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_bad_read_exception}{Bad\+Read\+Exception}}
+\begin{DoxyCompactList}\small\item\em Indicates that a read was attempted on a stream, and bad or incomplete data was received. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_bad_state_exception}{Bad\+State\+Exception}}
+\begin{DoxyCompactList}\small\item\em Indicates that an operation was attempted on a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} which was not possible given the state of the instance. For example, if you call {\ttfamily Save()} on a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} which has no filename set, you can get this exception. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_com_helper}{Com\+Helper}}
+\begin{DoxyCompactList}\small\item\em This class exposes a set of C\+O\+M-\/accessible wrappers for static methods available on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class. You don\textquotesingle{}t need this class unless you are using Dot\+Net\+Zip from a C\+OM environment. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_counting_stream}{Counting\+Stream}}
+\begin{DoxyCompactList}\small\item\em A decorator stream. It wraps another stream, and performs bookkeeping to keep track of the stream Position. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_extract_progress_event_args}{Extract\+Progress\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Provides information about the progress of the extract operation. \end{DoxyCompactList}\item 
+class {\bfseries Offset\+Stream}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options}{Read\+Options}}
+\begin{DoxyCompactList}\small\item\em A class for collecting the various options that can be used when Reading zip files for extraction or update. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_progress_event_args}{Read\+Progress\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Provides information about the progress of a Read operation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_save_progress_event_args}{Save\+Progress\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Provides information about the progress of a save operation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_self_extractor_save_options}{Self\+Extractor\+Save\+Options}}
+\begin{DoxyCompactList}\small\item\em The options for generating a self-\/extracting archive. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_sfx_generation_exception}{Sfx\+Generation\+Exception}}
+\begin{DoxyCompactList}\small\item\em Issued when errors occur saving a self-\/extracting archive. \end{DoxyCompactList}\item 
+class {\bfseries Shared\+Utilities}
+\begin{DoxyCompactList}\small\item\em Collects general purpose utility methods. \end{DoxyCompactList}\item 
+class {\bfseries Zip\+Cipher\+Stream}
+\begin{DoxyCompactList}\small\item\em A Stream for reading and concurrently decrypting data from a zip file, or for writing and concurrently encrypting data to a zip file. \end{DoxyCompactList}\item 
+class {\bfseries Zip\+Constants}
+\item 
+class {\bfseries Zip\+Container}
+\item 
+class {\bfseries Zip\+Crypto}
+\begin{DoxyCompactList}\small\item\em This class implements the \char`\"{}traditional\char`\"{} or \char`\"{}classic\char`\"{} P\+K\+Zip encryption, which today is considered to be weak. On the other hand it is ubiquitous. This class is intended for use only by the Dot\+Net\+Zip library. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}
+\begin{DoxyCompactList}\small\item\em Represents a single entry in a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. Typically, applications get a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} by enumerating the entries within a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}, or by adding an entry to a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_error_event_args}{Zip\+Error\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Provides information about the an error that occurred while zipping. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_exception}{Zip\+Exception}}
+\begin{DoxyCompactList}\small\item\em Base class for all exceptions defined by and throw by the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} library. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} type represents a zip archive file. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}
+\begin{DoxyCompactList}\small\item\em Provides a stream metaphor for reading zip files. \end{DoxyCompactList}\item 
+class {\bfseries Zip\+Output}
+\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}
+\begin{DoxyCompactList}\small\item\em Provides a stream metaphor for generating zip files. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args}{Zip\+Progress\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Provides information about the progress of a save, read, or extract operation. This is a base class; you will probably use one of the classes derived from this one. \end{DoxyCompactList}\item 
+class {\bfseries Zip\+Segmented\+Stream}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{Encryption\+Algorithm}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6a6adf97f83acf6453d4a6a4b1070f3754}{Encryption\+Algorithm.\+None}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ac1ce4469c40ac5817fb1c9c7909b18f6}{Encryption\+Algorithm.\+Pkzip\+Weak}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ab4080bdf74febf04d578ff105cce9d3f}{Encryption\+Algorithm.\+Unsupported}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em An enum that provides the various encryption algorithms supported by this library. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}{Zip\+Progress\+Event\+Type}} \{ \newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faadd4f41ec9305b334c5a247584c45898}{Zip\+Progress\+Event\+Type.\+Adding\+\_\+\+Started}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf97124a040226d9b24664e089d73e9b7}{Zip\+Progress\+Event\+Type.\+Adding\+\_\+\+After\+Add\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fab3c81a842a321d2e1f5cf86c4a01f5bc}{Zip\+Progress\+Event\+Type.\+Adding\+\_\+\+Completed}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fabc902821c623f35074e9fa76d571d6c9}{Zip\+Progress\+Event\+Type.\+Reading\+\_\+\+Started}}, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa7eebe2e9801f788320609bcf3c864c29}{Zip\+Progress\+Event\+Type.\+Reading\+\_\+\+Before\+Read\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa31f4741b407f9836d3e5c7d7a631f3ce}{Zip\+Progress\+Event\+Type.\+Reading\+\_\+\+After\+Read\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa1d3f7ae2eca18fce8cc7ec14bd068a58}{Zip\+Progress\+Event\+Type.\+Reading\+\_\+\+Completed}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fac21d747b48ff4e5a157acddc466a3b78}{Zip\+Progress\+Event\+Type.\+Reading\+\_\+\+Archive\+Bytes\+Read}}, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa981045d76077160a65da34e56daa04ba}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+Started}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6a5772cb33fcfbfbe2f970efdac29ac4}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+Before\+Write\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa25e89555bbf919c6e0d8d535bbdfcc67}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+After\+Write\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa3548b0e40a71a225262bd6326a4aa412}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+Completed}}, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faa1abc8670cbcfef255121364a3cf8bd8}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+After\+Save\+Temp\+Archive}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf723a2db08c9133606c2ad6621db8bfa}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+Before\+Rename\+Temp\+Archive}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fae54724e2102b8488d767c1341635a704}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+After\+Rename\+Temp\+Archive}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fafd6c4de11ac69e68ca709f43e21ddeab}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+After\+Compile\+Self\+Extractor}}, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa854ff1908364575616ad901a1050978b}{Zip\+Progress\+Event\+Type.\+Saving\+\_\+\+Entry\+Bytes\+Read}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faba311c17b20ee9533ccb290eb7d73f47}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+Before\+Extract\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa9800ef70dbd24e2445fdcd260a1487b6}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+After\+Extract\+Entry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf76e96e54af22ba88a1e180a9c935f05}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite}}, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fab1d6fef4a55c43c15713a126b8471092}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+Entry\+Bytes\+Written}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa36adf3f25d454b09928980646e2459d6}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+Before\+Extract\+All}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa89f4cb8811e15be571ff87cfd6687158}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+After\+Extract\+All}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6d93d77ba4439ec2a5bf59f7282b906f}{Zip\+Progress\+Event\+Type.\+Error\+\_\+\+Saving}}
+ \}
+\begin{DoxyCompactList}\small\item\em In an Event\+Args type, indicates which sort of progress event is being reported. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Extract\+Existing\+File\+Action}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a8ce61dd2505effd96f937fa743b6491f}{Extract\+Existing\+File\+Action.\+Throw}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0aa79e43bcce2e13d7d7f88ad674daf33c}{Extract\+Existing\+File\+Action.\+Overwrite\+Silently}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a80333c1a464b4e4f50e71e8b923931ca}{Extract\+Existing\+File\+Action.\+Do\+Not\+Overwrite}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a260afa558b9392c717b397a63c86e1fe}{Extract\+Existing\+File\+Action.\+Invoke\+Extract\+Progress\+Event}}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum for the options when extracting an entry would overwrite an existing file. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}{Zip\+Entry\+Timestamp}} \{ \newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6adf97f83acf6453d4a6a4b1070f3754}{Zip\+Entry\+Timestamp.\+None}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fdaa58e0423869da99d6ca169de8a000cc7}{Zip\+Entry\+Timestamp.\+D\+OS}} = 1, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fdaaea23489ce3aa9b6406ebb28e0cda430}{Zip\+Entry\+Timestamp.\+Windows}} = 2, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6ec1bd1ea6a5d67a63b20c8f6172bddd}{Zip\+Entry\+Timestamp.\+Unix}} = 4, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda25d1dd2095cb171345c14d53d73c7c22}{Zip\+Entry\+Timestamp.\+Info\+Zip1}} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em An enum that specifies the type of timestamp available on the Zip\+Entry. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}{Compression\+Method}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3a6adf97f83acf6453d4a6a4b1070f3754}{Compression\+Method.\+None}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3ae2430ff724c45c3d68893fb1a3584426}{Compression\+Method.\+Deflate}} = 8
+ \}
+\begin{DoxyCompactList}\small\item\em The method of compression to use for a particular Zip\+Entry. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83}{Zip\+Entry\+Source}} \{ \newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a6adf97f83acf6453d4a6a4b1070f3754}{Zip\+Entry\+Source.\+None}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83ae2d63d195b2bce9c8d5bf797a268bcec}{Zip\+Entry\+Source.\+File\+System}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Zip\+Entry\+Source.\+Stream}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{Zip\+Entry\+Source.\+Zip\+File}}, 
+\newline
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a6b1de844c6db599faedbfc860c6744f6}{Zip\+Entry\+Source.\+Write\+Delegate}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aa3749edaef8c43a935bed60ce9a06430}{Zip\+Entry\+Source.\+Jit\+Stream}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a93aca5a1a0fbd46c00163b840a8d96d5}{Zip\+Entry\+Source.\+Zip\+Output\+Stream}}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum that specifies the source of the Zip\+Entry. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593}{Zip\+Error\+Action}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a8ce61dd2505effd96f937fa743b6491f}{Zip\+Error\+Action.\+Throw}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a72ef2b9b6965d078e3c7f95487a82d1c}{Zip\+Error\+Action.\+Skip}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a6327b4e59f58137083214a1fec358855}{Zip\+Error\+Action.\+Retry}}, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a438494fa2a47a746a5f0660862a5bf68}{Zip\+Error\+Action.\+Invoke\+Error\+Event}}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum providing the options when an error occurs during opening or reading of a file or directory that is being saved to a zip file. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69}{Zip64\+Option}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7a1920d61156abc05a60135aefe8bc67}{Zip64\+Option.\+Default}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a6e7b34fa59e1bd229b207892956dc41c}{Zip64\+Option.\+Never}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}{Zip64\+Option.\+As\+Necessary}} = 1, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a68eec46437c384d8dad18d5464ebc35c}{Zip64\+Option.\+Always}}
+ \}
+\begin{DoxyCompactList}\small\item\em Options for using Z\+I\+P64 extensions when saving zip archives. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{Zip\+Option}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca7a1920d61156abc05a60135aefe8bc67}{Zip\+Option.\+Default}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca6e7b34fa59e1bd229b207892956dc41c}{Zip\+Option.\+Never}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca7bfa2d7f3d5b79692fe22a06113406c8}{Zip\+Option.\+As\+Necessary}} = 1, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca68eec46437c384d8dad18d5464ebc35c}{Zip\+Option.\+Always}}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum representing the values on a three-\/way toggle switch for various options in the library. This might be used to specify whether to employ a particular text encoding, or to use Z\+I\+P64 extensions, or some other option. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a8f124e362f4ed3751ef5f0f3ba6085e3}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a8f124e362f4ed3751ef5f0f3ba6085e3}} 
+enum {\bfseries Add\+Or\+Update\+Action} \{ {\bfseries Add\+Only} = 0, 
+{\bfseries Add\+Or\+Update}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963}{Self\+Extractor\+Flavor}} \{ \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963a9e6155c58429c83277586913ab5f0e11}{Self\+Extractor\+Flavor.\+Console\+Application}} = 0, 
+\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963a92c4af478ae5363eaacde6de61c1a549}{Self\+Extractor\+Flavor.\+Win\+Forms\+Application}}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum that provides the different self-\/extractor flavors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3bc35e889c4343c0028b310499c6886}{Write\+Delegate}} (string entry\+Name, System.\+I\+O.\+Stream stream)
+\begin{DoxyCompactList}\small\item\em Delegate in which the application writes the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} content for the named entry. \end{DoxyCompactList}\item 
+delegate System.\+I\+O.\+Stream \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a02583f9b7b1b724562c5ead6715256f2}{Open\+Delegate}} (string entry\+Name)
+\begin{DoxyCompactList}\small\item\em Delegate in which the application opens the stream, just-\/in-\/time, for the named entry. \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a19b625523fef0bcff4722ebb8a04b5d0}{Close\+Delegate}} (string entry\+Name, System.\+I\+O.\+Stream stream)
+\begin{DoxyCompactList}\small\item\em Delegate in which the application closes the stream, just-\/in-\/time, for the named entry. \end{DoxyCompactList}\item 
+delegate \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Ionic.\+Zlib.\+Compression\+Level}} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_ab6b15a72531220e6f98c46b594c9a849}{Set\+Compression\+Callback}} (string local\+File\+Name, string file\+Name\+In\+Archive)
+\begin{DoxyCompactList}\small\item\em Delegate for the callback by which the application tells the library the Compression\+Level to use for a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Compression\+Method@{Compression\+Method}}
+\index{Compression\+Method@{Compression\+Method}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Compression\+Method}{CompressionMethod}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Compression\+Method}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The method of compression to use for a particular \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+P\+K\+Ware\textquotesingle{}s Z\+IP Specification
+
+describes a number of distinct cmopression methods that can be used within a zip file. Dot\+Net\+Zip supports a subset of them. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!None@{None}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3a6adf97f83acf6453d4a6a4b1070f3754}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&No compression at all. For C\+OM environments, the value is 0 (zero). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Deflate@{Deflate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Deflate@{Deflate}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3ae2430ff724c45c3d68893fb1a3584426}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a48fd7a4529dd87fb2fda54f62ae3d8a3ae2430ff724c45c3d68893fb1a3584426}} 
+Deflate&D\+E\+F\+L\+A\+TE compression, as described in I\+E\+TF R\+FC 1951
+
+. This is the \char`\"{}normal\char`\"{} compression used in zip files. For C\+OM environments, the value is 8. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Encryption\+Algorithm@{Encryption\+Algorithm}}
+\index{Encryption\+Algorithm@{Encryption\+Algorithm}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Encryption\+Algorithm}{EncryptionAlgorithm}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Encryption\+Algorithm}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum that provides the various encryption algorithms supported by this library. 
+
+{\ttfamily Pkzip\+Weak} implies the use of \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} 2.\+0 encryption, which is known to be weak and subvertible. 
+
+A note on interoperability\+: Values of {\ttfamily Pkzip\+Weak} and {\ttfamily None} are specified in P\+K\+W\+A\+RE\textquotesingle{}s zip specification
+
+, and are considered to be \char`\"{}standard\char`\"{}. \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archives produced using these options will be interoperable with many other zip tools and libraries, including Windows Explorer. 
+
+Values of {\ttfamily Win\+Zip\+Aes128} and {\ttfamily Win\+Zip\+Aes256} are not part of the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification, but rather imply the use of a vendor-\/specific extension from Win\+Zip. If you want to produce interoperable \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archives, do not use these values. For example, if you produce a zip archive using Win\+Zip\+Aes256, you will be able to open it in Windows Explorer on Windows XP and Vista, but you will not be able to extract entries; trying this will lead to an \char`\"{}unspecified
+  error\char`\"{}. For this reason, some people have said that a zip archive that uses Win\+Zip\textquotesingle{}s A\+ES encryption is not actually a zip archive at all. A zip archive produced this way will be readable with the Win\+Zip tool (Version 11 and beyond). 
+
+There are other third-\/party tools and libraries, both commercial and otherwise, that support Win\+Zip\textquotesingle{}s A\+ES encryption. These will be able to read A\+E\+S-\/encrypted zip archives produced by Dot\+Net\+Zip, and conversely applications that use Dot\+Net\+Zip to read zip archives will be able to read A\+E\+S-\/encrypted archives produced by those tools or libraries. Consult the documentation for those other tools and libraries to find out if Win\+Zip\textquotesingle{}s A\+ES encryption is supported. 
+
+In case you care\+: According to the Win\+Zip specification
+
+, the actual A\+ES key used is derived from the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a4e1ce23f98c2e3a60a2d47a25a243a82}{Zip\+Entry.\+Password}} via an algorithm that complies with R\+FC 2898
+
+, using an iteration count of 1000. The algorithm is sometimes referred to as P\+B\+K\+D\+F2, which stands for \char`\"{}\+Password Based Key Derivation Function \#2\char`\"{}. 
+
+A word about password strength and length\+: The A\+ES encryption technology is very good, but any system is only as secure as the weakest link. If you want to secure your data, be sure to use a password that is hard to guess. To make it harder to guess (increase its \char`\"{}entropy\char`\"{}), you should make it longer. If you use normal characters from an A\+S\+C\+II keyboard, a password of length 20 will be strong enough that it will be impossible to guess. For more information on that, I\textquotesingle{}d encourage you to read this article.
+
+The Win\+Zip A\+ES algorithms are not supported with the version of Dot\+Net\+Zip that runs on the .N\+ET Compact Framework. This is because .N\+ET CF lacks the H\+M\+A\+C\+S\+H\+A1 class that is required for producing the archive. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!None@{None}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6a6adf97f83acf6453d4a6a4b1070f3754}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&No encryption at all. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pkzip\+Weak@{Pkzip\+Weak}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Pkzip\+Weak@{Pkzip\+Weak}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ac1ce4469c40ac5817fb1c9c7909b18f6}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ac1ce4469c40ac5817fb1c9c7909b18f6}} 
+Pkzip\+Weak&Traditional or Classic pkzip encryption. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unsupported@{Unsupported}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Unsupported@{Unsupported}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ab4080bdf74febf04d578ff105cce9d3f}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3f4e8aa12ef827ac72177a49b4e28e6ab4080bdf74febf04d578ff105cce9d3f}} 
+Unsupported&An encryption algorithm that is not supported by Dot\+Net\+Zip. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extract\+Existing\+File\+Action@{Extract\+Existing\+File\+Action}}
+\index{Extract\+Existing\+File\+Action@{Extract\+Existing\+File\+Action}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Extract\+Existing\+File\+Action}{ExtractExistingFileAction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Extract\+Existing\+File\+Action}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum for the options when extracting an entry would overwrite an existing file. 
+
+This enum describes the actions that the library can take when an {\ttfamily Extract()} or {\ttfamily Extract\+With\+Password()} method is called to extract an entry to a filesystem, and the extraction would overwrite an existing filesystem file. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Throw@{Throw}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Throw@{Throw}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a8ce61dd2505effd96f937fa743b6491f}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a8ce61dd2505effd96f937fa743b6491f}} 
+Throw&Throw an exception when extraction would overwrite an existing file. (For C\+OM clients, this is a 0 (zero).) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Overwrite\+Silently@{Overwrite\+Silently}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Overwrite\+Silently@{Overwrite\+Silently}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0aa79e43bcce2e13d7d7f88ad674daf33c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0aa79e43bcce2e13d7d7f88ad674daf33c}} 
+Overwrite\+Silently&When extraction would overwrite an existing file, overwrite the file silently. The overwrite will happen even if the target file is marked as read-\/only. (For C\+OM clients, this is a 1.) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Do\+Not\+Overwrite@{Do\+Not\+Overwrite}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Do\+Not\+Overwrite@{Do\+Not\+Overwrite}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a80333c1a464b4e4f50e71e8b923931ca}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a80333c1a464b4e4f50e71e8b923931ca}} 
+Do\+Not\+Overwrite&When extraction would overwrite an existing file, don\textquotesingle{}t overwrite the file, silently. (For C\+OM clients, this is a 2.) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Invoke\+Extract\+Progress\+Event@{Invoke\+Extract\+Progress\+Event}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Invoke\+Extract\+Progress\+Event@{Invoke\+Extract\+Progress\+Event}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a260afa558b9392c717b397a63c86e1fe}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a260afa558b9392c717b397a63c86e1fe}} 
+Invoke\+Extract\+Progress\+Event&When extraction would overwrite an existing file, invoke the Extract\+Progress event, using an event type of \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf76e96e54af22ba88a1e180a9c935f05}{Zip\+Progress\+Event\+Type.\+Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite}}. In this way, the application can decide, just-\/in-\/time, whether to overwrite the file. For example, a G\+UI application may wish to pop up a dialog to allow the user to choose. You may want to examine the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_extract_progress_event_args_a0202e78e09c6e75adc848cd4c24c59ae}{Extract\+Progress\+Event\+Args.\+Extract\+Location}} property before making the decision. If, after your processing in the Extract progress event, you want to N\+OT extract the file, set \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Zip\+Entry.\+Extract\+Existing\+File}} on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_aa2cf173f83591b5b52e15ca4c9d34129}{Zip\+Progress\+Event\+Args.\+Current\+Entry}}} to {\ttfamily Do\+Not\+Overwrite}. If you do want to extract the file, set {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ad1ab903c29b91edb82e7c6a9768552dd}{Zip\+Entry.\+Extract\+Existing\+File}}} to {\ttfamily Overwrite\+Silently}. If you want to cancel the Extraction, set {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a91248747aca5704f3cab69af3a289028}{Zip\+Progress\+Event\+Args.\+Cancel}}} to true. Cancelling differs from using Do\+Not\+Overwrite in that a cancel will not extract any further entries, if there are any. (For C\+OM clients, the value of this enum is a 3.) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Self\+Extractor\+Flavor@{Self\+Extractor\+Flavor}}
+\index{Self\+Extractor\+Flavor@{Self\+Extractor\+Flavor}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Self\+Extractor\+Flavor}{SelfExtractorFlavor}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Self\+Extractor\+Flavor}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum that provides the different self-\/extractor flavors 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Console\+Application@{Console\+Application}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Console\+Application@{Console\+Application}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963a9e6155c58429c83277586913ab5f0e11}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963a9e6155c58429c83277586913ab5f0e11}} 
+Console\+Application&A self-\/extracting zip archive that runs from the console or command line. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Win\+Forms\+Application@{Win\+Forms\+Application}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Win\+Forms\+Application@{Win\+Forms\+Application}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963a92c4af478ae5363eaacde6de61c1a549}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa52d746f0c73d4f07fe6b2d188979963a92c4af478ae5363eaacde6de61c1a549}} 
+Win\+Forms\+Application&A self-\/extracting zip archive that presents a graphical user interface when it is executed. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip64\+Option@{Zip64\+Option}}
+\index{Zip64\+Option@{Zip64\+Option}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Zip64\+Option}{Zip64Option}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip64\+Option}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Options for using Z\+I\+P64 extensions when saving zip archives. 
+
+Designed many years ago, the original zip specification from P\+K\+W\+A\+RE
+
+allowed for 32-\/bit quantities for the compressed and uncompressed sizes of zip entries, as well as a 32-\/bit quantity for specifying the length of the zip archive itself, and a maximum of 65535 entries. These limits are now regularly exceeded in many backup and archival scenarios. Recently, P\+K\+Ware added extensions to the original zip spec, called \char`\"{}\+Z\+I\+P64 extensions\char`\"{}, to raise those limitations. This property governs whether Dot\+Net\+Zip will use those extensions when writing zip archives. The use of these extensions is optional and explicit in Dot\+Net\+Zip because, despite the status of Z\+I\+P64 as a bona fide standard, many other zip tools and libraries do not support Z\+I\+P64, and therefore a zip file with Z\+I\+P64 extensions may be unreadable by some of those other tools. 
+
+Set this property to \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a68eec46437c384d8dad18d5464ebc35c}{Zip64\+Option.\+Always}} to always use Z\+I\+P64 extensions when saving, regardless of whether your zip archive needs it. Suppose you add 5 files, each under 100k, to a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}. If you specify Always for this flag, you will get a Z\+I\+P64 archive, though the archive does not need to use Z\+I\+P64 because none of the original zip limits had been exceeded. 
+
+Set this property to \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a6e7b34fa59e1bd229b207892956dc41c}{Zip64\+Option.\+Never}} to tell the Dot\+Net\+Zip library to never use Z\+I\+P64 extensions. This is useful for maximum compatibility and interoperability, at the expense of the capability of handling large files or large archives. NB\+: Windows Explorer in Windows XP and Windows Vista cannot currently extract files from a zip64 archive, so if you want to guarantee that a zip archive produced by this library will work in Windows Explorer, use {\ttfamily Never}. If you set this property to \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a6e7b34fa59e1bd229b207892956dc41c}{Zip64\+Option.\+Never}}, and your application creates a zip that would exceed one of the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} limits, the library will throw an exception while saving the zip file. 
+
+Set this property to \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}{Zip64\+Option.\+As\+Necessary}} to tell the Dot\+Net\+Zip library to use the Z\+I\+P64 extensions when required by the entry. After the file is compressed, the original and compressed sizes are checked, and if they exceed the limits described above, then zip64 can be used. That is the general idea, but there is an additional wrinkle when saving to a non-\/seekable device, like the A\+S\+P.\+N\+ET {\ttfamily Response.\+Output\+Stream}, or {\ttfamily Console.\+Out}. When using non-\/seekable streams for output, the entry header -\/ which indicates whether zip64 is in use -\/ is emitted before it is known if zip64 is necessary. It is only after all entries have been saved that it can be known if Z\+I\+P64 will be required. On seekable output streams, after saving all entries, the library can seek backward and re-\/emit the zip file header to be consistent with the actual Z\+I\+P64 requirement. But using a non-\/seekable output stream, the library cannot seek backward, so the header can never be changed. In other words, the archive\textquotesingle{}s use of Z\+I\+P64 extensions is not alterable after the header is emitted. Therefore, when saving to non-\/seekable streams, using \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}{Zip64\+Option.\+As\+Necessary}} is the same as using \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a68eec46437c384d8dad18d5464ebc35c}{Zip64\+Option.\+Always}}\+: it will always produce a zip archive that uses Z\+I\+P64 extensions. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Default@{Default}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7a1920d61156abc05a60135aefe8bc67}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7a1920d61156abc05a60135aefe8bc67}} 
+Default&The default behavior, which is \char`\"{}\+Never\char`\"{}. (For C\+OM clients, this is a 0 (zero).) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Never@{Never}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Never@{Never}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a6e7b34fa59e1bd229b207892956dc41c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a6e7b34fa59e1bd229b207892956dc41c}} 
+Never&Do not use Z\+I\+P64 extensions when writing zip archives. (For C\+OM clients, this is a 0 (zero).) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{As\+Necessary@{As\+Necessary}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!As\+Necessary@{As\+Necessary}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a7bfa2d7f3d5b79692fe22a06113406c8}} 
+As\+Necessary&Use Z\+I\+P64 extensions when writing zip archives, as necessary. For example, when a single entry exceeds 0x\+F\+F\+F\+F\+F\+F\+FF in size, or when the archive as a whole exceeds 0x\+F\+F\+F\+F\+F\+F\+FF in size, or when there are more than 65535 entries in an archive. (For C\+OM clients, this is a 1.) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Always@{Always}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Always@{Always}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a68eec46437c384d8dad18d5464ebc35c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a0c873ba2a5b73de966e876643830dc69a68eec46437c384d8dad18d5464ebc35c}} 
+Always&Always use Z\+I\+P64 extensions when writing zip archives, even when unnecessary. (For C\+OM clients, this is a 2.) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+Entry\+Source@{Zip\+Entry\+Source}}
+\index{Zip\+Entry\+Source@{Zip\+Entry\+Source}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Zip\+Entry\+Source}{ZipEntrySource}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry\+Source}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum that specifies the source of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!None@{None}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a6adf97f83acf6453d4a6a4b1070f3754}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Default value. Invalid on a bonafide \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{File\+System@{File\+System}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!File\+System@{File\+System}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83ae2d63d195b2bce9c8d5bf797a268bcec}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83ae2d63d195b2bce9c8d5bf797a268bcec}} 
+File\+System&The entry was instantiated by calling Add\+File() or another method that added an entry from the filesystem. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Stream@{Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Stream@{Stream}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}} 
+Stream&The entry was instantiated via \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a7f8d10ab9f75f0de6d27a61e5466c210}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string,string)}} or \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a5ae21397e59e0699aa8701822477e537}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string,\+System.\+I\+O.\+Stream)}} . \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zip\+File@{Zip\+File}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+File@{Zip\+File}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}} 
+Zip\+File&The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} was instantiated by reading a zipfile. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Write\+Delegate@{Write\+Delegate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Write\+Delegate@{Write\+Delegate}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a6b1de844c6db599faedbfc860c6744f6}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a6b1de844c6db599faedbfc860c6744f6}} 
+Write\+Delegate&The content for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} will be or was provided by the Write\+Delegate. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Jit\+Stream@{Jit\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Jit\+Stream@{Jit\+Stream}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aa3749edaef8c43a935bed60ce9a06430}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aa3749edaef8c43a935bed60ce9a06430}} 
+Jit\+Stream&The content for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} will be obtained from the stream dispensed by the {\ttfamily Open\+Delegate}. The entry was instantiated via \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aca70604c3928ce13d5028d31b7d491fd}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string,\+Open\+Delegate,\+Close\+Delegate)}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zip\+Output\+Stream@{Zip\+Output\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+Output\+Stream@{Zip\+Output\+Stream}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a93aca5a1a0fbd46c00163b840a8d96d5}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a93aca5a1a0fbd46c00163b840a8d96d5}} 
+Zip\+Output\+Stream&The content for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} will be or was obtained from a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+Entry\+Timestamp@{Zip\+Entry\+Timestamp}}
+\index{Zip\+Entry\+Timestamp@{Zip\+Entry\+Timestamp}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Zip\+Entry\+Timestamp}{ZipEntryTimestamp}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fd}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Entry\+Timestamp}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum that specifies the type of timestamp available on the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+The last modified time of a file can be stored in multiple ways in a zip file, and they are not mutually exclusive\+: 
+
+
+\begin{DoxyItemize}
+\item In the so-\/called \char`\"{}\+D\+O\+S\char`\"{} format, which has a 2-\/second precision. Values are rounded to the nearest even second. For example, if the time on the file is 12\+:34\+:43, then it will be stored as 12\+:34\+:44. This first value is accessible via the {\ttfamily Last\+Modified} property. This value is always present in the metadata for each zip entry. In some cases the value is invalid, or zero. 
+
+
+\item In the so-\/called \char`\"{}\+Windows\char`\"{} or \char`\"{}\+N\+T\+F\+S\char`\"{} format, as an 8-\/byte integer quantity expressed as the number of 1/10 milliseconds (in other words the number of 100 nanosecond units) since January 1, 1601 (U\+TC). This format is how Windows represents file times. This time is accessible via the {\ttfamily Modified\+Time} property. 
+
+
+\item In the \char`\"{}\+Unix\char`\"{} format, a 4-\/byte quantity specifying the number of seconds since January 1, 1970 U\+TC. 
+
+
+\item In an older format, now deprecated but still used by some current tools. This format is also a 4-\/byte quantity specifying the number of seconds since January 1, 1970 U\+TC. 
+
+
+\end{DoxyItemize}
+
+This bit field describes which of the formats were found in a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} that was read. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!None@{None}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6adf97f83acf6453d4a6a4b1070f3754}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6adf97f83acf6453d4a6a4b1070f3754}} 
+None&Default value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+OS@{D\+OS}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!D\+OS@{D\+OS}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fdaa58e0423869da99d6ca169de8a000cc7}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fdaa58e0423869da99d6ca169de8a000cc7}} 
+D\+OS&A D\+OS timestamp with 2-\/second precision. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Windows@{Windows}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Windows@{Windows}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fdaaea23489ce3aa9b6406ebb28e0cda430}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fdaaea23489ce3aa9b6406ebb28e0cda430}} 
+Windows&A Windows timestamp with 100-\/ns precision. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unix@{Unix}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Unix@{Unix}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6ec1bd1ea6a5d67a63b20c8f6172bddd}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda6ec1bd1ea6a5d67a63b20c8f6172bddd}} 
+Unix&A Unix timestamp with 1-\/second precision. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Info\+Zip1@{Info\+Zip1}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Info\+Zip1@{Info\+Zip1}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda25d1dd2095cb171345c14d53d73c7c22}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_afa5034d6b4915c0633b590a28622f7fda25d1dd2095cb171345c14d53d73c7c22}} 
+Info\+Zip1&A Unix timestamp with 1-\/second precision, stored in Info\+Zip v1 format. This format is outdated and is supported for reading archives only. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+Error\+Action@{Zip\+Error\+Action}}
+\index{Zip\+Error\+Action@{Zip\+Error\+Action}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Zip\+Error\+Action}{ZipErrorAction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Error\+Action}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum providing the options when an error occurs during opening or reading of a file or directory that is being saved to a zip file. 
+
+This enum describes the actions that the library can take when an error occurs opening or reading a file, as it is being saved into a \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archive. 
+
+In some cases an error will occur when Dot\+Net\+Zip tries to open a file to be added to the zip archive. In other cases, an error might occur after the file has been successfully opened, while Dot\+Net\+Zip is reading the file. 
+
+The first problem might occur when calling Add\+Directory() on a directory that contains a Clipper .dbf file; the file is locked by Clipper and cannot be opened by another process. An example of the second problem is the E\+R\+R\+O\+R\+\_\+\+L\+O\+C\+K\+\_\+\+V\+I\+O\+L\+A\+T\+I\+ON that results when a file is opened by another process, but not locked, and a range lock has been taken on the file. Microsoft Outlook takes range locks on .P\+ST files. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Throw@{Throw}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Throw@{Throw}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a8ce61dd2505effd96f937fa743b6491f}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a8ce61dd2505effd96f937fa743b6491f}} 
+Throw&Throw an exception when an error occurs while zipping. This is the default behavior. (For C\+OM clients, this is a 0 (zero).) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Skip@{Skip}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Skip@{Skip}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a72ef2b9b6965d078e3c7f95487a82d1c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a72ef2b9b6965d078e3c7f95487a82d1c}} 
+Skip&When an error occurs during zipping, for example a file cannot be opened, skip the file causing the error, and continue zipping. (For C\+OM clients, this is a 1.) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Retry@{Retry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Retry@{Retry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a6327b4e59f58137083214a1fec358855}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a6327b4e59f58137083214a1fec358855}} 
+Retry&When an error occurs during zipping, for example a file cannot be opened, retry the operation that caused the error. Be careful with this option. If the error is not temporary, the library will retry forever. (For C\+OM clients, this is a 2.) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Invoke\+Error\+Event@{Invoke\+Error\+Event}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Invoke\+Error\+Event@{Invoke\+Error\+Event}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a438494fa2a47a746a5f0660862a5bf68}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a5597d8881459658d304cdc5fdae35593a438494fa2a47a746a5f0660862a5bf68}} 
+Invoke\+Error\+Event&When an error occurs, invoke the zip\+Error event. The event type used is \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6d93d77ba4439ec2a5bf59f7282b906f}{Zip\+Progress\+Event\+Type.\+Error\+\_\+\+Saving}}. A typical use of this option\+: a G\+UI application may wish to pop up a dialog to allow the user to view the error that occurred, and choose an appropriate action. After your processing in the error event, if you want to skip the file, set \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a55a679298f00c5eef672e947c6293304}{Zip\+Entry.\+Zip\+Error\+Action}} on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_aa2cf173f83591b5b52e15ca4c9d34129}{Zip\+Progress\+Event\+Args.\+Current\+Entry}}} to {\ttfamily Skip}. If you want the exception to be thrown, set {\ttfamily Zip\+Error\+Action} on the {\ttfamily Current\+Entry} to {\ttfamily Throw}. If you want to cancel the zip, set {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_progress_event_args_a91248747aca5704f3cab69af3a289028}{Zip\+Progress\+Event\+Args.\+Cancel}}} to true. Cancelling differs from using Skip in that a cancel will not save any further entries, if there are any. (For C\+OM clients, the value of this enum is a 3.) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+Option@{Zip\+Option}}
+\index{Zip\+Option@{Zip\+Option}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Zip\+Option}{ZipOption}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630c}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Option}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum representing the values on a three-\/way toggle switch for various options in the library. This might be used to specify whether to employ a particular text encoding, or to use Z\+I\+P64 extensions, or some other option. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Default@{Default}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca7a1920d61156abc05a60135aefe8bc67}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca7a1920d61156abc05a60135aefe8bc67}} 
+Default&The default behavior. This is the same as \char`\"{}\+Never\char`\"{}. (For C\+OM clients, this is a 0 (zero).) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Never@{Never}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Never@{Never}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca6e7b34fa59e1bd229b207892956dc41c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca6e7b34fa59e1bd229b207892956dc41c}} 
+Never&Never use the associated option. (For C\+OM clients, this is a 0 (zero).) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{As\+Necessary@{As\+Necessary}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!As\+Necessary@{As\+Necessary}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca7bfa2d7f3d5b79692fe22a06113406c8}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca7bfa2d7f3d5b79692fe22a06113406c8}} 
+As\+Necessary&Use the associated behavior \char`\"{}as necessary.\char`\"{} (For C\+OM clients, this is a 1.) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Always@{Always}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Always@{Always}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca68eec46437c384d8dad18d5464ebc35c}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a25d431031427c142eba970006eee630ca68eec46437c384d8dad18d5464ebc35c}} 
+Always&Use the associated behavior Always, whether necessary or not. (For C\+OM clients, this is a 2.) \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Zip\+Progress\+Event\+Type@{Zip\+Progress\+Event\+Type}}
+\index{Zip\+Progress\+Event\+Type@{Zip\+Progress\+Event\+Type}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Zip\+Progress\+Event\+Type}{ZipProgressEventType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841f}{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Progress\+Event\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+In an Event\+Args type, indicates which sort of progress event is being reported. 
+
+There are events for reading, events for saving, and events for extracting. This enumeration allows a single Event\+Args type to be sued to describe one of multiple subevents. For example, a Save\+Progress event is invoked before, after, and during the saving of a single entry. The value of an enum with this type, specifies which event is being triggered. The same applies to Extraction, Reading and Adding events. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Adding\+\_\+\+Started@{Adding\+\_\+\+Started}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Adding\+\_\+\+Started@{Adding\+\_\+\+Started}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faadd4f41ec9305b334c5a247584c45898}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faadd4f41ec9305b334c5a247584c45898}} 
+Adding\+\_\+\+Started&Indicates that a Add() operation has started. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Adding\+\_\+\+After\+Add\+Entry@{Adding\+\_\+\+After\+Add\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Adding\+\_\+\+After\+Add\+Entry@{Adding\+\_\+\+After\+Add\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf97124a040226d9b24664e089d73e9b7}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf97124a040226d9b24664e089d73e9b7}} 
+Adding\+\_\+\+After\+Add\+Entry&Indicates that an individual entry in the archive has been added. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Adding\+\_\+\+Completed@{Adding\+\_\+\+Completed}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Adding\+\_\+\+Completed@{Adding\+\_\+\+Completed}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fab3c81a842a321d2e1f5cf86c4a01f5bc}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fab3c81a842a321d2e1f5cf86c4a01f5bc}} 
+Adding\+\_\+\+Completed&Indicates that a Add() operation has completed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reading\+\_\+\+Started@{Reading\+\_\+\+Started}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Reading\+\_\+\+Started@{Reading\+\_\+\+Started}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fabc902821c623f35074e9fa76d571d6c9}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fabc902821c623f35074e9fa76d571d6c9}} 
+Reading\+\_\+\+Started&Indicates that a Read() operation has started. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reading\+\_\+\+Before\+Read\+Entry@{Reading\+\_\+\+Before\+Read\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Reading\+\_\+\+Before\+Read\+Entry@{Reading\+\_\+\+Before\+Read\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa7eebe2e9801f788320609bcf3c864c29}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa7eebe2e9801f788320609bcf3c864c29}} 
+Reading\+\_\+\+Before\+Read\+Entry&Indicates that an individual entry in the archive is about to be read. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reading\+\_\+\+After\+Read\+Entry@{Reading\+\_\+\+After\+Read\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Reading\+\_\+\+After\+Read\+Entry@{Reading\+\_\+\+After\+Read\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa31f4741b407f9836d3e5c7d7a631f3ce}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa31f4741b407f9836d3e5c7d7a631f3ce}} 
+Reading\+\_\+\+After\+Read\+Entry&Indicates that an individual entry in the archive has just been read. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reading\+\_\+\+Completed@{Reading\+\_\+\+Completed}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Reading\+\_\+\+Completed@{Reading\+\_\+\+Completed}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa1d3f7ae2eca18fce8cc7ec14bd068a58}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa1d3f7ae2eca18fce8cc7ec14bd068a58}} 
+Reading\+\_\+\+Completed&Indicates that a Read() operation has completed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reading\+\_\+\+Archive\+Bytes\+Read@{Reading\+\_\+\+Archive\+Bytes\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Reading\+\_\+\+Archive\+Bytes\+Read@{Reading\+\_\+\+Archive\+Bytes\+Read}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fac21d747b48ff4e5a157acddc466a3b78}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fac21d747b48ff4e5a157acddc466a3b78}} 
+Reading\+\_\+\+Archive\+Bytes\+Read&The given event reports the number of bytes read so far during a Read() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+Started@{Saving\+\_\+\+Started}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+Started@{Saving\+\_\+\+Started}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa981045d76077160a65da34e56daa04ba}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa981045d76077160a65da34e56daa04ba}} 
+Saving\+\_\+\+Started&Indicates that a Save() operation has started. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+Before\+Write\+Entry@{Saving\+\_\+\+Before\+Write\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+Before\+Write\+Entry@{Saving\+\_\+\+Before\+Write\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6a5772cb33fcfbfbe2f970efdac29ac4}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6a5772cb33fcfbfbe2f970efdac29ac4}} 
+Saving\+\_\+\+Before\+Write\+Entry&Indicates that an individual entry in the archive is about to be written. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+After\+Write\+Entry@{Saving\+\_\+\+After\+Write\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+After\+Write\+Entry@{Saving\+\_\+\+After\+Write\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa25e89555bbf919c6e0d8d535bbdfcc67}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa25e89555bbf919c6e0d8d535bbdfcc67}} 
+Saving\+\_\+\+After\+Write\+Entry&Indicates that an individual entry in the archive has just been saved. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+Completed@{Saving\+\_\+\+Completed}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+Completed@{Saving\+\_\+\+Completed}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa3548b0e40a71a225262bd6326a4aa412}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa3548b0e40a71a225262bd6326a4aa412}} 
+Saving\+\_\+\+Completed&Indicates that a Save() operation has completed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+After\+Save\+Temp\+Archive@{Saving\+\_\+\+After\+Save\+Temp\+Archive}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+After\+Save\+Temp\+Archive@{Saving\+\_\+\+After\+Save\+Temp\+Archive}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faa1abc8670cbcfef255121364a3cf8bd8}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faa1abc8670cbcfef255121364a3cf8bd8}} 
+Saving\+\_\+\+After\+Save\+Temp\+Archive&Indicates that the zip archive has been created in a temporary location during a Save() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+Before\+Rename\+Temp\+Archive@{Saving\+\_\+\+Before\+Rename\+Temp\+Archive}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+Before\+Rename\+Temp\+Archive@{Saving\+\_\+\+Before\+Rename\+Temp\+Archive}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf723a2db08c9133606c2ad6621db8bfa}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf723a2db08c9133606c2ad6621db8bfa}} 
+Saving\+\_\+\+Before\+Rename\+Temp\+Archive&Indicates that the temporary file is about to be renamed to the final archive name during a Save() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+After\+Rename\+Temp\+Archive@{Saving\+\_\+\+After\+Rename\+Temp\+Archive}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+After\+Rename\+Temp\+Archive@{Saving\+\_\+\+After\+Rename\+Temp\+Archive}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fae54724e2102b8488d767c1341635a704}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fae54724e2102b8488d767c1341635a704}} 
+Saving\+\_\+\+After\+Rename\+Temp\+Archive&Indicates that the temporary file is has just been renamed to the final archive name during a Save() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+After\+Compile\+Self\+Extractor@{Saving\+\_\+\+After\+Compile\+Self\+Extractor}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+After\+Compile\+Self\+Extractor@{Saving\+\_\+\+After\+Compile\+Self\+Extractor}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fafd6c4de11ac69e68ca709f43e21ddeab}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fafd6c4de11ac69e68ca709f43e21ddeab}} 
+Saving\+\_\+\+After\+Compile\+Self\+Extractor&Indicates that the self-\/extracting archive has been compiled during a Save() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Saving\+\_\+\+Entry\+Bytes\+Read@{Saving\+\_\+\+Entry\+Bytes\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Saving\+\_\+\+Entry\+Bytes\+Read@{Saving\+\_\+\+Entry\+Bytes\+Read}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa854ff1908364575616ad901a1050978b}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa854ff1908364575616ad901a1050978b}} 
+Saving\+\_\+\+Entry\+Bytes\+Read&The given event is reporting the number of source bytes that have run through the compressor so far during a Save() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Extracting\+\_\+\+Before\+Extract\+Entry@{Extracting\+\_\+\+Before\+Extract\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extracting\+\_\+\+Before\+Extract\+Entry@{Extracting\+\_\+\+Before\+Extract\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faba311c17b20ee9533ccb290eb7d73f47}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faba311c17b20ee9533ccb290eb7d73f47}} 
+Extracting\+\_\+\+Before\+Extract\+Entry&Indicates that an entry is about to be extracted. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Extracting\+\_\+\+After\+Extract\+Entry@{Extracting\+\_\+\+After\+Extract\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extracting\+\_\+\+After\+Extract\+Entry@{Extracting\+\_\+\+After\+Extract\+Entry}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa9800ef70dbd24e2445fdcd260a1487b6}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa9800ef70dbd24e2445fdcd260a1487b6}} 
+Extracting\+\_\+\+After\+Extract\+Entry&Indicates that an entry has just been extracted. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite@{Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite@{Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf76e96e54af22ba88a1e180a9c935f05}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841faf76e96e54af22ba88a1e180a9c935f05}} 
+Extracting\+\_\+\+Extract\+Entry\+Would\+Overwrite&Indicates that extraction of an entry would overwrite an existing filesystem file. You must use \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a3f8db7242d746d36b45114257b4fe4c0a260afa558b9392c717b397a63c86e1fe}{Extract\+Existing\+File\+Action.\+Invoke\+Extract\+Progress\+Event}} in the call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}} in order to receive this event. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Extracting\+\_\+\+Entry\+Bytes\+Written@{Extracting\+\_\+\+Entry\+Bytes\+Written}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extracting\+\_\+\+Entry\+Bytes\+Written@{Extracting\+\_\+\+Entry\+Bytes\+Written}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fab1d6fef4a55c43c15713a126b8471092}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fab1d6fef4a55c43c15713a126b8471092}} 
+Extracting\+\_\+\+Entry\+Bytes\+Written&The given event is reporting the number of bytes written so far for the current entry during an Extract() operation. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Extracting\+\_\+\+Before\+Extract\+All@{Extracting\+\_\+\+Before\+Extract\+All}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extracting\+\_\+\+Before\+Extract\+All@{Extracting\+\_\+\+Before\+Extract\+All}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa36adf3f25d454b09928980646e2459d6}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa36adf3f25d454b09928980646e2459d6}} 
+Extracting\+\_\+\+Before\+Extract\+All&Indicates that an Extract\+All operation is about to begin. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Extracting\+\_\+\+After\+Extract\+All@{Extracting\+\_\+\+After\+Extract\+All}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Extracting\+\_\+\+After\+Extract\+All@{Extracting\+\_\+\+After\+Extract\+All}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa89f4cb8811e15be571ff87cfd6687158}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa89f4cb8811e15be571ff87cfd6687158}} 
+Extracting\+\_\+\+After\+Extract\+All&Indicates that an Extract\+All operation has completed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error\+\_\+\+Saving@{Error\+\_\+\+Saving}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Error\+\_\+\+Saving@{Error\+\_\+\+Saving}}}\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6d93d77ba4439ec2a5bf59f7282b906f}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a6584db8196e626ddfc455e74d31a841fa6d93d77ba4439ec2a5bf59f7282b906f}} 
+Error\+\_\+\+Saving&Indicates that an error has occurred while saving a zip file. This generally means the file cannot be opened, because it has been removed, or because it is locked by another process. It can also mean that the file cannot be Read, because of a range lock conflict. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a19b625523fef0bcff4722ebb8a04b5d0}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a19b625523fef0bcff4722ebb8a04b5d0}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Close\+Delegate@{Close\+Delegate}}
+\index{Close\+Delegate@{Close\+Delegate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Close\+Delegate()}{CloseDelegate()}}
+{\footnotesize\ttfamily delegate void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Close\+Delegate (\begin{DoxyParamCaption}\item[{string}]{entry\+Name,  }\item[{System.\+I\+O.\+Stream}]{stream }\end{DoxyParamCaption})}
+
+
+
+Delegate in which the application closes the stream, just-\/in-\/time, for the named entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\+Name} & The name of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} that the application should close the stream for. \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to be closed.\\
+\hline
+\end{DoxyParams}
+
+
+When you add an entry via \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aca70604c3928ce13d5028d31b7d491fd}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string,
+  Open\+Delegate, Close\+Delegate)}}, the application code provides the logic that opens and closes the stream for the given \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aca70604c3928ce13d5028d31b7d491fd}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string, Open\+Delegate, Close\+Delegate)}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a02583f9b7b1b724562c5ead6715256f2}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a02583f9b7b1b724562c5ead6715256f2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Open\+Delegate@{Open\+Delegate}}
+\index{Open\+Delegate@{Open\+Delegate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Open\+Delegate()}{OpenDelegate()}}
+{\footnotesize\ttfamily delegate System.\+I\+O.\+Stream Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Open\+Delegate (\begin{DoxyParamCaption}\item[{string}]{entry\+Name }\end{DoxyParamCaption})}
+
+
+
+Delegate in which the application opens the stream, just-\/in-\/time, for the named entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\+Name} & The name of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} that the application should open the stream for. \\
+\hline
+\end{DoxyParams}
+
+
+When you add an entry via \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aca70604c3928ce13d5028d31b7d491fd}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string,
+  Open\+Delegate, Close\+Delegate)}}, the application code provides the logic that opens and closes the stream for the given \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aca70604c3928ce13d5028d31b7d491fd}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string, Open\+Delegate, Close\+Delegate)}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_ab6b15a72531220e6f98c46b594c9a849}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_ab6b15a72531220e6f98c46b594c9a849}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Set\+Compression\+Callback@{Set\+Compression\+Callback}}
+\index{Set\+Compression\+Callback@{Set\+Compression\+Callback}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Set\+Compression\+Callback()}{SetCompressionCallback()}}
+{\footnotesize\ttfamily delegate \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Ionic.\+Zlib.\+Compression\+Level}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Set\+Compression\+Callback (\begin{DoxyParamCaption}\item[{string}]{local\+File\+Name,  }\item[{string}]{file\+Name\+In\+Archive }\end{DoxyParamCaption})}
+
+
+
+Delegate for the callback by which the application tells the library the Compression\+Level to use for a file. 
+
+Using this callback, the application can, for example, specify that previously-\/compressed files (.mp3, .png, .docx, etc) should use a {\ttfamily Compression\+Level} of {\ttfamily None}, or can set the compression level based on any other factor. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_abd6bdba1b63a17f284509bbc0fb66637}{Ionic.\+Zip.\+Zip\+File.\+Set\+Compression}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3bc35e889c4343c0028b310499c6886}\label{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3bc35e889c4343c0028b310499c6886}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}!Write\+Delegate@{Write\+Delegate}}
+\index{Write\+Delegate@{Write\+Delegate}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip}}
+\subsubsection{\texorpdfstring{Write\+Delegate()}{WriteDelegate()}}
+{\footnotesize\ttfamily delegate void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Write\+Delegate (\begin{DoxyParamCaption}\item[{string}]{entry\+Name,  }\item[{System.\+I\+O.\+Stream}]{stream }\end{DoxyParamCaption})}
+
+
+
+Delegate in which the application writes the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} content for the named entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\+Name} & The name of the entry that must be written.\\
+\hline
+{\em stream} & The stream to which the entry data should be written.\\
+\hline
+\end{DoxyParams}
+
+
+When you add an entry and specify a {\ttfamily Write\+Delegate}, via \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a4db76147d4354e087063303abc6a4ec4}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string, Write\+Delegate)}}, the application code provides the logic that writes the entry data directly into the zip file. 
+
+This example shows how to define a Write\+Delegate that obtains a Data\+Set, and then writes the X\+ML for the Data\+Set into the zip archive. There\textquotesingle{}s no need to save the X\+ML to a disk file first.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} WriteEntry (String filename, Stream output)
+\{
+    DataSet ds1 = ObtainDataSet();
+    ds1.WriteXml(output);
+\}
+
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} Run()
+\{
+    \textcolor{keyword}{using} (var zip = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83a088ad16b06174c69965e232063ba6d16}{ZipFile}}())
+    \{
+        zip.AddEntry(zipEntryName, WriteEntry);
+        zip.Save(zipFileName);
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Private Sub WriteEntry (ByVal filename As String, ByVal output As Stream)
+    DataSet ds1 = ObtainDataSet()
+    ds1.WriteXml(stream)
+End Sub
+
+Public Sub Run()
+    Using zip = New ZipFile
+        zip.AddEntry(zipEntryName, New \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_aa3bc35e889c4343c0028b310499c6886}{WriteDelegate}}(AddressOf WriteEntry))
+        zip.Save(zipFileName)
+    End Using
+End Sub
+\end{DoxyCode}
+ 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a4db76147d4354e087063303abc6a4ec4}{Ionic.\+Zip.\+Zip\+File.\+Add\+Entry(string, Write\+Delegate)}}
+
+
+\end{DoxySeeAlso}

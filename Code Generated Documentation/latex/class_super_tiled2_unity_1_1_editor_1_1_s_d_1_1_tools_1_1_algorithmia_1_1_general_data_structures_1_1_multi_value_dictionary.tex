@@ -1,0 +1,150 @@
+\hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{}\section{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary$<$ T\+Key, T\+Value $>$ Class Template Reference}
+\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}\index{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary$<$ T\+Key, T\+Value $>$@{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary$<$ T\+Key, T\+Value $>$}}
+
+
+Extension to the normal Dictionary. This class can store more than one value for every key. It keeps a Hash\+Set for every Key value. Calling Add with the same Key and multiple values will store each value under the same Key in the Dictionary. Obtaining the values for a Key will return the Hash\+Set with the Values of the Key.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary$<$ T\+Key, T\+Value $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.772152cm]{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a88bdd33727b767235b716c268c4a52d2}{Multi\+Value\+Dictionary}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a88bdd33727b767235b716c268c4a52d2}{Multi\+Value\+Dictionary$<$\+T\+Key, T\+Value$>$}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_ab8022bd65275815aa9f61cbe33c07fab}{Add}} (T\+Key key, T\+Value value)
+\begin{DoxyCompactList}\small\item\em Adds the specified value under the specified key \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_ab98e6429022ba2fa8ca951e73ffb345f}{Contains\+Value}} (T\+Key key, T\+Value value)
+\begin{DoxyCompactList}\small\item\em Determines whether this dictionary contains the specified value for the specified key \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a084278ce15ca1cd8eb913511fbe5b7df}{Remove}} (T\+Key key, T\+Value value)
+\begin{DoxyCompactList}\small\item\em Removes the specified value for the specified key. It will leave the key in the dictionary. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_af9d3e836e512ec78970c0c037a8f9000}{Merge}} (\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$ to\+Merge\+With)
+\begin{DoxyCompactList}\small\item\em Merges the specified multivaluedictionary into this instance. \end{DoxyCompactList}\item 
+Hash\+Set$<$ T\+Value $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a6e30cf7a205e22c3c87e88acdc3f778e}{Get\+Values}} (T\+Key key, bool return\+Empty\+Set)
+\begin{DoxyCompactList}\small\item\em Gets the values for the key specified. This method is useful if you want to avoid an exception for key value retrieval and you can\textquotesingle{}t use Try\+Get\+Value (e.\+g. in lambdas) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extension to the normal Dictionary. This class can store more than one value for every key. It keeps a Hash\+Set for every Key value. Calling Add with the same Key and multiple values will store each value under the same Key in the Dictionary. Obtaining the values for a Key will return the Hash\+Set with the Values of the Key. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Key} & The type of the key.\\
+\hline
+{\em T\+Value} & The type of the value.\\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a88bdd33727b767235b716c268c4a52d2}\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a88bdd33727b767235b716c268c4a52d2}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}!Multi\+Value\+Dictionary@{Multi\+Value\+Dictionary}}
+\index{Multi\+Value\+Dictionary@{Multi\+Value\+Dictionary}!Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}}
+\subsubsection{\texorpdfstring{Multi\+Value\+Dictionary()}{MultiValueDictionary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$.\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Multi\+Value\+Dictionary}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a88bdd33727b767235b716c268c4a52d2}{Multi\+Value\+Dictionary$<$\+T\+Key, T\+Value$>$}} class. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_ab8022bd65275815aa9f61cbe33c07fab}\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_ab8022bd65275815aa9f61cbe33c07fab}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}!Add@{Add}}
+\index{Add@{Add}!Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$.Add (\begin{DoxyParamCaption}\item[{T\+Key}]{key,  }\item[{T\+Value}]{value }\end{DoxyParamCaption})}
+
+
+
+Adds the specified value under the specified key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+{\em value} & The value.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_ab98e6429022ba2fa8ca951e73ffb345f}\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_ab98e6429022ba2fa8ca951e73ffb345f}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}!Contains\+Value@{Contains\+Value}}
+\index{Contains\+Value@{Contains\+Value}!Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}}
+\subsubsection{\texorpdfstring{Contains\+Value()}{ContainsValue()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$.Contains\+Value (\begin{DoxyParamCaption}\item[{T\+Key}]{key,  }\item[{T\+Value}]{value }\end{DoxyParamCaption})}
+
+
+
+Determines whether this dictionary contains the specified value for the specified key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+{\em value} & The value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the value is stored for the specified key in this dictionary, false otherwise
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a6e30cf7a205e22c3c87e88acdc3f778e}\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a6e30cf7a205e22c3c87e88acdc3f778e}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}!Get\+Values@{Get\+Values}}
+\index{Get\+Values@{Get\+Values}!Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}}
+\subsubsection{\texorpdfstring{Get\+Values()}{GetValues()}}
+{\footnotesize\ttfamily Hash\+Set$<$T\+Value$>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$.Get\+Values (\begin{DoxyParamCaption}\item[{T\+Key}]{key,  }\item[{bool}]{return\+Empty\+Set }\end{DoxyParamCaption})}
+
+
+
+Gets the values for the key specified. This method is useful if you want to avoid an exception for key value retrieval and you can\textquotesingle{}t use Try\+Get\+Value (e.\+g. in lambdas) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+{\em return\+Empty\+Set} & if set to true and the key isn\textquotesingle{}t found, an empty hashset is returned, otherwise, if the key isn\textquotesingle{}t found, null is returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This method will return null (or an empty set if return\+Empty\+Set is true) if the key wasn\textquotesingle{}t found, or the values if key was found. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_af9d3e836e512ec78970c0c037a8f9000}\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_af9d3e836e512ec78970c0c037a8f9000}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}!Merge@{Merge}}
+\index{Merge@{Merge}!Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}}
+\subsubsection{\texorpdfstring{Merge()}{Merge()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$.Merge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$}]{to\+Merge\+With }\end{DoxyParamCaption})}
+
+
+
+Merges the specified multivaluedictionary into this instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Merge\+With} & To merge with.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a084278ce15ca1cd8eb913511fbe5b7df}\label{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary_a084278ce15ca1cd8eb913511fbe5b7df}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}!Remove@{Remove}}
+\index{Remove@{Remove}!Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary@{Super\+Tiled2\+Unity\+::\+Editor\+::\+S\+D\+::\+Tools\+::\+Algorithmia\+::\+General\+Data\+Structures\+::\+Multi\+Value\+Dictionary}}
+\subsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures_1_1_multi_value_dictionary}{Super\+Tiled2\+Unity.\+Editor.\+S\+D.\+Tools.\+Algorithmia.\+General\+Data\+Structures.\+Multi\+Value\+Dictionary}}$<$ T\+Key, T\+Value $>$.Remove (\begin{DoxyParamCaption}\item[{T\+Key}]{key,  }\item[{T\+Value}]{value }\end{DoxyParamCaption})}
+
+
+
+Removes the specified value for the specified key. It will leave the key in the dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key.\\
+\hline
+{\em value} & The value.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/Multi\+Value\+Dictionary.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Adler Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Adler@{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Adler}}
+
+
+Computes an Adler-\/32 checksum.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler_a75caabf7b41a8f3bddc00e2c9027b551}{Adler32}} (uint adler, byte\mbox{[}$\,$\mbox{]} buf, int index, int len)
+\begin{DoxyCompactList}\small\item\em Calculates the Adler32 checksum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Computes an Adler-\/32 checksum. 
+
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler}{Adler}} checksum is similar to a C\+RC checksum, but faster to compute, though less reliable. It is used in producing R\+F\+C1950 compressed streams. The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler}{Adler}} checksum is a required part of the \char`\"{}\+Z\+L\+I\+B\char`\"{} standard. Applications will almost never need to use this class directly. 
+
+$<$exclude$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler_a75caabf7b41a8f3bddc00e2c9027b551}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_adler_a75caabf7b41a8f3bddc00e2c9027b551}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Adler@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Adler}!Adler32@{Adler32}}
+\index{Adler32@{Adler32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Adler@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+Adler}}
+\subsubsection{\texorpdfstring{Adler32()}{Adler32()}}
+{\footnotesize\ttfamily static uint Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+Adler.\+Adler32 (\begin{DoxyParamCaption}\item[{uint}]{adler,  }\item[{byte \mbox{[}$\,$\mbox{]}}]{buf,  }\item[{int}]{index,  }\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the Adler32 checksum. 
+
+This is used within Z\+L\+IB. You probably don\textquotesingle{}t need to use this directly. 
+
+To compute an Adler32 checksum on a byte array\+: 
+\begin{DoxyCode}
+var adler = Adler.Adler32(0, null, 0, 0);
+adler = Adler.Adler32(adler, buffer, index, length);
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zlib/Zlib.\+cs\end{DoxyCompactItemize}

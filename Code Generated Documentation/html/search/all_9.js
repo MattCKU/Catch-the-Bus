@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['sortinglayerexposed',['SortingLayerExposed',['../class_tiled2_unity_1_1_sorting_layer_exposed.html',1,'Tiled2Unity']]],
-  ['sortinglayerexposededitor',['SortingLayerExposedEditor',['../class_sorting_layer_exposed_editor.html',1,'']]],
-  ['spritedepthinmap',['SpriteDepthInMap',['../class_tiled2_unity_1_1_sprite_depth_in_map.html',1,'Tiled2Unity']]],
-  ['spritedepthinmapeditor',['SpriteDepthInMapEditor',['../class_tiled2_unity_1_1_sprite_depth_in_map_editor.html',1,'Tiled2Unity']]]
+  ['jitstream',['JitStream',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zip.html#a9ced5352c56e7e0fceff15b534073c83aa3749edaef8c43a935bed60ce9a06430',1,'SuperTiled2Unity::Ionic::Zip']]],
+  ['joystick',['Joystick',['../class_joystick.html',1,'']]]
 ];

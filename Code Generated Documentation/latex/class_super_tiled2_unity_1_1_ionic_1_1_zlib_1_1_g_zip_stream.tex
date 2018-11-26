@@ -1,0 +1,789 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream@{Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream}}
+
+
+A class for compressing and decompressing G\+Z\+IP streams.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{G\+Zip\+Stream}} (Stream stream, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}} mode)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a0c3a1b84d1e634a7405d40ff529330ca}{G\+Zip\+Stream}} (Stream stream, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}} mode, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode} and the specified {\ttfamily Compression\+Level}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_af94d6e6357a0e88fb3c237388574efeb}{G\+Zip\+Stream}} (Stream stream, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}} mode, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode}, and explicitly specify whether the stream should be left open after Deflation or Inflation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3cb29104487c56e6f58a24ce79ee546d}{G\+Zip\+Stream}} (Stream stream, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}} mode, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}} level, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode} and the specified {\ttfamily Compression\+Level}, and explicitly specify whether the stream should be left open after Deflation or Inflation. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ad71244e7b3bcea606d73cbf964f9f239}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush the stream. \end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Read and decompress data from the source stream. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a098a173894636f7470f79af72c12ba4f}{Seek}} (long offset, Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em Calling this method always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a79496db830d2a246f7c5aac8f3305617}{Set\+Length}} (long value)
+\begin{DoxyCompactList}\small\item\em Calling this method always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Write data to the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9fc4f76be82e1858510a322bcbf33d19}{Compress\+String}} (String s)
+\begin{DoxyCompactList}\small\item\em Compress a string into a byte array using G\+Zip. \end{DoxyCompactList}\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a8921597b77e25b2725aa74f2af045bd7}{Compress\+Buffer}} (byte\mbox{[}$\,$\mbox{]} b)
+\begin{DoxyCompactList}\small\item\em Compress a byte array into a new byte array using G\+Zip. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aa0f08dbda6cd5100d69af35ecbf7baf3}{Uncompress\+String}} (byte\mbox{[}$\,$\mbox{]} compressed)
+\begin{DoxyCompactList}\small\item\em Uncompress a G\+Zip\textquotesingle{}ed byte array into a single string. \end{DoxyCompactList}\item 
+static byte \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_afe494e891223e6d1de0d09ea8eeb3566}{Uncompress\+Buffer}} (byte\mbox{[}$\,$\mbox{]} compressed)
+\begin{DoxyCompactList}\small\item\em Uncompress a G\+Zip\textquotesingle{}ed byte array into a byte array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a2833edcfc2a88f9d036ca748be768188}{Last\+Modified}}
+\begin{DoxyCompactList}\small\item\em The last modified time for the G\+Z\+IP stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a43554a520237d8aedb81068572f93507}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Dispose the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a52ef5182490dec747b8d57a32f673668}{Comment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The comment on the G\+Z\+IP stream. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9f84ab701414ec04ac9ef7107eb4a30c}{File\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The File\+Name for the G\+Z\+IP stream. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a70e29334f61c43bc2c37591177f1869a}{Crc32}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The C\+RC on the G\+Z\+IP stream. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{Flush\+Type}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aa04b0e1934fafb1582f6d4bc8ce54542}{Flush\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em This property sets the flush behavior on the stream. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a62b26d1385352043955773fe1366c029}{Buffer\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The size of the working buffer for the compression codec. \end{DoxyCompactList}\item 
+virtual long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a4ffb8953936fc146795e0b76784369ac}{Total\+In}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of bytes input so far.\end{DoxyCompactList}\item 
+virtual long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aecc3867899f33926a632972aba76519f}{Total\+Out}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the total number of bytes output so far.\end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a6340afe9b11c6b17cd965ca153d75f27}{Can\+Read}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream can be read. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3a02ff35fb1b66b953a9cbda586871b8}{Can\+Seek}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream supports Seek operations. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a2e9b27e19327583b32fe086716245a40}{Can\+Write}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the stream can be written. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ade637ab4f778c5ee7f5540e00662a645}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Reading this property always throws a Not\+Implemented\+Exception. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_adcdf8cb19b6e76db6966ea46af5316e9}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The position of the stream pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for compressing and decompressing G\+Z\+IP streams. 
+
+The {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} is a Decorator
+
+on a Stream. It adds G\+Z\+IP compression or decompression to any stream. 
+
+Like the {\ttfamily System.\+I\+O.\+Compression.\+G\+Zip\+Stream} in the .N\+ET Base Class Library, the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{Ionic.\+Zlib.\+G\+Zip\+Stream}}} can compress while writing, or decompress while reading, but not vice versa. The compression method used is G\+Z\+IP, which is documented in I\+E\+TF R\+FC 1952
+
+, \char`\"{}\+G\+Z\+I\+P file format specification version 4.\+3\char`\"{}.
+
+A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} can be used to decompress data (through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}) or to compress data (through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}), but not both. 
+
+If you wish to use the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} to compress data, you must wrap it around a write-\/able stream. As you call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}} on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}}, the data will be compressed into the G\+Z\+IP format. If you want to decompress data, you must wrap the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} around a readable stream that contains an I\+E\+TF R\+FC 1952-\/compliant stream. The data will be decompressed as you call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}} on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}}. 
+
+Though the G\+Z\+IP format allows data from multiple files to be concatenated together, this stream handles only a single segment of G\+Z\+IP format, typically representing a single file. 
+
+This class is similar to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_stream}{Zlib\+Stream}} and \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream}{Deflate\+Stream}}. {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_stream}{Zlib\+Stream}}} handles R\+F\+C1950-\/compliant streams. \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream}{Deflate\+Stream}} handles R\+F\+C1951-\/compliant streams. This class handles R\+F\+C1952-\/compliant streams. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream}{Deflate\+Stream}}, \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_stream}{Zlib\+Stream}}
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!G\+Zip\+Stream@{G\+Zip\+Stream}}
+\index{G\+Zip\+Stream@{G\+Zip\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{G\+Zip\+Stream()}{GZipStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+G\+Zip\+Stream (\begin{DoxyParamCaption}\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}}}]{mode }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode}. 
+
+When mode is {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a8fa4fcfcda70410e089984d5f51ae97d}{Compression\+Mode.\+Compress}}}, the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} will use the default compression level. 
+
+As noted in the class documentation, the {\ttfamily Compression\+Mode} (Compress or Decompress) also establishes the \char`\"{}direction\char`\"{} of the stream. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a8fa4fcfcda70410e089984d5f51ae97d}{Compression\+Mode.\+Compress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a6d2861192fdf4370bcf95c099be0f2f0}{Compression\+Mode.\+Decompress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. 
+
+This example shows how to use a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}} to compress data. 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_system}{System}}.IO.Stream input = \mbox{\hyperlink{namespace_system}{System}}.IO.File.OpenRead(fileToCompress))
+\{
+    \textcolor{keyword}{using} (var raw = \mbox{\hyperlink{namespace_system}{System}}.IO.File.Create(outputFile))
+    \{
+        \textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} compressor = \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{GZipStream}}(raw, 
+      \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Compress))
+        \{
+            byte[] buffer = \textcolor{keyword}{new} byte[WORKING\_BUFFER\_SIZE];
+            \textcolor{keywordtype}{int} n;
+            \textcolor{keywordflow}{while} ((n= input.Read(buffer, 0, buffer.Length)) != 0)
+            \{
+                compressor.Write(buffer, 0, n);
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+Dim outputFile As String = (fileToCompress &amp; \textcolor{stringliteral}{".compressed"})
+Using input As Stream = File.OpenRead(fileToCompress)
+    Using raw As FileStream = File.Create(outputFile)
+    Using compressor As \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{GZipStream}}(raw, 
+      \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Compress)
+        Dim buffer As Byte() = New Byte(4096) \{\}
+        Dim n As Integer = -1
+        Do While (n <> 0)
+            If (n > 0) Then
+                compressor.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write}}(buffer, 0, n)
+            End If
+            n = input.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read}}(buffer, 0, buffer.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ade637ab4f778c5ee7f5540e00662a645}{Length}})
+        Loop
+    End Using
+    End Using
+End Using
+\end{DoxyCode}
+ 
+
+This example shows how to use a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}} to uncompress a file. 
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} GunZipFile(\textcolor{keywordtype}{string} filename)
+\{
+    \textcolor{keywordflow}{if} (!filename.EndsWith(\textcolor{stringliteral}{".gz))}
+\textcolor{stringliteral}{        throw new ArgumentException("}filename\textcolor{stringliteral}{");}
+\textcolor{stringliteral}{    var DecompressedFile = filename.Substring(0,filename.Length-3);}
+\textcolor{stringliteral}{    byte[] working = new byte[WORKING\_BUFFER\_SIZE];}
+\textcolor{stringliteral}{    int n= 1;}
+\textcolor{stringliteral}{    using (System.IO.Stream input = System.IO.File.OpenRead(filename))}
+\textcolor{stringliteral}{    \{}
+\textcolor{stringliteral}{        using (Stream decompressor= new Ionic.Zlib.GZipStream(input, CompressionMode.Decompress, true))}
+\textcolor{stringliteral}{        \{}
+\textcolor{stringliteral}{            using (var output = System.IO.File.Create(DecompressedFile))}
+\textcolor{stringliteral}{            \{}
+\textcolor{stringliteral}{                while (n !=0)}
+\textcolor{stringliteral}{                \{}
+\textcolor{stringliteral}{                    n= decompressor.Read(working, 0, working.Length);}
+\textcolor{stringliteral}{                    if (n > 0)}
+\textcolor{stringliteral}{                    \{}
+\textcolor{stringliteral}{                        output.Write(working, 0, n);}
+\textcolor{stringliteral}{                    \}}
+\textcolor{stringliteral}{                \}}
+\textcolor{stringliteral}{            \}}
+\textcolor{stringliteral}{        \}}
+\textcolor{stringliteral}{    \}}
+\textcolor{stringliteral}{\}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Private Sub GunZipFile(ByVal filename as String)
+    If Not (filename.EndsWith(\textcolor{stringliteral}{".gz)) Then}
+\textcolor{stringliteral}{        Throw New ArgumentException("}filename\textcolor{stringliteral}{")}
+\textcolor{stringliteral}{    End If}
+\textcolor{stringliteral}{    Dim DecompressedFile as String = filename.Substring(0,filename.Length-3)}
+\textcolor{stringliteral}{    Dim working(WORKING\_BUFFER\_SIZE) as Byte}
+\textcolor{stringliteral}{    Dim n As Integer = 1}
+\textcolor{stringliteral}{    Using input As Stream = File.OpenRead(filename)}
+\textcolor{stringliteral}{        Using decompressor As Stream = new Ionic.Zlib.GZipStream(input, CompressionMode.Decompress, True)}
+\textcolor{stringliteral}{            Using output As Stream = File.Create(UncompressedFile)}
+\textcolor{stringliteral}{                Do}
+\textcolor{stringliteral}{                    n= decompressor.Read(working, 0, working.Length)}
+\textcolor{stringliteral}{                    If n > 0 Then}
+\textcolor{stringliteral}{                        output.Write(working, 0, n)}
+\textcolor{stringliteral}{                    End IF}
+\textcolor{stringliteral}{                Loop While (n  > 0)}
+\textcolor{stringliteral}{            End Using}
+\textcolor{stringliteral}{        End Using}
+\textcolor{stringliteral}{    End Using}
+\textcolor{stringliteral}{End Sub}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream which will be read or written.\\
+\hline
+{\em mode} & Indicates whether the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}} will compress or decompress.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a0c3a1b84d1e634a7405d40ff529330ca}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a0c3a1b84d1e634a7405d40ff529330ca}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!G\+Zip\+Stream@{G\+Zip\+Stream}}
+\index{G\+Zip\+Stream@{G\+Zip\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{G\+Zip\+Stream()}{GZipStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+G\+Zip\+Stream (\begin{DoxyParamCaption}\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}}}]{mode,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode} and the specified {\ttfamily Compression\+Level}. 
+
+The {\ttfamily Compression\+Mode} (Compress or Decompress) also establishes the \char`\"{}direction\char`\"{} of the stream. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a8fa4fcfcda70410e089984d5f51ae97d}{Compression\+Mode.\+Compress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a6d2861192fdf4370bcf95c099be0f2f0}{Compression\+Mode.\+Decompress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. 
+
+This example shows how to use a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} to compress a file into a .gz file.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_system}{System}}.IO.Stream input = \mbox{\hyperlink{namespace_system}{System}}.IO.File.OpenRead(fileToCompress))
+\{
+    \textcolor{keyword}{using} (var raw = \mbox{\hyperlink{namespace_system}{System}}.IO.File.Create(fileToCompress + \textcolor{stringliteral}{".gz"}))
+    \{
+        \textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} compressor = \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{GZipStream}}(raw,
+                                                  \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Compress,
+                                                  \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{CompressionLevel}}.BestCompression))
+        \{
+            byte[] buffer = \textcolor{keyword}{new} byte[WORKING\_BUFFER\_SIZE];
+            \textcolor{keywordtype}{int} n;
+            \textcolor{keywordflow}{while} ((n= input.Read(buffer, 0, buffer.Length)) != 0)
+            \{
+                compressor.Write(buffer, 0, n);
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Using input As \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} = File.OpenRead(fileToCompress)
+    Using raw As FileStream = File.Create(fileToCompress &amp; \textcolor{stringliteral}{".gz"})
+        Using compressor As Stream = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{GZipStream}}(raw, 
+      \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Compress, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{CompressionLevel}}.BestCompression)
+            Dim buffer As Byte() = New Byte(4096) \{\}
+            Dim n As Integer = -1
+            Do While (n <> 0)
+                If (n > 0) Then
+                    compressor.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write}}(buffer, 0, n)
+                End If
+                n = input.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read}}(buffer, 0, buffer.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ade637ab4f778c5ee7f5540e00662a645}{Length}})
+            Loop
+        End Using
+    End Using
+End Using
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to be read or written while deflating or inflating.\\
+\hline
+{\em mode} & Indicates whether the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} will compress or decompress.\\
+\hline
+{\em level} & A tuning knob to trade speed for effectiveness.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_af94d6e6357a0e88fb3c237388574efeb}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_af94d6e6357a0e88fb3c237388574efeb}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!G\+Zip\+Stream@{G\+Zip\+Stream}}
+\index{G\+Zip\+Stream@{G\+Zip\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{G\+Zip\+Stream()}{GZipStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+G\+Zip\+Stream (\begin{DoxyParamCaption}\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}}}]{mode,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode}, and explicitly specify whether the stream should be left open after Deflation or Inflation. 
+
+This constructor allows the application to request that the captive stream remain open after the deflation or inflation occurs. By default, after {\ttfamily Close()} is called on the stream, the captive stream is also closed. In some cases this is not desired, for example if the stream is a memory stream that will be re-\/read after compressed data has been written to it. Specify true for the {\itshape leave\+Open}  parameter to leave the stream open. 
+
+The \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}} (Compress or Decompress) also establishes the \char`\"{}direction\char`\"{} of the stream. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a8fa4fcfcda70410e089984d5f51ae97d}{Compression\+Mode.\+Compress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a6d2861192fdf4370bcf95c099be0f2f0}{Compression\+Mode.\+Decompress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. 
+
+The {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} will use the default compression level. If you want to specify the compression level, see \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3cb29104487c56e6f58a24ce79ee546d}{G\+Zip\+Stream(\+Stream,
+  Compression\+Mode, Compression\+Level, bool)}}. 
+
+See the other overloads of this constructor for example code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream which will be read or written. This is called the \char`\"{}captive\char`\"{} stream in other places in this documentation. \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Indicates whether the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}} will compress or decompress. \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em leave\+Open} & true if the application would like the base stream to remain open after inflation/deflation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3cb29104487c56e6f58a24ce79ee546d}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3cb29104487c56e6f58a24ce79ee546d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!G\+Zip\+Stream@{G\+Zip\+Stream}}
+\index{G\+Zip\+Stream@{G\+Zip\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{G\+Zip\+Stream()}{GZipStream()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+G\+Zip\+Stream (\begin{DoxyParamCaption}\item[{Stream}]{stream,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{Compression\+Mode}}}]{mode,  }\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{Compression\+Level}}}]{level,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} using the specified {\ttfamily Compression\+Mode} and the specified {\ttfamily Compression\+Level}, and explicitly specify whether the stream should be left open after Deflation or Inflation. 
+
+This constructor allows the application to request that the captive stream remain open after the deflation or inflation occurs. By default, after {\ttfamily Close()} is called on the stream, the captive stream is also closed. In some cases this is not desired, for example if the stream is a memory stream that will be re-\/read after compressed data has been written to it. Specify true for the {\itshape leave\+Open}  parameter to leave the stream open. 
+
+As noted in the class documentation, the {\ttfamily Compression\+Mode} (Compress or Decompress) also establishes the \char`\"{}direction\char`\"{} of the stream. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a8fa4fcfcda70410e089984d5f51ae97d}{Compression\+Mode.\+Compress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}. A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a6d2861192fdf4370bcf95c099be0f2f0}{Compression\+Mode.\+Decompress}}} works only through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. 
+
+This example shows how to use a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} to compress data. 
+\begin{DoxyCode}
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_system}{System}}.IO.Stream input = \mbox{\hyperlink{namespace_system}{System}}.IO.File.OpenRead(fileToCompress))
+\{
+    \textcolor{keyword}{using} (var raw = \mbox{\hyperlink{namespace_system}{System}}.IO.File.Create(outputFile))
+    \{
+        \textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} compressor = \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{GZipStream}}(raw, 
+      \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Compress, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{CompressionLevel}}.BestCompression, \textcolor{keyword}{true}))
+        \{
+            byte[] buffer = \textcolor{keyword}{new} byte[WORKING\_BUFFER\_SIZE];
+            \textcolor{keywordtype}{int} n;
+            \textcolor{keywordflow}{while} ((n= input.Read(buffer, 0, buffer.Length)) != 0)
+            \{
+                compressor.Write(buffer, 0, n);
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+Dim outputFile As String = (fileToCompress &amp; \textcolor{stringliteral}{".compressed"})
+Using input As Stream = File.OpenRead(fileToCompress)
+    Using raw As FileStream = File.Create(outputFile)
+    Using compressor As \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a509b4683754c1e03e277c5688b75cf54}{GZipStream}}(raw, 
+      \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Compress, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a20f6771804996c363f454ad9765cd7db}{CompressionLevel}}.BestCompression, True)
+        Dim buffer As Byte() = New Byte(4096) \{\}
+        Dim n As Integer = -1
+        Do While (n <> 0)
+            If (n > 0) Then
+                compressor.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write}}(buffer, 0, n)
+            End If
+            n = input.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read}}(buffer, 0, buffer.\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ade637ab4f778c5ee7f5540e00662a645}{Length}})
+        Loop
+    End Using
+    End Using
+End Using
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream which will be read or written.\\
+\hline
+{\em mode} & Indicates whether the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}} will compress or decompress.\\
+\hline
+{\em leave\+Open} & true if the application would like the stream to remain open after inflation/deflation.\\
+\hline
+{\em level} & A tuning knob to trade speed for effectiveness.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a8921597b77e25b2725aa74f2af045bd7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a8921597b77e25b2725aa74f2af045bd7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Compress\+Buffer@{Compress\+Buffer}}
+\index{Compress\+Buffer@{Compress\+Buffer}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Compress\+Buffer()}{CompressBuffer()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Compress\+Buffer (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compress a byte array into a new byte array using G\+Zip. 
+
+Uncompress it with G\+Zip\+Stream.\+Uncompress\+Buffer(byte\mbox{[}$\,$\mbox{]}). 
+
+\begin{DoxySeeAlso}{See also}
+G\+Zip\+Stream.\+Compress\+String(string), G\+Zip\+Stream.\+Uncompress\+Buffer(byte\mbox{[}$\,$\mbox{]})
+
+
+\end{DoxySeeAlso}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & A buffer to compress. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+The data in compressed form
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9fc4f76be82e1858510a322bcbf33d19}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9fc4f76be82e1858510a322bcbf33d19}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Compress\+String@{Compress\+String}}
+\index{Compress\+String@{Compress\+String}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Compress\+String()}{CompressString()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Compress\+String (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compress a string into a byte array using G\+Zip. 
+
+Uncompress it with G\+Zip\+Stream.\+Uncompress\+String(byte\mbox{[}$\,$\mbox{]}). 
+
+\begin{DoxySeeAlso}{See also}
+G\+Zip\+Stream.\+Uncompress\+String(byte\mbox{[}$\,$\mbox{]}), G\+Zip\+Stream.\+Compress\+Buffer(byte\mbox{[}$\,$\mbox{]})
+
+
+\end{DoxySeeAlso}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & A string to compress. The string will first be encoded using U\+T\+F8, then compressed. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+The string in compressed form
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a43554a520237d8aedb81068572f93507}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a43554a520237d8aedb81068572f93507}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dispose the stream. 
+
+This may or may not result in a {\ttfamily Close()} call on the captive stream. See the constructors that have a {\ttfamily leave\+Open} parameter for more information. 
+
+This method may be invoked in two distinct scenarios. If disposing == true, the method has been called directly or indirectly by a user\textquotesingle{}s code, for example via the public \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a43554a520237d8aedb81068572f93507}{Dispose()}} method. In this case, both managed and unmanaged resources can be referenced and disposed. If disposing == false, the method has been called by the runtime from inside the object finalizer and this method should not reference other objects; in that case only unmanaged resources must be referenced or disposed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & indicates whether the Dispose method was invoked by user code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ad71244e7b3bcea606d73cbf964f9f239}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ad71244e7b3bcea606d73cbf964f9f239}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flush the stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Read@{Read}}
+\index{Read@{Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily override int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Read and decompress data from the source stream. 
+
+With a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}}, decompression is done through reading. 
+
+
+\begin{DoxyCode}
+byte[] working = \textcolor{keyword}{new} byte[WORKING\_BUFFER\_SIZE];
+\textcolor{keyword}{using} (\mbox{\hyperlink{namespace_system}{System}}.IO.Stream input = \mbox{\hyperlink{namespace_system}{System}}.IO.File.OpenRead(\_CompressedFile))
+\{
+    \textcolor{keyword}{using} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} decompressor= \textcolor{keyword}{new} Ionic.Zlib.GZipStream(input, 
+      \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1}{CompressionMode}}.Decompress, \textcolor{keyword}{true}))
+    \{
+        \textcolor{keyword}{using} (var output = \mbox{\hyperlink{namespace_system}{System}}.IO.File.Create(\_DecompressedFile))
+        \{
+            \textcolor{keywordtype}{int} n;
+            \textcolor{keywordflow}{while} ((n= decompressor.Read(working, 0, working.Length)) !=0)
+            \{
+                output.Write(working, 0, n);
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer into which the decompressed data should be placed.\\
+\hline
+{\em offset} & the offset within that data array to put the first byte read.\\
+\hline
+{\em count} & the number of bytes to read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of bytes actually read
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a098a173894636f7470f79af72c12ba4f}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a098a173894636f7470f79af72c12ba4f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Seek@{Seek}}
+\index{Seek@{Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Seek (\begin{DoxyParamCaption}\item[{long}]{offset,  }\item[{Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+Calling this method always throws a Not\+Implemented\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & irrelevant; it will always throw!\\
+\hline
+{\em origin} & irrelevant; it will always throw!\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+irrelevant!
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a79496db830d2a246f7c5aac8f3305617}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a79496db830d2a246f7c5aac8f3305617}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Set\+Length@{Set\+Length}}
+\index{Set\+Length@{Set\+Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Set\+Length()}{SetLength()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Set\+Length (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+Calling this method always throws a Not\+Implemented\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & irrelevant; this method will always throw!\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_afe494e891223e6d1de0d09ea8eeb3566}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_afe494e891223e6d1de0d09ea8eeb3566}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Uncompress\+Buffer@{Uncompress\+Buffer}}
+\index{Uncompress\+Buffer@{Uncompress\+Buffer}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Uncompress\+Buffer()}{UncompressBuffer()}}
+{\footnotesize\ttfamily static byte \mbox{[}$\,$\mbox{]} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Uncompress\+Buffer (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{compressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Uncompress a G\+Zip\textquotesingle{}ed byte array into a byte array. 
+
+\begin{DoxySeeAlso}{See also}
+G\+Zip\+Stream.\+Compress\+Buffer(byte\mbox{[}$\,$\mbox{]}), G\+Zip\+Stream.\+Uncompress\+String(byte\mbox{[}$\,$\mbox{]})
+
+
+\end{DoxySeeAlso}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em compressed} & A buffer containing data that has been compressed with G\+Zip. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+The data in uncompressed form
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aa0f08dbda6cd5100d69af35ecbf7baf3}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aa0f08dbda6cd5100d69af35ecbf7baf3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Uncompress\+String@{Uncompress\+String}}
+\index{Uncompress\+String@{Uncompress\+String}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Uncompress\+String()}{UncompressString()}}
+{\footnotesize\ttfamily static String Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Uncompress\+String (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{compressed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Uncompress a G\+Zip\textquotesingle{}ed byte array into a single string. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9fc4f76be82e1858510a322bcbf33d19}{G\+Zip\+Stream.\+Compress\+String(\+String)}}, G\+Zip\+Stream.\+Uncompress\+Buffer(byte\mbox{[}$\,$\mbox{]})
+
+
+\end{DoxySeeAlso}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em compressed} & A buffer containing G\+Z\+I\+P-\/compressed data. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+The uncompressed string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Write@{Write}}
+\index{Write@{Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Write data to the stream. 
+
+If you wish to use the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} to compress data while writing, you can create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} with {\ttfamily \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_ad5b7635d92497e1c905e5de82eb1c6b1a8fa4fcfcda70410e089984d5f51ae97d}{Compression\+Mode.\+Compress}}}, and a writable output stream. Then call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}} on that {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}}, providing uncompressed data as input. The data sent to the output stream will be the compressed form of the data written. 
+
+A {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} can be used for {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}} or {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}, but not both. Writing implies compression. Reading implies decompression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer holding data to write to the stream.\\
+\hline
+{\em offset} & the offset within that data array to find the first byte to write.\\
+\hline
+{\em count} & the number of bytes to write.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a2833edcfc2a88f9d036ca748be768188}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a2833edcfc2a88f9d036ca748be768188}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Last\+Modified@{Last\+Modified}}
+\index{Last\+Modified@{Last\+Modified}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Last\+Modified}{LastModified}}
+{\footnotesize\ttfamily Date\+Time Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Last\+Modified}
+
+
+
+The last modified time for the G\+Z\+IP stream. 
+
+G\+Z\+IP allows the storage of a last modified time with each G\+Z\+IP entry. When compressing data, you can set this before the first call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}. When decompressing, you can retrieve this value any time after the first call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a62b26d1385352043955773fe1366c029}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a62b26d1385352043955773fe1366c029}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Buffer\+Size@{Buffer\+Size}}
+\index{Buffer\+Size@{Buffer\+Size}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Buffer\+Size}{BufferSize}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Buffer\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The size of the working buffer for the compression codec. 
+
+The working buffer is used for all stream operations. The default size is 1024 bytes. The minimum size is 128 bytes. You may get better performance with a larger buffer. Then again, you might not. You would have to test it. 
+
+Set this before the first call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}} or {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}} on the stream. If you try to set it afterwards, it will throw. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a6340afe9b11c6b17cd965ca153d75f27}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a6340afe9b11c6b17cd965ca153d75f27}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Read}{CanRead}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Can\+Read\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream can be read. 
+
+The return value depends on whether the captive stream supports reading. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3a02ff35fb1b66b953a9cbda586871b8}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a3a02ff35fb1b66b953a9cbda586871b8}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Can\+Seek@{Can\+Seek}}
+\index{Can\+Seek@{Can\+Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Seek}{CanSeek}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Can\+Seek\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream supports Seek operations. 
+
+Always returns false. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a2e9b27e19327583b32fe086716245a40}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a2e9b27e19327583b32fe086716245a40}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Can\+Write@{Can\+Write}}
+\index{Can\+Write@{Can\+Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Write}{CanWrite}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Can\+Write\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates whether the stream can be written. 
+
+The return value depends on whether the captive stream supports writing. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a52ef5182490dec747b8d57a32f673668}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a52ef5182490dec747b8d57a32f673668}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Comment@{Comment}}
+\index{Comment@{Comment}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Comment}{Comment}}
+{\footnotesize\ttfamily String Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Comment\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The comment on the G\+Z\+IP stream. 
+
+The G\+Z\+IP format allows for each file to optionally have an associated comment stored with the file. The comment is encoded with the I\+S\+O-\/8859-\/1 code page. To include a comment in a G\+Z\+IP stream you create, set this property before calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}} for the first time on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}}. 
+
+When using {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}} to decompress, you can retrieve this property after the first call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. If no comment has been set in the G\+Z\+IP bytestream, the Comment property will return {\ttfamily null} ({\ttfamily Nothing} in VB). \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a70e29334f61c43bc2c37591177f1869a}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a70e29334f61c43bc2c37591177f1869a}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Crc32@{Crc32}}
+\index{Crc32@{Crc32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Crc32}{Crc32}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Crc32\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The C\+RC on the G\+Z\+IP stream. 
+
+This is used for internal error checking. You probably don\textquotesingle{}t need to look at this property. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9f84ab701414ec04ac9ef7107eb4a30c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a9f84ab701414ec04ac9ef7107eb4a30c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!File\+Name@{File\+Name}}
+\index{File\+Name@{File\+Name}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{File\+Name}{FileName}}
+{\footnotesize\ttfamily String Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+File\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The File\+Name for the G\+Z\+IP stream. 
+
+The G\+Z\+IP format optionally allows each file to have an associated filename. When compressing data (through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}}), set this File\+Name before calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a49032afb5806563236a5d53841abe2b8}{Write()}}} the first time on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream}{G\+Zip\+Stream}}}. The actual filename is encoded into the G\+Z\+IP bytestream with the I\+S\+O-\/8859-\/1 code page, according to R\+FC 1952. It is the application\textquotesingle{}s responsibility to insure that the File\+Name can be encoded and decoded correctly with this code page. 
+
+When decompressing (through {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}), you can retrieve this value any time after the first {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a772b5013a585850ffaf8be4aa7f3dbcf}{Read()}}}. In the case where there was no filename encoded into the G\+Z\+IP bytestream, the property will return {\ttfamily null} ({\ttfamily Nothing} in VB). \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aa04b0e1934fafb1582f6d4bc8ce54542}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aa04b0e1934fafb1582f6d4bc8ce54542}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Flush\+Mode@{Flush\+Mode}}
+\index{Flush\+Mode@{Flush\+Mode}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Flush\+Mode}{FlushMode}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zlib_a2c5853fd63f03c83ac2458da1f4ff3bc}{Flush\+Type}} Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Flush\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+This property sets the flush behavior on the stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ade637ab4f778c5ee7f5540e00662a645}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_ade637ab4f778c5ee7f5540e00662a645}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Length@{Length}}
+\index{Length@{Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Reading this property always throws a Not\+Implemented\+Exception. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_adcdf8cb19b6e76db6966ea46af5316e9}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_adcdf8cb19b6e76db6966ea46af5316e9}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Position@{Position}}
+\index{Position@{Position}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The position of the stream pointer. 
+
+Setting this property always throws a Not\+Implemented\+Exception. Reading will return the total bytes written out, if used in writing, or the total bytes read in, if used in reading. The count may refer to compressed bytes or uncompressed bytes, depending on how you\textquotesingle{}ve used the stream. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a4ffb8953936fc146795e0b76784369ac}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_a4ffb8953936fc146795e0b76784369ac}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Total\+In@{Total\+In}}
+\index{Total\+In@{Total\+In}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Total\+In}{TotalIn}}
+{\footnotesize\ttfamily virtual long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Total\+In\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the total number of bytes input so far.
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aecc3867899f33926a632972aba76519f}\label{class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream_aecc3867899f33926a632972aba76519f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}!Total\+Out@{Total\+Out}}
+\index{Total\+Out@{Total\+Out}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zlib\+::\+G\+Zip\+Stream}}
+\subsubsection{\texorpdfstring{Total\+Out}{TotalOut}}
+{\footnotesize\ttfamily virtual long Super\+Tiled2\+Unity.\+Ionic.\+Zlib.\+G\+Zip\+Stream.\+Total\+Out\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the total number of bytes output so far.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zlib/G\+Zip\+Stream.\+cs\end{DoxyCompactItemize}

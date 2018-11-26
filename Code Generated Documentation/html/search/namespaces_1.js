@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['algorithmia',['Algorithmia',['../namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia.html',1,'SuperTiled2Unity::Editor::SD::Tools']]],
+  ['bzip2',['BZip2',['../namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2.html',1,'SuperTiled2Unity::Ionic']]],
+  ['clipperlib',['ClipperLib',['../namespace_super_tiled2_unity_1_1_editor_1_1_clipper_lib.html',1,'SuperTiled2Unity::Editor']]],
+  ['crc',['Crc',['../namespace_super_tiled2_unity_1_1_ionic_1_1_crc.html',1,'SuperTiled2Unity::Ionic']]],
+  ['editor',['Editor',['../namespace_super_tiled2_unity_1_1_editor.html',1,'SuperTiled2Unity']]],
+  ['encoding',['Encoding',['../namespace_super_tiled2_unity_1_1_ionic_1_1_encoding.html',1,'SuperTiled2Unity::Ionic']]],
+  ['generaldatastructures',['GeneralDataStructures',['../namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools_1_1_algorithmia_1_1_general_data_structures.html',1,'SuperTiled2Unity::Editor::SD::Tools::Algorithmia']]],
+  ['geometry',['Geometry',['../namespace_super_tiled2_unity_1_1_editor_1_1_geometry.html',1,'SuperTiled2Unity::Editor']]],
+  ['ionic',['Ionic',['../namespace_super_tiled2_unity_1_1_ionic.html',1,'SuperTiled2Unity']]],
+  ['libtessdotnet',['LibTessDotNet',['../namespace_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net.html',1,'SuperTiled2Unity::Editor']]],
+  ['sd',['SD',['../namespace_super_tiled2_unity_1_1_editor_1_1_s_d.html',1,'SuperTiled2Unity::Editor']]],
+  ['supertiled2unity',['SuperTiled2Unity',['../namespace_super_tiled2_unity.html',1,'']]],
+  ['thirdparty',['ThirdParty',['../namespace_super_tiled2_unity_1_1_editor_1_1_third_party.html',1,'SuperTiled2Unity::Editor']]],
+  ['tools',['Tools',['../namespace_super_tiled2_unity_1_1_editor_1_1_s_d_1_1_tools.html',1,'SuperTiled2Unity::Editor::SD']]],
+  ['zip',['Zip',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zip.html',1,'SuperTiled2Unity::Ionic']]],
+  ['zlib',['Zlib',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html',1,'SuperTiled2Unity::Ionic']]]
+];

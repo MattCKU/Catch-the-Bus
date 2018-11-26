@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['filename',['FileName',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_error_event_args.html#a876d391994b97d490d8cb2a641f650d5',1,'SuperTiled2Unity.Ionic.Zip.ZipErrorEventArgs.FileName()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry.html#a78e0c5ee8272a51926eabb9ffc1b38d9',1,'SuperTiled2Unity.Ionic.Zip.ZipEntry.FileName()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a9f84ab701414ec04ac9ef7107eb4a30c',1,'SuperTiled2Unity.Ionic.Zlib.GZipStream.FileName()']]],
+  ['fileversion',['FileVersion',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_self_extractor_save_options.html#a5b0f403ca49ead60a7c0bd2248ec15e0',1,'SuperTiled2Unity::Ionic::Zip::SelfExtractorSaveOptions']]],
+  ['flavor',['Flavor',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_self_extractor_save_options.html#a1faa509ced07534506771b0cb6144c03',1,'SuperTiled2Unity::Ionic::Zip::SelfExtractorSaveOptions']]],
+  ['flushmode',['FlushMode',['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream.html#ab90435763dcf0b59cd239a55a59f9b39',1,'SuperTiled2Unity.Ionic.Zlib.DeflateStream.FlushMode()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#aa04b0e1934fafb1582f6d4bc8ce54542',1,'SuperTiled2Unity.Ionic.Zlib.GZipStream.FlushMode()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_stream.html#a79356b0cfbf9481948b23d8a2b19d032',1,'SuperTiled2Unity.Ionic.Zlib.ZlibStream.FlushMode()']]],
+  ['fullscan',['FullScan',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file.html#a0ce8fe1d66e96dc3deb4f2425573e567',1,'SuperTiled2Unity::Ionic::Zip::ZipFile']]]
+];

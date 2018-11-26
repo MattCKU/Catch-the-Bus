@@ -1,11 +1,20 @@
 var searchData=
 [
-  ['tileanimator',['TileAnimator',['../class_tiled2_unity_1_1_tile_animator.html',1,'Tiled2Unity']]],
-  ['tiled2unity',['Tiled2Unity',['../namespace_tiled2_unity.html',1,'']]],
-  ['tiled2unitymenuitems',['Tiled2UnityMenuItems',['../class_tiled2_unity_1_1_tiled2_unity_menu_items.html',1,'Tiled2Unity']]],
-  ['tiledassetpostprocessor',['TiledAssetPostProcessor',['../class_tiled2_unity_1_1_tiled_asset_post_processor.html',1,'Tiled2Unity']]],
-  ['tiledmap',['TiledMap',['../class_tiled2_unity_1_1_tiled_map.html',1,'Tiled2Unity']]],
-  ['tilelayer',['TileLayer',['../class_tiled2_unity_1_1_tile_layer.html',1,'Tiled2Unity']]],
-  ['tileobject',['TileObject',['../class_tiled2_unity_1_1_tile_object.html',1,'Tiled2Unity']]],
-  ['tmxobject',['TmxObject',['../class_tiled2_unity_1_1_tmx_object.html',1,'Tiled2Unity']]]
+  ['lastmodified',['LastModified',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry.html#acd1234fd27c216b59c166c2b96aba3dd',1,'SuperTiled2Unity.Ionic.Zip.ZipEntry.LastModified()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#a2833edcfc2a88f9d036ca748be768188',1,'SuperTiled2Unity.Ionic.Zlib.GZipStream.LastModified()']]],
+  ['layer',['Layer',['../class_tiled2_unity_1_1_layer.html',1,'Tiled2Unity']]],
+  ['layersorterhelper',['LayerSorterHelper',['../class_super_tiled2_unity_1_1_editor_1_1_layer_sorter_helper.html',1,'SuperTiled2Unity::Editor']]],
+  ['leaveopen',['LeaveOpen',['../class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream.html#a795c3dfe1fc4761c1426191a66a3bb44',1,'SuperTiled2Unity::Ionic::Crc::CrcCalculatorStream']]],
+  ['length',['Length',['../class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_input_stream.html#a15869a797d855b7b2df4a26624a1309c',1,'SuperTiled2Unity.Ionic.BZip2.BZip2InputStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_b_zip2_output_stream.html#a0c0afbfd277e00496c360a7b415ceb88',1,'SuperTiled2Unity.Ionic.BZip2.BZip2OutputStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_b_zip2_1_1_parallel_b_zip2_output_stream.html#a631f45f2aa471093d3fffdb9ffcddd27',1,'SuperTiled2Unity.Ionic.BZip2.ParallelBZip2OutputStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_crc_calculator_stream.html#ad743ed8196bc2eda561d7afb0f6adb60',1,'SuperTiled2Unity.Ionic.Crc.CrcCalculatorStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_counting_stream.html#a18349dd6626dd4848c1f5315c5d66230',1,'SuperTiled2Unity.Ionic.Zip.CountingStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream.html#a02840abc14d29e5cd82ee0af6b814c21',1,'SuperTiled2Unity.Ionic.Zip.ZipInputStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream.html#aca9775b4fa968157ae513542b4ccefbe',1,'SuperTiled2Unity.Ionic.Zip.ZipOutputStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_deflate_stream.html#a552b6fd67670fa655ad82c4ca192bc7a',1,'SuperTiled2Unity.Ionic.Zlib.DeflateStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_g_zip_stream.html#ade637ab4f778c5ee7f5540e00662a645',1,'SuperTiled2Unity.Ionic.Zlib.GZipStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_parallel_deflate_output_stream.html#a15050442090a1fa7047790fb8dc0ad80',1,'SuperTiled2Unity.Ionic.Zlib.ParallelDeflateOutputStream.Length()'],['../class_super_tiled2_unity_1_1_ionic_1_1_zlib_1_1_zlib_stream.html#a54ad4fbbd65e5e04fc2b714067f77fba',1,'SuperTiled2Unity.Ionic.Zlib.ZlibStream.Length()']]],
+  ['level0',['Level0',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba8292f4c72596c343cc85cfd818469fe0',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level1',['Level1',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba63664aa8bee7544118de87bf48d529ee',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level2',['Level2',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba0cbbfd5a182368f83190bf23d2bd5fde',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level3',['Level3',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba68290d8bb76fe3ceb98d34e8b068f6be',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level4',['Level4',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba881301b7eefadfa7f7b5453c749b804e',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level5',['Level5',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba69d39c12009d5b7d336c5e87ca922392',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level6',['Level6',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba8b20804a9b0fbb27f3e2f7dc56d9771e',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level7',['Level7',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba1ac532f8ad594ca1b5beff35b0c178fc',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level8',['Level8',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dba504f1878f14d62fc9d8c4f4ffc61fe91',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['level9',['Level9',['../namespace_super_tiled2_unity_1_1_ionic_1_1_zlib.html#a20f6771804996c363f454ad9765cd7dbad3ab3469c7484c78b3b0aac45a2f5a3d',1,'SuperTiled2Unity::Ionic::Zlib']]],
+  ['libraryversion',['LibraryVersion',['../class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file.html#ac9c12c0e7927c8d1fff6abd5f80e1125',1,'SuperTiled2Unity::Ionic::Zip::ZipFile']]],
+  ['logger',['Logger',['../class_tiled2_unity_1_1_logger.html',1,'Tiled2Unity']]]
 ];

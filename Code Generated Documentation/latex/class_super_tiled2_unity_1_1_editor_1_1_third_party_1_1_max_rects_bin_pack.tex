@@ -1,0 +1,89 @@
+\hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack}{}\section{Super\+Tiled2\+Unity.\+Editor.\+Third\+Party.\+Max\+Rects\+Bin\+Pack Class Reference}
+\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack}\index{Super\+Tiled2\+Unity.\+Editor.\+Third\+Party.\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity.\+Editor.\+Third\+Party.\+Max\+Rects\+Bin\+Pack}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980a}{Free\+Rect\+Choice\+Heuristic}} \{ \newline
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aadedea3b2f1e52f028df0a08d6af8ccac}{Free\+Rect\+Choice\+Heuristic.\+Rect\+Best\+Short\+Side\+Fit}}, 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa7750ffb6669ea3661d7da8be317aa2ad}{Free\+Rect\+Choice\+Heuristic.\+Rect\+Best\+Long\+Side\+Fit}}, 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa519e10d6187dcefe19406185f21e249c}{Free\+Rect\+Choice\+Heuristic.\+Rect\+Best\+Area\+Fit}}, 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aaaf3590d05143de6c1000307e5d1c757f}{Free\+Rect\+Choice\+Heuristic.\+Rect\+Bottom\+Left\+Rule}}, 
+\newline
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa74676dec9643df6719b3791bb16a7484}{Free\+Rect\+Choice\+Heuristic.\+Rect\+Contact\+Point\+Rule}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_ab92bf328850421243b691436caa6ed71}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_ab92bf328850421243b691436caa6ed71}} 
+{\bfseries Max\+Rects\+Bin\+Pack} (int width, int height, bool rotations=true)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_ade04b068b83ead937adad11e03c75698}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_ade04b068b83ead937adad11e03c75698}} 
+void {\bfseries Init} (int width, int height, bool rotations=true)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_aa50d29d118a01c8db5cc46ac6f9a10ad}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_aa50d29d118a01c8db5cc46ac6f9a10ad}} 
+Rect {\bfseries Insert} (int width, int height, \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980a}{Free\+Rect\+Choice\+Heuristic}} method)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a0cd04a4a738748c7afef531e7030ae54}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a0cd04a4a738748c7afef531e7030ae54}} 
+void {\bfseries Insert} (List$<$ Rect $>$ rects, List$<$ Rect $>$ dst, \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980a}{Free\+Rect\+Choice\+Heuristic}} method)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_aadb3536440c1be314e47ab79312967b5}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_aadb3536440c1be314e47ab79312967b5}} 
+float \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_aadb3536440c1be314e47ab79312967b5}{Occupancy}} ()
+\begin{DoxyCompactList}\small\item\em Computes the ratio of used surface area. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_ae4b71e40ffd18bf2d3b8fc352a76b80e}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_ae4b71e40ffd18bf2d3b8fc352a76b80e}} 
+bool {\bfseries Try\+Area\+Fit} (int width, int height, out int x, out int y)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a1e0a5e363e84cf1106d322acdeff9b4c}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a1e0a5e363e84cf1106d322acdeff9b4c}} 
+int {\bfseries bin\+Width} = 0
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a039bdac4e6fc6b01c49753d1136589c3}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a039bdac4e6fc6b01c49753d1136589c3}} 
+int {\bfseries bin\+Height} = 0
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a0daf729a59322e435b5b08a388e6ae3d}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a0daf729a59322e435b5b08a388e6ae3d}} 
+bool {\bfseries allow\+Rotations}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a8888ff0ebcc1bb11b5af7eb7cb002013}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a8888ff0ebcc1bb11b5af7eb7cb002013}} 
+List$<$ Rect $>$ {\bfseries used\+Rectangles} = new List$<$Rect$>$()
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a02de2fd35b5eaad5ec169a76865158a4}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a02de2fd35b5eaad5ec169a76865158a4}} 
+List$<$ Rect $>$ {\bfseries free\+Rectangles} = new List$<$Rect$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980a}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980a}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}!Free\+Rect\+Choice\+Heuristic@{Free\+Rect\+Choice\+Heuristic}}
+\index{Free\+Rect\+Choice\+Heuristic@{Free\+Rect\+Choice\+Heuristic}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}}
+\subsubsection{\texorpdfstring{Free\+Rect\+Choice\+Heuristic}{FreeRectChoiceHeuristic}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980a}{Super\+Tiled2\+Unity.\+Editor.\+Third\+Party.\+Max\+Rects\+Bin\+Pack.\+Free\+Rect\+Choice\+Heuristic}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rect\+Best\+Short\+Side\+Fit@{Rect\+Best\+Short\+Side\+Fit}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}}\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}!Rect\+Best\+Short\+Side\+Fit@{Rect\+Best\+Short\+Side\+Fit}}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aadedea3b2f1e52f028df0a08d6af8ccac}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aadedea3b2f1e52f028df0a08d6af8ccac}} 
+Rect\+Best\+Short\+Side\+Fit&-\/\+B\+S\+SF\+: Positions the rectangle against the short side of a free rectangle into which it fits the best. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rect\+Best\+Long\+Side\+Fit@{Rect\+Best\+Long\+Side\+Fit}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}}\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}!Rect\+Best\+Long\+Side\+Fit@{Rect\+Best\+Long\+Side\+Fit}}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa7750ffb6669ea3661d7da8be317aa2ad}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa7750ffb6669ea3661d7da8be317aa2ad}} 
+Rect\+Best\+Long\+Side\+Fit&-\/\+B\+L\+SF\+: Positions the rectangle against the long side of a free rectangle into which it fits the best. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rect\+Best\+Area\+Fit@{Rect\+Best\+Area\+Fit}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}}\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}!Rect\+Best\+Area\+Fit@{Rect\+Best\+Area\+Fit}}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa519e10d6187dcefe19406185f21e249c}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa519e10d6187dcefe19406185f21e249c}} 
+Rect\+Best\+Area\+Fit&-\/\+B\+AF\+: Positions the rectangle into the smallest free rect into which it fits. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rect\+Bottom\+Left\+Rule@{Rect\+Bottom\+Left\+Rule}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}}\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}!Rect\+Bottom\+Left\+Rule@{Rect\+Bottom\+Left\+Rule}}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aaaf3590d05143de6c1000307e5d1c757f}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aaaf3590d05143de6c1000307e5d1c757f}} 
+Rect\+Bottom\+Left\+Rule&-\/\+BL\+: Does the Tetris placement. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rect\+Contact\+Point\+Rule@{Rect\+Contact\+Point\+Rule}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}}\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Third\+Party\+::\+Max\+Rects\+Bin\+Pack}!Rect\+Contact\+Point\+Rule@{Rect\+Contact\+Point\+Rule}}}\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa74676dec9643df6719b3791bb16a7484}\label{class_super_tiled2_unity_1_1_editor_1_1_third_party_1_1_max_rects_bin_pack_a078e71237c51537c9c3445b68f9e980aa74676dec9643df6719b3791bb16a7484}} 
+Rect\+Contact\+Point\+Rule&-\/\+CP\+: Choosest the placement where the rectangle touches other rects as much as possible. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/Max\+Rects\+Bin\+Pack.\+cs\end{DoxyCompactItemize}

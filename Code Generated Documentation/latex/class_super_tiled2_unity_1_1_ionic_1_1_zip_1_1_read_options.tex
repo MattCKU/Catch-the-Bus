@@ -1,0 +1,73 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Read\+Options Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Read\+Options@{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Read\+Options}}
+
+
+A class for collecting the various options that can be used when Reading zip files for extraction or update.  
+
+
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_progress_event_args}{Read\+Progress\+Event\+Args}} $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_ab4dc78c65a53e852df3fcdc5232383de}{Read\+Progress}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em An event handler for Read operations. When opening large zip archives, you may want to display a progress bar or other indicator of status progress while reading. This parameter allows you to specify a Read\+Progress Event Handler directly. When you call {\ttfamily Read()}, the progress event is invoked as necessary. \end{DoxyCompactList}\item 
+Text\+Writer \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_afbdb75da8e78c61f663cf0a623e0e4cf}{Status\+Message\+Writer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The {\ttfamily System.\+I\+O.\+Text\+Writer} to use for writing verbose status messages during operations on the zip archive. A console application may wish to pass {\ttfamily System.\+Console.\+Out} to get messages on the Console. A graphical or headless application may wish to capture the messages in a different {\ttfamily Text\+Writer}, such as a {\ttfamily System.\+I\+O.\+String\+Writer}. \end{DoxyCompactList}\item 
+System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_ac83fac9bd2d384c0595f87717b66bff3}{Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The {\ttfamily System.\+Text.\+Encoding} to use when reading in the zip archive. Be careful specifying the encoding. If the value you use here is not the same as the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_encoding}{Encoding}} used when the zip archive was created (possibly by a different archiver) you will get unexpected results and possibly exceptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for collecting the various options that can be used when Reading zip files for extraction or update. 
+
+When reading a zip file, there are several options an application can set, to modify how the file is read, or what the library does while reading. This class collects those options into one container. 
+
+Pass an instance of the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options}{Read\+Options}}} class into the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a7b5b9f3c89b0bb19938e5f5b101c8f30}{Zip\+File.\+Read()}}} method. 
+
+\begin{DoxySeeAlso}{See also}
+Zip\+File.\+Read(\+String, Read\+Options), \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a158599d431cb5649f7729fd6f9a1e0af}{Zip\+File.\+Read(\+Stream, Read\+Options)}}
+
+
+\end{DoxySeeAlso}
+. . 
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_ac83fac9bd2d384c0595f87717b66bff3}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_ac83fac9bd2d384c0595f87717b66bff3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options}}
+\subsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Read\+Options.\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The {\ttfamily System.\+Text.\+Encoding} to use when reading in the zip archive. Be careful specifying the encoding. If the value you use here is not the same as the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_encoding}{Encoding}} used when the zip archive was created (possibly by a different archiver) you will get unexpected results and possibly exceptions. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_aece3d00ca721d3d06020ecc44442ea1e}{Zip\+File.\+Provisional\+Alternate\+Encoding}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_ab4dc78c65a53e852df3fcdc5232383de}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_ab4dc78c65a53e852df3fcdc5232383de}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options}!Read\+Progress@{Read\+Progress}}
+\index{Read\+Progress@{Read\+Progress}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options}}
+\subsubsection{\texorpdfstring{Read\+Progress}{ReadProgress}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_progress_event_args}{Read\+Progress\+Event\+Args}}$>$ Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Read\+Options.\+Read\+Progress\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+An event handler for Read operations. When opening large zip archives, you may want to display a progress bar or other indicator of status progress while reading. This parameter allows you to specify a Read\+Progress Event Handler directly. When you call {\ttfamily Read()}, the progress event is invoked as necessary. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_afbdb75da8e78c61f663cf0a623e0e4cf}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_read_options_afbdb75da8e78c61f663cf0a623e0e4cf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options}!Status\+Message\+Writer@{Status\+Message\+Writer}}
+\index{Status\+Message\+Writer@{Status\+Message\+Writer}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Read\+Options}}
+\subsubsection{\texorpdfstring{Status\+Message\+Writer}{StatusMessageWriter}}
+{\footnotesize\ttfamily Text\+Writer Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Read\+Options.\+Status\+Message\+Writer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The {\ttfamily System.\+I\+O.\+Text\+Writer} to use for writing verbose status messages during operations on the zip archive. A console application may wish to pass {\ttfamily System.\+Console.\+Out} to get messages on the Console. A graphical or headless application may wish to capture the messages in a different {\ttfamily Text\+Writer}, such as a {\ttfamily System.\+I\+O.\+String\+Writer}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+File.\+Read.\+cs\end{DoxyCompactItemize}

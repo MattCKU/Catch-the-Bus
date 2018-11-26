@@ -1,0 +1,264 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32 Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}\index{Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32@{Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32}}
+
+
+Computes a C\+R\+C-\/32. The C\+R\+C-\/32 algorithm is parameterized -\/ you can set the polynomial and enable or disable bit reversal. This can be used for G\+Z\+IP, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}}, or Z\+IP.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Int32 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a15be255989390633f0344f817b124911}{Get\+Crc32}} (System.\+I\+O.\+Stream input)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} for the specified stream. \end{DoxyCompactList}\item 
+Int32 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a463a42082c0ed59d8e1c20e60c4e6d8d}{Get\+Crc32\+And\+Copy}} (System.\+I\+O.\+Stream input, System.\+I\+O.\+Stream output)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} for the specified stream, and writes the input into the output stream. \end{DoxyCompactList}\item 
+Int32 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_abc80dde14bd2132eb4ebcbd88b8f9aaf}{Compute\+Crc32}} (Int32 W, byte B)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} for the given (word,byte) combo. This is a computation defined by P\+Kzip for P\+K\+Z\+IP 2.\+0 (weak) encryption. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ad7cbadf67f7afe7d490460a1f9fc2bd4}{Slurp\+Block}} (byte\mbox{[}$\,$\mbox{]} block, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Update the value for the running \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} using the given block of bytes. This is useful when using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aaa06a281b345284e2703ffb94ba46433}{C\+R\+C32()}} class in a Stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a078816cf3a9bdd4f29a898bf94cb1bde}{Update\+C\+RC}} (byte b)
+\begin{DoxyCompactList}\small\item\em Process one byte in the C\+RC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a17ab72a7c24c3aa682eb14cc17f34c16}{Update\+C\+RC}} (byte b, int n)
+\begin{DoxyCompactList}\small\item\em Process a run of N identical bytes into the C\+RC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a947f4c65cbeb6d2deae11477b0c18893}{Combine}} (int crc, int length)
+\begin{DoxyCompactList}\small\item\em Combines the given \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} value with the current running total. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aaa06a281b345284e2703ffb94ba46433}{C\+R\+C32}} ()
+\begin{DoxyCompactList}\small\item\em Create an instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} class using the default settings\+: no bit reversal, and a polynomial of 0x\+E\+D\+B88320. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a08b8fd33fe8fb5840d9e20eecf878c67}{C\+R\+C32}} (bool reverse\+Bits)
+\begin{DoxyCompactList}\small\item\em Create an instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} class, specifying whether to reverse data bits or not. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a55eee500667c8e6f5e1b53436829715b}{C\+R\+C32}} (int polynomial, bool reverse\+Bits)
+\begin{DoxyCompactList}\small\item\em Create an instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} class, specifying the polynomial and whether to reverse data bits or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aacb0cd763cb7bfd3bec2c2aa2d961b19}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the C\+R\+C-\/32 class -\/ clear the C\+RC \char`\"{}remainder register.\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Int64 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ac5179e08a9efec03818f9742d2fe3f41}{Total\+Bytes\+Read}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates the total number of bytes applied to the C\+RC. \end{DoxyCompactList}\item 
+Int32 \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ac401eaaaa2cbfcceabfa4f42146739e0}{Crc32\+Result}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates the current C\+RC for all blocks slurped in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Computes a C\+R\+C-\/32. The C\+R\+C-\/32 algorithm is parameterized -\/ you can set the polynomial and enable or disable bit reversal. This can be used for G\+Z\+IP, \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}}, or Z\+IP. 
+
+This type is used internally by Dot\+Net\+Zip; it is generally not used directly by applications wishing to create, read, or manipulate zip archive files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aaa06a281b345284e2703ffb94ba46433}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aaa06a281b345284e2703ffb94ba46433}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!C\+R\+C32@{C\+R\+C32}}
+\index{C\+R\+C32@{C\+R\+C32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{C\+R\+C32()}{CRC32()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+C\+R\+C32 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create an instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} class using the default settings\+: no bit reversal, and a polynomial of 0x\+E\+D\+B88320. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a08b8fd33fe8fb5840d9e20eecf878c67}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a08b8fd33fe8fb5840d9e20eecf878c67}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!C\+R\+C32@{C\+R\+C32}}
+\index{C\+R\+C32@{C\+R\+C32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{C\+R\+C32()}{CRC32()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+C\+R\+C32 (\begin{DoxyParamCaption}\item[{bool}]{reverse\+Bits }\end{DoxyParamCaption})}
+
+
+
+Create an instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} class, specifying whether to reverse data bits or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reverse\+Bits} & specify true if the instance should reverse data bits. \\
+\hline
+\end{DoxyParams}
+
+
+In the C\+R\+C-\/32 used by \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}}, the bits are reversed. Therefore if you want a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} with compatibility with \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}}, you should pass true here. In the C\+R\+C-\/32 used by G\+Z\+IP and P\+K\+Z\+IP, the bits are not reversed; Therefore if you want a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} with compatibility with those, you should pass false. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a55eee500667c8e6f5e1b53436829715b}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a55eee500667c8e6f5e1b53436829715b}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!C\+R\+C32@{C\+R\+C32}}
+\index{C\+R\+C32@{C\+R\+C32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{C\+R\+C32()}{CRC32()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+C\+R\+C32 (\begin{DoxyParamCaption}\item[{int}]{polynomial,  }\item[{bool}]{reverse\+Bits }\end{DoxyParamCaption})}
+
+
+
+Create an instance of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} class, specifying the polynomial and whether to reverse data bits or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em polynomial} & The polynomial to use for the C\+RC, expressed in the reversed (L\+SB) format\+: the highest ordered bit in the polynomial value is the coefficient of the 0th power; the second-\/highest order bit is the coefficient of the 1 power, and so on. Expressed this way, the polynomial for the C\+R\+C-\/32C used in I\+E\+EE 802.\+3, is 0x\+E\+D\+B88320. \\
+\hline
+{\em reverse\+Bits} & specify true if the instance should reverse data bits. \\
+\hline
+\end{DoxyParams}
+
+
+In the C\+R\+C-\/32 used by \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}}, the bits are reversed. Therefore if you want a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} with compatibility with \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_b_zip2}{B\+Zip2}}, you should pass true here for the {\ttfamily reverse\+Bits} parameter. In the C\+R\+C-\/32 used by G\+Z\+IP and P\+K\+Z\+IP, the bits are not reversed; Therefore if you want a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} with compatibility with those, you should pass false for the {\ttfamily reverse\+Bits} parameter. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a947f4c65cbeb6d2deae11477b0c18893}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a947f4c65cbeb6d2deae11477b0c18893}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Combine@{Combine}}
+\index{Combine@{Combine}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Combine()}{Combine()}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Combine (\begin{DoxyParamCaption}\item[{int}]{crc,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Combines the given \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} value with the current running total. 
+
+This is useful when using a divide-\/and-\/conquer approach to calculating a C\+RC. Multiple threads can each calculate a \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} on a segment of the data, and then combine the individual \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} values at the end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em crc} & the crc value to be combined with this one\\
+\hline
+{\em length} & the length of data the C\+RC value was calculated on\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_abc80dde14bd2132eb4ebcbd88b8f9aaf}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_abc80dde14bd2132eb4ebcbd88b8f9aaf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Compute\+Crc32@{Compute\+Crc32}}
+\index{Compute\+Crc32@{Compute\+Crc32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Compute\+Crc32()}{ComputeCrc32()}}
+{\footnotesize\ttfamily Int32 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Compute\+Crc32 (\begin{DoxyParamCaption}\item[{Int32}]{W,  }\item[{byte}]{B }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} for the given (word,byte) combo. This is a computation defined by P\+Kzip for P\+K\+Z\+IP 2.\+0 (weak) encryption. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & The word to start with.\\
+\hline
+{\em B} & The byte to combine it with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The C\+R\+C-\/ized result.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a15be255989390633f0344f817b124911}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a15be255989390633f0344f817b124911}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Get\+Crc32@{Get\+Crc32}}
+\index{Get\+Crc32@{Get\+Crc32}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Get\+Crc32()}{GetCrc32()}}
+{\footnotesize\ttfamily Int32 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Get\+Crc32 (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{input }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} for the specified stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The stream over which to calculate the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} calculation
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a463a42082c0ed59d8e1c20e60c4e6d8d}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a463a42082c0ed59d8e1c20e60c4e6d8d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Get\+Crc32\+And\+Copy@{Get\+Crc32\+And\+Copy}}
+\index{Get\+Crc32\+And\+Copy@{Get\+Crc32\+And\+Copy}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Get\+Crc32\+And\+Copy()}{GetCrc32AndCopy()}}
+{\footnotesize\ttfamily Int32 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Get\+Crc32\+And\+Copy (\begin{DoxyParamCaption}\item[{System.\+I\+O.\+Stream}]{input,  }\item[{System.\+I\+O.\+Stream}]{output }\end{DoxyParamCaption})}
+
+
+
+Returns the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} for the specified stream, and writes the input into the output stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The stream over which to calculate the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}}\\
+\hline
+{\em output} & The stream into which to deflate the input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} calculation
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aacb0cd763cb7bfd3bec2c2aa2d961b19}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aacb0cd763cb7bfd3bec2c2aa2d961b19}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Reset@{Reset}}
+\index{Reset@{Reset}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the C\+R\+C-\/32 class -\/ clear the C\+RC \char`\"{}remainder register.\char`\"{} 
+
+Use this when employing a single instance of this class to compute multiple, distinct C\+R\+Cs on multiple, distinct data blocks. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ad7cbadf67f7afe7d490460a1f9fc2bd4}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ad7cbadf67f7afe7d490460a1f9fc2bd4}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Slurp\+Block@{Slurp\+Block}}
+\index{Slurp\+Block@{Slurp\+Block}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Slurp\+Block()}{SlurpBlock()}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Slurp\+Block (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{block,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Update the value for the running \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32}{C\+R\+C32}} using the given block of bytes. This is useful when using the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_aaa06a281b345284e2703ffb94ba46433}{C\+R\+C32()}} class in a Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & block of bytes to slurp\\
+\hline
+{\em offset} & starting point in the block\\
+\hline
+{\em count} & how many bytes within the block to slurp\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a078816cf3a9bdd4f29a898bf94cb1bde}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a078816cf3a9bdd4f29a898bf94cb1bde}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Update\+C\+RC@{Update\+C\+RC}}
+\index{Update\+C\+RC@{Update\+C\+RC}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Update\+C\+R\+C()}{UpdateCRC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Update\+C\+RC (\begin{DoxyParamCaption}\item[{byte}]{b }\end{DoxyParamCaption})}
+
+
+
+Process one byte in the C\+RC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the byte to include into the C\+RC . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a17ab72a7c24c3aa682eb14cc17f34c16}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_a17ab72a7c24c3aa682eb14cc17f34c16}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Update\+C\+RC@{Update\+C\+RC}}
+\index{Update\+C\+RC@{Update\+C\+RC}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Update\+C\+R\+C()}{UpdateCRC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Update\+C\+RC (\begin{DoxyParamCaption}\item[{byte}]{b,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Process a run of N identical bytes into the C\+RC. 
+
+This method serves as an optimization for updating the C\+RC when a run of identical bytes is found. Rather than passing in a buffer of length n, containing all identical bytes b, this method accepts the byte value and the length of the (virtual) buffer -\/ the length of the run. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the byte to include into the C\+RC. \\
+\hline
+{\em n} & the number of times that byte should be repeated. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ac401eaaaa2cbfcceabfa4f42146739e0}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ac401eaaaa2cbfcceabfa4f42146739e0}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Crc32\+Result@{Crc32\+Result}}
+\index{Crc32\+Result@{Crc32\+Result}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Crc32\+Result}{Crc32Result}}
+{\footnotesize\ttfamily Int32 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Crc32\+Result\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates the current C\+RC for all blocks slurped in. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ac5179e08a9efec03818f9742d2fe3f41}\label{class_super_tiled2_unity_1_1_ionic_1_1_crc_1_1_c_r_c32_ac5179e08a9efec03818f9742d2fe3f41}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}!Total\+Bytes\+Read@{Total\+Bytes\+Read}}
+\index{Total\+Bytes\+Read@{Total\+Bytes\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Crc\+::\+C\+R\+C32}}
+\subsubsection{\texorpdfstring{Total\+Bytes\+Read}{TotalBytesRead}}
+{\footnotesize\ttfamily Int64 Super\+Tiled2\+Unity.\+Ionic.\+Crc.\+C\+R\+C32.\+Total\+Bytes\+Read\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Indicates the total number of bytes applied to the C\+RC. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Common\+Src/C\+R\+C32.\+cs\end{DoxyCompactItemize}

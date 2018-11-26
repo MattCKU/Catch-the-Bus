@@ -1,0 +1,109 @@
+\hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess}{}\section{Super\+Tiled2\+Unity.\+Editor.\+Lib\+Tess\+Dot\+Net.\+Tess Class Reference}
+\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess}\index{Super\+Tiled2\+Unity.\+Editor.\+Lib\+Tess\+Dot\+Net.\+Tess@{Super\+Tiled2\+Unity.\+Editor.\+Lib\+Tess\+Dot\+Net.\+Tess}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Active\+Region}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a40b858b7f3c13f2eeff0f8ecd420dcef}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a40b858b7f3c13f2eeff0f8ecd420dcef}} 
+{\bfseries Tess} (\mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_i_pool}{I\+Pool}} pool)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a2c7312adccd2c464fbd4b86e6a562047}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a2c7312adccd2c464fbd4b86e6a562047}} 
+void {\bfseries Add\+Contour} (\mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_contour_vertex}{Contour\+Vertex}}\mbox{[}$\,$\mbox{]} vertices)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a5e8432a57b71e7c9a99a6b72c6bb2b75}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a5e8432a57b71e7c9a99a6b72c6bb2b75}} 
+void {\bfseries Add\+Contour} (\mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_contour_vertex}{Contour\+Vertex}}\mbox{[}$\,$\mbox{]} vertices, Contour\+Orientation force\+Orientation)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_afe9b67cc89f9ee8c6abd678759f2b450}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_afe9b67cc89f9ee8c6abd678759f2b450}} 
+void {\bfseries Tessellate} (Winding\+Rule winding\+Rule, Element\+Type element\+Type, int poly\+Size)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a28b2a3a23b91b06c15e265d9cd7b6eb0}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a28b2a3a23b91b06c15e265d9cd7b6eb0}} 
+void {\bfseries Tessellate} (Winding\+Rule winding\+Rule, Element\+Type element\+Type, int poly\+Size, Combine\+Callback combine\+Callback)
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_aa2c0d88bbb370249a93babac320f626b}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_aa2c0d88bbb370249a93babac320f626b}} 
+void {\bfseries Tessellate} (Winding\+Rule winding\+Rule, Element\+Type element\+Type, int poly\+Size, Combine\+Callback combine\+Callback, \mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_vec3}{Vec3}} normal)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ac8385432178c9ce4f2e3468fb9e8973a}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ac8385432178c9ce4f2e3468fb9e8973a}} 
+Real {\bfseries S\+UnitX} = 1
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a5c7282700d2a992da43768ece7b4c5ec}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a5c7282700d2a992da43768ece7b4c5ec}} 
+Real {\bfseries S\+UnitY} = 0
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ab46494df50424ec37ef8e48fb39cb4c0}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ab46494df50424ec37ef8e48fb39cb4c0}} 
+Real {\bfseries Sentinel\+Coord} = 4e30f
+\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a1b947d7d13dfc58a8848e4c8420ab62d}{No\+Empty\+Polygons}} = false
+\begin{DoxyCompactList}\small\item\em If true, will remove empty (zero area) polygons. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ae1a04c8eb8585a734a74f6c00b7e2e20}{Use\+Pooling}} = true
+\begin{DoxyCompactList}\small\item\em O\+B\+S\+O\+L\+E\+TE\+: use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_i_pool}{I\+Pool}} constructor to disable pooling by passing null. If true, will use pooling to reduce GC (compare performance with/without, can vary wildly). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a106a0e9131ed76adbf04e70ec0fc728f}{Compute\+Interior}} ()
+\begin{DoxyCompactList}\small\item\em Compute\+Interior computes the planar arrangement specified by the given contours, and further subdivides this arrangement into regions. Each region is marked \char`\"{}inside\char`\"{} if it belongs to the polygon, according to the rule given by winding\+Rule. Each interior region is guaranteed to be monotone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a38f3a1259f1a18ec9dee4f58604183f6}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a38f3a1259f1a18ec9dee4f58604183f6}} 
+\mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_vec3}{Vec3}} {\bfseries Normal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_af4899abef1cc89fa6a473d4cb36809db}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_af4899abef1cc89fa6a473d4cb36809db}} 
+\mbox{\hyperlink{struct_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_contour_vertex}{Contour\+Vertex}} \mbox{[}$\,$\mbox{]} {\bfseries Vertices}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a818198fc1340090c84e26662f6b96a4e}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a818198fc1340090c84e26662f6b96a4e}} 
+int {\bfseries Vertex\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ab5bbf7e33956c8acc688c567777905aa}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ab5bbf7e33956c8acc688c567777905aa}} 
+int \mbox{[}$\,$\mbox{]} {\bfseries Elements}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ac4b1f6c7f61eb9b032c17fd118c5ee8f}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ac4b1f6c7f61eb9b032c17fd118c5ee8f}} 
+int {\bfseries Element\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a106a0e9131ed76adbf04e70ec0fc728f}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a106a0e9131ed76adbf04e70ec0fc728f}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess}!Compute\+Interior@{Compute\+Interior}}
+\index{Compute\+Interior@{Compute\+Interior}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess}}
+\subsubsection{\texorpdfstring{Compute\+Interior()}{ComputeInterior()}}
+{\footnotesize\ttfamily void Super\+Tiled2\+Unity.\+Editor.\+Lib\+Tess\+Dot\+Net.\+Tess.\+Compute\+Interior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Compute\+Interior computes the planar arrangement specified by the given contours, and further subdivides this arrangement into regions. Each region is marked \char`\"{}inside\char`\"{} if it belongs to the polygon, according to the rule given by winding\+Rule. Each interior region is guaranteed to be monotone. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a1b947d7d13dfc58a8848e4c8420ab62d}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_a1b947d7d13dfc58a8848e4c8420ab62d}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess}!No\+Empty\+Polygons@{No\+Empty\+Polygons}}
+\index{No\+Empty\+Polygons@{No\+Empty\+Polygons}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess}}
+\subsubsection{\texorpdfstring{No\+Empty\+Polygons}{NoEmptyPolygons}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Editor.\+Lib\+Tess\+Dot\+Net.\+Tess.\+No\+Empty\+Polygons = false}
+
+
+
+If true, will remove empty (zero area) polygons. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ae1a04c8eb8585a734a74f6c00b7e2e20}\label{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_tess_ae1a04c8eb8585a734a74f6c00b7e2e20}} 
+\index{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess}!Use\+Pooling@{Use\+Pooling}}
+\index{Use\+Pooling@{Use\+Pooling}!Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess@{Super\+Tiled2\+Unity\+::\+Editor\+::\+Lib\+Tess\+Dot\+Net\+::\+Tess}}
+\subsubsection{\texorpdfstring{Use\+Pooling}{UsePooling}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Editor.\+Lib\+Tess\+Dot\+Net.\+Tess.\+Use\+Pooling = true}
+
+
+
+O\+B\+S\+O\+L\+E\+TE\+: use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_editor_1_1_lib_tess_dot_net_1_1_i_pool}{I\+Pool}} constructor to disable pooling by passing null. If true, will use pooling to reduce GC (compare performance with/without, can vary wildly). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/\+Lib\+Tess\+Dot\+Net/Sweep.\+cs\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/\+Lib\+Tess\+Dot\+Net/Tess.\+cs\end{DoxyCompactItemize}

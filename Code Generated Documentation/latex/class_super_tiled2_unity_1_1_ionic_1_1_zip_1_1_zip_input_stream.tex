@@ -1,0 +1,558 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}\index{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream}}
+
+
+Provides a stream metaphor for reading zip files.  
+
+
+Inheritance diagram for Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{Zip\+Input\+Stream}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} stream)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}}, wrapping it around an existing stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab8638e5453c2c32e3007ca7978949f94}{Zip\+Input\+Stream}} (String file\+Name)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}}, given the name of an existing zip file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_aed25ba22785f1bfebfa9bbac8054e89b}{Zip\+Input\+Stream}} (\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}} stream, bool leave\+Open)
+\begin{DoxyCompactList}\small\item\em Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}}, explicitly specifying whether to keep the underlying stream open. \end{DoxyCompactList}\item 
+override String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a3d251603c009cbbb714ffa02d41724a5}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Provides a string representation of the instance.\end{DoxyCompactList}\item 
+override int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em Read the data from the stream into the buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Read the next entry from the zip file. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_aeb026d271ed4735218e0a828e894bfb2}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em This is a no-\/op. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a17ea725c822fa0c237288944bc4e9263}{Write}} (byte\mbox{[}$\,$\mbox{]} buffer, int offset, int count)
+\begin{DoxyCompactList}\small\item\em This method always throws a Not\+Supported\+Exception. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab18b42888a3f6495b8afd7bc667edb5f}{Seek}} (long offset, Seek\+Origin origin)
+\begin{DoxyCompactList}\small\item\em This method seeks in the underlying stream. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a30b3d9819a30af02a5edcf31a20095f7}{Set\+Length}} (long value)
+\begin{DoxyCompactList}\small\item\em This method always throws a Not\+Supported\+Exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a27f6b4a5f9fd86beaf360d8b1594b91d}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Dispose the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Text.\+Encoding \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a0b2b02e8e22ba92c63f7a77852abf062}{Provisional\+Alternate\+Encoding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The text encoding to use when reading entries into the zip archive, for those entries whose filenames or comments cannot be encoded with the default (I\+B\+M437) encoding. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af44fff57aee1d3076896571b3e102937}{Codec\+Buffer\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Size of the work buffer to use for the Z\+L\+IB codec during decompression. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a152dfe460b16330a160db99eeffcf07c}{Password}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the password to be used on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} instance. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a5d96ce8da0a2f65670eddfc56dae1a21}{Can\+Read}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Always returns true. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ac37e847bafaafa0cf3f7713f5e6119e2}{Can\+Seek}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the value of {\ttfamily Can\+Seek} for the underlying (wrapped) stream. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a3f81c6724ec62db4d5c4cada5522a704}{Can\+Write}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Always returns false. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a02840abc14d29e5cd82ee0af6b814c21}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns the length of the underlying stream. \end{DoxyCompactList}\item 
+override long \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a5320273749e8a3c5c5676b7e19b612d2}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the position of the underlying stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a stream metaphor for reading zip files. 
+
+This class provides an alternative programming model for reading zip files to the one enabled by the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class. Use this when reading zip files, as an alternative to the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class, when you would like to use a Stream class to read the file. 
+
+Some application designs require a readable stream for input. This stream can be used to read a zip file, and extract entries. 
+
+Both the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class and the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class can be used to read and extract zip files. Both of them support many of the common zip features, including Unicode, different compression levels, and Z\+I\+P64. The programming models differ. For example, when extracting entries via calls to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry()}}} and {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}} methods on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class, the caller is responsible for creating the file, writing the bytes into the file, setting the attributes on the file, and setting the created, last modified, and last accessed timestamps on the file. All of these things are done automatically by a call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}. For this reason, the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} is generally recommended for when your application wants to extract the data, without storing that data into a file. 
+
+Aside from the obvious differences in programming model, there are some differences in capability between the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class and the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class. 
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} can be used to create or update zip files, or read and extract zip files. {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} can be used only to read and extract zip files. If you want to use a stream to create zip files, check out the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. 
+
+
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} cannot read segmented or spanned zip files. 
+
+
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} will not read \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} file comments. 
+
+
+\item When reading larger files, {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} will always underperform {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. This is because the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} does a full scan on the zip file, while the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class reads the central directory of the zip file. 
+
+
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Zip\+Input\+Stream@{Zip\+Input\+Stream}}
+\index{Zip\+Input\+Stream@{Zip\+Input\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Zip\+Input\+Stream()}{ZipInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Zip\+Input\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}}}]{stream }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}}, wrapping it around an existing stream. 
+
+While the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class is generally easier to use, this class provides an alternative to those applications that want to read from a zipfile directly, using a System.\+I\+O.\+Stream. 
+
+Both the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class and the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class can be used to read and extract zip files. Both of them support many of the common zip features, including Unicode, different compression levels, and Z\+I\+P64. The programming models differ. For example, when extracting entries via calls to the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry()}}} and {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}} methods on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class, the caller is responsible for creating the file, writing the bytes into the file, setting the attributes on the file, and setting the created, last modified, and last accessed timestamps on the file. All of these things are done automatically by a call to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}. For this reason, the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} is generally recommended for when your application wants to extract the data, without storing that data into a file. 
+
+Aside from the obvious differences in programming model, there are some differences in capability between the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class and the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class. 
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} can be used to create or update zip files, or read and extract zip files. {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} can be used only to read and extract zip files. If you want to use a stream to create zip files, check out the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_output_stream}{Zip\+Output\+Stream}}. 
+
+
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} cannot read segmented or spanned zip files. 
+
+
+\item {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} will not read \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} file comments. 
+
+
+\item When reading larger files, {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} will always underperform {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}}. This is because the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} does a full scan on the zip file, while the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}}} class reads the central directory of the zip file. 
+
+
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to read. It must be readable. This stream will be closed at the time the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} is closed. \\
+\hline
+\end{DoxyParams}
+
+
+This example shows how to read a zip file, and extract entries, using the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} Unzip()
+\{
+    byte[] buffer= \textcolor{keyword}{new} byte[2048];
+    \textcolor{keywordtype}{int} n;
+    \textcolor{keyword}{using} (var raw = File.Open(inputFileName, FileMode.Open, FileAccess.Read))
+    \{
+        \textcolor{keyword}{using} (var input= \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}}(raw))
+        \{
+            ZipEntry e;
+            \textcolor{keywordflow}{while} (( e = input.GetNextEntry()) != null)
+            \{
+                \textcolor{keywordflow}{if} (e.IsDirectory) \textcolor{keywordflow}{continue};
+                \textcolor{keywordtype}{string} outputPath = \mbox{\hyperlink{namespace_path}{Path}}.Combine(extractDir, e.FileName);
+                \textcolor{keyword}{using} (var output = File.Open(outputPath, FileMode.Create, FileAccess.ReadWrite))
+                \{
+                    \textcolor{keywordflow}{while} ((n= input.Read(buffer, 0, buffer.Length)) > 0)
+                    \{
+                        output.Write(buffer,0,n);
+                    \}
+                \}
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Private Sub UnZip()
+    Dim inputFileName As String = "MyArchive.zip"
+    Dim extractDir As String = "extract"
+    Dim buffer As Byte() = New Byte(2048) \{\}
+    Using raw As FileStream = File.Open(inputFileName, FileMode.Open, FileAccess.Read)
+        Using input As \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}} = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}}(raw)
+            Dim e As ZipEntry
+            Do While (Not e = input.GetNextEntry Is Nothing)
+                If Not e.IsDirectory Then
+                    Using output As FileStream = File.Open(\mbox{\hyperlink{namespace_path}{Path}}.Combine(extractDir, e.FileName), \_
+                                                           FileMode.Create, FileAccess.ReadWrite)
+                        Dim n As Integer
+                        Do While (n = input.Read(buffer, 0, buffer.Length) > 0)
+                            output.Write(buffer, 0, n)
+                        Loop
+                    End Using
+                End If
+            Loop
+        End Using
+    End Using
+End Sub
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab8638e5453c2c32e3007ca7978949f94}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab8638e5453c2c32e3007ca7978949f94}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Zip\+Input\+Stream@{Zip\+Input\+Stream}}
+\index{Zip\+Input\+Stream@{Zip\+Input\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Zip\+Input\+Stream()}{ZipInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Zip\+Input\+Stream (\begin{DoxyParamCaption}\item[{String}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}}, given the name of an existing zip file. 
+
+This constructor opens a {\ttfamily File\+Stream} for the given zipfile, and wraps a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} around that. See the documentation for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{Zip\+Input\+Stream(\+Stream)}} constructor for full details. 
+
+While the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Zip\+File}} class is generally easier to use, this class provides an alternative to those applications that want to read from a zipfile directly, using a System.\+I\+O.\+Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & The name of the filesystem file to read. \\
+\hline
+\end{DoxyParams}
+
+
+This example shows how to read a zip file, and extract entries, using the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} class.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{private} \textcolor{keywordtype}{void} Unzip()
+\{
+    byte[] buffer= \textcolor{keyword}{new} byte[2048];
+    \textcolor{keywordtype}{int} n;
+    \textcolor{keyword}{using} (var input= \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}}(inputFileName))
+    \{
+        ZipEntry e;
+        \textcolor{keywordflow}{while} (( e = input.GetNextEntry()) != null)
+        \{
+            \textcolor{keywordflow}{if} (e.IsDirectory) \textcolor{keywordflow}{continue};
+            \textcolor{keywordtype}{string} outputPath = \mbox{\hyperlink{namespace_path}{Path}}.Combine(extractDir, e.FileName);
+            \textcolor{keyword}{using} (var output = File.Open(outputPath, FileMode.Create, FileAccess.ReadWrite))
+            \{
+                \textcolor{keywordflow}{while} ((n= input.Read(buffer, 0, buffer.Length)) > 0)
+                \{
+                    output.Write(buffer,0,n);
+                \}
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}
+Private Sub UnZip()
+    Dim inputFileName As String = "MyArchive.zip"
+    Dim extractDir As String = "extract"
+    Dim buffer As Byte() = New Byte(2048) \{\}
+    Using input As \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}} = New \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}}(inputFileName)
+        Dim e As ZipEntry
+        Do While (Not e = input.GetNextEntry Is Nothing)
+            If Not e.IsDirectory Then
+                Using output As FileStream = File.Open(\mbox{\hyperlink{namespace_path}{Path}}.Combine(extractDir, e.FileName), \_
+                                                       FileMode.Create, FileAccess.ReadWrite)
+                    Dim n As Integer
+                    Do While (n = input.Read(buffer, 0, buffer.Length) > 0)
+                        output.Write(buffer, 0, n)
+                    Loop
+                End Using
+            End If
+        Loop
+    End Using
+End Sub
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_aed25ba22785f1bfebfa9bbac8054e89b}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_aed25ba22785f1bfebfa9bbac8054e89b}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Zip\+Input\+Stream@{Zip\+Input\+Stream}}
+\index{Zip\+Input\+Stream@{Zip\+Input\+Stream}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Zip\+Input\+Stream()}{ZipInputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Zip\+Input\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip_a9ced5352c56e7e0fceff15b534073c83aeae835e83c0494a376229f254f7d3392}{Stream}}}]{stream,  }\item[{bool}]{leave\+Open }\end{DoxyParamCaption})}
+
+
+
+Create a {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}}, explicitly specifying whether to keep the underlying stream open. 
+
+See the documentation for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{Zip\+Input\+Stream(\+Stream)}} constructor for a discussion of the class, and an example of how to use the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream to read from. It must be readable. \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em leave\+Open} & true if the application would like the stream to remain open after the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} has been closed. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a27f6b4a5f9fd86beaf360d8b1594b91d}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a27f6b4a5f9fd86beaf360d8b1594b91d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dispose the stream. 
+
+This method disposes the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}. It may also close the underlying stream, depending on which constructor was used. 
+
+Typically the application will call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a27f6b4a5f9fd86beaf360d8b1594b91d}{Dispose()}}} implicitly, via a {\ttfamily using} statement in C\#, or a {\ttfamily Using} statement in VB. 
+
+Application code won\textquotesingle{}t call this code directly. This method may be invoked in two distinct scenarios. If disposing == true, the method has been called directly or indirectly by a user\textquotesingle{}s code, for example via the public \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a27f6b4a5f9fd86beaf360d8b1594b91d}{Dispose()}} method. In this case, both managed and unmanaged resources can be referenced and disposed. If disposing == false, the method has been called by the runtime from inside the object finalizer and this method should not reference other objects; in that case only unmanaged resources must be referenced or disposed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if the Dispose method was invoked by user code. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_aeb026d271ed4735218e0a828e894bfb2}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_aeb026d271ed4735218e0a828e894bfb2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Flush@{Flush}}
+\index{Flush@{Flush}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is a no-\/op. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Get\+Next\+Entry@{Get\+Next\+Entry}}
+\index{Get\+Next\+Entry@{Get\+Next\+Entry}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Get\+Next\+Entry()}{GetNextEntry()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}} Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Get\+Next\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Read the next entry from the zip file. 
+
+Call this method just before calling Read(byte\mbox{[}$\,$\mbox{]}, int, int), to position the pointer in the zip file to the next entry that can be read. Subsequent calls to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}}, will decrypt and decompress the data in the zip file, until {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}} returns 0. 
+
+Each time you call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry()}}}, the pointer in the wrapped stream is moved to the next entry in the zip file. If you call \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab18b42888a3f6495b8afd7bc667edb5f}{Seek(long, Seek\+Origin)}}, and thus re-\/position the pointer within the file, you will need to call {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry()}}} again, to insure that the file pointer is positioned at the beginning of a zip entry. 
+
+This method returns the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}}. Using a stream approach, you will read the raw bytes for an entry in a zip file via calls to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}}. Alternatively, you can extract an entry into a file, or a stream, by calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_a9d65543aadd23e47e188175412891b42}{Zip\+Entry.\+Extract()}}, or one of its siblings. 
+
+\begin{DoxyReturn}{Returns}
+The {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} read. Returns null (or Nothing in VB) if there are no more entries in the zip file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Read@{Read}}
+\index{Read@{Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily override int Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Read (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Read the data from the stream into the buffer. 
+
+The data for the zipentry will be decrypted and uncompressed, as necessary, before being copied into the buffer. 
+
+You must set the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a152dfe460b16330a160db99eeffcf07c}{Password}} property before calling {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}} the first time for an encrypted entry. To determine if an entry is encrypted and requires a password, check the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry_ab8de4882ffe896d2657b27264807ef1c}{Zip\+Entry.\+Encryption}} property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The buffer to hold the data read from the stream.\\
+\hline
+{\em offset} & the offset within the buffer to copy the first byte read.\\
+\hline
+{\em count} & the number of bytes to read.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of bytes read, after decryption and decompression.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab18b42888a3f6495b8afd7bc667edb5f}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab18b42888a3f6495b8afd7bc667edb5f}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Seek@{Seek}}
+\index{Seek@{Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Seek (\begin{DoxyParamCaption}\item[{long}]{offset,  }\item[{Seek\+Origin}]{origin }\end{DoxyParamCaption})}
+
+
+
+This method seeks in the underlying stream. 
+
+Call this method if you want to seek around within the zip file for random access. 
+
+Applications can intermix calls to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab18b42888a3f6495b8afd7bc667edb5f}{Seek()}}} with calls to \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry()}}. After a call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ab18b42888a3f6495b8afd7bc667edb5f}{Seek()}}}, {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_afd108d06a4650f63b0ec80d0698fc886}{Get\+Next\+Entry()}}} will get the next {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} that falls after the current position in the input stream. You\textquotesingle{}re on your own for finding out just where to seek in the stream, to get to the various entries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & the offset point to seek to\\
+\hline
+{\em origin} & the reference point from which to seek\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new position
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a30b3d9819a30af02a5edcf31a20095f7}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a30b3d9819a30af02a5edcf31a20095f7}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Set\+Length@{Set\+Length}}
+\index{Set\+Length@{Set\+Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Set\+Length()}{SetLength()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Set\+Length (\begin{DoxyParamCaption}\item[{long}]{value }\end{DoxyParamCaption})}
+
+
+
+This method always throws a Not\+Supported\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & ignored\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a3d251603c009cbbb714ffa02d41724a5}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a3d251603c009cbbb714ffa02d41724a5}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override String Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides a string representation of the instance.
+
+This can be useful for debugging purposes. 
+
+\begin{DoxyReturn}{Returns}
+a string representation of the instance.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a17ea725c822fa0c237288944bc4e9263}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a17ea725c822fa0c237288944bc4e9263}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Write@{Write}}
+\index{Write@{Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily override void Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Write (\begin{DoxyParamCaption}\item[{byte \mbox{[}$\,$\mbox{]}}]{buffer,  }\item[{int}]{offset,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+This method always throws a Not\+Supported\+Exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & ignored\\
+\hline
+{\em offset} & ignored\\
+\hline
+{\em count} & ignored\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a5d96ce8da0a2f65670eddfc56dae1a21}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a5d96ce8da0a2f65670eddfc56dae1a21}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Can\+Read@{Can\+Read}}
+\index{Can\+Read@{Can\+Read}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Read}{CanRead}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Can\+Read\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Always returns true. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ac37e847bafaafa0cf3f7713f5e6119e2}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_ac37e847bafaafa0cf3f7713f5e6119e2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Can\+Seek@{Can\+Seek}}
+\index{Can\+Seek@{Can\+Seek}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Seek}{CanSeek}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Can\+Seek\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the value of {\ttfamily Can\+Seek} for the underlying (wrapped) stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a3f81c6724ec62db4d5c4cada5522a704}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a3f81c6724ec62db4d5c4cada5522a704}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Can\+Write@{Can\+Write}}
+\index{Can\+Write@{Can\+Write}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Can\+Write}{CanWrite}}
+{\footnotesize\ttfamily override bool Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Can\+Write\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Always returns false. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af44fff57aee1d3076896571b3e102937}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af44fff57aee1d3076896571b3e102937}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Codec\+Buffer\+Size@{Codec\+Buffer\+Size}}
+\index{Codec\+Buffer\+Size@{Codec\+Buffer\+Size}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Codec\+Buffer\+Size}{CodecBufferSize}}
+{\footnotesize\ttfamily int Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Codec\+Buffer\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Size of the work buffer to use for the Z\+L\+IB codec during decompression. 
+
+Setting this affects the performance and memory efficiency of compression and decompression. For larger files, setting this to a larger size may improve performance, but the exact numbers vary depending on available memory, and a bunch of other variables. I don\textquotesingle{}t have good firm recommendations on how to set it. You\textquotesingle{}ll have to test it yourself. Or just leave it alone and accept the default. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a02840abc14d29e5cd82ee0af6b814c21}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a02840abc14d29e5cd82ee0af6b814c21}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Length@{Length}}
+\index{Length@{Length}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns the length of the underlying stream. 
+
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a152dfe460b16330a160db99eeffcf07c}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a152dfe460b16330a160db99eeffcf07c}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Password@{Password}}
+\index{Password@{Password}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Password}{Password}}
+{\footnotesize\ttfamily String Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Password\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets the password to be used on the {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}}} instance. 
+
+When reading a zip archive, this password is used to read and decrypt the entries that are encrypted within the zip file. When entries within a zip file use different passwords, set the appropriate password for the entry before the first call to {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a172a23a02d3c7a34db7c6648c55fd299}{Read()}}} for each entry. 
+
+When reading an entry that is not encrypted, the value of this property is ignored. 
+
+This example uses the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream}{Zip\+Input\+Stream}} to read and extract entries from a zip file, using a potentially different password for each entry.
+
+
+\begin{DoxyCode}
+byte[] buffer= \textcolor{keyword}{new} byte[2048];
+\textcolor{keywordtype}{int} n;
+\textcolor{keyword}{using} (var raw = File.Open(\_inputFileName, FileMode.Open, FileAccess.Read ))
+\{
+    \textcolor{keyword}{using} (var input= \textcolor{keyword}{new} \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_af9203130f058abb23317725bcb98c047}{ZipInputStream}}(raw))
+    \{
+        ZipEntry e;
+        \textcolor{keywordflow}{while} (( e = input.GetNextEntry()) != null)
+        \{
+            input.Password = PasswordForEntry(e.FileName);
+            \textcolor{keywordflow}{if} (e.IsDirectory) \textcolor{keywordflow}{continue};
+            \textcolor{keywordtype}{string} outputPath = \mbox{\hyperlink{namespace_path}{Path}}.Combine(\_extractDir, e.FileName);
+            \textcolor{keyword}{using} (var output = File.Open(outputPath, FileMode.Create, FileAccess.ReadWrite))
+            \{
+                \textcolor{keywordflow}{while} ((n= input.Read(buffer,0,buffer.Length)) > 0)
+                \{
+                    output.Write(buffer,0,n);
+                \}
+            \}
+        \}
+    \}
+\}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a5320273749e8a3c5c5676b7e19b612d2}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a5320273749e8a3c5c5676b7e19b612d2}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Position@{Position}}
+\index{Position@{Position}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily override long Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the position of the underlying stream. 
+
+Setting the position is equivalent to calling {\ttfamily Seek(value, Seek\+Origin.\+Begin)}. \mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a0b2b02e8e22ba92c63f7a77852abf062}\label{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_input_stream_a0b2b02e8e22ba92c63f7a77852abf062}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}!Provisional\+Alternate\+Encoding@{Provisional\+Alternate\+Encoding}}
+\index{Provisional\+Alternate\+Encoding@{Provisional\+Alternate\+Encoding}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+Zip\+::\+Zip\+Input\+Stream}}
+\subsubsection{\texorpdfstring{Provisional\+Alternate\+Encoding}{ProvisionalAlternateEncoding}}
+{\footnotesize\ttfamily System.\+Text.\+Encoding Super\+Tiled2\+Unity.\+Ionic.\+Zip.\+Zip\+Input\+Stream.\+Provisional\+Alternate\+Encoding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The text encoding to use when reading entries into the zip archive, for those entries whose filenames or comments cannot be encoded with the default (I\+B\+M437) encoding. 
+
+In its zip specification
+
+, P\+K\+Ware describes two options for encoding filenames and comments\+: using I\+B\+M437 or U\+T\+F-\/8. But, some archiving tools or libraries do not follow the specification, and instead encode characters using the system default code page. For example, Win\+R\+AR when run on a machine in Shanghai may encode filenames with the Big-\/5 Chinese (950) code page. This behavior is contrary to the \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} specification, but it occurs anyway. 
+
+When using Dot\+Net\+Zip to read zip archives that use something other than U\+T\+F-\/8 or I\+B\+M437, set this property to specify the code page to use when reading encoded filenames and comments for each {\ttfamily \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Zip\+Entry}}} in the zip file. 
+
+This property is \char`\"{}provisional\char`\"{}. When the entry in the zip archive is not explicitly marked as using U\+T\+F-\/8, then I\+B\+M437 is used to decode filenames and comments. If a loss of data would result from using I\+B\+M436 -\/ specifically when encoding and decoding is not reflexive -\/ the codepage specified here is used. It is possible, therefore, to have a given entry with a {\ttfamily Comment} encoded in I\+B\+M437 and a {\ttfamily File\+Name} encoded with the specified \char`\"{}provisional\char`\"{} codepage. 
+
+When a zip file uses an arbitrary, non-\/\+U\+T\+F8 code page for encoding, there is no standard way for the reader application -\/ whether Dot\+Net\+Zip, Win\+Zip, Win\+Rar, or something else -\/ to know which codepage has been used for the entries. Readers of zip files are not able to inspect the zip file and determine the codepage that was used for the entries contained within it. It is left to the application or user to determine the necessary codepage when reading zip files encoded this way. If you use an incorrect codepage when reading a zipfile, you will get entries with filenames that are incorrect, and the incorrect filenames may even contain characters that are not legal for use within filenames in Windows. Extracting entries with illegal characters in the filenames will lead to exceptions. It\textquotesingle{}s too bad, but this is just the way things are with code pages in zip files. Caveat Emptor. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+Input\+Stream.\+cs\end{DoxyCompactItemize}

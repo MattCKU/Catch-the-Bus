@@ -1,0 +1,325 @@
+\hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{}\section{Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector Class Reference}
+\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}\index{Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector@{Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector}}
+
+
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} encapsulates logic that selects files from a source -\/ a zip file or the filesystem -\/ based on a set of criteria. This class is used internally by the Dot\+Net\+Zip library, in particular for the Add\+Selected\+Files() methods. This class can also be used independently of the zip capability in Dot\+Net\+Zip.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_af4eb6aa0e0d86c9af92a0dbea18ec673}{File\+Selector}} (String selection\+Criteria)
+\begin{DoxyCompactList}\small\item\em Constructor that allows the caller to specify file selection criteria. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a3c48fb07f40c9390505395257fee90cf}{File\+Selector}} (String selection\+Criteria, bool traverse\+Directory\+Reparse\+Points)
+\begin{DoxyCompactList}\small\item\em Constructor that allows the caller to specify file selection criteria. \end{DoxyCompactList}\item 
+override String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a8fa535a32889af944e74d9621c93edf1}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} object. \end{DoxyCompactList}\item 
+System.\+Collections.\+Generic.\+I\+Collection$<$ String $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a378ddfe137426330784a2561be3a5899}{Select\+Files}} (String directory)
+\begin{DoxyCompactList}\small\item\em Returns the names of the files in the specified directory that fit the selection criteria specified in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}}. \end{DoxyCompactList}\item 
+System.\+Collections.\+Object\+Model.\+Read\+Only\+Collection$<$ String $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a7678841863d20889f7b0be2737550be3}{Select\+Files}} (String directory, bool recurse\+Directories)
+\begin{DoxyCompactList}\small\item\em Returns the names of the files in the specified directory that fit the selection criteria specified in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}}, optionally recursing through subdirectories. \end{DoxyCompactList}\item 
+I\+Collection$<$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Ionic.\+Zip.\+Zip\+Entry}} $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_abe158bc9314c9c3cdb511da60fcd4766}{Select\+Entries}} (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Ionic.\+Zip.\+Zip\+File}} zip)
+\begin{DoxyCompactList}\small\item\em Retrieve the Zip\+Entry items in the Zip\+File that conform to the specified criteria. \end{DoxyCompactList}\item 
+I\+Collection$<$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Ionic.\+Zip.\+Zip\+Entry}} $>$ \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_ab70d506c4868dac72f93573fbd5f1f92}{Select\+Entries}} (\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Ionic.\+Zip.\+Zip\+File}} zip, string directory\+Path\+In\+Archive)
+\begin{DoxyCompactList}\small\item\em Retrieve the Zip\+Entry items in the Zip\+File that conform to the specified criteria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{Selection\+Criteria}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The string specifying which files to include when retrieving. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a631a7673d40a3ab092958c3d522d831d}{Traverse\+Reparse\+Points}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indicates whether searches will traverse N\+T\+FS reparse points, like Junctions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} encapsulates logic that selects files from a source -\/ a zip file or the filesystem -\/ based on a set of criteria. This class is used internally by the Dot\+Net\+Zip library, in particular for the Add\+Selected\+Files() methods. This class can also be used independently of the zip capability in Dot\+Net\+Zip. 
+
+The \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} class is used internally by the Zip\+File class for selecting files for inclusion into the Zip\+File, when the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_ac40d1b5cde5fe68a968056fe0f401359}{Ionic.\+Zip.\+Zip\+File.\+Add\+Selected\+Files(\+String,\+String)}} method, or one of its overloads, is called. It\textquotesingle{}s also used for the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file_a1c3f402c719453b86bec0438b649c5f4}{Ionic.\+Zip.\+Zip\+File.\+Extract\+Selected\+Entries(\+String)}} methods. Typically, an application that creates or manipulates \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archives will not directly interact with the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} class. 
+
+Some applications may wish to use the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} class directly, to select files from disk volumes based on a set of criteria, without creating or querying \mbox{\hyperlink{namespace_super_tiled2_unity_1_1_ionic_1_1_zip}{Zip}} archives. The file selection criteria include\+: a pattern to match the filename; the last modified, created, or last accessed time of the file; the size of the file; and the attributes of the file. 
+
+Consult the documentation for \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{Selection\+Criteria}} for more information on specifying the selection criteria. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_af4eb6aa0e0d86c9af92a0dbea18ec673}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_af4eb6aa0e0d86c9af92a0dbea18ec673}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!File\+Selector@{File\+Selector}}
+\index{File\+Selector@{File\+Selector}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{File\+Selector()}{FileSelector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+File\+Selector (\begin{DoxyParamCaption}\item[{String}]{selection\+Criteria }\end{DoxyParamCaption})}
+
+
+
+Constructor that allows the caller to specify file selection criteria. 
+
+This constructor allows the caller to specify a set of criteria for selection of files. 
+
+See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{File\+Selector.\+Selection\+Criteria}} for a description of the syntax of the selection\+Criteria string. 
+
+By default the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} will traverse N\+T\+FS Reparse Points. To change this, use \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a3c48fb07f40c9390505395257fee90cf}{File\+Selector(\+String, bool)}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selection\+Criteria} & The criteria for file selection.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a3c48fb07f40c9390505395257fee90cf}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a3c48fb07f40c9390505395257fee90cf}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!File\+Selector@{File\+Selector}}
+\index{File\+Selector@{File\+Selector}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{File\+Selector()}{FileSelector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+File\+Selector (\begin{DoxyParamCaption}\item[{String}]{selection\+Criteria,  }\item[{bool}]{traverse\+Directory\+Reparse\+Points }\end{DoxyParamCaption})}
+
+
+
+Constructor that allows the caller to specify file selection criteria. 
+
+This constructor allows the caller to specify a set of criteria for selection of files. 
+
+See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{File\+Selector.\+Selection\+Criteria}} for a description of the syntax of the selection\+Criteria string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selection\+Criteria} & The criteria for file selection.\\
+\hline
+{\em traverse\+Directory\+Reparse\+Points} & whether to traverse N\+T\+FS reparse points (junctions). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_abe158bc9314c9c3cdb511da60fcd4766}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_abe158bc9314c9c3cdb511da60fcd4766}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!Select\+Entries@{Select\+Entries}}
+\index{Select\+Entries@{Select\+Entries}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{Select\+Entries()}{SelectEntries()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+Collection$<$\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Ionic.\+Zip.\+Zip\+Entry}}$>$ Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+Select\+Entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Ionic.\+Zip.\+Zip\+File}}}]{zip }\end{DoxyParamCaption})}
+
+
+
+Retrieve the Zip\+Entry items in the Zip\+File that conform to the specified criteria. 
+
+This method applies the criteria set in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} instance (as described in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{File\+Selector.\+Selection\+Criteria}}) to the specified Zip\+File. Using this method, for example, you can retrieve all entries from the given Zip\+File that have filenames ending in .txt. 
+
+Normally, applications would not call this method directly. This method is used by the Zip\+File class. 
+
+Using the appropriate Selection\+Criteria, you can retrieve entries based on size, time, and attributes. See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{File\+Selector.\+Selection\+Criteria}} for a description of the syntax of the Selection\+Criteria string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zip} & The Zip\+File from which to retrieve entries.\\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+a collection of Zip\+Entry objects that conform to the criteria.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_ab70d506c4868dac72f93573fbd5f1f92}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_ab70d506c4868dac72f93573fbd5f1f92}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!Select\+Entries@{Select\+Entries}}
+\index{Select\+Entries@{Select\+Entries}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{Select\+Entries()}{SelectEntries()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+Collection$<$\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_entry}{Ionic.\+Zip.\+Zip\+Entry}}$>$ Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+Select\+Entries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_zip_1_1_zip_file}{Ionic.\+Zip.\+Zip\+File}}}]{zip,  }\item[{string}]{directory\+Path\+In\+Archive }\end{DoxyParamCaption})}
+
+
+
+Retrieve the Zip\+Entry items in the Zip\+File that conform to the specified criteria. 
+
+This method applies the criteria set in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} instance (as described in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{File\+Selector.\+Selection\+Criteria}}) to the specified Zip\+File. Using this method, for example, you can retrieve all entries from the given Zip\+File that have filenames ending in .txt. 
+
+Normally, applications would not call this method directly. This method is used by the Zip\+File class. 
+
+This overload allows the selection of Zip\+Entry instances from the Zip\+File to be restricted to entries contained within a particular directory in the Zip\+File. 
+
+Using the appropriate Selection\+Criteria, you can retrieve entries based on size, time, and attributes. See \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}{File\+Selector.\+Selection\+Criteria}} for a description of the syntax of the Selection\+Criteria string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zip} & The Zip\+File from which to retrieve entries.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory\+Path\+In\+Archive} & the directory in the archive from which to select entries. If null, then all directories in the archive are used. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+a collection of Zip\+Entry objects that conform to the criteria.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a378ddfe137426330784a2561be3a5899}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a378ddfe137426330784a2561be3a5899}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!Select\+Files@{Select\+Files}}
+\index{Select\+Files@{Select\+Files}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{Select\+Files()}{SelectFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System.\+Collections.\+Generic.\+I\+Collection$<$String$>$ Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+Select\+Files (\begin{DoxyParamCaption}\item[{String}]{directory }\end{DoxyParamCaption})}
+
+
+
+Returns the names of the files in the specified directory that fit the selection criteria specified in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}}. 
+
+This is equivalent to calling \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a7678841863d20889f7b0be2737550be3}{Select\+Files(\+String, bool)}} with recurse\+Directories = false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & The name of the directory over which to apply the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} criteria. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+A collection of strings containing fully-\/qualified pathnames of files that match the criteria specified in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a7678841863d20889f7b0be2737550be3}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a7678841863d20889f7b0be2737550be3}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!Select\+Files@{Select\+Files}}
+\index{Select\+Files@{Select\+Files}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{Select\+Files()}{SelectFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System.\+Collections.\+Object\+Model.\+Read\+Only\+Collection$<$String$>$ Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+Select\+Files (\begin{DoxyParamCaption}\item[{String}]{directory,  }\item[{bool}]{recurse\+Directories }\end{DoxyParamCaption})}
+
+
+
+Returns the names of the files in the specified directory that fit the selection criteria specified in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}}, optionally recursing through subdirectories. 
+
+This method applies the file selection criteria contained in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} to the files contained in the given directory, and returns the names of files that conform to the criteria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & The name of the directory over which to apply the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} criteria. \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em recurse\+Directories} & Whether to recurse through subdirectories when applying the file selection criteria. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+A collection of strings containing fully-\/qualified pathnames of files that match the criteria specified in the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a8fa535a32889af944e74d9621c93edf1}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a8fa535a32889af944e74d9621c93edf1}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override String Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a string representation of the \mbox{\hyperlink{class_super_tiled2_unity_1_1_ionic_1_1_file_selector}{File\+Selector}} object. 
+
+\begin{DoxyReturn}{Returns}
+The string representation of the boolean logic statement of the file selection criteria for this instance. 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a0f2d26f8fb39862f504bc0069365ff39}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!Selection\+Criteria@{Selection\+Criteria}}
+\index{Selection\+Criteria@{Selection\+Criteria}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{Selection\+Criteria}{SelectionCriteria}}
+{\footnotesize\ttfamily String Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+Selection\+Criteria\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The string specifying which files to include when retrieving. 
+
+Specify the criteria in statements of 3 elements\+: a noun, an operator, and a value. Consider the string \char`\"{}name != $\ast$.\+doc\char`\"{} . The noun is \char`\"{}name\char`\"{}. The operator is \char`\"{}!=\char`\"{}, implying \char`\"{}\+Not Equal\char`\"{}. The value is \char`\"{}$\ast$.\+doc\char`\"{}. That criterion, in English, says \char`\"{}all files with a name that
+  does not end in the .\+doc extension.\char`\"{} 
+
+Supported nouns include \char`\"{}name\char`\"{} (or \char`\"{}filename\char`\"{}) for the filename; \char`\"{}atime\char`\"{}, \char`\"{}mtime\char`\"{}, and \char`\"{}ctime\char`\"{} for last access time, last modfied time, and created time of the file, respectively; \char`\"{}attributes\char`\"{} (or \char`\"{}attrs\char`\"{}) for the file attributes; \char`\"{}size\char`\"{} (or \char`\"{}length\char`\"{}) for the file length (uncompressed); and \char`\"{}type\char`\"{} for the type of object, either a file or a directory. The \char`\"{}attributes\char`\"{}, \char`\"{}type\char`\"{}, and \char`\"{}name\char`\"{} nouns all support = and != as operators. The \char`\"{}size\char`\"{}, \char`\"{}atime\char`\"{}, \char`\"{}mtime\char`\"{}, and \char`\"{}ctime\char`\"{} nouns support = and !=, and $>$, $>$=, $<$, $<$= as well. The times are taken to be expressed in local time. 
+
+Specify values for the file attributes as a string with one or more of the characters H,R,S,A,I,L in any order, implying file attributes of Hidden, Read\+Only, System, Archive, Not\+Context\+Indexed, and Reparse\+Point (symbolic link) respectively. 
+
+To specify a time, use Y\+Y\+Y\+Y-\/\+M\+M-\/\+D\+D-\/\+HH\+:mm\+:ss or Y\+Y\+Y\+Y/\+M\+M/\+D\+D-\/\+HH\+:mm\+:ss as the format. If you omit the H\+H\+:mm\+:ss portion, it is assumed to be 00\+:00\+:00 (midnight). 
+
+The value for a size criterion is expressed in integer quantities of bytes, kilobytes (use k or kb after the number), megabytes (m or mb), or gigabytes (g or gb). 
+
+The value for a name is a pattern to match against the filename, potentially including wildcards. The pattern follows C\+M\+D.\+exe glob rules\+: $\ast$ implies one or more of any character, while ? implies one character. If the name pattern contains any slashes, it is matched to the entire filename, including the path; otherwise, it is matched against only the filename without the path. This means a pattern of \char`\"{}$\ast$\textbackslash{}$\ast$.$\ast$\char`\"{} matches all files one directory level deep, while a pattern of \char`\"{}$\ast$.$\ast$\char`\"{} matches all files in all directories. 
+
+To specify a name pattern that includes spaces, use single quotes around the pattern. A pattern of \char`\"{}\textquotesingle{}$\ast$ $\ast$.$\ast$\textquotesingle{}\char`\"{} will match all files that have spaces in the filename. The full criteria string for that would be \char`\"{}name = \textquotesingle{}$\ast$ $\ast$.$\ast$\textquotesingle{}\char`\"{} . 
+
+The value for a type criterion is either F (implying a file) or D (implying a directory). 
+
+Some examples\+: 
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ criteria }&\textbf{ Files retrieved 
+
+}\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ criteria }&\textbf{ Files retrieved 
+
+}\\\cline{1-2}
+\endhead
+name != $\ast$.xls  &any file with an extension that is not .xls  
+
+\\\cline{1-2}
+name = $\ast$.mp3  &any file with a .mp3 extension.  
+
+\\\cline{1-2}
+$\ast$.mp3 &(same as above) any file with a .mp3 extension.  
+
+\\\cline{1-2}
+attributes = A  &all files whose attributes include the Archive bit.  
+
+\\\cline{1-2}
+attributes != H  &all files whose attributes do not include the Hidden bit.  
+
+\\\cline{1-2}
+mtime $>$ 2009-\/01-\/01 &all files with a last modified time after January 1st, 2009.  
+
+\\\cline{1-2}
+ctime $>$ 2009/01/01-\/03\+:00\+:00 &all files with a created time after 3am (local time), on January 1st, 2009.  
+
+\\\cline{1-2}
+size $>$ 2gb &all files whose uncompressed size is greater than 2gb.  
+
+\\\cline{1-2}
+type = D &all directories in the filesystem.  
+
+\\\cline{1-2}
+\end{longtabu}
+
+
+You can combine criteria with the conjunctions A\+ND, OR, and X\+OR. Using a string like \char`\"{}name = $\ast$.\+txt A\+N\+D size >= 100k\char`\"{} for the selection\+Criteria retrieves entries whose names end in .txt, and whose uncompressed size is greater than or equal to 100 kilobytes. 
+
+For more complex combinations of criteria, you can use parenthesis to group clauses in the boolean logic. Absent parenthesis, the precedence of the criterion atoms is determined by order of appearance. Unlike the C\# language, the A\+ND conjunction does not take precendence over the logical OR. This is important only in strings that contain 3 or more criterion atoms. In other words, \char`\"{}name = $\ast$.\+txt
+  and size > 1000 or attributes = H\char`\"{} implies \char`\"{}((name = $\ast$.\+txt A\+N\+D size
+  > 1000) O\+R attributes = H)\char`\"{} while \char`\"{}attributes = H O\+R name = $\ast$.\+txt
+  and size > 1000\char`\"{} evaluates to \char`\"{}((attributes = H O\+R name = $\ast$.\+txt)
+  A\+N\+D size > 1000)\char`\"{}. When in doubt, use parenthesis. 
+
+Using time properties requires some extra care. If you want to retrieve all entries that were last updated on 2009 February 14, specify \char`\"{}mtime >= 2009-\/02-\/14 A\+N\+D mtime < 2009-\/02-\/15\char`\"{}. Read this to say\+: all files updated after 12\+:00am on February 14th, until 12\+:00am on February 15th. You can use the same bracketing approach to specify any time period -\/ a year, a month, a week, and so on. 
+
+The syntax allows one special case\+: if you provide a string with no spaces, it is treated as a pattern to match for the filename. Therefore a string like \char`\"{}$\ast$.\+xls\char`\"{} will be equivalent to specifying \char`\"{}name
+  = $\ast$.\+xls\char`\"{}. This \char`\"{}shorthand\char`\"{} notation does not work with compound criteria. 
+
+There is no logic in this class that insures that the inclusion criteria are internally consistent. For example, it\textquotesingle{}s possible to specify criteria that says the file must have a size of less than 100 bytes, as well as a size that is greater than 1000 bytes. Obviously no file will ever satisfy such criteria, but this class does not check for or detect such inconsistencies. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Thrown in the setter if the value has an invalid syntax. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a631a7673d40a3ab092958c3d522d831d}\label{class_super_tiled2_unity_1_1_ionic_1_1_file_selector_a631a7673d40a3ab092958c3d522d831d}} 
+\index{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}!Traverse\+Reparse\+Points@{Traverse\+Reparse\+Points}}
+\index{Traverse\+Reparse\+Points@{Traverse\+Reparse\+Points}!Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector@{Super\+Tiled2\+Unity\+::\+Ionic\+::\+File\+Selector}}
+\subsubsection{\texorpdfstring{Traverse\+Reparse\+Points}{TraverseReparsePoints}}
+{\footnotesize\ttfamily bool Super\+Tiled2\+Unity.\+Ionic.\+File\+Selector.\+Traverse\+Reparse\+Points\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indicates whether searches will traverse N\+T\+FS reparse points, like Junctions. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/File\+Selector.\+cs\item 
+D\+:/\+Users/\+Bennett/\+Desktop/\+School/\+E\+E\+C\+S\+\_\+448/\+Catch-\/the-\/\+Bus/\+Iso\+Chai/\+Assets/\+Super\+Tiled2\+Unity/\+Scripts/\+Editor/\+Third\+Party/dotnetzip-\/for-\/unity/\+Zip/Zip\+File.\+Selector.\+cs\end{DoxyCompactItemize}
