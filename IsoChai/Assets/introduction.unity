@@ -319,7 +319,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "You\u2019re late to class! Gotta catch the bus! Navigate the busy street,
     cluttered sidewalk, and dangerous grass all the while avoiding cars, cats and
-    the dreaded snowmen! but hurry the bus leaves in just 40! Can you Catch the Bus!"
+    the dreaded snowmen! but hurry the bus leaves in just 40 seconds! Can you Catch
+    the Bus!"
 --- !u!222 &791780656
 CanvasRenderer:
   m_ObjectHideFlags: 0
