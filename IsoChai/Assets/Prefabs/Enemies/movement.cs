@@ -11,7 +11,6 @@ public class movement : MonoBehaviour {
 	private float speed = 5f;
 	// Use this for initialization
 	void Start () {
-		//transform.eulerAngles = new Vector3(0,240,0);
 		rb = GetComponent<Rigidbody>();
 	}
 	
@@ -20,7 +19,12 @@ public class movement : MonoBehaviour {
         Vector3 movement = Vector3.MoveTowards(transform.position, laneObject.transform.position, speed*Time.deltaTime);
 		rb.MovePosition(movement);
 	}
-    public void setLaneObject(GameObject obj){
+    /*
+	@pre None
+	@post set new lane object
+	@param obj = new game object
+ 	*/
+	public void setLaneObject(GameObject obj){
         laneObject=obj;
     }
 }

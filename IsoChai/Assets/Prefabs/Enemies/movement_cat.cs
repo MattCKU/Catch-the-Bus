@@ -22,10 +22,12 @@ public class movement_cat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		rb.MovePosition(transform.position + movementDir.normalized*speed*Time.deltaTime);
-		//transform.Translate(movementDir.normalized*speed*Time.deltaTime);
-		
-		//transform.Rotate(0,240,0);
 	}
+	/*
+	@pre calls on collsiion enter
+	@post delets object if coliding with object
+	@param collision = object that is collided with
+ 	*/
 	void onCollisionEnter(Collision collision){
 		if(collision.gameObject.tag == "Wall"){
 			Destroy(self);

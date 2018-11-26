@@ -13,12 +13,17 @@ public class deleteEnemy : MonoBehaviour {
 	void Update () {
 		
 	}
- void OnTriggerEnter(Collider col) {
-     if(col.gameObject.tag == "Enemy")
-     {
-        //DestroyObject(col.gameObject);
-		Destroy(col.gameObject);
-     }
-  }
+	/*
+	@pre calls on collision triger enter
+	@post delets object if object is enemy
+	@param col = object that is collided with
+ 	*/
+	void OnTriggerEnter(Collider col) {
+		if(col.gameObject.tag == "Enemy")
+		{
+
+			Destroy(col.gameObject);
+		}
+	}
  }
 

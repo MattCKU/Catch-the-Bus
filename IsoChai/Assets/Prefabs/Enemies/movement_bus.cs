@@ -21,12 +21,9 @@ public class movement_bus : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Get movement direction
 		Vector3 movement = Vector3.MoveTowards(transform.position, laneObject.transform.position, speed*Time.deltaTime);
 		rb.MovePosition(movement);
-		//rb.MovePosition(transform.position + movementDir.normalized*speed*Time.deltaTime);
-		//transform.Translate(movementDir.normalized*speed*Time.deltaTime);
-		
-		//transform.Rotate(0,240,0);
 	}
 
 }
