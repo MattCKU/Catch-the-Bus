@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laneObject: {fileID: 0}
-  speed: 5
+  speed: 7
 --- !u!136 &136734486886491054
 CapsuleCollider:
   m_ObjectHideFlags: 1
