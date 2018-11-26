@@ -39,6 +39,9 @@ public class CharController : MonoBehaviour
                 canMove=true;
             }
         }
+        if(transform.position.y<=1.2){
+            transform.position.Set(transform.position.x,1.2f,transform.position.z);
+        }
 	}
 
     void Move()

@@ -1929,7 +1929,7 @@ Prefab:
     - target: {fileID: 54209779770424414, guid: 1cef8a5d9eb539741a3d17b680beaecd,
         type: 2}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4977469558430802, guid: 1cef8a5d9eb539741a3d17b680beaecd, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
