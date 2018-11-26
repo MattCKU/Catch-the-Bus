@@ -3383,7 +3383,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4826163971755172}
-  - component: {fileID: 114788543849354608}
   - component: {fileID: 54603990112340590}
   - component: {fileID: 136554662892494846}
   - component: {fileID: 114243479134951392}
@@ -36949,20 +36948,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laneObject: {fileID: 0}
-  speed: 5
---- !u!114 &114788543849354608
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1368982609448090}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 549d0950e950f6c45b10da2e6fe90f55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laneObject: {fileID: 0}
-  movementDir: {x: -0.866, y: 0, z: -0.5}
   speed: 5
 --- !u!136 &136554662892494846
 CapsuleCollider:
