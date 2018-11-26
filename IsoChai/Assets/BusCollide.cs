@@ -17,6 +17,11 @@ public class BusCollide : MonoBehaviour {
 		
 	}
 
+	/*
+	@pre calls on trigger
+	@post win if player collides with bus
+	@param other = object colided with
+ 	*/
 	void OnTriggerEnter(Collider other)
 	{
 		Debug.Log("Entered.");

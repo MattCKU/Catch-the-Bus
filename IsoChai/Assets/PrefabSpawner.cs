@@ -26,6 +26,10 @@ public class PrefabSpawner : MonoBehaviour {
 			Spawn();
 		}
 	}
+	/*
+	@pre time > next spawn time
+	@post new object is spawned and set to run down lane
+ 	*/
 	private void Spawn(){
 		nextSpawnTime = Time.time + spawnDelay + Random.Range(-1*rand_variance,rand_variance);
 		var obj = Instantiate(spawnObject, transform.position, spawnObject.transform.rotation);
