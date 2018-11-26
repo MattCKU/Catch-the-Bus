@@ -64,4 +64,14 @@ public class CharController : MonoBehaviour
             canMoveTime=Time.time+stunTime;
         }
     }
+
+    public float getMovementSpeed()
+    {
+        return moveSpeed;
+    }
+
+    public void setMovementSpeed(float playerSpeed)
+    {
+       moveSpeed = playerSpeed;
+    }
 }

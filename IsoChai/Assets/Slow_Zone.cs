@@ -5,6 +5,7 @@ using UnityEngine;
 public class Slow_Zone : MonoBehaviour {
 
 	public GameObject player;
+	[SerializeField]
 	// Use this for initialization
 	void Start () {
 		
@@ -17,12 +18,21 @@ public class Slow_Zone : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log("On top sidewalk. Slowing Down.");
-
+		if (other.gameObject.tag == "Player")
+		{
+			Debug.Log("On top sidewalk. Slowing Down.");
+			player.GetComponent<CharController>().setMovementSpeed(4);
+		}
+	
 	}
 
 	void OnTriggerExit(Collider other)
 	{
-		Debug.Log("Leaving the top sidewalk. Speeding up.");
+		if (other.gameObject.tag == "Player")
+		{
+			Debug.Log("Leaving the top sidewalk. Speeding up.");
+			player.GetComponent<CharController>().setMovementSpeed(9);
+		}
+		
 	}
 }
